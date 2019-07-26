@@ -1,0 +1,3 @@
+[25-Jul-2019 16:07:28 GMT] PHP Notice:  Undefined index: 5c10968cf39f4usr_ses_id in /home/smccubnr/public_html/usnazranimatrimony.com/freichat/server/freichat.php on line 81
+[25-Jul-2019 16:07:28 GMT] PHP Notice:  Undefined index: 5c10968cf39f4usr_name in /home/smccubnr/public_html/usnazranimatrimony.com/freichat/server/freichat.php on line 82
+[25-Jul-2019 16:07:28 GMT] PHP Notice:  Undefined index: 5c10968cf39f4is_guest in /home/smccubnr/public_html/usnazranimatrimony.com/freichat/server/freichat.php on line 279
