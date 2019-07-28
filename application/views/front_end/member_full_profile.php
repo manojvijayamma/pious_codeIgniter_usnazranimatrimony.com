@@ -388,14 +388,14 @@
                                                         <div class="xxl-16 xl-16 m-16 xs-16 s-16 l-16 padding-lr-zero">
                                                             <div class="xxl-16 xl-16 m-4 s-16 l-4 xs-16 padding-top-10px">
                                                                 <div class="row">
-                                                                    Religion:
+                                                                Catholic Community:
                                                                 </div>
                                                             </div>
                                                             
                                                             <div class="xxl-16 xl-16 m-12 s-16 l-12 xs-16 ne_font_12">
                                                                 <div class="row">
                                                                     <select class="form-control" name="religion[]">
-                                                                        <option value="">Select religion</option>
+                                                                        <option value="">Select Catholic Community</option>
                                                                         <option value="32">Buddhist</option>
                                                                         <option value="30">Christian</option>
                                                                         <option value="1">Hindu</option>
@@ -904,7 +904,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="xxl-16 xl-16 l-16 m-16 s-16 xs-16 padding-lr-zero">
+                                <!-- <li class="xxl-16 xl-16 l-16 m-16 s-16 xs-16 padding-lr-zero">
                                     <div  class="xxl-16 xl-16 l-16 m-16 s-16 xs-16 padding-lr-zero margin-top-10px-320px margin-top-10px-480px ne-mrg-top-10-768">
                                         <div class="xxl-6 xl-6 l-6 m-6 s-6 xs-6 label-title margin-top-5-xs">
                                             Star
@@ -945,8 +945,8 @@
                                             <span class="dot-padding">:</span> Does Not Matter                                            
                                         </div>
                                     </div>
-                                </li>
-                                <li class="xxl-16 xl-16 l-16 m-16 s-16 xs-16 padding-lr-zero">
+                                </li> -->
+                                <!-- <li class="xxl-16 xl-16 l-16 m-16 s-16 xs-16 padding-lr-zero">
                                     <div  class="xxl-16 xl-16 l-16 m-16 s-16 xs-16 padding-lr-zero margin-top-10px-320px margin-top-10px-480px ne-mrg-top-10-768">
                                         <div class="xxl-6 xl-6 l-6 m-6 s-6 xs-6 label-title margin-top-5-xs">
                                             Moonsign
@@ -955,7 +955,7 @@
                                             <span class="dot-padding">:</span> Does not matter                                            
                                         </div>
                                     </div>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                         

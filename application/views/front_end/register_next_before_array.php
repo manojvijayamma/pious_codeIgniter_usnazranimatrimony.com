@@ -660,7 +660,7 @@
                                 <div class="row">
                                     <div class="xxl-5 xl-5 xs-16 s-16 m-16 l-4 margin-top-5px">
                                         <label>
-                                            Sub Caste :
+                                        Parish:
                                         </label>
                                     </div>
                                     <div class="clearfix visible-xs"></div>
@@ -668,7 +668,7 @@
                                     	<input type="text" name="subcaste" id="subcaste" class="form-control" />                                    </div>
                                 </div>
                             </div>
-                            <div class="xxl-16 xl-16 xs-16 s-16  m-16 l-16 margin-top-20px">
+                            <!-- <div class="xxl-16 xl-16 xs-16 s-16  m-16 l-16 margin-top-20px">
                                 <div class="row">
                                     <div class="xxl-5 xl-5 xs-16 s-16 m-16 l-4 margin-top-5px">
                                         <label>
@@ -683,8 +683,8 @@
                                         </select>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="xxl-16 xl-16 xs-16 s-16  m-16 l-16 margin-top-20px">
+                            </div> -->
+                            <!-- <div class="xxl-16 xl-16 xs-16 s-16  m-16 l-16 margin-top-20px">
                                 <div class="row">
                                     <div class="xxl-5 xl-5 xs-16 s-16 m-16 l-4 margin-top-5px">
                                         <label>
@@ -699,8 +699,8 @@
                                         </select>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="xxl-16 xl-16 xs-16 s-16  m-16 l-16 margin-top-20px">
+                            </div> -->
+                            <!-- <div class="xxl-16 xl-16 xs-16 s-16  m-16 l-16 margin-top-20px">
                                 <div class="row">
                                     <div class="xxl-5 xl-5 xs-16 s-16 m-16 l-4 margin-top-5px">
                                         <label>
@@ -715,8 +715,8 @@
                                         </select>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="xxl-16 xl-16 xs-16 s-16  m-16 l-16 margin-top-20px">
+                            </div> -->
+                            <!-- <div class="xxl-16 xl-16 xs-16 s-16  m-16 l-16 margin-top-20px">
                                 <div class="row">
                                     <div class="xxl-5 xl-5 xs-16 s-16 m-16 l-4 margin-top-5px">
                                         <label>
@@ -728,8 +728,8 @@
                                     	<input type="text" name="gothra" id="gothra" class="form-control" />
                                     </div>
                                 </div>
-                            </div>
-                            <div class="xxl-16 xl-16 xs-16 s-16  m-16 l-16 margin-top-20px">
+                            </div> -->
+                            <!-- <div class="xxl-16 xl-16 xs-16 s-16  m-16 l-16 margin-top-20px">
                                 <div class="row">
                                     <div class="xxl-5 xl-5 xs-16 s-16 m-16 l-4 margin-top-5px">
                                         <label>
@@ -744,7 +744,7 @@
                                         </select>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             
                         </div>
                     </div>

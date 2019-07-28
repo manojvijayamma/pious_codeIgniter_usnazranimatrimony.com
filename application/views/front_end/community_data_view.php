@@ -40,7 +40,7 @@ if(isset($member_data) && $member_data !='' && is_array($member_data) && count($
                 <h2 id="mobile_hover" class="margin-top-0px margin-bottom-0px xxl-5 xl-5 l-5 m-5 s-16 xs-16" style="padding:0px;">
                     <a target="_blank" href="<?php echo base_url()."search/view-profile/".$member_data_val['matri_id']; ?>" class="name-title xxl-16 xl-16 l-16 m-16 s-16 xs-16 padding-lr-zero ne_font_weight_nrm"> <?php echo ucwords($comm_model->display_data_na($member_data_val['username']));?>&nbsp;<span class="user-id">(<?php echo $comm_model->display_data_na($member_data_val['matri_id']);?>)</span>
                         <!--<span class="mobile-status"  data-toggle="tooltip" title="Contact Available" ></span>
-                        <span class="horo-status"  data-toggle="tooltip" title="Horoscope Available"></span>-->
+                        -->
                     </a>
                 </h2>
 				
@@ -104,7 +104,7 @@ if(isset($member_data) && $member_data !='' && is_array($member_data) && count($
                             <div class="row">
                                 <div class="xxl-6 xl-6 l-6 m-6 s-6 ne_mrg_ri8_10">
                                     <div class="row label-title">
-                                        Religion
+                                    Catholic Community
                                     </div>
                                 </div>
                                 <div class="xxl-9 xl-9 l-9 m-9 s-9 ne-word-wrap">
@@ -119,7 +119,7 @@ if(isset($member_data) && $member_data !='' && is_array($member_data) && count($
                             <div class="row">
                                 <div class="xxl-6 xl-6 l-6 m-6 s-6 ne_mrg_ri8_10">
                                     <div class="row label-title">
-                                        Caste
+                                    Diocese
                                     </div>
                                 </div>
                                 <div class="xxl-9 xl-9 l-9 m-9 s-9 ne-word-wrap">

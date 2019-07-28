@@ -7,6 +7,8 @@ if($member_fb_data != '')
 		$member_fb_data_image_url = $member_fb_data['fb_image_name'];
 	}
 }
+
+$religion_arr = $this->common_model->dropdown_array_table('religion');
 ?>
 <!-- =====<div class="container"> Start===== -->
 <div class="container margin-top-20 margin-bottom-20 padding-lr-zero-xs">
@@ -380,12 +382,15 @@ if($member_fb_data != '')
                             <div class="reponse_message" id="reponse_message"></div>
                              <?php
 								 $ele_array = array(
-									'subcaste'=>array('label'=>'Sub Caste'),
-									'manglik'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('manglik'),'extra_style'=>'width:100%'),
-									'star'=>array('type'=>'dropdown','class'=>'select2','value_arr'=>$this->common_model->dropdown_array_table('star'),'extra_style'=>'width:100%'),
-									'horoscope'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('horoscope'),'extra_style'=>'width:100%'),
-									'gothra'=>array('label'=>'Gothra'),
-									'moonsign'=>array('type'=>'dropdown','class'=>'select2','value_arr'=>$this->common_model->dropdown_array_table('moonsign'),'extra_style'=>'width:100%'),
+                                    'religion'=>array('is_required'=>'required','type'=>'dropdown','onchange'=>"dropdownChange('religion','caste','caste_list')",'value_arr'=>$religion_arr,'extra_style'=>'width:100%','label'=>'Catholic Community'),
+                                    'caste'=>array('label'=>'Diocese','is_required'=>'required','type'=>'dropdown','relation'=>array('rel_table'=>'caste','key_val'=>'id','key_disp'=>'caste_name','rel_col_name'=>'religion_id','not_load_add'=>'yes','not_load_add'=>'yes','cus_rel_col_val'=>'religion'),'extra_style'=>'width:100%'),
+                                 
+									'subcaste'=>array('label'=>'Parish'),
+									//'manglik'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('manglik'),'extra_style'=>'width:100%'),
+									//'star'=>array('type'=>'dropdown','class'=>'select2','value_arr'=>$this->common_model->dropdown_array_table('star'),'extra_style'=>'width:100%'),
+									//'horoscope'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('horoscope'),'extra_style'=>'width:100%'),
+									//'gothra'=>array('label'=>'Gothra'),
+									//'moonsign'=>array('type'=>'dropdown','class'=>'select2','value_arr'=>$this->common_model->dropdown_array_table('moonsign'),'extra_style'=>'width:100%'),
 								);
 								echo $this->common_front_model->generate_common_front_form($ele_array,array('page_type'=>'register'));
                             ?>

@@ -1119,6 +1119,16 @@ class Common_model extends CI_Model {
 		else
 		{
 			$label = str_replace('_',' ',$key);
+
+			/* by manoj on 28-07-2019*/
+			if($key=='religion_name'){
+				$label="Catholic Community";
+			}
+			if($key=='caste_name'){
+				$label="Diocese";
+			}
+			/* by manoj on 28-07-2019*/
+
 			$label = ucwords($label);
 		}
 		return $label;

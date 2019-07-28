@@ -1086,14 +1086,14 @@ class Member_model extends CI_Model {
 				'title'=>'Religious Information',
 				'class_width'=>' col-lg-6 col-md-6 col-sm-12 col-xs-12 ',
 				'field_array'=>array(
-					'religion_name'=>array('label'=>'Religion'),
-					'caste_name'=>array('label'=>'Caste'),
-					'subcaste'=>array('label'=>'Subcaste'),
-					'manglik'=>array('label'=>'Manglik'),
-					'gothra'=>array('label'=>'Gothra'),
-					'horoscope'=>array('label'=>'Horoscope'),
-					'moonsign'=>array('label'=>'Moonsign','type'=>'relation','table_name'=>'moonsign','disp_column_name'=>'moonsign_name'),
-					'star'=>array('label'=>'Star','type'=>'relation','table_name'=>'star','disp_column_name'=>'star_name'),
+					'religion_name'=>array('label'=>'Catholic Community'),
+					'caste_name'=>array('label'=>'Diocese'),
+					'subcaste'=>array('label'=>'Parish'),
+					//'manglik'=>array('label'=>'Manglik'),
+					//'gothra'=>array('label'=>'Gothra'),
+					//'horoscope'=>array('label'=>'Horoscope'),
+					//'moonsign'=>array('label'=>'Moonsign','type'=>'relation','table_name'=>'moonsign','disp_column_name'=>'moonsign_name'),
+					//'star'=>array('label'=>'Star','type'=>'relation','table_name'=>'star','disp_column_name'=>'star_name'),
 					),
 			),
 			array(
@@ -1176,10 +1176,10 @@ class Member_model extends CI_Model {
 				'label_width'=>'3',
 				'val_width'=>9,
 				'field_array'=>array(
-					'part_manglik'=>array('label'=>'Manglik'),
-					'part_star'=>array('label'=>'Star','type'=>'relation','table_name'=>'star','disp_column_name'=>'star_name'),
-					'part_religion'=>array('label'=>'Religion','type'=>'relation','table_name'=>'religion','disp_column_name'=>'religion_name'),
-					'part_caste'=>array('label'=>'Caste','type'=>'relation','table_name'=>'caste','disp_column_name'=>'caste_name'),
+					//'part_manglik'=>array('label'=>'Manglik'),
+					//'part_star'=>array('label'=>'Star','type'=>'relation','table_name'=>'star','disp_column_name'=>'star_name'),
+					'part_religion'=>array('label'=>'Catholic Community','type'=>'relation','table_name'=>'religion','disp_column_name'=>'religion_name'),
+					'part_caste'=>array('label'=>'Diocese','type'=>'relation','table_name'=>'caste','disp_column_name'=>'caste_name'),
 				),
 			),
 			array(
@@ -1234,8 +1234,8 @@ class Member_model extends CI_Model {
 			'.chosen-select-width': { width: '100%' }			
 			};
 			$('#mother_tongue').chosen({placeholder_text_multiple:'Select Mother Tongue'});
-			$('#religion').chosen({placeholder_text_multiple:'Select Religion'});
-			$('#caste').chosen({placeholder_text_multiple:'Select Caste'});
+			$('#religion').chosen({placeholder_text_multiple:'Select Catholic Community'});
+			$('#caste').chosen({placeholder_text_multiple:'Select Diocese'});
 			$('#country').chosen({placeholder_text_multiple:'Select Country'});
 			$('#state').chosen({placeholder_text_multiple:'Select State'});
 			$('#city').chosen({placeholder_text_multiple:'Select City'});

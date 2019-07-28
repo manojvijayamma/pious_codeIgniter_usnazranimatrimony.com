@@ -82,12 +82,12 @@ if(isset($shortlist_data) && $shortlist_data !='' && is_array($shortlist_data) &
               </div>
               <div class="row"> 
               	<div class="xxl-16 xl-16 l-16 m-16 xs-16 s-16 margin-top-5 padding-right-0-xs">
-                    <b>Religion :</b> <?php if(isset($shortlist_profile['religion']) && $shortlist_profile['religion']!='') {echo $this->common_model->valueFromId('religion',$shortlist_profile['religion'],'religion_name');}else{echo "N/A";}?>
+                    <b>Catholic Community :</b> <?php if(isset($shortlist_profile['religion']) && $shortlist_profile['religion']!='') {echo $this->common_model->valueFromId('religion',$shortlist_profile['religion'],'religion_name');}else{echo "N/A";}?>
                 </div>	
               </div>
               <div class="row"> 
               	<div class="xxl-16 xl-16 l-16 m-16 xs-16 s-16 margin-top-5 padding-right-0-xs">
-                    <b>Caste :</b> <?php if(isset($shortlist_profile['caste']) && $shortlist_profile['caste']!='') {echo $this->common_model->valueFromId('caste',$shortlist_profile['caste'],'caste_name');}else{echo "N/A";}?>
+                    <b>Diocese :</b> <?php if(isset($shortlist_profile['caste']) && $shortlist_profile['caste']!='') {echo $this->common_model->valueFromId('caste',$shortlist_profile['caste'],'caste_name');}else{echo "N/A";}?>
                 </div>	
               </div>
                <div class="row"> 
@@ -144,7 +144,7 @@ if(isset($shortlist_data) && $shortlist_data !='' && is_array($shortlist_data) &
               </div>
               <div class="row"> 
               	<div class="xxl-16 xl-16 l-16 m-16 xs-16 s-16 margin-top-5 padding-right-0-xs">
-                    <b>Religion :</b> <?php if(isset($shortlist_profile['religion']) && $shortlist_profile['religion']!='') {echo $this->common_model->valueFromId('religion',$shortlist_profile['religion'],'religion_name');}else{echo "N/A";}?>
+                    <b>Catholic Community  :</b> <?php if(isset($shortlist_profile['religion']) && $shortlist_profile['religion']!='') {echo $this->common_model->valueFromId('religion',$shortlist_profile['religion'],'religion_name');}else{echo "N/A";}?>
                 </div>	
               </div>
               <div class="row"> 
@@ -188,11 +188,11 @@ if(isset($shortlist_data) && $shortlist_data !='' && is_array($shortlist_data) &
                     <b>Income :</b><?php if(isset($shortlist_profile['income']) && $shortlist_profile['income']!=''){$income = $shortlist_profile['income']; echo $income_exp = str_replace('-|-',', ',$income);}else{echo "N/A";}?>
                 </div>	
               </div>
-               <div class="row"> 
+               <!-- <div class="row"> 
               	<div class="xxl-16 xl-16 l-16 m-16 xs-16 s-16 margin-top-5 padding-right-0-xs">
                     <b>Star :</b><?php if(isset($shortlist_profile['star']) && $shortlist_profile['star']!=''){$star = $shortlist_profile['star'];echo $star_exp = str_replace(',',', ',$star);}else{echo "N/A";}?>
                 </div>	
-              </div>
+              </div> -->
               <div class="row"> 
               	<div class="xxl-10 xl-16 l-16 m-16 xs-16 s-16 margin-top-5 padding-right-0-xs">
                       <b>Eating Habits :</b> <?php if(isset($shortlist_profile['diet']) && $shortlist_profile['diet']!='') {$diet = $shortlist_profile['diet'];echo $diet_exp = str_replace(',',', ',$diet);}else{echo "N/A";}?>
@@ -213,9 +213,9 @@ if(isset($shortlist_data) && $shortlist_data !='' && is_array($shortlist_data) &
               	<div class="xxl-10 xl-16 l-16 m-16 xs-16 s-16 margin-top-5 padding-right-0-xs">
                      <b>Body Type :</b> <?php if(isset($shortlist_profile['bodytype']) && $shortlist_profile['bodytype']!=''){$bodytype = $shortlist_profile['bodytype'];echo $bodytype_exp = str_replace(',',', ',$bodytype); }else{echo "N/A";}?>
                 </div>	
-                <div class="xxl-6 xl-16 l-16 m-16 xs-16 s-16 margin-top-5 padding-right-0-xs">
+                <!-- <div class="xxl-6 xl-16 l-16 m-16 xs-16 s-16 margin-top-5 padding-right-0-xs">
                     <b>Manglik :</b> <?php if(isset($shortlist_profile['manglik']) && $shortlist_profile['manglik']!='') {$manglik = $shortlist_profile['manglik'];echo $manglik_exp = str_replace(',',', ',$manglik);}else{echo "N/A";}?>
-                </div>
+                </div> -->
               </div>
             <?php } ?>
             

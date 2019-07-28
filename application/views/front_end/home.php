@@ -7,6 +7,66 @@
 	body{
 	background-color:#fff !important;
 	}
+
+
+	
+</style>
+
+<style>
+
+.profileSliderImage{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+.flip-card {
+	margin-left: auto;
+    margin-right: auto;
+  background-color: transparent;
+  width: 200px;
+  height: 240px;
+  perspective: 1000px;
+  margin-bottom:25px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 98%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+ 
+  color: black;
+}
+
+.flip-card-back {
+	background-color: #fee0ec;
+  	color: white;
+  	transform: rotateY(180deg);
+}
+.flip-card-back p{
+	color:#cd7291 ;
+	text-align:center
+}
 </style>
 
 <div id="bootstrap-touch-slider" class="slider-bg kenburns_zoomInOut">
@@ -96,11 +156,11 @@
 										</div>
 									</div>
 									<div class="inline-block pdr10">
-										<label class="gender_1">Of Religion:</label>
+										<label class="gender_1">Of Catholic Community:</label>
 										<div class="age_box1" style="max-width:100%;display:inline-block;">
 											<select name="religion[]" class="form-control" style="padding: 5px 15px;border: 2px solid #ecc8ca!important;
 											border-radius: 5px;">
-												<option value="">Select Religion</option>
+												<option value="">Select Catholic Community</option>
 												<?php echo $this->common_model->array_optionstr($this->common_model->dropdown_array_table('religion'));?>
 											</select>
 										</div>
@@ -168,6 +228,8 @@ if(isset($featured_profile_data) && $featured_profile_data !='' && is_array($fea
 {	?>
 <div class="section-space50 padding-top-10-xs" style="background:#fff; margin-bottom: 30px;">
 	<div class="container">
+
+	
 <div class="row">
 			<div class="col-md-12">
 				<div class="section-title text-center slideanim" style="margin-bottom: 15px;
@@ -177,7 +239,15 @@ if(isset($featured_profile_data) && $featured_profile_data !='' && is_array($fea
 				</div>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row carousel slide" id="profilesCarousel_old">
+
+
+
+
+		
+
+
+
 <?php
 	$i=1;
 	$path_photos = $this->common_model->path_photos;
@@ -189,7 +259,73 @@ if(isset($featured_profile_data) && $featured_profile_data !='' && is_array($fea
 <?php
 		}?>
 		<div class="col-md-3 feature-block">
+
+
+
+
+
+
+				<?php 
+									$path_photos = $this->common_model->path_photos;
+				
+			
+									if(isset($featured_data['photo1']) && $featured_data['photo1'] !='' && $featured_data['photo1_approve'] =='APPROVED' && file_exists($path_photos.$featured_data['photo1']) && $featured_data['photo_password'] !='' && $featured_data['photo_protect'] !='No' && $featured_data['photo_view_status'] == 0){
+										$photoUrl= $photopassword_image;
+									}
+									else{
+										$photoUrl= $this->common_model->member_photo_disp($featured_data);
+									}
+									?>
+
+
+			<a href="<?php echo $base_url; ?>search/view-profile/<?php echo $featured_data['matri_id'];?>">
+					<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+						<img src="<?php echo $photoUrl?>" alt="Avatar" style="width:200px;height:200px;">
+						<h4 style="color:#c54868"><?php echo $featured_data['username'];?></h4>
+						</div>
+						<div class="flip-card-back">
+						<h4 style="color:#c54868"><?php echo $featured_data['username'];?></h4>
+						<p>
+						<?php if(isset($featured_data['birthdate']) && $featured_data['birthdate'] !='')
+																{
+																	$birthdate = $featured_data['birthdate'];
+																	echo $this->common_model->birthdate_disp($birthdate,0);
+																}
+																else
+																{
+																	echo $this->common_model->display_data_na('');
+																}?>, 
+																<?php if(isset($featured_data['height']) && $featured_data['height'] !='')
+																{
+																	$height = $featured_data['height'];
+																	echo $this->common_model->display_height($height);
+																}
+																else
+																{
+																	echo $this->common_model->display_data_na('');
+																}?>,<br>
+																<?php if(isset($featured_data['religion_name']) && $featured_data['religion_name'] !=''){ echo $featured_data['religion_name'];}else{echo $this->common_model->display_data_na($featured_data['religion_name']);}?>
+
+						</p>
+						</div>
+					</div>
+					</div>
+			</a>
+
+			</div>		
+
+
+				
+
+
+																
+				
+            
+		
 	<?php
+		/*
 		$path_photos = $this->common_model->path_photos;
 			if(isset($featured_data['photo1']) && $featured_data['photo1'] !='' && $featured_data['photo1_approve'] =='APPROVED' && file_exists($path_photos.$featured_data['photo1']) && $featured_data['photo_password'] !='' && $featured_data['photo_protect'] !='No' && $featured_data['photo_view_status'] == 0){
 		?>
@@ -197,10 +333,14 @@ if(isset($featured_profile_data) && $featured_profile_data !='' && is_array($fea
 					<img src="<?php echo $photopassword_image; ?>" style="width: 70px !important;height: 70px !important;" class="new-hiegh" alt="">
 				</a>
 				
+
+				
 		<?php }else{ ?>
-			<a href=""><img src="<?php echo $this->common_model->member_photo_disp($featured_data);?>" class="new-hiegh" title="<?php echo $featured_data['username'];?>" alt="<?php echo $featured_data['matri_id'];?>"></a>
-		<?php }	?>
-		</div>
+			<a href="<?php echo $base_url; ?>search/view-profile/<?php echo $featured_data['matri_id'];?>"><img src="<?php echo $this->common_model->member_photo_disp($featured_data);?>" class="new-hiegh" title="<?php echo $featured_data['username'];?>" alt="<?php echo $featured_data['matri_id'];?>"></a>
+		<?php }
+		*/
+		?>
+		
 		<?php
 		$i++;
 		}?>
@@ -229,8 +369,9 @@ if(isset($featured_profile_data) && $featured_profile_data !='' && is_array($fea
 			</div>
 			<div class="row">
 				<div class="col-md-3">
-					<h2 class="font-25-xs" style="color:#c54868;"><span class="text-center"><b><?php if(isset($config_data['web_frienly_name']) && $config_data['web_frienly_name'] !=''){ echo $config_data['web_frienly_name'];} ?></b></span>
-					</h2>
+					<!-- <h2 class="font-25-xs" style="color:#c54868;"><span class="text-center"><b><?php if(isset($config_data['web_frienly_name']) && $config_data['web_frienly_name'] !=''){ echo $config_data['web_frienly_name'];} ?></b></span>
+					</h2> -->
+					<img src="<?php echo $base_url; ?>assets/logo/homepage-aboutlogo.png">
 				</div>
 				<div class="col-md-8">
 					<p class="font-25-xs" style="color:#c54868;padding-bottom: 18px;"><span class="text-center"><b><?php if(isset($config_data['website_description']) && $config_data['website_description'] !=''){ echo $config_data['website_description'];} ?></b></span></p>

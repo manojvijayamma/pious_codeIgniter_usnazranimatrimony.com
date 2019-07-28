@@ -146,17 +146,17 @@ if($member_fb_data != '')
                                     </div>
                                     
                                     <div class="text-darkgrey margin-top-10">
-                                        <label>Religion<span class="font-red">* </span>:</label>
+                                        <label>Catholic Community<span class="font-red">* </span>:</label>
                                         <select class="form-control" required name="religion" id="religion" style="width:100%" onChange="dropdownChange('religion','caste','caste_list')">
-                                            <option value="">Select Religion</option>
+                                            <option value="">Select Catholic Community</option>
 											<?php echo $this->common_model->array_optionstr($this->common_model->dropdown_array_table('religion'));?>
                                         </select>
                                     </div>
                                     
                                     <div class="text-darkgrey margin-top-10">
-                                        <label>Caste <span class="font-red">* </span>:</label>
+                                        <label>Diocese <span class="font-red">* </span>:</label>
                                         <select class="form-control" required name="caste" id="caste" style="width:100%">
-                                            <option value="">Select Your Religion First</option>
+                                            <option value="">Select Your Catholic Community First</option>
                                         </select>
                                     </div>
                                     

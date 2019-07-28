@@ -543,14 +543,14 @@
                                                         <div class="xxl-16 xl-16 m-16 xs-16 s-16 l-16 padding-lr-zero">
                                                             <div class="xxl-16 xl-16 m-4 s-16 l-4 xs-16 padding-top-10px">
                                                                 <div class="row">
-                                                                    Religion:
+                                                                Catholic Community:
                                                                 </div>
                                                             </div>
                                                             
                                                             <div class="xxl-16 xl-16 m-12 s-16 l-12 xs-16 ne_font_12">
                                                                 <div class="row">
                                                                     <select class="form-control" name="religion[]">
-                                                                        <option value="">Select religion</option>
+                                                                        <option value="">Select Catholic Community</option>
                                                                         <option value="32">Buddhist</option>
                                                                         <option value="30">Christian</option>
                                                                         <option value="1">Hindu</option>

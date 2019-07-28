@@ -1,5 +1,33 @@
+
+function flip() {
+  $('.card').toggleClass('flipped');
+}
+
+
 $(document).ready(function() {
   
+  
+  
+  $("#profilesCarousel").owlCarousel({
+  
+    navigation : false, // Show next and prev buttons
+    slideSpeed : 300,
+    paginationSpeed : 400,
+    singleItem:false,
+    autoPlay: 5000,
+    items : 4,
+
+    // "singleItem:true" is a shortcut for:
+    // items : 1, 
+    // itemsDesktop : false,
+    // itemsDesktopSmall : false,
+    // itemsTablet: false,
+    // itemsMobile : false
+
+});
+
+
+
   if($("#slider").length > 0)
   {
 	  $("#slider").owlCarousel({

@@ -128,14 +128,14 @@
                             </div>
                              <?php
 								$element_array = array(
-									'religion_name'=>array('label'=>'Religion'),
-									'caste_name'=>array('label'=>'Caste'),
-									'subcaste'=>array('label'=>'Subcaste'),
-									'manglik'=>array('label'=>'Manglik'),
-									'star'=>array('label'=>'Star','type'=>'relation','table_name'=>'star','disp_column_name'=>'star_name'),
-									'horoscope'=>array('label'=>'Horoscope'),
-									'gothra'=>array('label'=>'Gothra'),
-									'moonsign'=>array('label'=>'Moonsign','type'=>'relation','table_name'=>'moonsign','disp_column_name'=>'moonsign_name'),
+									'religion_name'=>array('label'=>'Catholic Community'),
+									'caste_name'=>array('label'=>'Diocese'),
+									'subcaste'=>array('label'=>'Parish'),
+									//'manglik'=>array('label'=>'Manglik'),
+									//'star'=>array('label'=>'Star','type'=>'relation','table_name'=>'star','disp_column_name'=>'star_name'),
+									//'horoscope'=>array('label'=>'Horoscope'),
+									//'gothra'=>array('label'=>'Gothra'),
+									//'moonsign'=>array('label'=>'Moonsign','type'=>'relation','table_name'=>'moonsign','disp_column_name'=>'moonsign_name'),
 								);
 								echo $this->common_front_model->view_detail_common($element_array,$member_data);
 							?>
@@ -279,10 +279,10 @@
                                 
                                  <?php
 								$element_array = array(
-									'part_religion'=>array('label'=>'Religion','type'=>'relation','table_name'=>'religion','disp_column_name'=>'religion_name'),
-									'part_caste'=>array('label'=>'Caste','type'=>'relation','table_name'=>'caste','disp_column_name'=>'caste_name'),
-									'part_manglik'=>array('label'=>'Manglik'),
-									'part_star'=>array('label'=>'Star','type'=>'relation','table_name'=>'star','disp_column_name'=>'star_name'),
+									'part_religion'=>array('label'=>'Catholic Community','type'=>'relation','table_name'=>'religion','disp_column_name'=>'religion_name'),
+									'part_caste'=>array('label'=>'Diocese','type'=>'relation','table_name'=>'caste','disp_column_name'=>'caste_name'),
+									//'part_manglik'=>array('label'=>'Manglik'),
+									//'part_star'=>array('label'=>'Star','type'=>'relation','table_name'=>'star','disp_column_name'=>'star_name'),
 								);
 								echo $this->common_front_model->view_detail_common($element_array,$member_data);
 							?>

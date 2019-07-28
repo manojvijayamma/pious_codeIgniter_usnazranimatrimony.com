@@ -128,7 +128,7 @@ hr {
 									<div class="row">
 										<div class="xxl-6 xl-6 l-6 m-6 s-6 ne_mrg_ri8_10">
 											<div class="row label-title">
-												Religion
+											Catholic Community
 											</div>
 										</div>
 										<div class="xxl-9 xl-9 l-9 m-9 s-9 ne-word-wrap">
@@ -143,7 +143,7 @@ hr {
 									<div class="row">
 										<div class="xxl-6 xl-6 l-6 m-6 s-6 ne_mrg_ri8_10">
 											<div class="row label-title">
-												Caste
+											Diocese
 											</div>
 										</div>
 										<div class="xxl-9 xl-9 l-9 m-9 s-9 ne-word-wrap">
