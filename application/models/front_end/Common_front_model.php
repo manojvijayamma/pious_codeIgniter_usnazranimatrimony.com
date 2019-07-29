@@ -987,7 +987,7 @@ class Common_front_model extends CI_Model {
 			'mothertongue_list'=>array('table_name'=>'mothertongue','pri_key'=>'id','disp_clm'=>'mtongue_name','label'=>'Mother Tongue','rel_clm_name'=>''),
 			'mothertongue_lists'=>array('table_name'=>'mothertongue','pri_key'=>'mtongue_name','disp_clm'=>'mtongue_name','label'=>'Mother Tongue','rel_clm_name'=>''),
 			'religion_list'=>array('table_name'=>'religion','pri_key'=>'id','disp_clm'=>'religion_name','label'=>'Religion','rel_clm_name'=>''),
-			'religion_lists'=>array('table_name'=>'religion','pri_key'=>'religion_name','disp_clm'=>'religion_name','label'=>'Religion','rel_clm_name'=>''),
+			'religion_lists'=>array('table_name'=>'religion','pri_key'=>'religion_name','disp_clm'=>'religion_name','label'=>'Catholic Community','rel_clm_name'=>''),
 			'education_list'=>array('table_name'=>'education_detail','pri_key'=>'id','disp_clm'=>'education_name','label'=>'Education','rel_clm_name'=>''),
 			'occupation_list'=>array('table_name'=>'occupation','pri_key'=>'id','disp_clm'=>'occupation_name','label'=>'Occupation','rel_clm_name'=>''),
 			'designation_list'=>array('table_name'=>'designation','pri_key'=>'id','disp_clm'=>'designation_name','label'=>'Designation','rel_clm_name'=>''),
@@ -998,9 +998,9 @@ class Common_front_model extends CI_Model {
 			'country_lists'=>array('table_name'=>'country_master','pri_key'=>'country_name','disp_clm'=>'country_name','label'=>'Country','rel_clm_name'=>''),
 			'state_list'=>array('table_name'=>'state_master','pri_key'=>'id','disp_clm'=>'state_name','rel_clm_name'=>'country_id','label'=>'State'),
 			'city_list'=>array('table_name'=>'city_master','pri_key'=>'id','disp_clm'=>'city_name','label'=>'City','rel_clm_name'=>'state_id'),
-			'caste_list'=>array('table_name'=>'caste','pri_key'=>'id','disp_clm'=>'caste_name','label'=>'Caste','rel_clm_name'=>'religion_id'),
+			'caste_list'=>array('table_name'=>'caste','pri_key'=>'id','disp_clm'=>'caste_name','label'=>'Diocese','rel_clm_name'=>'religion_id'),
 			
-			'caste_dropdown'=>array('table_name'=>'caste','pri_key'=>'caste_name','disp_clm'=>'caste_name','label'=>'Caste','rel_clm_name'=>''),
+			'caste_dropdown'=>array('table_name'=>'caste','pri_key'=>'caste_name','disp_clm'=>'caste_name','label'=>'Diocese','rel_clm_name'=>''),
 			'currency_master'=>array('table_name'=>'currency_master','val_clm'=>'currency_code','disp_clm'=>'currency_code','pri_key'=>'id','label'=>'Currency','rel_clm_name'=>''),
 		);
 		
@@ -1119,7 +1119,7 @@ class Common_front_model extends CI_Model {
 	{
 		
 		$this->tabel_config= array(
-			'caste_list'=>array('table_name'=>'caste','pri_key'=>'id','disp_clm'=>'caste_name','label'=>'Caste','rel_clm_name'=>'religion_id'),
+			'caste_list'=>array('table_name'=>'caste','pri_key'=>'id','disp_clm'=>'caste_name','label'=>'Diocese','rel_clm_name'=>'religion_id'),
 			'state_list'=>array('table_name'=>'state_master','pri_key'=>'id','disp_clm'=>'state_name','label'=>'State','rel_clm_name'=>'country_id'),
 			'city_list'=>array('table_name'=>'city_master','pri_key'=>'id','disp_clm'=>'city_name','label'=>'City','rel_clm_name'=>'state_id'),
 			

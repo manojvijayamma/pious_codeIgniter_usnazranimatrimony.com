@@ -65,7 +65,7 @@ class Register_model extends CI_Model {
 		$this->form_validation->set_rules('lastname', 'Last Name', 'required');
 		
 		$this->form_validation->set_rules('religion', 'Religion', 'required');
-		$this->form_validation->set_rules('caste', 'Caste', 'required');
+		//$this->form_validation->set_rules('caste', 'Caste', 'required');
 		$this->form_validation->set_rules('terms', 'Temrs & Condition', 'required');
 		
 		//$this->form_validation->set_rules('code_captcha', 'Captcha Code', 'callback_validate_captcha');
