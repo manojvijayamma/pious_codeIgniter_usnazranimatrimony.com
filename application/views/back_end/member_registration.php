@@ -140,6 +140,7 @@ else if($this->session->flashdata('error_message_mem'))
             'relig_title'=>array('type'=>'manual','code'=>'<h3 class="sub_title_mem"> Religious Information</h3>'),
             'religion'=>array('label'=>'Catholic Community','is_required'=>'required','type'=>'dropdown','onchange'=>"dropdownChange('religion','caste','caste_list')",'class'=>'select2','value_arr'=>$religion_arr),
             'caste'=>array('label'=>'Diocese','is_required'=>'required','type'=>'dropdown','class'=>'select2','relation'=>array('rel_table'=>'caste','key_val'=>'id','key_disp'=>'caste_name','rel_col_name'=>'religion_id','not_load_add'=>'yes','not_load_add'=>'yes','cus_rel_col_val'=>'religion')),
+            'other_caste'=>array('label'=>'If Other Diocese'),
             'subcaste'=>array('label'=>'Parish'),
            // 'manglik'=>array('type'=>'dropdown','class'=>'select2','value_arr'=>$this->common_model->get_list_ddr('manglik')),
             //'star'=>array('type'=>'dropdown','class'=>'select2','value_arr'=>$star_arr),

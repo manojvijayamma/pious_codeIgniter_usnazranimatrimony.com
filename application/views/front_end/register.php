@@ -12,6 +12,7 @@ if($member_fb_data != '')
 	$fb_last_name = $member_fb_data['fb_last_name'];
 	$fb_email = $member_fb_data['fb_email'];
 	$fb_image = $member_fb_data['fb_image'];
+	$other_caste=$member_fb_data['other_caste'];
 	$fb_image_name = isset($member_fb_data['fb_image_name']) ? $member_fb_data['fb_image_name'] : '';
 	if(isset($member_fb_data['month']) && $member_fb_data['month'] !='' && isset($member_fb_data['day']) && $member_fb_data['day'] !=''  && isset($member_fb_data['year']) && $member_fb_data['year'] !='' )
 	{
@@ -155,10 +156,16 @@ if($member_fb_data != '')
                                     
                                     <div class="text-darkgrey margin-top-10">
                                         <label>Diocese <span class="font-red">* </span>:</label>
-                                        <select class="form-control" required name="caste" id="caste" style="width:100%">
+                                        <select class="form-control"  name="caste" id="caste" style="width:100%">
                                             <option value="">Select Your Catholic Community First</option>
                                         </select>
                                     </div>
+
+									<div class="md-form font-15 margin-top-20 text-darkgrey">
+                                        <label>If other <span class="font-red"></span>:</label>
+                                        <input type="text" class="form-control"  name="other_caste" id="other_caste" value="<?php if(isset($_REQUEST['other_caste']) && $_REQUEST['other_caste']!=''){ echo $_REQUEST['other_caste'];}elseif(isset($other_caste) && $other_caste !=''){ echo $other_caste; } ?>" />
+                                    </div>
+
                                     
                                     <div class="margin-top-10">
 											<input id="345" type="checkbox" value="Yes" name="terms" class="">

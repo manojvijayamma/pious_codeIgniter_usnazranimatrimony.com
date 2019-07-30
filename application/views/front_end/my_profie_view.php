@@ -129,7 +129,8 @@
                              <?php
 								$element_array = array(
 									'religion_name'=>array('label'=>'Catholic Community'),
-									'caste_name'=>array('label'=>'Diocese'),
+                                    'caste_name'=>array('label'=>'Diocese'),
+                                    'other_caste'=>array('label'=>'If Other Diocese'),
 									'subcaste'=>array('label'=>'Parish'),
 									//'manglik'=>array('label'=>'Manglik'),
 									//'star'=>array('label'=>'Star','type'=>'relation','table_name'=>'star','disp_column_name'=>'star_name'),
