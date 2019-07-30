@@ -162,7 +162,7 @@ if($member_fb_data != '')
                                     </div>
 
 									<div class="md-form font-15 margin-top-20 text-darkgrey">
-                                        <label>If other <span class="font-red"></span>:</label>
+                                        <label>If Other Diocese <span class="font-red"></span>:</label>
                                         <input type="text" class="form-control"  name="other_caste" id="other_caste" value="<?php if(isset($_REQUEST['other_caste']) && $_REQUEST['other_caste']!=''){ echo $_REQUEST['other_caste'];}elseif(isset($other_caste) && $other_caste !=''){ echo $other_caste; } ?>" />
                                     </div>
 

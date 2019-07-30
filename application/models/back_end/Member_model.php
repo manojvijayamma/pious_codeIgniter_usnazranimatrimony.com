@@ -1088,6 +1088,7 @@ class Member_model extends CI_Model {
 				'field_array'=>array(
 					'religion_name'=>array('label'=>'Catholic Community'),
 					'caste_name'=>array('label'=>'Diocese'),
+					'other_caste'=>array('label'=>'If Other Diocese'),
 					'subcaste'=>array('label'=>'Parish'),
 					//'manglik'=>array('label'=>'Manglik'),
 					//'gothra'=>array('label'=>'Gothra'),

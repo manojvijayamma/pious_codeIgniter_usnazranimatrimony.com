@@ -1,4 +1,5 @@
 <?php
+exit;
 date_default_timezone_set('Asia/Kolkata');
 error_reporting(0);
 /**
