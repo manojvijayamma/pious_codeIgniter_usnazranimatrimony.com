@@ -76,9 +76,9 @@ $query_builder = TRUE;
 $db['default'] = array(
 	'dsn'	=> 'mysql:host=localhost; dbname=smccubnr_matrimony; charset=utf8;',
 	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'pious_matrimonial',
+	'username' => 'smccubnr_narjis',
+	'password' => 'rnv,(XZ4bze?',
+	'database' => 'smccubnr_matrimony',
 	'dbdriver' => 'pdo',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

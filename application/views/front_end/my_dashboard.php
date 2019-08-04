@@ -177,7 +177,7 @@ $current_login_user = $this->common_front_model->get_session_data(); ?>
 									<div class="row" style="padding:4px;">									
 										<div class="xxl-16 xl-16 l-16 m-16 s-16 xs-16 bg-white" style="box-shadow: none;">
 											<div class="row upgrade-heading">
-												<h3 class="font-13 text-white">Recently logged in members</h3>
+												<h3 class="font-13 text-brown">Recently logged in members</h3>
 											</div>
 											<div class="clearfix"></div>
 											<div class="row">
@@ -275,9 +275,6 @@ $current_login_user = $this->common_front_model->get_session_data(); ?>
 											<div class="xxl-8 xl-8 l-8 m-16 s-16 xs-16 pull-left">
 												<h4 class="text-grey font-13"><img src="<?php echo $base_url; ?>assets/front_end/images/icon/down-arrow.gif" alt="" /> Recently Joined Members</h4>
 											</div>
-											<!--  <div class="xxl-8 xl-8 l-8 m-16 s-16 xs-16 pull-right">
-												<h5 class="next_prev pull-right"><a href="#" class="underline"><span class="arrow-left"></span> Prev</a>  |  <a href="#" class="underline">Back</a>  |  <a href="#" class="underline">Next <span class="arrow-right-page"></span></a></h5>
-											</div>-->
 										</div>
 										<?php foreach ($recent_profile as $member_data_val) {
 										?>
@@ -303,9 +300,6 @@ $current_login_user = $this->common_front_model->get_session_data(); ?>
 													
 													if (isset($member_data_val['photo1']) && $member_data_val['photo1'] != '' && $member_data_val['photo1_approve'] == 'APPROVED' && file_exists($path_photos . $member_data_val['photo1']) && $member_data_val['photo_password'] != '' && $member_data_val['photo_protect'] != 'No' && $member_data_val['photo_view_status'] == 0) {
 													?>
-													<!--<a href="javascript:;" onClick="newWindow('<?php echo base_url(); ?>search/photo-password/<?php echo $member_data_val['matri_id']; ?>', '', '650', '420')" >
-														<img src="<?php echo $photopassword_image; ?>" class="img-responsive ne_result_img myimg" alt="<?php echo $comm_model->display_data_na($member_data_val['matri_id']); ?>" style="width:170px; height:175px !important;" title="<?php echo $comm_model->display_data_na($member_data_val['username']); ?>">
-													</a>-->
 													<a data-toggle="modal" data-target="#myModal_photoprotect" class="xxl-16 xl-16 l-16 s-16 m-16 xs-16  btn-block font-14 padding-lr-zero" title="Photo Protected" onClick="addstyle('<?php echo $matri_id;?>','<?php echo $member_data_val['matri_id']; ?>')">
 														<img src="<?php echo $photopassword_image; ?>" class="cursor img-thumbnail text-center" style=" height: 164px!important; width: 164px!important;">
 													</a>
@@ -345,7 +339,7 @@ $current_login_user = $this->common_front_model->get_session_data(); ?>
 																	<div class="row">
 																		<div class="xxl-6 xl-6 l-6 m-6 s-6 ne_mrg_ri8_10">
 																			<div class="row label-title">
-																			Catholic Community
+																				Catholic Community
 																			</div>
 																		</div>
 																		<div class="xxl-9 xl-9 l-9 m-9 s-9 ne-word-wrap">
@@ -360,7 +354,7 @@ $current_login_user = $this->common_front_model->get_session_data(); ?>
 																	<div class="row">
 																		<div class="xxl-6 xl-6 l-6 m-6 s-6 ne_mrg_ri8_10">
 																			<div class="row label-title">
-																			Diocese
+																				Diocese
 																			</div>
 																		</div>
 																		<div class="xxl-9 xl-9 l-9 m-9 s-9 ne-word-wrap">

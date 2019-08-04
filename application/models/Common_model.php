@@ -83,7 +83,7 @@ class Common_model extends CI_Model {
 		$this->addPopup = 0;
 		$this->button_array = array();
 		$this->last_insert_id = '';
-		$this->labelArr = array('country_id'=>'Country Name','state_id'=>'State Name','city_id'=>'City Name','photo1_approve'=>'Status','photo2_approve'=>'Status','photo3_approve'=>'Status','photo4_approve'=>'Status','photo5_approve'=>'Status','photo6_approve'=>'Status','photo7_approve'=>'Status','photo8_approve'=>'Status','photo1_uploaded_on'=>'Uploaded On','photo2_uploaded_on'=>'Uploaded On','photo3_uploaded_on'=>'Uploaded On','photo4_uploaded_on'=>'Uploaded On','photo5_uploaded_on'=>'Uploaded On','photo6_uploaded_on'=>'Uploaded On','photo7_uploaded_on'=>'Uploaded On','photo8_uploaded_on'=>'Uploaded On','id_proof_approve'=>'Status','horoscope_photo_approve'=>'Status','exp_date'=>'Plan Expired','p_currency'=>'Currency','id_proof_uploaded_on'=>'Uploaded On','horoscope_photo_uploaded_on'=>'Uploaded On','franchise_comm_amt'=>'Commission Amount','franchise_comm_per'=>'Commission Percentage','mtongue_name'=>'Mother Tongue','plan_msg'=>'Plan Message'); // here we can set common label change for coloumn name
+		$this->labelArr = array('country_id'=>'Country Name','state_id'=>'State Name','city_id'=>'City Name','photo1_approve'=>'Status','photo2_approve'=>'Status','photo3_approve'=>'Status','photo4_approve'=>'Status','photo5_approve'=>'Status','photo6_approve'=>'Status','photo7_approve'=>'Status','photo8_approve'=>'Status','photo1_uploaded_on'=>'Uploaded On','photo2_uploaded_on'=>'Uploaded On','photo3_uploaded_on'=>'Uploaded On','photo4_uploaded_on'=>'Uploaded On','photo5_uploaded_on'=>'Uploaded On','photo6_uploaded_on'=>'Uploaded On','photo7_uploaded_on'=>'Uploaded On','photo8_uploaded_on'=>'Uploaded On','id_proof_approve'=>'Status','horoscope_photo_approve'=>'Status','exp_date'=>'Plan Expired','p_currency'=>'Currency','id_proof_uploaded_on'=>'Uploaded On','horoscope_photo_uploaded_on'=>'Uploaded On','franchise_comm_amt'=>'Commission Amount','franchise_comm_per'=>'Commission Percentage','mtongue_name'=>'Mother Tongue','plan_msg'=>'Plan Message','religion_name'=>'Catholic Community','caste_name'=>'Diocese','religion'=>'Catholic Community','caste'=>'Diocese','subcaste'=>'Parish'); // here we can set common label change for coloumn name
 		$this->data['base_url'] = $this->base_url = base_url();
 		$this->data['base_url_admin'] = $this->base_url_admin = $this->base_url.$this->admin_path.'/';
 		$this->data['config_data'] = $this->get_site_config();
@@ -636,12 +636,12 @@ class Common_model extends CI_Model {
 	}
 	public function common_send_email($to_array,$subject,$message,$cc_array= '',$bcc_array ='',$attachment = '')
 	{
-		
 		$config = array(
 		'smtp_host' =>'mail.usnazranimatrimony.com',
-		'smtp_port' =>25,
+		'smtp_port' =>587,
 		'smtp_user' =>'info@usnazranimatrimony.com',
-		'protocol' => 'mail',
+		'smtp_pass' =>'ghC}kG[K4t4M',
+		'protocol' => 'smtp',
 		'mailtype' => 'html',
 		'charset' => 'iso-8859-1',
 		'wordwrap' => TRUE
@@ -652,7 +652,7 @@ class Common_model extends CI_Model {
 		//$this->email->set_newline("\r\n");
 
 		$config['newline'] = "\r\n";
-    $config['crlf'] = "\r\n";
+        $config['crlf'] = "\r\n";
 		
 
 		$config_arra = $this->get_site_config();
@@ -694,7 +694,7 @@ class Common_model extends CI_Model {
 		$msg = 'Email sent.';
 		
 		$base_url = base_url();
-		if($base_url !='http://192.168.1.111/mega_matrimony/original_script/v1.0/' && $base_url != "http://localhost/megamatrymony/"  && $base_url != "http://192.168.1.222/megamatrymony/")
+		if($base_url !='http://192.168.1.111/mega_matrimony/original_script/v2.0/')
 		{
 			if($this->email->send())
 			{
@@ -1119,16 +1119,6 @@ class Common_model extends CI_Model {
 		else
 		{
 			$label = str_replace('_',' ',$key);
-
-			/* by manoj on 28-07-2019*/
-			if($key=='religion_name'){
-				$label="Catholic Community";
-			}
-			if($key=='caste_name'){
-				$label="Diocese";
-			}
-			/* by manoj on 28-07-2019*/
-
 			$label = ucwords($label);
 		}
 		return $label;
@@ -3117,11 +3107,11 @@ class Common_model extends CI_Model {
 			}
 			if($action == 'Unassigned'){$assign_id = '';}else{$assign_id = $assign_to;}
 			if($assign_user_type == 'Staff'){
-				$where_update1 = array('staff_assign_id'=>$assign_id,'staff_assign_date'=>$assign_date);
-				$where_update2 = array('franchise_assign_id'=>'','franchise_assign_date'=>'');
+				$where_update1 = array('staff_assign_id'=>$assign_id,'staff_assign_date'=>$assign_date,'adminrole_id'=>$assign_id);
+				$where_update2 = array('franchise_assign_id'=>'','franchise_assign_date'=>'','franchised_by'=>'');
 			}else{
-				$where_update1 = array('franchise_assign_id'=>$assign_id,'franchise_assign_date'=>$assign_date);
-				$where_update2 = array('staff_assign_id'=>'','staff_assign_date'=>'');
+				$where_update1 = array('franchise_assign_id'=>$assign_id,'franchise_assign_date'=>$assign_date,'franchised_by'=>$assign_id);
+				$where_update2 = array('staff_assign_id'=>'','staff_assign_date'=>'','adminrole_id'=>'');
 			}
 			$this->update_insert_data_common($tab,$where_update1,array('id'=>$selected_val_val),1,0);
 			$this->update_insert_data_common($tab,$where_update2,array('id'=>$selected_val_val),1,0);
