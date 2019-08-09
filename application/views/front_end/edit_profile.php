@@ -744,9 +744,9 @@
 										'state_id'=>array('is_required'=>'required','type'=>'dropdown','relation'=>array('rel_table'=>'state_master','key_val'=>'id','key_disp'=>'state_name','not_load_add'=>'yes','cus_rel_col_name'=>'country_id',),'label'=>'State','class'=>'select2','onchange'=>"dropdownChange('state_id','city','city_list')",'extra_style'=>'width:100%'),
 
 										'city'=>array('is_required'=>'required','type'=>'dropdown','relation'=>array('rel_table'=>'city_master','key_val'=>'id','key_disp'=>'city_name','not_load_add'=>'yes','cus_rel_col_name'=>'state_id'),'label'=>'City','class'=>'select2','extra_style'=>'width:100%'),
-
+										'other_city'=>array('label'=>'If Other City'),
 										'address'=>array('type'=>'textarea'),
-
+										'zipcode'=>array('label'=>'Zipcode'),
 										'mobile'=>array('type'=>'manual','code'=>'
 
 										<div class="form-group xxl-16 xl-16 s-16 m-16 xs-16 l-16 padding-lr-zero-320 padding-lr-zero-480 padding-0-xs"">
