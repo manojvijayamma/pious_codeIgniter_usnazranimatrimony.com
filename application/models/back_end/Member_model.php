@@ -2208,10 +2208,12 @@ class Member_model extends CI_Model {
 					'state_name'=>array('label'=>'State'),
 
 					'city_name'=>array('label'=>'City'),
+					'other_city'=>array('label'=>'If other city'),
 
 					'residence'=>array('label'=>'Residence Status'),
 
 					'address'=>array('label'=>'Address'),
+					'zipcode'=>array('label'=>'Zipcode'),
 
 					),
 

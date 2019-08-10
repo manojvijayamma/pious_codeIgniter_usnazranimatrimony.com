@@ -283,8 +283,10 @@
 									'state_name'=>array('label'=>'State'),
 
 									'city_name'=>array('label'=>'City'),
+									'other_city'=>array('label'=>'If other city'),
 
 									'address'=>array('label'=>'Address'),
+									'zipcode'=>array('label'=>'Zipcode'),
 
 									'mobile'=>array('label'=>'Mobile','fa_icone'=>'fa fa-phone'),
 

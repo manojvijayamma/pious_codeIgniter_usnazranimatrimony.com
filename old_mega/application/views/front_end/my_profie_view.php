@@ -164,8 +164,10 @@
 								$element_array = array(
 									'country_name'=>array('label'=>'Country'),
 									'state_name'=>array('label'=>'State'),
-									'city_name'=>array('label'=>'City'),
-									'address'=>array('label'=>'Address'),
+                                    'city_name'=>array('label'=>'City'),
+                                    'other_city'=>array('label'=>'If other city'),
+                                    'address'=>array('label'=>'Address'),
+                                    'zipcode'=>array('label'=>'Zipcode'),
 									'mobile'=>array('label'=>'Mobile','fa_icone'=>'fa fa-phone'),
 									'phone'=>array('label'=>'Phone','fa_icone'=>'fa fa-phone'),
 									'time_to_call'=>array('label'=>'Time To Call'),
