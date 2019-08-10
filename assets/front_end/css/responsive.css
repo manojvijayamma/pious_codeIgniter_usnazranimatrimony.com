@@ -1481,7 +1481,15 @@
 	.new-btn-mobile{
 		width: 98%;
 	}
-	
+	.profile-image {
+		position: relative;
+		width: 100% !important;
+		margin: 0px auto;
+		height: auto!important;
+	}
+	.agile-overlay {
+		width: 100%!important;
+	}
 	/* added for freichat responsive */
 	.freicontain0 { right: 37% !important;}
 	.chatboxhead { width: 78.1% !important; }
@@ -1842,24 +1850,34 @@
 	}
 	
 	.new-wedding {
-    height: auto;
-    width: 100%;
-    margin: 20px auto;
-}
+		height: auto;
+		width: 100%;
+		margin: 20px auto;
+	}
 }
 
 
 
 @media(min-width:200px) and (max-width:320px)
 { 
+	
+	.profile-image {
+		position: relative;
+		width: 100% !important;
+		margin: 0px auto;
+		height: auto!important;
+	}
+	.agile-overlay {
+		width: 100%!important;
+	}
 	.new-btn-mobile{
 		width: 98%;
 	}
 	.new-wedding {
-    height: auto;
-    width: 100%;
-    margin: 20px auto;
-}
+		height: auto;
+		width: 100%;
+		margin: 20px auto;
+	}
 	.new-hiegh {
 		height: auto;
 		width: 100%;
@@ -4148,7 +4166,15 @@ nav ul
 		
 	}
 	
-	
+	.profile-image {
+		position: relative;
+		width: 100% !important;
+		margin: 0px auto;
+		height: auto!important;
+	}
+	.agile-overlay {
+		width: 100%!important;
+	}
 }
 @media (max-width: 767px) {
 	

@@ -382,9 +382,7 @@ else if($this->session->flashdata('error_message_mem'))
 
             'city'=>array('is_required'=>'required','type'=>'dropdown','relation'=>array('rel_table'=>'city_master','key_val'=>'id','key_disp'=>'city_name','not_load_add'=>'yes','cus_rel_col_name'=>'state_id'),'label'=>'City','class'=>'select2'),
 
-            'other_city'=>array('label'=>'If Other City'),
             'address'=>array('type'=>'textarea'),
-            'zipcode'=>array('label'=>'Zipcode'),
 
             'mobile'=>array('type'=>'manual','code'=>'
 

@@ -629,7 +629,7 @@ function clear_refine(class_reset)
 		if(class_reset =='religion')
 		{
 			$('.caste').prop("checked",false);
-			$('#list_disp_caste').html('<li class="xxl-16 xl-16 xs-16 s-16 m-16 l-16 padding-lr-zero"><span class="xxl-12 xl-12 xs-12 s-12 m-12 l-12 label-search">First Select Religion</span></li>');
+			$('#list_disp_caste').html('<li class="xxl-16 xl-16 xs-16 s-16 m-16 l-16 padding-lr-zero"><span class="xxl-12 xl-12 xs-12 s-12 m-12 l-12 label-search">First Select Catholic Community</span></li>');
 		}
 		else if(class_reset =='country')
 		{
