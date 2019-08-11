@@ -111,7 +111,7 @@ class Register extends CI_Controller {
 		//$this->common_model->display_top_menu_perm = 'No';
 		
 		$this->common_model->extra_css_fr= array('css/bootstrap-touch-slider.css','css/select2.min.css','css/canvasCrop.css');
-		$this->common_model->extra_js_fr= array('js/jquery.canvasCrop.js');
+		$this->common_model->extra_js_fr= array('js/jquery.canvasCrop.js','js/register.js');
 		$this->common_model->front_load_header();
 		$this->load->view('front_end/register_next');
 	}
