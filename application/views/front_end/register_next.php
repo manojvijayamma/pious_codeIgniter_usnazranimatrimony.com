@@ -188,9 +188,9 @@ if($member_fb_data != '')
                                     'other_city'=>array('label'=>'If other city'),
 									'marital_status'=>array('is_required'=>'required','type'=>'radio','value_arr'=>$this->common_model->get_list_ddr('marital_status'),'onclick'=>'display_total_childern()'),
 
-									'total_children'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('total_children'),'value_curr'=>0,'extra'=>'disabled','onchange'=>'display_childern_status()'),
+									'total_children'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('total_children'),'value_curr'=>0,'extra'=>'disabled','onchange'=>'display_childern_status()'),
 
-									'status_children'=>array('is_required'=>'required','type'=>'radio','value_arr'=>$this->common_model->get_list_ddr('status_children'),'extra'=>'disabled'),
+									'status_children'=>array('type'=>'radio','value_arr'=>$this->common_model->get_list_ddr('status_children'),'extra'=>'disabled'),
 
 									'mother_tongue'=>array('is_required'=>'required','type'=>'dropdown','class'=>'select2','value_arr'=>$this->common_model->dropdown_array_table('mothertongue'),'label'=>'Mother Tongue'),
 
