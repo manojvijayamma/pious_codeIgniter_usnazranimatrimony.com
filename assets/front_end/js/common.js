@@ -1,4 +1,8 @@
 var is_reload_page=0;
+
+$('#total_children').parent().parent().parent().hide();
+$('input[name="status_children"]').parent().parent().parent().hide();
+
 function scroll_to_div(div_id)
 {
 	$('html, body').animate({
@@ -1551,6 +1555,8 @@ function display_total_childern()
 	if(marital_status !='' && marital_status !='Unmarried')
 	{
 		$("#total_children").removeAttr('disabled');
+		$('#total_children').parent().parent().parent().show();
+		$('input[name="status_children"]').parent().parent().parent().show();
 		display_childern_status();
 	}
 	else
