@@ -1,0 +1,5 @@
+file: view/fe/user_profile
+
+function : get_ViewContactDetails => assets/fe/common.js
+
+function : get_ViewContactDetails_mobile => view/fe/part/mobile_common_front_button_ajaxcode.php
