@@ -90,7 +90,7 @@
 											{ ?>
                                             <div class="mySlides">
                                                 
-                                                <img src="<?php echo $base_url; ?><?php echo $path_photos_big;?><?php echo $photo_val['photo'];?>" class="slide-img img-responsive padding-top-10" alt="" style="box-shadow: 0 5px 11px 0 rgba(0,0,0,.38), 0 4px 15px 0 rgba(0,0,0,.55);padding: 0px;width: 600px !important;height: 500px !important;max-height:500px !important;" />
+                                                <img src="<?php echo $base_url; ?><?php echo $path_photos_big;?><?php echo $photo_val['photo'];?>" class="slide-img img-responsive padding-top-10" alt="" style="box-shadow: 0 5px 11px 0 rgba(0,0,0,.38), 0 4px 15px 0 rgba(0,0,0,.55);padding: 0px;width: 400px !important;height: 500px !important;max-height:500px !important;" />
 											</div>
 											<?php }
 										} ?>
