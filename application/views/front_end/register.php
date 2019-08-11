@@ -799,9 +799,9 @@ if($member_fb_data != '')
 				var caste=$('#caste').val();
 				var other_caste=$('#other_caste').val();
 				if(caste=="" & other_caste==""){
-					$("#reponse_message").removeClass('alert alert-success alert-danger');
-					$("#reponse_message").html("Diocese or Other Diocese is required");	
-					return false;
+					//$("#reponse_message").removeClass('alert alert-success alert-danger');
+					//$("#reponse_message").html("Diocese or Other Diocese is required");	
+					//return false;
 				}
 
 				var form_data = $('#register_step1, #register_step2').serialize();

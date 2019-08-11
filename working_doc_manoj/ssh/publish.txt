@@ -1,0 +1,7 @@
+sudo ssh -i usmatri.pub smccubnr@199.79.62.13
+
+- enter key
+- manojsreelakam
+- manojsreelakam
+- manojsreelakam
+- *1Smcc*1
