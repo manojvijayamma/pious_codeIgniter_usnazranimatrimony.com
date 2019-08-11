@@ -6,543 +6,247 @@
 	http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 	<url>
-		<loc>http://megamatrimony.trialme.in/</loc>
+		<loc>https://www.usnazranimatrimony.com/</loc>
 		<priority>1.00</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/register</loc>
+		<loc>https://www.usnazranimatrimony.com/register</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/login</loc>
+		<loc>https://www.usnazranimatrimony.com/login</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/cms/faq</loc>
+		<loc>https://www.usnazranimatrimony.com/cms/faq</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/about-us</loc>
+		<loc>https://www.usnazranimatrimony.com/about-us</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/search/quick</loc>
+		<loc>https://www.usnazranimatrimony.com/search/quick</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/search/advance</loc>
+		<loc>https://www.usnazranimatrimony.com/search/advance</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/search/keyword</loc>
+		<loc>https://www.usnazranimatrimony.com/search/keyword</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/search/id</loc>
+		<loc>https://www.usnazranimatrimony.com/search/id</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/premium-member</loc>
+		<loc>https://www.usnazranimatrimony.com/premium-member</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/success-story</loc>
+		<loc>https://www.usnazranimatrimony.com/success-story</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/contact</loc>
+		<loc>https://www.usnazranimatrimony.com/contact</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/faq</loc>
+		<loc>https://www.usnazranimatrimony.com/faq</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/mobile-matri</loc>
+		<loc>https://www.usnazranimatrimony.com/mobile-matri</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/demograph</loc>
+		<loc>https://www.usnazranimatrimony.com/demograph</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/privacy-policy</loc>
+		<loc>https://www.usnazranimatrimony.com/privacy-policy</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/refund-policy</loc>
+		<loc>https://www.usnazranimatrimony.com/refund-policy</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/report-misuse</loc>
+		<loc>https://www.usnazranimatrimony.com/report-misuse</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/terms-condition</loc>
+		<loc>https://www.usnazranimatrimony.com/terms-condition</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/login/forgot-password</loc>
+		<loc>https://www.usnazranimatrimony.com/login/forgot-password</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/success-story/add-story</loc>
+		<loc>https://www.usnazranimatrimony.com/success-story/add-story</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/blog</loc>
+		<loc>https://www.usnazranimatrimony.com/blog</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/event</loc>
+		<loc>https://www.usnazranimatrimony.com/event</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/wedding-vendor</loc>
+		<loc>https://www.usnazranimatrimony.com/wedding-vendor</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/contact</loc>
+		<loc>https://www.usnazranimatrimony.com/contact</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/add-with-us</loc>
+		<loc>https://www.usnazranimatrimony.com/add-with-us</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/blog/test-blog</loc>
+		<loc>https://www.usnazranimatrimony.com/blog/new-blog</loc>
 		<priority>0.64</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/blog/try-rtyet-y</loc>
-		<priority>0.64</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/blog/test-rt-dsf</loc>
-		<priority>0.64</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/blog/just-test</loc>
-		<priority>0.64</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/blog/sf-sdfsd</loc>
-		<priority>0.64</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/blog/letest-blog</loc>
-		<priority>0.64</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/blog/letest-blog-2</loc>
-		<priority>0.64</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/blog/test</loc>
-		<priority>0.64</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/blog/n-demo-blog</loc>
-		<priority>0.64</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/blog/ewrewr</loc>
-		<priority>0.64</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/blog/final-demo-test</loc>
-		<priority>0.64</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/blog/hi-hello</loc>
-		<priority>0.64</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/blog/hh</loc>
-		<priority>0.64</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/blog/future-trend-of-online-matrimony-industry-in-india</loc>
-		<priority>0.64</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/blog/uk-blog</loc>
-		<priority>0.64</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/success_story/details/42</loc>
-		<priority>0.51</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/success_story/details/43</loc>
-		<priority>0.51</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/success_story/details/44</loc>
-		<priority>0.51</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/success_story/details/45</loc>
-		<priority>0.51</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/success_story/details/46</loc>
-		<priority>0.51</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/success_story/details/47</loc>
-		<priority>0.51</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/success_story/details/48</loc>
-		<priority>0.51</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/success_story/details/49</loc>
-		<priority>0.51</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/success_story/details/50</loc>
-		<priority>0.51</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/success_story/details/51</loc>
-		<priority>0.51</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/success_story/details/53</loc>
-		<priority>0.51</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/success_story/details/71</loc>
-		<priority>0.51</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/success_story/details/74</loc>
-		<priority>0.51</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/success_story/details/83</loc>
-		<priority>0.51</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/success_story/details/77</loc>
-		<priority>0.51</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/success_story/details/78</loc>
-		<priority>0.51</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/success_story/details/80</loc>
-		<priority>0.51</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/success_story/details/81</loc>
-		<priority>0.51</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/success_story/details/84</loc>
-		<priority>0.51</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/success_story/details/85</loc>
-		<priority>0.51</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/success_story/details/86</loc>
-		<priority>0.51</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/success_story/details/87</loc>
-		<priority>0.51</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/success_story/details/90</loc>
-		<priority>0.51</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/success_story/details/91</loc>
-		<priority>0.51</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/event/details/24</loc>
-		<priority>0.41</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/event/details/26</loc>
-		<priority>0.41</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/event/details/27</loc>
-		<priority>0.41</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/event/details/28</loc>
-		<priority>0.41</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/event/details/29</loc>
-		<priority>0.41</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/event/details/30</loc>
-		<priority>0.41</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/event/details/31</loc>
-		<priority>0.41</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/event/details/32</loc>
-		<priority>0.41</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/event/details/33</loc>
-		<priority>0.41</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/event/details/34</loc>
-		<priority>0.41</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/event/details/35</loc>
-		<priority>0.41</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/event/details/36</loc>
-		<priority>0.41</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/event/details/37</loc>
-		<priority>0.41</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/event/details/38</loc>
-		<priority>0.41</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/event/details/39</loc>
-		<priority>0.41</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/event/details/40</loc>
-		<priority>0.41</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/event/details/41</loc>
-		<priority>0.41</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/event/details/42</loc>
-		<priority>0.41</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/event/details/44</loc>
-		<priority>0.41</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/wedding-vendor/details/83</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/Singapore-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/wedding-vendor/details/84</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/South-Sudan-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/wedding-vendor/details/86</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/Mexico-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/wedding-vendor/details/88</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/Tokelau-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/wedding-vendor/details/89</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/Costa-Rica-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/wedding-vendor/details/90</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/Taiwan-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/wedding-vendor/details/91</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/Slovenia-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/wedding-vendor/details/93</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/Bhutan-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/wedding-vendor/details/94</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/Jacobite-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/wedding-vendor/details/95</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/Orthodox-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/wedding-vendor/details/96</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/Latin-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Malaysia-matrimony</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/Knanaya-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Panama-matrimony</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/Syro-Malankara-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Belgium-matrimony</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/Syro-Malabar-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Guinea-Bissau-matrimony</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/Lakhapadar-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Svalbard-And-Jan-Mayen-matrimony</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/Chayotha-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Canada-matrimony</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/Mauriyan-Ka-Khirk-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Israel-matrimony</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/Itkur-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Tunisia-matrimony</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/Arain-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Sikh-matrimony</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/Monoharpur-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Jain-matrimony</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/Mihinpurwa-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Buddhist-matrimony</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/Banduya-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Hindu-matrimony</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/Idukki-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Muslim-matrimony</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/Hosur-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/muslim-sunny-matrimony</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/Alleppey-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/UK-Religion-matrimony</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/Gurgaon-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Ishai-matrimony</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/Mississauga-Canada-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Galuthi-matrimony</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/Mandya-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Badalwas-matrimony</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/Kottapuram-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Kirvil-matrimony</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/Belthangady-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/That-Ranjan-matrimony</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/Other-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Chituri-matrimony</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/Hindi-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Taregaon-matrimony</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/Malayalam-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Saheri-matrimony</loc>
-		<priority>0.80</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Sambhalheri-matrimony</loc>
-		<priority>0.80</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Muslim-matrimony</loc>
-		<priority>0.80</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Sutar-matrimony</loc>
-		<priority>0.80</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Kamma-matrimony</loc>
-		<priority>0.80</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Arya-Vysya-matrimony</loc>
-		<priority>0.80</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Jat-matrimony</loc>
-		<priority>0.80</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Nepali-matrimony</loc>
-		<priority>0.80</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Balija-Naidu-matrimony</loc>
-		<priority>0.80</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Vellalar-matrimony</loc>
-		<priority>0.80</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Santhali-matrimony</loc>
-		<priority>0.80</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Marathi-matrimony</loc>
-		<priority>0.80</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Tagalog-matrimony</loc>
-		<priority>0.80</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Sindhi-matrimony</loc>
-		<priority>0.80</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Arabic-matrimony</loc>
-		<priority>0.80</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Urdu-matrimony</loc>
-		<priority>0.80</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Hindi-matrimony</loc>
-		<priority>0.80</priority>
-	</url>
-	<url>
-		<loc>http://megamatrimony.trialme.in/matrimony/Kokni-matrimony</loc>
+		<loc>https://www.usnazranimatrimony.com/matrimony/English-matrimony</loc>
 		<priority>0.80</priority>
 	</url>
 </urlset>
