@@ -186,7 +186,7 @@ if($member_fb_data != '')
 
             						'city'=>array('type'=>'dropdown','relation'=>array('rel_table'=>'city_master','key_val'=>'id','key_disp'=>'city_name','not_load_add'=>'yes','cus_rel_col_name'=>'state_id'),'label'=>'City','class'=>'select2'),
                                     'other_city'=>array('label'=>'If other city'),
-									'marital_status'=>array('is_required'=>'required','type'=>'radio','value_arr'=>$this->common_model->get_list_ddr('marital_status'),'onclick'=>'display_total_childern()'),
+									'marital_status'=>array('is_required'=>'required','type'=>'radio','value_arr'=>$this->common_model->get_list_ddr('marital_status'),'onclick'=>'display_total_childern();showChildern();'),
 
 									'total_children'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('total_children'),'value_curr'=>0,'extra'=>'disabled','onchange'=>'display_childern_status()'),
 
@@ -1303,6 +1303,21 @@ if(base_url()!='http://192.168.1.111/mega_matrimony/original_script/'){
 
 var base_url = '<?php echo $base_url; ?>';
 
+$('#total_children').parent().parent().parent().hide();
+$('input[name="status_children"]').parent().parent().parent().hide();
+
+funtion showChildern(){
+    var marital_status = $("[name='marital_status']:checked").val();
+	if(marital_status !='' && marital_status !='Unmarried')
+	{
+        $('#total_children').parent().parent().parent().show();
+		$('input[name="status_children"]').parent().parent().parent().show();
+    }
+    else{
+        $('#total_children').parent().parent().parent().hide();
+		$('input[name="status_children"]').parent().parent().parent().hide();
+    }
+}
 
 
 $( document ).ready(function() {

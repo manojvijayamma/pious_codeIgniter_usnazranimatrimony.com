@@ -1,7 +1,6 @@
 var is_reload_page=0;
 
-$('#total_children').parent().parent().parent().hide();
-$('input[name="status_children"]').parent().parent().parent().hide();
+
 
 function scroll_to_div(div_id)
 {
@@ -1554,15 +1553,12 @@ function display_total_childern()
 	var marital_status = $("[name='marital_status']:checked").val();
 	if(marital_status !='' && marital_status !='Unmarried')
 	{
-		$("#total_children").removeAttr('disabled');
-		$('#total_children').parent().parent().parent().show();
-		$('input[name="status_children"]').parent().parent().parent().show();
+		$("#total_children").removeAttr('disabled');		
 		display_childern_status();
 	}
 	else
 	{
-		$('#total_children').parent().parent().parent().hide();
-		$('input[name="status_children"]').parent().parent().parent().hide();
+		
 		$("#total_children").attr('disabled','disabled');
 		$("#total_children").val('');
 		$("[name='status_children']").prop('checked', false);

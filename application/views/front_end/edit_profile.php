@@ -218,11 +218,11 @@
 
 							'lastname'=>array('is_required'=>'required','label'=>'Last Name'),
 
-							'marital_status'=>array('is_required'=>'required','type'=>'radio','value_arr'=>$this->common_model->get_list_ddr('marital_status'),'value'=>'Unmarried','onclick'=>'display_total_childern()'),
+							'marital_status'=>array('is_required'=>'required','type'=>'radio','value_arr'=>$this->common_model->get_list_ddr('marital_status'),'value'=>'Unmarried','onclick'=>'display_total_childern();showChildern();'),
 
-							'total_children'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('total_children'),'value_curr'=>0,'extra'=>'disabled','onchange'=>'display_childern_status()','extra_style'=>'width:100%'),
+							'total_children'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('total_children'),'value_curr'=>0,'extra'=>'disabled','onchange'=>'display_childern_status()','extra_style'=>'width:100%'),
 
-							'status_children'=>array('is_required'=>'required','type'=>'radio','value_arr'=>$this->common_model->get_list_ddr('status_children'),'extra'=>'disabled','extra_style'=>'width:100%'),
+							'status_children'=>array('type'=>'radio','value_arr'=>$this->common_model->get_list_ddr('status_children'),'extra'=>'disabled','extra_style'=>'width:100%'),
 
 							'mother_tongue'=>array('is_required'=>'required','type'=>'dropdown','class'=>'select2','value_arr'=>$mother_tongue_arr,'label'=>'Mother Tongue','extra_style'=>'width:100%'),
 
@@ -991,8 +991,7 @@
 											'mother_name'=>array('extra_style'=>'width:100%'),
 
 											'mother_occupation'=>array('lable'=>"Mother's Occupation",'extra_style'=>'width:100%'),
-
-											'family_status'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('family_status'),'extra_style'=>'width:100%'),            
+          
 
 											'no_of_brothers'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('no_of_brothers'),'extra_style'=>'width:100%'),
 
@@ -1770,4 +1769,27 @@
 
 										";
 
-									?>																																				
+									?>	
+
+
+									<script>
+									
+
+$('#total_children').parent().parent().hide();
+$('input[name="status_children"]').parent().parent().hide();
+
+funtion showChildern(){
+	var marital_status = $("[name='marital_status']:checked").val();
+	if(marital_status !='' && marital_status !='Unmarried')
+	{
+		$('#total_children').parent().parent().show();
+		$('input[name="status_children"]').parent().parent().show();
+	}
+	else{
+		$('#total_children').parent().parent().hide();
+		$('input[name="status_children"]').parent().parent().hide();
+	}
+}
+
+
+									</script>
