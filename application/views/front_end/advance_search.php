@@ -318,39 +318,10 @@
                                                     <div class="clearfix"></div>
                                                 </div>
                                                 
-                                                <div class="xxl-16 xs-16 s-16 m-16 l-16 s-16" data-toggle="collapse" role="navigation" data-target="#ne_lft_pan_list5"  aria-expanded="false" aria-controls="ne_lft_pan_list5" onclick="change_img('5_profile')" style="padding:0px;">														
-                                                    <h3 class="font-15-bold-arial title-bg">
-                                                        <a  class="text-white">
-                                                            <i class="fa fa-asterisk"></i> Horoscope Details:
-                                                            <span class="collapse-plus-nomargin" id="img_5_profile"></span>
-                                                        </a>
-                                                    </h3>
-                                                </div>
-                                                <div class="clearfix"></div>
                                                 
-                                                <div id="ne_lft_pan_list5" class="collapse">
-                                                    <div class="form-group xxl-16 xl-16 l-16 m-16 s-16 xs-16  padding-lr-zero-320 padding-lr-zero-480 padding-bottom-10px padding-lr-zero-xs">
-                                                        <div class="xxl-4 xs-16 s-16 m-4 l-4 xl-4 margin-top-5px src-label">
-                                                            Star:
-                                                        </div>
-                                                        <div class="xxl-12 xl-12 xs-16 s-16 m-12 l-12 margin-top-5px-320 margin-top-5px-480">
-                                                            <select data-placeholder="Select Star" class="chosen-select form-control" multiple  name="star[]">
-                                                               <?php echo $this->common_model->array_optionstr($this->common_model->dropdown_array_table('star'));?>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group xxl-16 xl-16 l-16 m-16 s-16 xs-16  padding-lr-zero-320 padding-lr-zero-480 padding-bottom-10px padding-lr-zero-xs">
-                                                        <div class="xxl-4 xs-16 s-16 m-4 l-4 xl-4 margin-top-5px src-label">
-                                                            Manglik:
-                                                        </div>
-                                                        <div class="xxl-12 xl-12 xs-16 s-16 m-12 l-12 margin-top-5px-320 margin-top-5px-480">
-                                                            <select data-placeholder="Select Manglik" class="chosen-select form-control" name="manglik[]" multiple>
-                                                           <?php echo $this->common_model->array_optionstr($this->common_model->get_list_ddr('manglik'));?>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clearfix"></div>
-                                                </div>
+                                               
+                                                
+                                                
                                                 <div class="clearfix"></div>
                                                 <hr>
                                                 <div class="xxl-16 xl-16 l-16 m-16 s-16 xs-16 margin-bottom-10px">

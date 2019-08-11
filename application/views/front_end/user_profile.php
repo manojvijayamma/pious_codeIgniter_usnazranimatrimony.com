@@ -637,13 +637,7 @@
                                                             echo $this->common_model->display_data_na('');
                                                         }?>
                                                  	</p>
-                                                    <p class="margin-top-5"><span class="basic-img_5"></span>Family Status : 
-                                                    <?php if(isset($user_data['family_status']) && $user_data['family_status'] !=''){ 
-                                                            echo $user_data['family_status'];
-                                                        }else{
-                                                            echo $this->common_model->display_data_na('');
-                                                        }?>
-                                                 	</p>
+                                                   
                                                     
                                                     <p class="margin-top-4"><span class="basic-img_4"></span>No Of Brothers : 
                                                     <?php if(isset($user_data['no_of_brothers']) && $user_data['no_of_brothers'] !=''){ 

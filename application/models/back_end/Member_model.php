@@ -2287,8 +2287,7 @@ class Member_model extends CI_Model {
 
 					'father_occupation'=>array('label'=>"Father's Occupation"),
 
-					'family_status'=>array('label'=>'Family Status'),
-
+					
 					'no_of_married_brother'=>array('label'=>'Married Brother'),
 
 					'mother_name'=>array('label'=>"Mother's Name"),
@@ -2519,7 +2518,7 @@ class Member_model extends CI_Model {
 
 			//$('#family_type').chosen({placeholder_text_multiple:'Select Family Type'});
 
-			$('#family_status').chosen({placeholder_text_multiple:'Select Family Status'});
+			
 
 			$('#no_of_brothers').chosen({placeholder_text_multiple:'Select No Of Brothers'});
 
@@ -2855,7 +2854,7 @@ class Member_model extends CI_Model {
 
 			'family_type'=>array('display_in'=>'1','type'=>'radio','value_arr'=>$family_type_arr,'value'=>'All'),
 
-			'family_status'=>array('display_in'=>'1','type'=>'dropdown','value_arr'=>$this->member_model->get_list_ddr('family_status'),'label'=>'Family Status','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'chosen-select'),
+			
 
 			'no_of_brothers'=>array('display_in'=>'1','type'=>'dropdown','value_arr'=>$this->member_model->get_list_ddr('no_of_brothers'),'label'=>'No Of Brothers','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'chosen-select'),
 

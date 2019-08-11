@@ -1144,7 +1144,7 @@ class Member_model extends CI_Model {
 					'family_type'=>array('label'=>'Family Type'),
 					'father_name'=>array('label'=>'Father Name'),
 					'father_occupation'=>array('label'=>"Father's Occupation"),
-					'family_status'=>array('label'=>'Family Status'),
+					
 					'no_of_married_brother'=>array('label'=>'Married Brother'),
 					'mother_name'=>array('label'=>"Mother's Name"),
 					'mother_occupation'=>array('label'=>"Mother's Occupation"),
@@ -1260,7 +1260,7 @@ class Member_model extends CI_Model {
 			$('#profileby').chosen({placeholder_text_multiple:'Select Profile By'});
 			$('#reference').chosen({placeholder_text_multiple:'Select Reference'});
 			//$('#family_type').chosen({placeholder_text_multiple:'Select Family Type'});
-			$('#family_status').chosen({placeholder_text_multiple:'Select Family Status'});
+			
 			$('#no_of_brothers').chosen({placeholder_text_multiple:'Select No Of Brothers'});
 			$('#no_marri_brother').chosen({placeholder_text_multiple:'Select No Of Married Brother'});
 			$('#no_of_sisters').chosen({placeholder_text_multiple:'Select No Of Sisters'});
@@ -1428,7 +1428,7 @@ class Member_model extends CI_Model {
 			'profileby'=>array('display_in'=>'1','type'=>'dropdown','value_arr'=>$this->member_model->get_list_ddr('profileby'),'label'=>'Profile By','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'chosen-select'),
 			'reference'=>array('display_in'=>'1','type'=>'dropdown','value_arr'=>$this->member_model->get_list_ddr('reference'),'label'=>'Reference','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'chosen-select'),
 			'family_type'=>array('display_in'=>'1','type'=>'radio','value_arr'=>$family_type_arr,'value'=>'All'),
-			'family_status'=>array('display_in'=>'1','type'=>'dropdown','value_arr'=>$this->member_model->get_list_ddr('family_status'),'label'=>'Family Status','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'chosen-select'),
+			
 			'no_of_brothers'=>array('display_in'=>'1','type'=>'dropdown','value_arr'=>$this->member_model->get_list_ddr('no_of_brothers'),'label'=>'No Of Brothers','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'chosen-select'),
 			'no_marri_brother'=>array('display_in'=>'1','type'=>'dropdown','value_arr'=>$this->member_model->get_list_ddr('no_marri_brother'),'label'=>'No Of Married Brother','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'chosen-select'),
 			'no_of_sisters'=>array('display_in'=>'1','type'=>'dropdown','value_arr'=>$this->member_model->get_list_ddr('no_of_brothers'),'label'=>'No Of Sisters','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'chosen-select'),
