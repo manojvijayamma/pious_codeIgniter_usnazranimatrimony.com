@@ -392,7 +392,7 @@
 
 									'mother_occupation'=>array('label'=>"Mother Occupation"),
 
-									'family_status'=>array('label'=>'Family Status'),
+									
 
 									'no_of_brothers'=>array('label'=>'No Of Brothers'),
 

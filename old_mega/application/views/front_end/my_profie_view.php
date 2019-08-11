@@ -220,7 +220,7 @@
 									'father_occupation'=>array('label'=>"Father Occupation"),
 									'mother_name'=>array('label'=>"Mother Name"),
 									'mother_occupation'=>array('label'=>"Mother Occupation"),
-									'family_status'=>array('label'=>'Family Status'),
+									
 									'no_of_brothers'=>array('label'=>'No Of Brothers'),
 									'no_of_married_brother'=>array('label'=>'No Of Married Brother'),
 									'no_of_sisters'=>array('label'=>'No Of Sisters'),

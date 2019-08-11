@@ -1,4 +1,4 @@
-
+<<<<<<< HEAD
 <?php
 	$member_id = $this->common_front_model->get_session_data('matri_id');
 	$plan_status = $this->common_front_model->get_session_data('plan_status');
@@ -660,7 +660,6 @@
                                                             echo $this->common_model->display_data_na($user_data['no_of_married_brother']);
                                                         }?>
                                                  	</p>
-
                                                     <p class="margin-top-4"><span class="basic-img_4"></span>No Of Sisters : 
                                                     <?php if(isset($user_data['no_of_sisters']) && $user_data['no_of_sisters'] !=''){ 
                                                             echo $user_data['no_of_sisters'];
@@ -2493,5 +2492,4 @@
 	$('.modal:visible').each(centerModal);
 	});
 	";
->>>>>>> e83c49b303ccf6cd1afd5b9ed8581572aae7303c
 	?>	

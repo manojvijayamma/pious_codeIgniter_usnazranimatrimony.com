@@ -1147,16 +1147,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="xxl-16 xl-16 l-16 m-16 s-16 xs-16 padding-lr-zero">
-                                    <div  class="xxl-16 xl-16 l-16 m-16 s-16 xs-16 padding-lr-zero margin-top-10px-320px margin-top-10px-480px ne-mrg-top-10-768">
-                                        <div class="xxl-6 xl-6 l-6 m-6 s-6 xs-6 label-title margin-top-5-xs">
-                                            Family Status
-                                        </div>
-                                        <div class="xxl-10 xl-10 l-10 m-10 s-10 xs-10">
-                                        <span class="dot-padding">:</span> <span class="text-grey">Not Available (<a href="#" class="underline">Add Now <img src="<?php echo $base_url; ?>assets/front_end/images/icon/view-arrow.gif" alt="" ></a>)</span>
-                                        </div>
-                                    </div>
-                                </li>
+                               
                                 
                                 <li class="xxl-16 xl-16 l-16 m-16 s-16 xs-16 padding-lr-zero">
                                     <div  class="xxl-16 xl-16 l-16 m-16 s-16 xs-16 padding-lr-zero">
