@@ -1561,6 +1561,8 @@ function display_total_childern()
 	}
 	else
 	{
+		$('#total_children').parent().parent().parent().hide();
+		$('input[name="status_children"]').parent().parent().parent().hide();
 		$("#total_children").attr('disabled','disabled');
 		$("#total_children").val('');
 		$("[name='status_children']").prop('checked', false);
