@@ -657,6 +657,7 @@ var base_url = '<?php echo $base_url; ?>';
 
 $('#total_children').parent().parent().parent().hide();
 $('#Living with me').parent().parent().parent().hide();
+
 $( document ).ready(function() {
 	$('select').select2();
 	$('.nav-tabs > li a[title]').tooltip();
