@@ -762,9 +762,11 @@ class Common_model extends CI_Model {
 						curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 3);
 						curl_setopt($ch, CURLOPT_TIMEOUT, 3);
 						$curl_scraped_page = curl_exec($ch);
-						
+						$status="";
 						$json = json_decode($curl_scraped_page);
-						$status = $json->{'status'};
+						if(isset($json)){
+							$status = $json->{'status'};
+						}	
 						if($status == 'success'){
 							$return_otp = 'success';
 						}
