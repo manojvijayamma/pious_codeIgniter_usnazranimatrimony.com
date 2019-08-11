@@ -1303,6 +1303,9 @@ if(base_url()!='http://192.168.1.111/mega_matrimony/original_script/'){
 
 var base_url = '<?php echo $base_url; ?>';
 
+$('#total_children').parent().parent().parent().hide();
+$('#Living with me').parent().parent().parent().hide();
+
 $( document ).ready(function() {
 
 	$('select').select2();

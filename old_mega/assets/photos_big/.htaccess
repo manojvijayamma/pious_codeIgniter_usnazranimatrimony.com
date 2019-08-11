@@ -1,2 +1,0 @@
-RewriteEngine on
-RewriteRule ^(.*\.(gif|jp?g|png))$ https://www.usnazranimatrimony.com/assets/photos_big/watermark.php?image=$1 [NC] 
