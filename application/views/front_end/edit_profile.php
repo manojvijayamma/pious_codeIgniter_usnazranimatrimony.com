@@ -228,9 +228,9 @@
 
 							'languages_known'=>array('type'=>'dropdown','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','value_arr'=>$mother_tongue_arr,'label'=>'Language Known','extra_style'=>'width:100%'),
 
-							'height'=>array('is_required'=>'required','type'=>'dropdown','class'=>'select2','value_arr'=>$height,'label'=>'Height','extra_style'=>'width:100%'),
+							'height'=>array('type'=>'dropdown','class'=>'select2','value_arr'=>$height,'label'=>'Height','extra_style'=>'width:100%'),
 
-							'weight'=>array('is_required'=>'required','type'=>'dropdown','class'=>'select2','value_arr'=>$weight,'label'=>'Weight','extra_style'=>'width:100%'),
+							'weight'=>array('type'=>'dropdown','class'=>'select2','value_arr'=>$weight,'label'=>'Weight','extra_style'=>'width:100%'),
 
 							'birthdate'=>array('type'=>'manual','code'=>$birth_date_str),
 
@@ -882,13 +882,13 @@
 
 										$ele_array = array(
 
-										'education_detail'=>array('is_required'=>'required','type'=>'dropdown','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','value_arr'=>$education_name_arr,'label'=>'Education','extra_style'=>'width:100%'),
+										'education_detail'=>array('type'=>'dropdown','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','value_arr'=>$education_name_arr,'label'=>'Education','extra_style'=>'width:100%'),
 
 										'employee_in'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('employee_in'),'extra_style'=>'width:100%'),
 
 										'income'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('income'),'label'=>'Annual Income','extra_style'=>'width:100%'),
 
-										'occupation'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$occupation_arr,'label'=>'Occupation','class'=>'select2','extra_style'=>'width:100%'),
+										'occupation'=>array('type'=>'dropdown','value_arr'=>$occupation_arr,'label'=>'Occupation','class'=>'select2','extra_style'=>'width:100%'),
 
 										'designation'=>array('type'=>'dropdown','class'=>'select2','value_arr'=>$designation_arr,'extra_style'=>'width:100%')
 
@@ -1123,9 +1123,9 @@
 
 													'part_to_age'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->age_rang(),'label'=>"To Age",'class'=>'select2','extra_style'=>'width:100%'),
 
-													'part_height'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->height_list(),'label'=>"From Height",'class'=>'select2','extra_style'=>'width:100%'),
+													'part_height'=>array('type'=>'dropdown','value_arr'=>$this->common_model->height_list(),'label'=>"From Height",'class'=>'select2','extra_style'=>'width:100%'),
 
-													'part_height_to'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->height_list(),'label'=>"To Height",'class'=>'select2','extra_style'=>'width:100%'),
+													'part_height_to'=>array('type'=>'dropdown','value_arr'=>$this->common_model->height_list(),'label'=>"To Height",'class'=>'select2','extra_style'=>'width:100%'),
 
 													'part_bodytype'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('bodytype'),'label'=>'Body type','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','extra_style'=>'width:100%'),
 
@@ -1775,21 +1775,7 @@
 									<script>
 									
 
-$('#total_children').parent().parent().hide();
-$('input[name="status_children"]').parent().parent().hide();
 
-funtion showChildern(){
-	var marital_status = $("[name='marital_status']:checked").val();
-	if(marital_status !='' && marital_status !='Unmarried')
-	{
-		$('#total_children').parent().parent().show();
-		$('input[name="status_children"]').parent().parent().show();
-	}
-	else{
-		$('#total_children').parent().parent().hide();
-		$('input[name="status_children"]').parent().parent().hide();
-	}
-}
 
 
 									</script>

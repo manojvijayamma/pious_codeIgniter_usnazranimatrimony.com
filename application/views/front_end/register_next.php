@@ -316,9 +316,9 @@ if($member_fb_data != '')
 
 									'part_to_age'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->age_rang(),'label'=>"Partner To Age",'class'=>'select2'),
 
-									'part_height'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->height_list(),'label'=>"Partner From Height",'class'=>'select2'),
+									'part_height'=>array('type'=>'dropdown','value_arr'=>$this->common_model->height_list(),'label'=>"Partner From Height",'class'=>'select2'),
 
-									'part_height_to'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->height_list(),'label'=>"Partner To Height",'class'=>'select2'),
+									'part_height_to'=>array('type'=>'dropdown','value_arr'=>$this->common_model->height_list(),'label'=>"Partner To Height",'class'=>'select2'),
 
 								);
 
@@ -400,13 +400,13 @@ if($member_fb_data != '')
 
 								 $ele_array = array(
 
-									'education_detail'=>array('is_required'=>'required','type'=>'dropdown','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','value_arr'=>$this->common_model->dropdown_array_table('education_detail'),'label'=>'Education','extra_style'=>'width:100%'),
+									'education_detail'=>array('type'=>'dropdown','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','value_arr'=>$this->common_model->dropdown_array_table('education_detail'),'label'=>'Education','extra_style'=>'width:100%'),
 
 									'employee_in'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('employee_in'),'extra_style'=>'width:100%'),
 
 									'income'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('income'),'label'=>'Annual Income','extra_style'=>'width:100%'),
 
-									'occupation'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->dropdown_array_table('occupation'),'label'=>'Occupation','class'=>'select2','extra_style'=>'width:100%'),
+									'occupation'=>array('type'=>'dropdown','value_arr'=>$this->common_model->dropdown_array_table('occupation'),'label'=>'Occupation','class'=>'select2','extra_style'=>'width:100%'),
 
 									'designation'=>array('is_required'=>'required','type'=>'dropdown','class'=>'select2','value_arr'=>$this->common_model->dropdown_array_table('designation'),'extra_style'=>'width:100%'),
 
@@ -572,9 +572,9 @@ if($member_fb_data != '')
 
 								 $ele_array = array(
 
-									'height'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->height_list(),'extra_style'=>'width:100%'),
+									'height'=>array('type'=>'dropdown','value_arr'=>$this->common_model->height_list(),'extra_style'=>'width:100%'),
 
-									'weight'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->weight_list(),'extra_style'=>'width:100%'),
+									'weight'=>array('type'=>'dropdown','value_arr'=>$this->common_model->weight_list(),'extra_style'=>'width:100%'),
 
 									'diet'=>array('label'=>'Eating Habits','is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('diet'),'extra_style'=>'width:100%'),
 
@@ -1303,21 +1303,7 @@ if(base_url()!='http://192.168.1.111/mega_matrimony/original_script/'){
 
 var base_url = '<?php echo $base_url; ?>';
 
-$('#total_children').parent().parent().parent().hide();
-$('input[name="status_children"]').parent().parent().parent().hide();
 
-funtion showChildern(){
-    var marital_status = $("[name='marital_status']:checked").val();
-	if(marital_status !='' && marital_status !='Unmarried')
-	{
-        $('#total_children').parent().parent().parent().show();
-		$('input[name="status_children"]').parent().parent().parent().show();
-    }
-    else{
-        $('#total_children').parent().parent().parent().hide();
-		$('input[name="status_children"]').parent().parent().parent().hide();
-    }
-}
 
 
 $( document ).ready(function() {

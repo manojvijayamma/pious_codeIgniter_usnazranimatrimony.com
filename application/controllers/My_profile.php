@@ -61,7 +61,7 @@ class My_profile extends CI_Controller {
 	{
 		$this->common_model->display_top_menu_perm = 'No';
 		$this->common_model->extra_css_fr= array('css/select2.min.css','css/jquery-ui.css');
-		$this->common_model->extra_js_fr= array('js/select2.min.js','js/jquery.validate.min.js','js/photo_protect_js.js');
+		$this->common_model->extra_js_fr= array('js/select2.min.js','js/jquery.validate.min.js','js/photo_protect_js.js','js/edit_profile.js');
 		$base_url = $this->data['base_url'];
 		$this->data['step_part'] = $step; 
 		$this->common_model->front_load_header('Edit Profile');
