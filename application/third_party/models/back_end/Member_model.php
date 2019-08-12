@@ -1067,10 +1067,13 @@ class Member_model extends CI_Model {
 				'title'=>'Education / Profession Information',
 				'field_array'=>array(
 					'education_detail'=>array('label'=>'Education','type'=>'relation','table_name'=>'education_detail','disp_column_name'=>'education_name'),
+					'other_education'=>array('label'=>'If other education'),
 					'occupation_name'=>array('label'=>'Occupation'),
-					'income'=>array('label'=>'Annual Income'),
+					'other_occupation'=>array('label'=>'If other occupation'),
+					//'income'=>array('label'=>'Annual Income'),
 					'employee_in'=>array(),
-					'designation'=>array('label'=>'Designation','type'=>'relation','table_name'=>'designation','disp_column_name'=>'designation_name')
+					'designation'=>array('label'=>'Designation','type'=>'relation','table_name'=>'designation','disp_column_name'=>'designation_name'),
+					'other_designation'=>array('label'=>'If other designation'),
 				),
 			),
 			array(

@@ -337,15 +337,15 @@
 								$element_array = array(
 
 									'education_detail'=>array('label'=>'Education','type'=>'relation','table_name'=>'education_detail','disp_column_name'=>'education_name'),
-
+									'other_education'=>array('label'=>'If other education'),
 									'employee_in'=>array(),
 
-									'income'=>array('label'=>'Annual Income'),
+									//'income'=>array('label'=>'Annual Income'),
 
 									'occupation_name'=>array('label'=>'Occupation'),
-
+									'other_occupation'=>array('label'=>'If other occupation'),
 									'designation'=>array('label'=>'Designation','type'=>'relation','table_name'=>'designation','disp_column_name'=>'designation_name'),
-
+									'other_designation'=>array('label'=>'If other designation'),
 								);
 
 								echo $this->common_front_model->view_detail_common($element_array,$member_data);

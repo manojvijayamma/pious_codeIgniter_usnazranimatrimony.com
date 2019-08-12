@@ -513,11 +513,11 @@
 															else
 															{
 																echo $this->common_model->display_data_na('');
-															}?></p>
-															<p class="margin-top-5"><span class="basic-img_6"></span>Designation : <?php if(isset($user_data['designation_name']) && $user_data['designation_name'] !=''){ echo $user_data['designation_name'];}else{echo $this->common_model->display_data_na($user_data['designation_name']);}?></p>
+															}?><?php echo $user_data['other_education']?></p>
+															<p class="margin-top-5"><span class="basic-img_6"></span>Designation : <?php if(isset($user_data['designation_name']) && $user_data['designation_name'] !=''){ echo $user_data['designation_name'];}else{echo $this->common_model->display_data_na($user_data['designation_name']);}?>, <?php echo $user_data['other_designation']?></p>
 															<p class="margin-top-5"><span class="basic-img_6"></span>Employed in : <?php if(isset($user_data['employee_in']) && $user_data['employee_in'] !=''){ echo $user_data['employee_in'];}else{echo $this->common_model->display_data_na($user_data['employee_in']);}?></p>
-															<p class="margin-top-5"><span class="basic-img_6"></span>Occupation : <?php if(isset($user_data['occupation_name']) && $user_data['occupation_name'] !=''){ echo $user_data['occupation_name'];}else{echo $this->common_model->display_data_na($user_data['occupation_name']);}?></p>
-															<p class="margin-top-5"><span class="basic-img_8"></span>Annual Income : <?php if(isset($user_data['income']) && $user_data['income'] !=''){ echo $user_data['income'];}else{echo $this->common_model->display_data_na($user_data['income']);}?></p>
+															<p class="margin-top-5"><span class="basic-img_6"></span>Occupation : <?php if(isset($user_data['occupation_name']) && $user_data['occupation_name'] !=''){ echo $user_data['occupation_name'];}else{echo $this->common_model->display_data_na($user_data['occupation_name']);}?>, <?php echo $user_data['other_occupation']?></p>
+															
 															<p></p>
 												</div>
 											</div>

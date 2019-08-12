@@ -296,16 +296,16 @@ else if($this->session->flashdata('error_message_mem'))
 
             'education_title'=>array('type'=>'manual','code'=>'<h3 class="sub_title_mem"> Education / Occupation Details</h3>'),
 
-            'education_detail'=>array('is_required'=>'required','type'=>'dropdown','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','value_arr'=>$education_name_arr,'label'=>'Education'),
-
+            'education_detail'=>array('type'=>'dropdown','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','value_arr'=>$education_name_arr,'label'=>'Education'),
+            'other_education'=>array('label'=>'If other education'),
             'employee_in'=>array('type'=>'dropdown','class'=>'select2','value_arr'=>$this->common_model->get_list_ddr('employee_in')),
 
-            'income'=>array('type'=>'dropdown','class'=>'select2','value_arr'=>$this->common_model->get_list_ddr('income'),'label'=>'Annual Income'),
+            //'income'=>array('type'=>'dropdown','class'=>'select2','value_arr'=>$this->common_model->get_list_ddr('income'),'label'=>'Annual Income'),
 
-            'occupation'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$occupation_arr,'label'=>'Occupation','class'=>'select2'),
-
+            'occupation'=>array('type'=>'dropdown','value_arr'=>$occupation_arr,'label'=>'Occupation','class'=>'select2'),
+            'other_occupation'=>array('label'=>'If other occupation'),
             'designation'=>array('type'=>'dropdown','class'=>'select2','value_arr'=>$designation_arr),
-
+            'other_designation'=>array('label'=>'If other designation'),
 			'page_type'=>array('type'=>'manual','code'=>'<input type="hidden" name="page_type" id="page_type" value="basic_detail" />')
 
         );

@@ -401,15 +401,15 @@ if($member_fb_data != '')
 								 $ele_array = array(
 
 									'education_detail'=>array('type'=>'dropdown','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','value_arr'=>$this->common_model->dropdown_array_table('education_detail'),'label'=>'Education','extra_style'=>'width:100%'),
-
+                                    'other_education'=>array('label'=>'If other education'),
 									'employee_in'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('employee_in'),'extra_style'=>'width:100%'),
 
-									'income'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('income'),'label'=>'Annual Income','extra_style'=>'width:100%'),
+									//'income'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('income'),'label'=>'Annual Income','extra_style'=>'width:100%'),
 
 									'occupation'=>array('type'=>'dropdown','value_arr'=>$this->common_model->dropdown_array_table('occupation'),'label'=>'Occupation','class'=>'select2','extra_style'=>'width:100%'),
-
-									'designation'=>array('is_required'=>'required','type'=>'dropdown','class'=>'select2','value_arr'=>$this->common_model->dropdown_array_table('designation'),'extra_style'=>'width:100%'),
-
+                                    'other_occupation'=>array('label'=>'If other occupation'),
+									'designation'=>array('type'=>'dropdown','class'=>'select2','value_arr'=>$this->common_model->dropdown_array_table('designation'),'extra_style'=>'width:100%'),
+                                    'other_designation'=>array('label'=>'If other designation'),
 									
 
 								);
