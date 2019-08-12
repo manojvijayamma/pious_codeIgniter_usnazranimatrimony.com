@@ -173,7 +173,7 @@ if($member_fb_data != '')
 
                                         <select name="country_code" id="country_code" class="form-control select2">
 
-										<?php if(isset($_REQUEST['country_code']) && $_REQUEST['country_code'] !=''){ echo $val=$_REQUEST['country_code'];}else{ echo $val='+91';}?>
+										<?php if(isset($_REQUEST['country_code']) && $_REQUEST['country_code'] !=''){ echo $val=$_REQUEST['country_code'];}else{ echo $val='+1';}?>
 
                                         	<option value="Select Country Code">Select Country Code</option>
 

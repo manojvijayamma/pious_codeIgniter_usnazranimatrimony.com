@@ -388,7 +388,7 @@ $current_login_user = $this->common_front_model->get_session_data(); ?>
 																		</div>
 																		<div class="xxl-9 xl-9 l-9 m-9 s-9 ne-word-wrap">
 																			<div class="row">
-																				: <?php echo $comm_model->valueFromId('education_detail', $member_data_val['education_detail'], 'education_name'); ?>                                                                        		
+																				: <?php echo $comm_model->valueFromId('education_detail', $member_data_val['education_detail'], 'education_name'); ?> , <?php echo $member_data_val['other_education']?>                                                                       		
 																			</div>
 																		</div>
 																	</div>
@@ -418,7 +418,7 @@ $current_login_user = $this->common_front_model->get_session_data(); ?>
 																		</div>
 																		<div class="xxl-9 xl-9 l-9 m-9 s-9 ne-word-wrap">
 																			<div class="row">
-																				: <?php echo $comm_model->display_data_na($member_data_val['occupation_name']); ?>                                                                        		
+																				: <?php echo $comm_model->display_data_na($member_data_val['occupation_name']); ?>  , <?php echo $member_data_val['other_occupation']?>                                                                      		
 																			</div>
 																		</div>
 																	</div>
