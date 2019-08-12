@@ -314,7 +314,7 @@ if($member_fb_data != '')
 
 									'part_frm_age'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->age_rang(),'label'=>"Partner From Age",'class'=>'select2'),
 
-									'part_to_age'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->age_rang(),'label'=>"Partner To Age",'class'=>'select2'),
+									'part_to_age'=>array('type'=>'dropdown','value_arr'=>$this->common_model->age_rang(),'label'=>"Partner To Age",'class'=>'select2'),
 
 									'part_height'=>array('type'=>'dropdown','value_arr'=>$this->common_model->height_list(),'label'=>"Partner From Height",'class'=>'select2'),
 
@@ -402,7 +402,7 @@ if($member_fb_data != '')
 
 									'education_detail'=>array('type'=>'dropdown','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','value_arr'=>$this->common_model->dropdown_array_table('education_detail'),'label'=>'Education','extra_style'=>'width:100%'),
                                     'other_education'=>array('label'=>'If other education'),
-									'employee_in'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('employee_in'),'extra_style'=>'width:100%'),
+									'employee_in'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('employee_in'),'extra_style'=>'width:100%'),
 
 									//'income'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('income'),'label'=>'Annual Income','extra_style'=>'width:100%'),
 
@@ -576,15 +576,15 @@ if($member_fb_data != '')
 
 									'weight'=>array('type'=>'dropdown','value_arr'=>$this->common_model->weight_list(),'extra_style'=>'width:100%'),
 
-									'diet'=>array('label'=>'Eating Habits','is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('diet'),'extra_style'=>'width:100%'),
+									'diet'=>array('label'=>'Eating Habits','type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('diet'),'extra_style'=>'width:100%'),
 
-									'smoke'=>array('label'=>'Smoking','is_required'=>'required','type'=>'radio','value_arr'=>$this->common_model->get_list_ddr('smoke'),'value'=>'No','extra_style'=>'width:100%'),
+									'smoke'=>array('label'=>'Smoking','type'=>'radio','value_arr'=>$this->common_model->get_list_ddr('smoke'),'value'=>'No','extra_style'=>'width:100%'),
 
-									'drink'=>array('label'=>'Drinking','is_required'=>'required','type'=>'radio','value_arr'=>$this->common_model->get_list_ddr('drink'),'value'=>'No','extra_style'=>'width:100%'),
+									'drink'=>array('label'=>'Drinking','type'=>'radio','value_arr'=>$this->common_model->get_list_ddr('drink'),'value'=>'No','extra_style'=>'width:100%'),
 
-									'bodytype'=>array('label'=>'Body Type','is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('bodytype'),'extra_style'=>'width:100%'),
+									'bodytype'=>array('label'=>'Body Type','type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('bodytype'),'extra_style'=>'width:100%'),
 
-									'complexion'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('complexion'),'label'=>'Skin Tone','extra_style'=>'width:100%'),
+									'complexion'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('complexion'),'label'=>'Skin Tone','extra_style'=>'width:100%'),
 
 									
 
@@ -903,7 +903,7 @@ if($member_fb_data != '')
 
                                         <label>
 
-                                            Hobby <span class="font-red">* </span>:
+                                            Hobby <span class="font-red"> </span>:
 
                                         </label>
 
@@ -913,7 +913,7 @@ if($member_fb_data != '')
 
                                     <div class="xxl-11 xl-11 xs-16 s-16 m-16 l-8">
 
-                                        <textarea id="hobby" class="form-control" rows="5" placeholder="" name="hobby" required><?php if(isset($row_data['profile_text']) && $row_data['hobby'] !=''){ echo $row_data['hobby'];} ?></textarea>
+                                        <textarea id="hobby" class="form-control" rows="5" placeholder="" name="hobby" ><?php if(isset($row_data['profile_text']) && $row_data['hobby'] !=''){ echo $row_data['hobby'];} ?></textarea>
 
                                     </div>
 
