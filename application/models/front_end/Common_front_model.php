@@ -1977,7 +1977,7 @@ class Common_front_model extends CI_Model {
 					'Religious Information'=>array('Catholic Community'=>'religion_name','Diocese'=>'caste_name','Parish'=>'subcaste')
 				),
 				'about_me_and_hobby'=>array(
-					'About Me & Hobby'=>array('About Us'=>'profile_text','Hobby'=>'hobby','Birth Place'=>'birthplace','Birth Time'=>'birthtime','Created By'=>'profileby','Referenced By'=>'reference')
+					'About Me & Hobby'=>array('About Us'=>'profile_text','Hobby'=>'hobby','Birth Place'=>'birthplace','Created By'=>'profileby','Referenced By'=>'reference')
 				),
 
 				'edu_Occup'=>array(
@@ -1993,7 +1993,7 @@ class Common_front_model extends CI_Model {
 				),
 
 				'family_info'=>array(
-					'Family Details'=>array('Family Type'=>'family_type','Father Name'=>'father_name','Father Occupation'=>'father_occupation','Mother Name'=>'mother_name','Mother Occupation'=>'mother_occupation','No Of Brothers'=>'no_of_brothers','No Of Married Brother'=>'no_of_married_brother','No Of Sisters'=>'no_of_sisters','No Of Married Sister'=>'no_of_married_sister','About My Family'=>'family_details')
+					'Family Details'=>array('Family Name'=>'family_type','Father Name'=>'father_name','Father Occupation'=>'father_occupation','Mother Name'=>'mother_name','Mother Occupation'=>'mother_occupation','No Of Brothers'=>'no_of_brothers','No Of Married Brother'=>'no_of_married_brother','No Of Sisters'=>'no_of_sisters','No Of Married Sister'=>'no_of_married_sister','About My Family'=>'family_details')
 				),  
 				'photo_info'=>array(
 					'Photo Details'=>array('Photo 1'=>'photo1','Photo1 status'=>'photo1_approve','Photo 2'=>'photo2','Photo2 status'=>'photo2_approve','Photo 3'=>'photo3','Photo3 status'=>'photo3_approve','Photo 4'=>'photo4','Photo4 status'=>'photo4_approve','Photo 5'=>'photo5','Photo5 status'=>'photo5_approve','Photo 6'=>'photo6','Photo6 status'=>'photo6_approve','Photo 7'=>'photo7','Photo7 status'=>'photo7_approve','Photo 8'=>'photo8','Photo8 status'=>'photo8_approve')
@@ -2274,7 +2274,7 @@ class Common_front_model extends CI_Model {
 				),
 
 				'about_me_and_hobby'=>array(
-					'About Me & Hobby'=>array('About Us'=>'profile_text','Hobby'=>'hobby','Birth Place'=>'birthplace','Birth Time'=>'birthtime','Created By'=>'profileby','Referenced By'=>'reference')
+					'About Me & Hobby'=>array('About Us'=>'profile_text','Hobby'=>'hobby','Birth Place'=>'birthplace','Created By'=>'profileby','Referenced By'=>'reference')
 				),
 
 				'edu_Occup'=>array(
@@ -2290,7 +2290,7 @@ class Common_front_model extends CI_Model {
 				),
 
 				'family_info'=>array(
-					'Family Details'=>array('Family Type'=>'family_type','Father Name'=>'father_name','Father Occupation'=>'father_occupation','Mother Name'=>'mother_name','Mother Occupation'=>'mother_occupation','No Of Brothers'=>'no_of_brothers','No Of Married Brother'=>'no_of_married_brother','No Of Sisters'=>'no_of_sisters','No Of Married Sister'=>'no_of_married_sister','About My Family'=>'family_details')
+					'Family Details'=>array('Family Name'=>'family_type','Father Name'=>'father_name','Father Occupation'=>'father_occupation','Mother Name'=>'mother_name','Mother Occupation'=>'mother_occupation','No Of Brothers'=>'no_of_brothers','No Of Married Brother'=>'no_of_married_brother','No Of Sisters'=>'no_of_sisters','No Of Married Sister'=>'no_of_married_sister','About My Family'=>'family_details')
 				),  
 
 				'photo_info'=>array(

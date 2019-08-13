@@ -2140,7 +2140,7 @@ class Member_model extends CI_Model {
 
 					'birthplace'=>array('label'=>'Birth Place'),
 
-					'birthtime'=>array('label'=>'Birth Time'),
+					//'birthtime'=>array('label'=>'Birth Time'),
 
 					'hobby'=>array('label'=>'Hobby'),
 
@@ -2281,7 +2281,7 @@ class Member_model extends CI_Model {
 
 				'field_array'=>array(
 
-					'family_type'=>array('label'=>'Family Type'),
+					'family_type'=>array('label'=>'Family Name'),
 
 					'father_name'=>array('label'=>'Father Name'),
 

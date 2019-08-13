@@ -168,7 +168,7 @@
 
 									'birthplace'=>array('label'=>'Birth Place'),
 
-									'birthtime'=>array('label'=>'Birth Time'),
+									//'birthtime'=>array('label'=>'Birth Time'),
 
 									'profileby'=>array('label'=>'Created By'),
 
@@ -382,7 +382,7 @@
 
 								$element_array = array(
 
-									'family_type'=>array('label'=>'Family Type'),
+									'family_type'=>array('label'=>'Family Name'),
 
 									'father_name'=>array('label'=>'Father Name'),
 

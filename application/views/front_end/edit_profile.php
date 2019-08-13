@@ -450,7 +450,7 @@
 
 								'birthplace'=>array('label'=>'Birth Place'),
 
-            					'birthtime'=>array('label'=>'Birth Time','other'=>'type="time"'),
+            					//'birthtime'=>array('label'=>'Birth Time','other'=>'type="time"'),
 
            						'profileby'=>array('is_required'=>'required','type'=>'dropdown','class'=>'select2','value_arr'=>$this->common_model->get_list_ddr('profileby'),'label'=>'Created By','extra_style'=>'width:100%'),
 
@@ -982,7 +982,7 @@
 
 											$ele_array = array(
 
-											'family_type'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('family_type'),'extra_style'=>'width:100%'),
+											'family_type'=>array('label'=>'Family Name'),
 
 											'father_name'=>array('extra_style'=>'width:100%'),
 
