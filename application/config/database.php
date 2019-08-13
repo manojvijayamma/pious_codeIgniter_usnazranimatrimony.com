@@ -75,11 +75,11 @@ $query_builder = TRUE;
 
 
 $db['default'] = array(
-	'dsn'	=> 'mysql:host=localhost; dbname=test_usnazranimatrimony; charset=utf8;',
+	'dsn'	=> 'mysql:host=localhost; dbname=pious_matrimony; charset=utf8;',
 	'hostname' => 'localhost',
 	'username' => 'root',
 	'password' => 'root',
-	'database' => 'test_usnazranimatrimony',
+	'database' => 'pious_matrimony',
 	'dbdriver' => 'pdo',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

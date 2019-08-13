@@ -1699,3 +1699,4 @@ if(isset($this->common_model->extra_js_fr) && $this->common_model->extra_js_fr !
 </body>
 
 </html>
+
