@@ -1119,7 +1119,7 @@
 
 													'part_complexion'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('complexion'),'label'=>'Complexion','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','extra_style'=>'width:100%'),
 
-													'part_frm_age'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->age_rang(),'label'=>"From Age",'class'=>'select2','extra_style'=>'width:100%'),
+													'part_frm_age'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->age_rang(1),'label'=>"From Age",'class'=>'select2','extra_style'=>'width:100%'),
 
 													'part_to_age'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->age_rang(),'label'=>"To Age",'class'=>'select2','extra_style'=>'width:100%'),
 

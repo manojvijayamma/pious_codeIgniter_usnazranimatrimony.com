@@ -73,12 +73,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = TRUE;
 
+
 $db['default'] = array(
-	'dsn'	=> 'mysql:host=localhost; dbname=smccubnr_matrimony; charset=utf8;',
+	'dsn'	=> 'mysql:host=localhost; dbname=test_usnazranimatrimony; charset=utf8;',
 	'hostname' => 'localhost',
-	'username' => 'smccubnr_narjis',
-	'password' => 'rnv,(XZ4bze?',
-	'database' => 'smccubnr_matrimony',
+	'username' => 'root',
+	'password' => 'root',
+	'database' => 'test_usnazranimatrimony',
 	'dbdriver' => 'pdo',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
