@@ -1,0 +1,5 @@
+common_front_model->generate_common_front_form
+
+generate_dropdown
+
+$value_arr = $this->common_model->get_value($element_array_val,'value_arr','');

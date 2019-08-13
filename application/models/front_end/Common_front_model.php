@@ -1501,6 +1501,10 @@ class Common_front_model extends CI_Model {
 		if(count($element_array_val) > 0 && $key !='')
 		{
 			$value_curr = $this->common_model->get_value($element_array_val,'value','');
+			/* manoj */
+			if($key=='country_id' && $value_curr==''){
+				$value_curr=215;
+			}
 			$label = $this->common_model->get_label($element_array_val,$key);
 			$is_required = $this->common_model->is_required($element_array_val);
 			$class = $this->common_model->get_value($element_array_val,'class');
@@ -1567,7 +1571,7 @@ class Common_front_model extends CI_Model {
 				if(isset($value_arr) && $value_arr !='' && count($value_arr) > 0)
 				{
 					foreach($value_arr as $key_r=>$value_arr_val)
-					{
+					{	
 						$selected_drop = '';
 						if(in_array($key_r,$current_selected_arra))
 						{

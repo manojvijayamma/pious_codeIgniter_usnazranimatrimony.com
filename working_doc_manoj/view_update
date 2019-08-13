@@ -175,7 +175,10 @@ AS  select
 `franchise`.`username` AS `assign_to_franchise`,
 `reg`.`other_caste` AS `other_caste`,
 `reg`.`other_city` AS `other_city`,
-`reg`.`zipcode` AS `zipcode`
+`reg`.`zipcode` AS `zipcode`,
+`reg`.`other_education` AS `other_education`,
+`reg`.`other_occupation` AS `other_occupation`,
+`reg`.`other_designation` AS `other_designation`
 
  from (((((((((((`register` `reg` 
  left join 
@@ -188,7 +191,7 @@ left join
 
 drop views:
 <pre><xmp>
-    DROP VIEW view_name; 
+    DROP VIEW register_view; 
 </xmp></pre>
 
 

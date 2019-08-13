@@ -4094,12 +4094,18 @@ class Common_model extends CI_Model {
 		}
 		return $weight_arr;
 	}
-	public function age_rang()
+	public function age_rang($from=null)
 	{
 		$age_arr = array();
 		for($i=18;$i<=65;$i++)
-		{
-			$age_arr[$i] = $i.' Year';
+		{	
+			if($from){
+				$age_arr[$i] = $i.' Year +';
+			}
+			else{
+				$age_arr[$i] = $i.' Year';
+			}
+			
 		}
 		return $age_arr;
 	}
