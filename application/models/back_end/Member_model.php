@@ -2413,6 +2413,7 @@ class Member_model extends CI_Model {
 					'part_state'=>array('label'=>'Residency State','type'=>'relation','table_name'=>'state_master','disp_column_name'=>'state_name'),
 
 					'part_city'=>array('label'=>'Residency City','type'=>'relation','table_name'=>'city_master','disp_column_name'=>'city_name'),
+					'part_other_city'=>array('label'=>'If other city'),
 
 				),
 
