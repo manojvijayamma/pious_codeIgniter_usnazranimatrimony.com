@@ -563,7 +563,7 @@
 									'part_state'=>array('label'=>'State','type'=>'relation','table_name'=>'state_master','disp_column_name'=>'state_name'),
 
 									'part_city'=>array('label'=>'City','type'=>'relation','table_name'=>'city_master','disp_column_name'=>'city_name'),
-
+									'part_other_city'=>array('label'=>'If other city'),
 									'part_resi_status'=>array('label'=>'Residence'),
 
 								);
@@ -608,7 +608,7 @@
 
 									'part_designation'=>array('label'=>'Designation','type'=>'relation','table_name'=>'designation','disp_column_name'=>'designation_name'),
 
-									'part_income'=>array('label'=>'Annual Income')
+									//'part_income'=>array('label'=>'Annual Income')
 
 								);
 

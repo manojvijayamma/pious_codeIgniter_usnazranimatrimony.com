@@ -194,6 +194,16 @@ drop views:
     DROP VIEW register_view; 
 </xmp></pre>
 
+ DROP VIEW search_register_view; 
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`smccubnr`@`localhost` SQL SECURITY DEFINER VIEW `search_register_view`  AS  select `reg`.`id` AS `id`,`reg`.`matri_id` AS `matri_id`,`reg`.`email` AS `email`,`reg`.`marital_status` AS `marital_status`,`reg`.`profileby` AS `profileby`,`reg`.`username` AS `username`,`reg`.`firstname` AS `firstname`,`reg`.`lastname` AS `lastname`,`reg`.`gender` AS `gender`,`reg`.`birthdate` AS `birthdate`,`reg`.`birthtime` AS `birthtime`,`reg`.`education_detail` AS `education_detail`,`reg`.`income` AS `income`,`reg`.`occupation` AS `occupation`,`reg`.`employee_in` AS `employee_in`,`reg`.`designation` AS `designation`,`reg`.`religion` AS `religion`,`reg`.`caste` AS `caste`,`reg`.`mother_tongue` AS `mother_tongue`,`reg`.`height` AS `height`,`reg`.`weight` AS `weight`,`reg`.`country_id` AS `country_id`,`reg`.`state_id` AS `state_id`,`reg`.`city` AS `city`,`reg`.`phone` AS `phone`,`reg`.`mobile` AS `mobile`,`reg`.`photo1` AS `photo1`,`reg`.`photo1_approve` AS `photo1_approve`,`reg`.`photo_protect` AS `photo_protect`,`reg`.`photo_view_status` AS `photo_view_status`,`reg`.`photo_password` AS `photo_password`,`reg`.`status` AS `status`,`reg`.`registered_on` AS `registered_on`,`reg`.`is_deleted` AS `is_deleted`,`reg`.`registered_from` AS `registered_from`,`reg`.`last_login` AS `last_login`,`reg`.`fstatus` AS `fstatus`,`reg`.`profile_text` AS `profile_text`,`cnt`.`country_name` AS `country_name`,`sta`.`state_name` AS `state_name`,`ct`.`city_name` AS `city_name`,`rel`.`religion_name` AS `religion_name`,`cst`.`caste_name` AS `caste_name`,`ocp`.`occupation_name` AS `occupation_name`,`mt`.`mtongue_name` AS `mtongue_name`,`dsg`.`designation_name` AS `designation_name`,
+`reg`.`other_occupation` AS `other_occupation`,
+`reg`.`other_education` AS `other_education`,
+`reg`.`other_designation` AS `other_designation`
+
+ from ((((((((`register` `reg` left join `caste` `cst` on((`reg`.`caste` = `cst`.`id`))) left join `religion` `rel` on((`reg`.`religion` = `rel`.`id`))) left join `state_master` `sta` on((`reg`.`state_id` = `sta`.`id`))) left join `country_master` `cnt` on((`reg`.`country_id` = `cnt`.`id`))) left join `city_master` `ct` on((`reg`.`city` = `ct`.`id`))) left join `occupation` `ocp` on((`reg`.`occupation` = `ocp`.`id`))) left join `mothertongue` `mt` on((`reg`.`mother_tongue` = `mt`.`id`))) left join `designation` `dsg` on((`reg`.`designation` = `dsg`.`id`))) ;
+
+
 
 
 
