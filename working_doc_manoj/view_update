@@ -178,7 +178,8 @@ AS  select
 `reg`.`zipcode` AS `zipcode`,
 `reg`.`other_education` AS `other_education`,
 `reg`.`other_occupation` AS `other_occupation`,
-`reg`.`other_designation` AS `other_designation`
+`reg`.`other_designation` AS `other_designation`,
+`reg`.`part_other_city` AS `part_other_city`
 
  from (((((((((((`register` `reg` 
  left join 
