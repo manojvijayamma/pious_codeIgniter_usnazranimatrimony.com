@@ -125,3 +125,23 @@ Stack trace:
 #3 /home/smccubnr/public_html/usnazranimatrimony.com/freichat/server/freichat.php(1172): Conn->getmembers()
 #4 {main}
   thrown in /home/smccubnr/public_html/usnazranimatrimony.com/freichat/server/drivers/Custom.php on line 146
+[15-Aug-2019 02:40:42 GMT] PHP Notice:  Undefined index: 5c10968cf39f4usr_ses_id in /home/smccubnr/public_html/usnazranimatrimony.com/freichat/server/freichat.php on line 81
+[15-Aug-2019 02:40:42 GMT] PHP Notice:  Undefined index: 5c10968cf39f4usr_name in /home/smccubnr/public_html/usnazranimatrimony.com/freichat/server/freichat.php on line 82
+[15-Aug-2019 02:40:42 GMT] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on boolean in /home/smccubnr/public_html/usnazranimatrimony.com/freichat/server/freichat.php:866
+Stack trace:
+#0 /home/smccubnr/public_html/usnazranimatrimony.com/freichat/server/freichat.php(1172): Conn->getdata()
+#1 {main}
+  thrown in /home/smccubnr/public_html/usnazranimatrimony.com/freichat/server/freichat.php on line 866
+[15-Aug-2019 02:40:42 GMT] PHP Notice:  Undefined index: 5c10968cf39f4usr_ses_id in /home/smccubnr/public_html/usnazranimatrimony.com/freichat/server/freichat.php on line 81
+[15-Aug-2019 02:40:42 GMT] PHP Notice:  Undefined index: 5c10968cf39f4is_guest in /home/smccubnr/public_html/usnazranimatrimony.com/freichat/server/freichat.php on line 279
+[15-Aug-2019 13:53:56 GMT] PHP Notice:  Undefined index: 5c10968cf39f4usr_ses_id in /home/smccubnr/public_html/usnazranimatrimony.com/freichat/server/freichat.php on line 81
+[15-Aug-2019 13:53:56 GMT] PHP Notice:  Undefined index: 5c10968cf39f4usr_name in /home/smccubnr/public_html/usnazranimatrimony.com/freichat/server/freichat.php on line 82
+[15-Aug-2019 13:53:56 GMT] PHP Notice:  Undefined index: 5c10968cf39f4is_guest in /home/smccubnr/public_html/usnazranimatrimony.com/freichat/server/freichat.php on line 279
+[15-Aug-2019 13:53:56 GMT] PHP Notice:  Undefined index: 5c10968cf39f4usr_ses_id in /home/smccubnr/public_html/usnazranimatrimony.com/freichat/server/drivers/base.php on line 298
+[15-Aug-2019 13:53:56 GMT] PHP Fatal error:  Uncaught Error: Call to a member function rowCount() on boolean in /home/smccubnr/public_html/usnazranimatrimony.com/freichat/server/drivers/base.php:300
+Stack trace:
+#0 /home/smccubnr/public_html/usnazranimatrimony.com/freichat/server/drivers/Custom.php(214): driver_base->check_ban()
+#1 /home/smccubnr/public_html/usnazranimatrimony.com/freichat/server/freichat.php(415): Custom->load_driver()
+#2 /home/smccubnr/public_html/usnazranimatrimony.com/freichat/server/freichat.php(1172): Conn->getmembers()
+#3 {main}
+  thrown in /home/smccubnr/public_html/usnazranimatrimony.com/freichat/server/drivers/base.php on line 300
