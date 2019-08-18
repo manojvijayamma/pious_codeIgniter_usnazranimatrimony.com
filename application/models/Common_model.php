@@ -639,8 +639,8 @@ class Common_model extends CI_Model {
 		$config = array(
 		'smtp_host' =>'mail.usnazranimatrimony.com',
 		'smtp_port' =>587,
-		'smtp_user' =>'info@usnazranimatrimony.com',
-		'smtp_pass' =>'ghC}kG[K4t4M',
+		'smtp_user' =>'support@usnazranimatrimony.com',
+		'smtp_pass' =>'*2masmccusa',
 		'protocol' => 'smtp',
 		'mailtype' => 'html',
 		'charset' => 'iso-8859-1',
