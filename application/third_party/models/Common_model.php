@@ -3026,7 +3026,7 @@ class Common_model extends CI_Model {
 	public function age_rang()
 	{
 		$age_arr = array();
-		for($i=18;$i<=65;$i++)
+		for($i=21;$i<=65;$i++)
 		{
 			$age_arr[$i] = $i.' Year';
 		}
