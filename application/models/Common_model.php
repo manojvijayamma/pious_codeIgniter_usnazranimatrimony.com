@@ -3995,7 +3995,7 @@ class Common_model extends CI_Model {
 		$sel_date = 1;
 		$sel_month ='01';
 		$current_year = $this->common_model->getCurrentDate('Y');
-		$last_year = $current_year - 18;
+		$last_year = $current_year - 21;
 		$sel_year = $last_year;
 		
 		if($birth_date !='')
@@ -4043,8 +4043,9 @@ class Common_model extends CI_Model {
 		$sel_date = 1;
 		$sel_month ='01';
 		$current_year = $this->common_model->getCurrentDate('Y');
-		$last_year = $current_year - 18;
+		$last_year = $current_year - 21;
 		$sel_year = $last_year;
+		
 		
 		if($birth_date !='')
 		{
