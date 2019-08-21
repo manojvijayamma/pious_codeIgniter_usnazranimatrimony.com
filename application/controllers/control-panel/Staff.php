@@ -136,8 +136,8 @@ class Staff extends CI_Controller {
 			'advanced_search'=>array('type'=>'radio','value_arr'=>$yes_no_arr,'value'=>'Yes'),
 			'photo_approval'=>array('type'=>'radio','value_arr'=>$all_own_no_arr,'value'=>'All Members','label'=>'Photo(s) Approval','onclick'=>"show_hide_option_rad('photo_approval')"),
 			'photo_delete'=>array('type'=>'radio','value_arr'=>$all_own_no_arr,'value'=>'All Members','label'=>'Photo(s) Delete','class_con_val'=>'radio_photo_approval'),
-			'horoscope_approval'=>array('type'=>'radio','value_arr'=>$all_own_no_arr,'value'=>'All Members','onclick'=>"show_hide_option_rad('horoscope_approval')"),
-			'horoscope_delete'=>array('type'=>'radio','value_arr'=>$all_own_no_arr,'value'=>'All Members','class_con_val'=>'radio_horoscope_approval'),
+			//'horoscope_approval'=>array('type'=>'radio','value_arr'=>$all_own_no_arr,'value'=>'All Members','onclick'=>"show_hide_option_rad('horoscope_approval')"),
+			//'horoscope_delete'=>array('type'=>'radio','value_arr'=>$all_own_no_arr,'value'=>'All Members','class_con_val'=>'radio_horoscope_approval'),
 			'id_proof_approval'=>array('type'=>'radio','value_arr'=>$all_own_no_arr,'value'=>'All Members','onclick'=>"show_hide_option_rad('id_proof_approval')"),
 			'id_proof_delete'=>array('type'=>'radio','value_arr'=>$all_own_no_arr,'value'=>'All Members','class_con_val'=>'radio_id_proof_approval'),
 		);

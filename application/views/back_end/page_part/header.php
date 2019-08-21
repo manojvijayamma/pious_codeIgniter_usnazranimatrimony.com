@@ -473,9 +473,9 @@ $class_name = $this->router->fetch_class();
 							if($filter_profile_perm !='No')
 							{
 							?>
-                            <li class="approval" id="horoscope">
+                            <!-- <li class="approval" id="horoscope">
                             	<a href="<?php echo $base_url.$admin_path.'/approval/horoscope/ALL/1/yes';?>"> <span>Horoscope</span> </a> 
-                            </li>
+                            </li> -->
                         <?php
 						}
 						if(isset($this->common_model->photo_upload_count) && $this->common_model->photo_upload_count !='')
