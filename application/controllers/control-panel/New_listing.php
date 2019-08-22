@@ -179,6 +179,7 @@ class New_listing extends CI_Controller {
 	public function designation_man($status ='ALL', $page =1)
 	{
 		$ele_array = array(
+			'occupation_id'=>array('is_required'=>'required','class'=>' not_reset ','type'=>'dropdown','relation'=>array('rel_table'=>'occupation','key_val'=>'id','key_disp'=>'occupation_name')),	// for relation dropdown
 			'designation_name'=>array('is_required'=>'required'),
 			'status'=>array('type'=>'radio')
 		);
@@ -190,8 +191,18 @@ class New_listing extends CI_Controller {
 				},				
 			 },
 		';
-		$other_config = array('field_duplicate'=>array('designation_name'));
-		$this->common_model->common_rander('designation', $status, $page , 'Designation',$ele_array,'designation_name',1,$other_config);
+		
+		//$other_config = array('field_duplicate'=>array('designation_name'));
+		//$this->common_model->common_rander('designation', $status, $page , 'Designation',$ele_array,'designation_name',1,$other_config);
+
+		$this->common_model->dup_where_con = 'and';
+		$join_tab_array = array();
+		$join_tab_array[] = array( 'rel_table'=>'occupation', 'rel_filed'=>'id', 'rel_filed_disp'=>'occupation_name','rel_filed_org'=>'occupation_id');
+		
+		$other_config = array('default_order'=>'DESC','filed_notdisp'=>array(),'field_duplicate'=>array('occupation_id','designation_name'));
+		$this->common_model->common_rander('designation', $status, $page, 'Designation',$ele_array,'designation_name',1,$other_config,$join_tab_array);
+
+
 	}
 	public function star_man($status ='ALL', $page =1)
 	{
