@@ -96,11 +96,11 @@
 											</div>
 										</div>
 										<div class="inline-block pdr10">
-											<label class="gender_1">Of Catholic Community:</label>
+											<label class="gender_1">Of Community:</label>
 											<div class="age_box1" style="max-width:100%;display:inline-block;">
 												<select name="religion[]" class="form-control" style="padding: 5px 5px;border: 2px solid #ecc8ca!important;
 												border-radius: 5px;">
-													<option value="">Select Catholic Community</option>
+													<option value="">Select Community</option>
 													<?php echo $this->common_model->array_optionstr($this->common_model->dropdown_array_table('religion'));?>
 												</select>
 											</div>
@@ -446,7 +446,7 @@
 				</div>
 				<div class="col-md-3 feature-block">
 					<a href=""> <img src="<?php echo $base_url;?>assets/images/cg.png" class="new-wedding" alt=""/></a>
-					<h4 class="text-center" style="color:#a58401; line-height: 25px;"><strong> Catholic <br> Guidelines </strong></h4>
+					<h4 class="text-center" style="color:#a58401; line-height: 25px;"><strong> <br> Guidelines </strong></h4>
 				</div>
 				<div class="col-md-3 feature-block">
 					<a href=""> <img src="<?php echo $base_url;?>assets/images/use-full.png" class="new-wedding" alt=""/> </a>
@@ -454,7 +454,7 @@
 				</div>
 				<div class="col-md-3 feature-block">
 					<a href=""><img src="<?php echo $base_url;?>assets/images/mb.png" class="new-wedding" alt=""/></a>
-					<h4 class="text-center" style="color:#a58401; line-height: 25px;"><strong> Catholic <br> Matrimonial Blog</strong></h4>
+					<h4 class="text-center" style="color:#a58401; line-height: 25px;"><strong> <br> Matrimonial Blog</strong></h4>
 				</div>
 			</div>
 			

@@ -106,10 +106,10 @@
                                                 </div>
                                                     <div class="form-group xxl-16 xl-16 l-16 m-16 s-16 xs-16  padding-lr-zero-320 padding-lr-zero-480 padding-bottom-10px padding-lr-zero-xs">
                                                     <div class="xxl-4 xs-16 s-16 m-4 l-4 xl-4 margin-top-5px src-label">
-                                                        Catholic Community:
+                                                        Community:
                                                     </div>
                                                     <div class="xxl-12 xl-12 xs-16 s-16 m-12 l-12 margin-top-5px-320 margin-top-5px-480">
-                                                        <select data-placeholder="Select Catholic Community" id="religion" name="religion[]" class="chosen-select form-control" multiple onchange="dropdownChange_mul('religion','caste','caste_list')" >
+                                                        <select data-placeholder="Select Community" id="religion" name="religion[]" class="chosen-select form-control" multiple onchange="dropdownChange_mul('religion','caste','caste_list')" >
                                                             <?php echo $this->common_model->array_optionstr($this->common_model->dropdown_array_table('religion'));?>
                                                         </select>
                                                         <div id="CasteDivloader_adv"></div>

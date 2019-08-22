@@ -1031,7 +1031,7 @@ class Member_model extends CI_Model {
 			array(
 				'title'=>'Religious Information',
 				'field_array'=>array(
-					'religion_name'=>array('label'=>'Catholic Community'),
+					'religion_name'=>array('label'=>'Community'),
 					'caste_name'=>array('label'=>'Diocese'),
 					'subcaste'=>array('label'=>'Parish'),
 					//'manglik'=>array('label'=>'Manglik'),
@@ -1120,7 +1120,7 @@ class Member_model extends CI_Model {
 				'field_array'=>array(
 					//'part_manglik'=>array('label'=>'Manglik'),
 					//'part_star'=>array('label'=>'Star','type'=>'relation','table_name'=>'star','disp_column_name'=>'star_name'),
-					'part_religion'=>array('label'=>'Catholic Community','type'=>'relation','table_name'=>'religion','disp_column_name'=>'religion_name'),
+					'part_religion'=>array('label'=>'Community','type'=>'relation','table_name'=>'religion','disp_column_name'=>'religion_name'),
 					'part_caste'=>array('label'=>'Diocese','type'=>'relation','table_name'=>'caste','disp_column_name'=>'caste_name'),
 				),
 			),
@@ -1176,7 +1176,7 @@ class Member_model extends CI_Model {
 			'.chosen-select-width': { width: '100%' }			
 			};
 			$('#mother_tongue').chosen({placeholder_text_multiple:'Select Mother Tongue'});
-			$('#religion').chosen({placeholder_text_multiple:'Select Catholic Community'});
+			$('#religion').chosen({placeholder_text_multiple:'Select Community'});
 			$('#caste').chosen({placeholder_text_multiple:'Select Diocese'});
 			$('#country').chosen({placeholder_text_multiple:'Select Country'});
 			$('#state').chosen({placeholder_text_multiple:'Select State'});

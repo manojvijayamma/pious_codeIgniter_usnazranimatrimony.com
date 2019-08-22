@@ -210,7 +210,7 @@
 
 								$element_array = array(
 
-									'religion_name'=>array('label'=>'Catholic Community'),
+									'religion_name'=>array('label'=>'Community'),
 
 									'caste_name'=>array('label'=>'Diocese'),
 									'other_caste'=>array('label'=>'If other diocese'),
@@ -516,7 +516,7 @@
 
 								$element_array = array(
 
-									'part_religion'=>array('label'=>'Catholic Community','type'=>'relation','table_name'=>'religion','disp_column_name'=>'religion_name'),
+									'part_religion'=>array('label'=>'Community','type'=>'relation','table_name'=>'religion','disp_column_name'=>'religion_name'),
 
 									'part_caste'=>array('label'=>'Diocese','type'=>'relation','table_name'=>'caste','disp_column_name'=>'caste_name'),
 

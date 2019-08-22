@@ -137,7 +137,7 @@ $class_name = $this->router->fetch_class();
                     	<a href=javascript:;> <i class="fa fa-plus"></i> <span>Add New Details</span> </a>
           				<ul class=sub-menu>
                         	<li class="new_listing_add" id="religion_man">
-                            	<a href="<?php echo $base_url.$admin_path.'/new-listing/religion-man/ALL/1/yes';?>"> <span>Catholic Community</span> </a>
+                            	<a href="<?php echo $base_url.$admin_path.'/new-listing/religion-man/ALL/1/yes';?>"> <span>Community</span> </a>
                             </li>
                             <li class="new_listing_add" id="caste_man">
                             	<a href="<?php echo $base_url.$admin_path.'/new-listing/caste-man/ALL/1/yes';?>"> <span>Diocese</span> </a>

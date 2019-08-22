@@ -70,7 +70,7 @@ class Match_making extends CI_Controller {
 			$ele_array = array(
 				'match_send_date'=>array('is_required'=>'required','class'=>'datepicker'),
 				'send_total_match'=>array('is_required'=>'required','label'=>'Send Total Match To User','type_num_alph'=>'num','other'=>'maxlength="2" min="1" max="99"'),
-				'match_criteria'=>array('is_required'=>'required','is_multiple'=>'yes','display_placeholder'=>'No','type'=>'checkbox','value_arr'=>array('looking_for'=>'Marital Status','age'=>'Age','height'=>'Height','part_complexion'=>'Complexion','part_mother_tongue'=>'Mother Tongue','part_religion'=>'Catholic Community','part_caste'=>'Diocese','part_country_living'=>'Country','part_education'=>'Education')),
+				'match_criteria'=>array('is_required'=>'required','is_multiple'=>'yes','display_placeholder'=>'No','type'=>'checkbox','value_arr'=>array('looking_for'=>'Marital Status','age'=>'Age','height'=>'Height','part_complexion'=>'Complexion','part_mother_tongue'=>'Mother Tongue','part_religion'=>'Community','part_caste'=>'Diocese','part_country_living'=>'Country','part_education'=>'Education')),
 				'match_sending_mode'=>array('is_required'=>'required','type'=>'dropdown','value'=>'email','value_arr'=>array('email'=>'Email','sms'=>'SMS','both'=>'Both'))
 			);
 			$other_config = array('mode'=>'edit','id'=>'1','addAllow'=>'no','deleteAllow'=>'no');

@@ -176,13 +176,13 @@
                 <div class="xxl-16 xl-16 m-16 xs-16 s-16 l-16 padding-lr-zero">
                     <div class="xxl-16 xl-16 m-4 s-16 l-4 xs-16 padding-top-10px">
                         <div class="row">
-                            Catholic Community:
+                            Community:
                         </div>
                     </div>
                     
                     <div class="xxl-16 xl-16 m-12 s-16 l-12 xs-16 ne_font_12">
                         <div class="row">
-                            <select data-placeholder="Select Catholic Community" id="search_religion" name="religion[]" class="chosen-select form-control" multiple >
+                            <select data-placeholder="Select Community" id="search_religion" name="religion[]" class="chosen-select form-control" multiple >
                             <?php echo $this->common_model->array_optionstr($this->common_model->dropdown_array_table('religion'));?>
                         </select>
                         </div>

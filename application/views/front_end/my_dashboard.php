@@ -339,7 +339,7 @@ $current_login_user = $this->common_front_model->get_session_data(); ?>
 																	<div class="row">
 																		<div class="xxl-6 xl-6 l-6 m-6 s-6 ne_mrg_ri8_10">
 																			<div class="row label-title">
-																				Catholic Community
+																				Community
 																			</div>
 																		</div>
 																		<div class="xxl-9 xl-9 l-9 m-9 s-9 ne-word-wrap">

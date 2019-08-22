@@ -205,7 +205,7 @@ border-bottom: 0px !important;
 									<div class="xxl-16 xl-16 xs-16 l-16 m-16 s-16 ne_bg_alert ne-box-shd-1px-lgt-grey border-top" role="navigation" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample1" onclick="change_img('4_profile')">
 										<a class="xxl-16 xl-16 xs-16 l-16 m-16 s-16 padding-lr-zero">
 											<h4 class="margin-bottom-0px margin-top-0px ne_pad_btm_10px ne_pad_tp_10px center-text ne_font_weight_nrm ne_bg_alert ">
-												Catholic Community
+												Community
 												<span class="collapse-plus-nomargin" id="img_4_profile"></span>
 											</h4>
 										</a>
@@ -270,7 +270,7 @@ border-bottom: 0px !important;
 												?>
 												<li class="xxl-16 xl-16 xs-16 s-16 m-16 l-16 padding-lr-zero">
 													<span class="xxl-12 xl-12 xs-12 s-12 m-12 l-12 label-search">
-														First Select Catholic Community
+														First Select Community
 													</span>
 												</li>
 												<?php
@@ -1194,7 +1194,7 @@ border-bottom: 0px !important;
 									<div class="xxl-16 xl-16 xs-16 l-16 m-16 s-16 ne_bg_alert ne-box-shd-1px-lgt-grey border-top" data-toggle="collapse" role="navigation" data-target="#collapseExample42" aria-expanded="false" aria-controls="collapseExample12" onclick="change_img('4_profile_mobile')">
 										<a class="xxl-16 xl-16 xs-16 l-16 m-16 s-16 padding-lr-zero">
 											<h4 class="margin-bottom-0px margin-top-0px ne_pad_btm_10px ne_pad_tp_10px center-text ne_font_weight_nrm ne_bg_alert ">
-												Catholic Community
+												Community
 												<span class="collapse-plus-nomargin" id="img_4_profile_mobile"></span>
 											</h4>
 										</a>
@@ -1283,7 +1283,7 @@ border-bottom: 0px !important;
 												?>
 												<li class="xxl-16 xl-16 xs-16 s-16 m-16 l-16 padding-lr-zero">
 													<span class="xxl-12 xl-12 xs-12 s-12 m-12 l-12 label-search">
-														First Select Catholic Community
+														First Select Community
 													</span>
 												</li>
 												<?php

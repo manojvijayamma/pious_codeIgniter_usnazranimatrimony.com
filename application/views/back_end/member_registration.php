@@ -278,7 +278,7 @@ else if($this->session->flashdata('error_message_mem'))
 
             'relig_title'=>array('type'=>'manual','code'=>'<h3 class="sub_title_mem"> Religious Information</h3>'),
 
-            'religion'=>array('is_required'=>'required','type'=>'dropdown','onchange'=>"dropdownChange('religion','caste','caste_list')",'class'=>'select2','value_arr'=>$religion_arr,'label'=>'Catholic Community'),
+            'religion'=>array('is_required'=>'required','type'=>'dropdown','onchange'=>"dropdownChange('religion','caste','caste_list')",'class'=>'select2','value_arr'=>$religion_arr,'label'=>'Community'),
 
             'caste'=>array('type'=>'dropdown','class'=>'select2','relation'=>array('rel_table'=>'caste','key_val'=>'id','key_disp'=>'caste_name','rel_col_name'=>'religion_id','not_load_add'=>'yes','not_load_add'=>'yes','cus_rel_col_val'=>'religion'),'label'=>'Diocese'),
             'other_caste'=>array('label'=>'If Other Diocese'),
@@ -630,7 +630,7 @@ else if($this->session->flashdata('error_message_mem'))
 
             'religious_title'=>array('type'=>'manual','code'=>'<h3 class="sub_title_mem">Religious Preferences</h3>'),
 
-            'part_religion'=>array('is_required'=>'required','type'=>'dropdown','onchange'=>"dropdownChange('part_religion','part_caste','caste_list')",'value_arr'=>$religion_arr,'label'=>'Partner Religion','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','label'=>'Partner Catholic Community'),
+            'part_religion'=>array('is_required'=>'required','type'=>'dropdown','onchange'=>"dropdownChange('part_religion','part_caste','caste_list')",'value_arr'=>$religion_arr,'label'=>'Partner Religion','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','label'=>'Partner Community'),
 
             'part_caste'=>array('type'=>'dropdown','relation'=>array('rel_table'=>'caste','key_val'=>'id','key_disp'=>'caste_name','not_load_add'=>'yes','rel_col_name'=>'religion_id','cus_rel_col_val'=>'part_religion'),'label'=>'Partner Diocese','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2'),
 

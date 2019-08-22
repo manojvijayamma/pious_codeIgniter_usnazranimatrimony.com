@@ -395,7 +395,7 @@
 							<div id="member_religion_chart" data-delay="500" class="xxl-8 xl-8 l-8 m-16 s-16 xs-16 margin-top-5px animated">
 								<div class="panel panel-primary">
 									<div class="panel-heading">
-										<h3  class="panel-title">MEMBERS BY CATHOLIC COMMUNITY</h3>
+										<h3  class="panel-title">MEMBERS BY  COMMUNITY</h3>
 									</div>
 									<div class="panel-body">
 									<div id="piechart_div"></div>
