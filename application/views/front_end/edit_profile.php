@@ -888,10 +888,11 @@
 
 										//'income'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('income'),'label'=>'Annual Income','extra_style'=>'width:100%'),
 
-										'occupation'=>array('type'=>'dropdown','value_arr'=>$occupation_arr,'label'=>'Occupation','class'=>'select2','extra_style'=>'width:100%'),
+										'occupation'=>array('type'=>'dropdown','value_arr'=>$this->common_model->dropdown_array_table('occupation'),'label'=>'Occupation','class'=>'select2','extra_style'=>'width:100%', 'onchange'=>"dropdownChange('occupation','designation','designation_list')"),
 										'other_occupation'=>array('label'=>'If other occupation'),
-										'designation'=>array('type'=>'dropdown','class'=>'select2','value_arr'=>$designation_arr,'extra_style'=>'width:100%'),
+										'designation'=>array('type'=>'dropdown','class'=>'select2','relation'=>array('rel_table'=>'designation','key_val'=>'id','key_disp'=>'designation_name','not_load_add'=>'yes','cus_rel_col_name'=>'occupation_id'),'extra_style'=>'width:100%'),
 										'other_designation'=>array('label'=>'If other designation'),
+
 										);
 
 										echo $this->common_front_model->generate_common_front_form($ele_array,array('page_type'=>'edit_profile'));
