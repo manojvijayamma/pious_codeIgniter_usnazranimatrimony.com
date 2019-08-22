@@ -1,4 +1,6 @@
 <?PHP
+echo $_SERVER['USNZM_DB_NAME'];
+echo $_SERVER['USNZM_BASE_URL'];exit;
 $sender = 'support@usnazranimatrimony.com';
 $recipient = 'manojvijayanaluva@gmail.com';
 
