@@ -981,11 +981,11 @@ class Common_front_model extends CI_Model {
 		$this->tabel_config = array(
 			'mothertongue_list'=>array('table_name'=>'mothertongue','pri_key'=>'id','disp_clm'=>'mtongue_name','label'=>'Mother Tongue','rel_clm_name'=>''),
 			'mothertongue_lists'=>array('table_name'=>'mothertongue','pri_key'=>'mtongue_name','disp_clm'=>'mtongue_name','label'=>'Mother Tongue','rel_clm_name'=>''),
-			'religion_list'=>array('table_name'=>'religion','pri_key'=>'id','disp_clm'=>'religion_name','label'=>'Catholic Community','rel_clm_name'=>''),
-			'religion_lists'=>array('table_name'=>'religion','pri_key'=>'religion_name','disp_clm'=>'religion_name','label'=>'Catholic Community','rel_clm_name'=>''),
+			'religion_list'=>array('table_name'=>'religion','pri_key'=>'id','disp_clm'=>'religion_name','label'=>'Community','rel_clm_name'=>''),
+			'religion_lists'=>array('table_name'=>'religion','pri_key'=>'religion_name','disp_clm'=>'religion_name','label'=>'Community','rel_clm_name'=>''),
 			'education_list'=>array('table_name'=>'education_detail','pri_key'=>'id','disp_clm'=>'education_name','label'=>'Education','rel_clm_name'=>''),
 			'occupation_list'=>array('table_name'=>'occupation','pri_key'=>'id','disp_clm'=>'occupation_name','label'=>'Occupation','rel_clm_name'=>''),
-			'designation_list'=>array('table_name'=>'designation','pri_key'=>'id','disp_clm'=>'designation_name','label'=>'Designation','rel_clm_name'=>''),
+			'designation_list'=>array('table_name'=>'designation','pri_key'=>'id','disp_clm'=>'designation_name','label'=>'Designation','rel_clm_name'=>'occupation_id'),
 			'star_list'=>array('table_name'=>'star','pri_key'=>'id','disp_clm'=>'star_name','label'=>'Star','rel_clm_name'=>''),
 			'moonsign_list'=>array('table_name'=>'moonsign','pri_key'=>'id','disp_clm'=>'moonsign_name','label'=>'Moonsign','rel_clm_name'=>''),
 			'country_code'=>array('table_name'=>'country_master','pri_key'=>'country_code','disp_clm'=>'country_name','label'=>'Country Code','rel_clm_name'=>''),
@@ -1974,7 +1974,7 @@ class Common_front_model extends CI_Model {
                     'Basic Details'=>array('Name'=>'username','Marital Status'=>'marital_status','Total Children'=>'total_children','Status Children'=>'status_children','Mother Tongue'=>'mtongue_name','Languages Known'=>(($data['languages_known']==null || $data['languages_known']==''))?'languages_known':'languages_known_str','Height'=>(($data['height']==null || $data['height']==''))?'height':'height_str','Weight'=>'weight','Birthdate'=>'birthdate','Age'=>'age')
                 ),
 				'religion_info'=>array(
-					'Religious Information'=>array('Catholic Community'=>'religion_name','Diocese'=>'caste_name','Parish'=>'subcaste')
+					'Religious Information'=>array('Community'=>'religion_name','Diocese'=>'caste_name','Parish'=>'subcaste')
 				),
 				'about_me_and_hobby'=>array(
 					'About Me & Hobby'=>array('About Us'=>'profile_text','Hobby'=>'hobby','Birth Place'=>'birthplace','Created By'=>'profileby','Referenced By'=>'reference')
@@ -2001,7 +2001,7 @@ class Common_front_model extends CI_Model {
 			),
 			'partners_field'=>array(
 				'match_partner_info'=>array(
-					'Partner Preferences'=>array('Looking For'=>'looking_for','Age Preference'=>($data['part_frm_age']!='' && $data['part_to_age']!='')?$data['part_frm_age'].' to '.$data['part_to_age'].' Years':'','Height Preference'=>($data['part_height']!='' && $data['part_height_to']!='')?$data['part_height_str'].' to '.$data['part_height_to_str']:'','Mother Tongue'=>(($data['part_mother_tongue']==null || $data['part_mother_tongue']==''))?'part_mother_tongue':'part_mother_tongue_str','Catholic Community'=>(($data['part_religion']==null || $data['part_religion']==''))?'part_religion':'part_religion_str','Country'=>(($data['part_country_living']==null || $data['part_country_living']==''))?'part_country_living':'part_country_living_str','Education'=>(($data['part_education']==null || $data['part_education']==''))?'part_education':'part_education_str','Occupation'=>(($data['part_occupation']==null || $data['part_occupation']==''))?'part_occupation':'part_occupation_str','Designation'=>(($data['part_designation']==null || $data['part_designation']==''))?'part_designation':'part_designation_str')
+					'Partner Preferences'=>array('Looking For'=>'looking_for','Age Preference'=>($data['part_frm_age']!='' && $data['part_to_age']!='')?$data['part_frm_age'].' to '.$data['part_to_age'].' Years':'','Height Preference'=>($data['part_height']!='' && $data['part_height_to']!='')?$data['part_height_str'].' to '.$data['part_height_to_str']:'','Mother Tongue'=>(($data['part_mother_tongue']==null || $data['part_mother_tongue']==''))?'part_mother_tongue':'part_mother_tongue_str','Community'=>(($data['part_religion']==null || $data['part_religion']==''))?'part_religion':'part_religion_str','Country'=>(($data['part_country_living']==null || $data['part_country_living']==''))?'part_country_living':'part_country_living_str','Education'=>(($data['part_education']==null || $data['part_education']==''))?'part_education':'part_education_str','Occupation'=>(($data['part_occupation']==null || $data['part_occupation']==''))?'part_occupation':'part_occupation_str','Designation'=>(($data['part_designation']==null || $data['part_designation']==''))?'part_designation':'part_designation_str')
 				),
 			),
 		);
@@ -2270,7 +2270,7 @@ class Common_front_model extends CI_Model {
                 ),
 
 				'religion_info'=>array(
-					'Religious Information'=>array('Catholic Community'=>'religion_name','Diocese'=>'caste_name','Parish'=>'subcaste')
+					'Religious Information'=>array('Community'=>'religion_name','Diocese'=>'caste_name','Parish'=>'subcaste')
 				),
 
 				'about_me_and_hobby'=>array(
@@ -2303,7 +2303,7 @@ class Common_front_model extends CI_Model {
 				),
 
 				'religion_partner_info'=>array(
-					'Religious Preferences'=>array('Catholic Community'=>'part_religion','Diocese'=>'part_caste')
+					'Religious Preferences'=>array('Community'=>'part_religion','Diocese'=>'part_caste')
 				),
 
 				'location_partner_info'=>array(
@@ -2366,7 +2366,7 @@ class Common_front_model extends CI_Model {
 										'part_city'=>array('table'=>'city_master','key_disp'=>'city_name')
 									);
 								}
-								else if($keyss=='Catholic Community'){
+								else if($keyss=='Community'){
 									$reset_opt_arrya = array(
 										'part_religion'=>array('table'=>'religion','key_disp'=>'religion_name')
 									);

@@ -179,7 +179,7 @@ class New_listing extends CI_Controller {
 	public function designation_man($status ='ALL', $page =1)
 	{
 		$ele_array = array(
-			'occupation_id'=>array('is_required'=>'required','class'=>' not_reset ','type'=>'dropdown','relation'=>array('rel_table'=>'occupation','key_val'=>'id','key_disp'=>'occupation_name')),	// for relation dropdown
+			'occupation_id'=>array('label'=>'Occupation','is_required'=>'required','class'=>' not_reset ','type'=>'dropdown','relation'=>array('rel_table'=>'occupation','key_val'=>'id','key_disp'=>'occupation_name')),	// for relation dropdown
 			'designation_name'=>array('is_required'=>'required'),
 			'status'=>array('type'=>'radio')
 		);

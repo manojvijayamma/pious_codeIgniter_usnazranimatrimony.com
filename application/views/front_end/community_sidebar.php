@@ -1,6 +1,6 @@
 <div class="hidden-sm hidden-xs">
     <div class="religion-matrimonials margin-top-20px">
-    <h4 class="font1">Catholic Community Matrimonials</h4>
+    <h4 class="font1">Community Matrimonials</h4>
     <hr class="hrmarsetting">
     <div class="listofsection">
         <?php 

@@ -130,7 +130,7 @@ class Register_model extends CI_Model {
 
 		
 
-		$this->form_validation->set_rules('religion', 'Catholic Community', 'required');
+		$this->form_validation->set_rules('religion', 'Community', 'required');
 
 		//$this->form_validation->set_rules('caste', 'Diocese', 'required');
 

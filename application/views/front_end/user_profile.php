@@ -453,7 +453,7 @@
                                                                     echo $this->common_model->display_data_na($user_data['marital_status']);
                                                                 }
                                                             ?></p>
-                                                            <p class="margin-top-5"><span class="basic-img_3"></span>Catholic Community : <?php if(isset($user_data['religion_name']) && $user_data['religion_name'] !=''){ echo $user_data['religion_name'];}else{echo $this->common_model->display_data_na($user_data['religion_name']);}?>, Diocese : <?php if(isset($user_data['caste_name']) && $user_data['caste_name'] !=''){ echo $user_data['caste_name'];}else{echo $this->common_model->display_data_na($user_data['caste_name']);}?></p>
+                                                            <p class="margin-top-5"><span class="basic-img_3"></span>Community : <?php if(isset($user_data['religion_name']) && $user_data['religion_name'] !=''){ echo $user_data['religion_name'];}else{echo $this->common_model->display_data_na($user_data['religion_name']);}?>, Diocese : <?php if(isset($user_data['caste_name']) && $user_data['caste_name'] !=''){ echo $user_data['caste_name'];}else{echo $this->common_model->display_data_na($user_data['caste_name']);}?></p>
                                                             <p class="margin-top-5"><span class="basic-img_4"></span>Mother Tongue : <?php 
                                                                 if(isset($user_data['mother_tongue']) && $user_data['mother_tongue'] !=''){ 
                                                                     echo $this->common_model->valueFromId(' mothertongue',$user_data['mother_tongue'],'mtongue_name');	
@@ -820,7 +820,7 @@
 														</div>
 														<div class="info_container xxl-16 xl-16 l-16 m-16 s-16 xs-16">
 															<div class="info_wrap xxl-13 xl-13 l-13 m-16 s-16 xs-16">
-																<span class="info_title">Catholic Community</span><br/>
+																<span class="info_title">Community</span><br/>
 																<?php if(isset($user_data['part_religion']) && $user_data['part_religion'] !='')
 																	{ 
 																	$religion = $this->common_model->valueFromId('religion',$user_data['part_religion'],'religion_name');?> 	

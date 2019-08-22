@@ -1,6 +1,6 @@
 <div class="hidden-lg hidden-md">
     <div class="religion-matrimonials margin-top-30px ">
-        <button type="button" class="btn btn-block btn-lg  btn-matry" data-toggle="collapse" data-target="#demo-2">Catholic Community Matrimonials <i class="fa fa-caret-down pull-right"></i></button>                            
+        <button type="button" class="btn btn-block btn-lg  btn-matry" data-toggle="collapse" data-target="#demo-2">Community Matrimonials <i class="fa fa-caret-down pull-right"></i></button>                            
         <div id="demo-2" class="collapse">	
             <div class="listofsection">
             <?php 

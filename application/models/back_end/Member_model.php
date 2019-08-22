@@ -2174,7 +2174,7 @@ class Member_model extends CI_Model {
 
 				'field_array'=>array(
 
-					'religion_name'=>array('label'=>'Catholic Community'),
+					'religion_name'=>array('label'=>'Community'),
 
 					'caste_name'=>array('label'=>'Diocese'),
 					'other_caste'=>array('label'=>'If Other Diocese'),
@@ -2360,7 +2360,7 @@ class Member_model extends CI_Model {
 
 					//'part_star'=>array('label'=>'Star','type'=>'relation','table_name'=>'star','disp_column_name'=>'star_name'),
 
-					'part_religion'=>array('label'=>'Catholic Community','type'=>'relation','table_name'=>'religion','disp_column_name'=>'religion_name'),
+					'part_religion'=>array('label'=>'Community','type'=>'relation','table_name'=>'religion','disp_column_name'=>'religion_name'),
 
 					'part_caste'=>array('label'=>'Diocese','type'=>'relation','table_name'=>'caste','disp_column_name'=>'caste_name'),
 
@@ -2473,7 +2473,7 @@ class Member_model extends CI_Model {
 
 			$('#mother_tongue').chosen({placeholder_text_multiple:'Select Mother Tongue'});
 
-			$('#religion').chosen({placeholder_text_multiple:'Select Catholic Community'});
+			$('#religion').chosen({placeholder_text_multiple:'Select Community'});
 
 			$('#caste').chosen({placeholder_text_multiple:'Select Diocese'});
 
@@ -2793,7 +2793,7 @@ class Member_model extends CI_Model {
 
 			'looking_for'=>array('display_in'=>'2','is_required'=>'required','type'=>'dropdown','value_arr'=>$this->member_model->get_list_ddr('marital_status'),'label'=>'Marital Status','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'chosen-select'),
 
-			'religion'=>array('display_in'=>'2','type'=>'dropdown','relation'=>array('rel_table'=>'religion','key_val'=>'id','key_disp'=>'religion_name'),'is_multiple'=>'yes','display_placeholder'=>'No','class'=>'chosen-select','onchange'=>"dropdownChange_mul('religion','caste','caste_list')",'label'=>'Catholic Community'),
+			'religion'=>array('display_in'=>'2','type'=>'dropdown','relation'=>array('rel_table'=>'religion','key_val'=>'id','key_disp'=>'religion_name'),'is_multiple'=>'yes','display_placeholder'=>'No','class'=>'chosen-select','onchange'=>"dropdownChange_mul('religion','caste','caste_list')",'label'=>'Community'),
 
 			'caste'=>array('display_in'=>'2','type'=>'dropdown','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'chosen-select chosen_select_remove','label'=>'Diocese'),
 

@@ -764,7 +764,7 @@ if($member_fb_data != '')
 
 								 $ele_array = array(
 
-									'religion'=>array('is_required'=>'required','type'=>'dropdown','onchange'=>"dropdownChange('religion','caste','caste_list')",'value_arr'=>$religion_arr,'extra_style'=>'width:100%','label'=>'Catholic Community'),
+									'religion'=>array('is_required'=>'required','type'=>'dropdown','onchange'=>"dropdownChange('religion','caste','caste_list')",'value_arr'=>$religion_arr,'extra_style'=>'width:100%','label'=>'Community'),
                                     'caste'=>array('label'=>'Diocese','type'=>'dropdown','relation'=>array('rel_table'=>'caste','key_val'=>'id','key_disp'=>'caste_name','rel_col_name'=>'religion_id','not_load_add'=>'yes','not_load_add'=>'yes','cus_rel_col_val'=>'religion'),'extra_style'=>'width:100%'),
                                     'other_caste'=>array('label'=>'If Other Diocese'),
 									'subcaste'=>array('label'=>'Parish'),

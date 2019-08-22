@@ -82,7 +82,7 @@ if(isset($shortlist_data) && $shortlist_data !='' && is_array($shortlist_data) &
               </div>
               <div class="row"> 
               	<div class="xxl-16 xl-16 l-16 m-16 xs-16 s-16 margin-top-5 padding-right-0-xs">
-                    <b>Catholic Community :</b> <?php if(isset($shortlist_profile['religion']) && $shortlist_profile['religion']!='') {echo $this->common_model->valueFromId('religion',$shortlist_profile['religion'],'religion_name');}else{echo "N/A";}?>
+                    <b>Community :</b> <?php if(isset($shortlist_profile['religion']) && $shortlist_profile['religion']!='') {echo $this->common_model->valueFromId('religion',$shortlist_profile['religion'],'religion_name');}else{echo "N/A";}?>
                 </div>	
               </div>
               <div class="row"> 
@@ -144,7 +144,7 @@ if(isset($shortlist_data) && $shortlist_data !='' && is_array($shortlist_data) &
               </div>
               <div class="row"> 
               	<div class="xxl-16 xl-16 l-16 m-16 xs-16 s-16 margin-top-5 padding-right-0-xs">
-                    <b>Catholic Community :</b> <?php if(isset($shortlist_profile['religion']) && $shortlist_profile['religion']!='') {echo $this->common_model->valueFromId('religion',$shortlist_profile['religion'],'religion_name');}else{echo "N/A";}?>
+                    <b>Community :</b> <?php if(isset($shortlist_profile['religion']) && $shortlist_profile['religion']!='') {echo $this->common_model->valueFromId('religion',$shortlist_profile['religion'],'religion_name');}else{echo "N/A";}?>
                 </div>	
               </div>
               <div class="row"> 
