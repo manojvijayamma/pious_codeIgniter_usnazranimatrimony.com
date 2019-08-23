@@ -327,22 +327,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="xxl-16 xl-16 xs-16 s-16  m-16 l-16 margin-top-20px">
-                                <div class="row">
-                                    <div class="xxl-5 xl-5 xs-16 s-16 m-16 l-4 margin-top-5px">
-                                        <label>
-                                            Employee In <span class="font-red">* </span>:
-                                        </label>
-                                    </div>
-                                    <div class="clearfix visible-xs"></div>
-                                    <div class="xxl-11 xl-11 xs-16 s-16 m-16 l-8">
-                                       	<select class="form-control select2"  required name="employee_in" id="employee_in" style="width:100%">
-	                                       <option value="">Select Employee In</option>
-                                            <?php echo $this->common_model->array_optionstr('employee_in');?>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
+                           
                             <div class="xxl-16 xl-16 xs-16 s-16  m-16 l-16 margin-top-20px">
                                 <div class="row">
                                     <div class="xxl-5 xl-5 xs-16 s-16 m-16 l-4 margin-top-5px">

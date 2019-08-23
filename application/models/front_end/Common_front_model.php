@@ -1981,7 +1981,7 @@ class Common_front_model extends CI_Model {
 				),
 
 				'edu_Occup'=>array(
-					'Education & Occupation Information'=>array('Education'=>'education_detail_str','Employee In'=>'employee_in','Annual Income'=>'income','Occupation'=>'occupation_name','Designation'=>'designation_name')
+					'Education & Occupation Information'=>array('Education'=>'education_detail_str','Occupation'=>'occupation_name','Designation'=>'designation_name')
 				),
 
 				'life_style_info'=>array(
@@ -2278,7 +2278,7 @@ class Common_front_model extends CI_Model {
 				),
 
 				'edu_Occup'=>array(
-					'Education & Occupation Information'=>array('Education'=>'education_detail_str','Employee In'=>'employee_in','Annual Income'=>'income','Occupation'=>'occupation_name','Designation'=>'designation_name')
+					'Education & Occupation Information'=>array('Education'=>'education_detail_str','Occupation'=>'occupation_name','Designation'=>'designation_name')
 				),
 
 				'life_style_info'=>array(
@@ -2311,7 +2311,7 @@ class Common_front_model extends CI_Model {
 				),
 
 				'edu_occup_partner_info'=>array(
-					'Education & Occupation Preferences'=>array('Education'=>'part_education','Employee In'=>'part_employee_in','Occupation'=>'part_occupation','Designation'=>'part_designation','Annual Income'=>'part_income')
+					'Education & Occupation Preferences'=>array('Education'=>'part_education','Occupation'=>'part_occupation','Designation'=>'part_designation','Annual Income'=>'part_income')
 				),
 			),
 		);

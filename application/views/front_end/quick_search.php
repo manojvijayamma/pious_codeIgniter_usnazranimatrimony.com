@@ -1,6 +1,7 @@
 <?php $current_login_user = $this->common_front_model->get_session_data();?>
 <!-- ====== <div class="container"> Start ========= -->	
-	<?php echo $this->search_model->search_sub_menu(); ?>
+	<?php echo $this->search_model->search_sub_menu(); 
+	?>
 	<div class="page-wrap ne-aft-log">
 			<div class="container padding-0-5-xs">
 				<div class="xxl-12 xl-12 m-16 s-16 l-12 xs-16 padding-lr-zero-320 padding-lr-zero-480 padding-lr-zero-768 padding-lr-zero-xs">
@@ -103,7 +104,7 @@
 															</div>
 															<div class="xxl-12 xs-16 s-16 m-12 l-12 xl-12 margin-top-5px-320 margin-top-5px-480">
                                                
-																<select data-placeholder="Select Marital Status" class="chosen-select form-control" multiple name="looking_for[]">
+																<select data-placeholder="Any" class="chosen-select form-control" multiple name="looking_for[]">
                                                                 <?php echo $this->common_model->array_optionstr($this->common_model->get_list_ddr('marital_status'));?>
 																</select>
 															</div>
@@ -114,7 +115,7 @@
 																Community:
 															</div>
 															<div class="xxl-12 xs-16 s-16 m-12 l-12 xl-12 margin-top-5px-320 margin-top-5px-480">
-																<select data-placeholder="Select Community" id="religion" name="religion[]" class="chosen-select form-control" multiple onchange="dropdownChange_mul('religion','caste','caste_list')">
+																<select data-placeholder="Any" id="religion" name="religion[]" class="chosen-select form-control" multiple onchange="dropdownChange_mul('religion','caste','caste_list')">
 																	 <?php echo $this->common_model->array_optionstr($this->common_model->dropdown_array_table('religion'));?>
 																</select>
 																<div id="CasteDivloader"></div>
@@ -125,7 +126,7 @@
 																Diocese:
 															</div>
 															<div class="xxl-12 xs-16 s-16 m-12 l-12 xl-12 margin-top-5px-320 margin-top-5px-480" id="CasteDiv1">
-																<select data-placeholder="Select Diocese" class="chosen-select form-control" id="caste" name="caste[]" multiple></select>
+																<select data-placeholder="Any" class="chosen-select form-control" id="caste" name="caste[]" multiple></select>
 															</div>
 														</div> 
 														<div class="form-group xxl-16 xl-16 l-16 m-16 s-16 xs-16  padding-lr-zero-320 padding-lr-zero-480 padding-bottom-10px padding-lr-zero-xs">
@@ -133,7 +134,7 @@
 																Mother Tongue:
 															</div>
 															<div class="xxl-12 xs-16 s-16 m-12 l-12 xl-12 margin-top-5px-320 margin-top-5px-480">
-																<select data-placeholder="Select Mother Tongue" class="chosen-select form-control" multiple name="mothertongue[]">
+																<select data-placeholder="Any" class="chosen-select form-control" multiple name="mothertongue[]">
 																 <?php echo $this->common_model->array_optionstr($this->common_model->dropdown_array_table('mothertongue'));?>
 																</select>
 															</div>
@@ -143,8 +144,8 @@
 																Country:
 															</div>
 															<div class="xxl-12 xs-16 s-16 m-12 l-12 xl-12 margin-top-5px-320 margin-top-5px-480">
-																<select data-placeholder="Select Country" id="country" name="country[]" class="chosen-select form-control" multiple onchange="dropdownChange_mul('country','state','state_list')" >
-																    <?php echo $this->common_model->array_optionstr($this->common_model->dropdown_array_table('country_master'),'us');?>
+																<select data-placeholder="Any" id="country" name="country[]" class="chosen-select form-control" multiple onchange="dropdownChange_mul('country','state','state_list')" >
+																    <?php echo $this->common_model->array_optionstr($this->common_model->dropdown_array_table('country_master'),'215');?>
 																</select><div id="stateDivloader"></div>
 															</div>
 														</div>
@@ -153,7 +154,7 @@
 																State:
 															</div>
 															<div class="xxl-12 xs-16 s-16 m-12 l-12 xl-12 margin-top-5px-320 margin-top-5px-480" id="statediv">
-																<select data-placeholder="Select State" class="chosen-select form-control" id="state" name="state[]" multiple onchange="dropdownChange_mul('state','city','city_list')">
+																<select data-placeholder="Any" class="chosen-select form-control" id="state" name="state[]" multiple onchange="dropdownChange_mul('state','city','city_list')">
 																</select>
 															</div>
 															<div id="cityDivloader"></div>
@@ -163,7 +164,7 @@
 																City:
 															</div>
 															<div class="xxl-12 xs-16 s-16 m-12 l-12 xl-12 margin-top-5px-320 margin-top-5px-480" id="citydiv">
-																<select data-placeholder="Select City" class="chosen-select form-control" id="city" name="city[]" multiple>
+																<select data-placeholder="Any" class="chosen-select form-control" id="city" name="city[]" multiple>
 																</select>
 															</div>
 														</div>
@@ -172,7 +173,7 @@
 																Education:
 															</div>
 															<div class="xxl-12 xs-16 s-16 m-12 l-12 xl-12 margin-top-5px-320 margin-top-5px-480">
-																<select data-placeholder="Select Education" class="chosen-select form-control" multiple name="education[]">
+																<select data-placeholder="Any" class="chosen-select form-control" multiple name="education[]">
 																	<?php echo $this->common_model->array_optionstr($this->common_model->dropdown_array_table('education_detail'));?>
 																</select>
 															</div>

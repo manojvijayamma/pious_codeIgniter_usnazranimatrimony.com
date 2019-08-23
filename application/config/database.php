@@ -74,11 +74,11 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-	'dsn'	=> 'mysql:host=localhost; dbname=smccubnr_matrimony; charset=utf8;',
+	'dsn'	=> 'mysql:host=localhost; dbname='.USNZM_DB_NAME.'; charset=utf8;',
 	'hostname' => 'localhost',
-	'username' => 'smccubnr_narjis',
-	'password' => 'rnv,(XZ4bze?',
-	'database' => 'smccubnr_matrimony',
+	'username' => USNZM_DB_USER,
+	'password' => USNZM_DB_PASS,
+	'database' => USNZM_DB_NAME,
 	'dbdriver' => 'pdo',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
