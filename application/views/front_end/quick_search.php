@@ -144,7 +144,7 @@
 															</div>
 															<div class="xxl-12 xs-16 s-16 m-12 l-12 xl-12 margin-top-5px-320 margin-top-5px-480">
 																<select data-placeholder="Select Country" id="country" name="country[]" class="chosen-select form-control" multiple onchange="dropdownChange_mul('country','state','state_list')" >
-																    <?php echo $this->common_model->array_optionstr($this->common_model->dropdown_array_table('country_master'));?>
+																    <?php echo $this->common_model->array_optionstr($this->common_model->dropdown_array_table('country_master'),'us');?>
 																</select><div id="stateDivloader"></div>
 															</div>
 														</div>
