@@ -99,7 +99,7 @@
                                                         Marital status:
                                                         </div>
                                                     <div class="xxl-12 xl-12 xs-16 s-16 m-12 l-12 margin-top-5px-320 margin-top-5px-480">
-                                                        <select data-placeholder="Select Marital Status" class="chosen-select form-control" multiple name="looking_for[]">
+                                                        <select data-placeholder="Any" class="chosen-select form-control" multiple name="looking_for[]">
                                                             <?php echo $this->common_model->array_optionstr($this->common_model->get_list_ddr('marital_status'));?>
                                                         </select>
                                                     </div>
@@ -109,7 +109,7 @@
                                                         Community:
                                                     </div>
                                                     <div class="xxl-12 xl-12 xs-16 s-16 m-12 l-12 margin-top-5px-320 margin-top-5px-480">
-                                                        <select data-placeholder="Select Community" id="religion" name="religion[]" class="chosen-select form-control" multiple onchange="dropdownChange_mul('religion','caste','caste_list')" >
+                                                        <select data-placeholder="Any" id="religion" name="religion[]" class="chosen-select form-control" multiple onchange="dropdownChange_mul('religion','caste','caste_list')" >
                                                             <?php echo $this->common_model->array_optionstr($this->common_model->dropdown_array_table('religion'));?>
                                                         </select>
                                                         <div id="CasteDivloader_adv"></div>
@@ -120,7 +120,7 @@
                                                         Diocese:
                                                     </div>
                                                     <div class="xxl-12 xl-12 xs-16 s-16 m-12 l-12 margin-top-5px-320 margin-top-5px-480" id="CasteDiv1_adv">
-                                                        <select data-placeholder="Select Diocese" class="chosen-select form-control" id="caste" name="caste[]" multiple></select>
+                                                        <select data-placeholder="Any" class="chosen-select form-control" id="caste" name="caste[]" multiple></select>
                                                     </div>
                                                 </div>
                                                     <div class="form-group xxl-16 xl-16 l-16 m-16 s-16 xs-16  padding-lr-zero-320 padding-lr-zero-480 padding-bottom-10px padding-lr-zero-xs">
@@ -128,7 +128,7 @@
                                                         Mother Tongue:
                                                     </div>
                                                     <div class="xxl-12 xl-12 xs-16 s-16 m-12 l-12 margin-top-5px-320 margin-top-5px-480">
-                                                        <select data-placeholder="Select Mother Tongue" class="chosen-select form-control" multiple name="mothertongue[]" >
+                                                        <select data-placeholder="Any" class="chosen-select form-control" multiple name="mothertongue[]" >
                                                            <?php echo $this->common_model->array_optionstr($this->common_model->dropdown_array_table('mothertongue'));?>
                                                         </select>
                                                     </div>
@@ -159,8 +159,8 @@
                                                                 Country:
                                                             </div>
                                                             <div class="xxl-12 xl-12 xs-16 s-16 m-12 l-12 margin-top-5px-320 margin-top-5px-480">
-                                                                <select data-placeholder="Select Country" id="country" name="country[]" class="chosen-select form-control" multiple onchange="dropdownChange_mul('country','state','state_list')" >
-																    <?php echo $this->common_model->array_optionstr($this->common_model->dropdown_array_table('country_master'),'us');?>
+                                                                <select data-placeholder="Any" id="country" name="country[]" class="chosen-select form-control" multiple onchange="dropdownChange_mul('country','state','state_list')" >
+																    <?php echo $this->common_model->array_optionstr($this->common_model->dropdown_array_table('country_master'),'215');?>
 																</select>
                                                                 <div id="stateDivloader_adv"></div>
                                                             </div>
@@ -170,7 +170,7 @@
                                                                 State:
                                                             </div>
                                                             <div class="xxl-12 xl-12 xs-16 s-16 m-12 l-12 margin-top-5px-320 margin-top-5px-480">
-                                                                <select data-placeholder="Select State" class="chosen-select form-control" id="state" name="state[]" multiple onchange="dropdownChange_mul('state','city','city_list')">
+                                                                <select data-placeholder="Any" class="chosen-select form-control" id="state" name="state[]" multiple onchange="dropdownChange_mul('state','city','city_list')">
 																</select><div id="cityDivloader_adv"></div>
                                                             </div>
                                                         </div>
@@ -179,7 +179,7 @@
                                                                 City:
                                                             </div>
                                                             <div class="xxl-12 xl-12 xs-16 s-16 m-12 l-12 margin-top-5px-320 margin-top-5px-480">
-                                                              	<select data-placeholder="Select City" class="chosen-select form-control" id="city" name="city[]" multiple>
+                                                              	<select data-placeholder="Any" class="chosen-select form-control" id="city" name="city[]" multiple>
 																</select>
                                                             </div>
                                                         </div>
@@ -202,7 +202,7 @@
                                                             Education:
                                                         </div>
                                                         <div class="xxl-12 xl-12 xs-16 s-16 m-12 l-12 margin-top-5px-320 margin-top-5px-480">
-                                                            <select data-placeholder="Select Education" class="chosen-select form-control" multiple name="education[]">
+                                                            <select data-placeholder="Any" class="chosen-select form-control" multiple name="education[]">
                                                                <?php echo $this->common_model->array_optionstr($this->common_model->dropdown_array_table('education_detail'));?>
                                                             </select>
                                                         </div>
@@ -212,31 +212,13 @@
                                                             Occupation:
                                                         </div>
                                                         <div class="xxl-12 xl-12 xs-16 s-16 m-12 l-12 margin-top-5px-320 margin-top-5px-480">
-                                                            <select data-placeholder="Select Occupation" name="occupation[]" class="chosen-select form-control" multiple>
+                                                            <select data-placeholder="Any" name="occupation[]" class="chosen-select form-control" multiple>
                                                                 <?php echo $this->common_model->array_optionstr($this->common_model->dropdown_array_table('occupation'));?>
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group xxl-16 xl-16 l-16 m-16 s-16 xs-16  padding-lr-zero-320 padding-lr-zero-480 padding-bottom-10px padding-lr-zero-xs">
-                                                        <div class="xxl-4 xs-16 s-16 m-4 l-4 xl-4 margin-top-5px src-label">
-                                                            Employee In:
-                                                        </div>
-                                                        <div class="xxl-12 xl-12 xs-16 s-16 m-12 l-12 margin-top-5px-320 margin-top-5px-480">
-                                                            <select class="chosen-select form-control" data-placeholder="Select Employee In" name="employee_in[]" multiple>
-                                                            <?php echo $this->common_model->array_optionstr($this->common_model->get_list_ddr('employee_in'));?>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group xxl-16 xl-16 l-16 m-16 s-16 xs-16  padding-lr-zero-320 padding-lr-zero-480 padding-bottom-10px padding-lr-zero-xs">
-                                                        <div class="xxl-4 xs-16 s-16 m-4 l-4 xl-4 margin-top-5px src-label">
-                                                            Annual income:
-                                                        </div>
-                                                        <div class="xxl-12 xl-12 xs-16 s-16 m-12 l-12 margin-top-5px-320 margin-top-5px-480">
-                                                            <select class="chosen-select form-control" data-placeholder="Select Annual Income" name="income[]" multiple>
-                                                            <?php echo $this->common_model->array_optionstr($this->common_model->get_list_ddr('income'));?>
-                                                            </select>
-                                                        </div>
-                                                    </div>
+                                                    
+   
                                                     <div class="clearfix"></div>
                                                 </div>
                                                 
@@ -256,7 +238,7 @@
                                                             Eating habits:
                                                         </div>
                                                         <div class="xxl-12 xl-12 xs-16 s-16 m-12 l-12 margin-top-5px-320 margin-top-5px-480">
-                                                            <select data-placeholder="Select Eating Habit" class="chosen-select form-control" multiple  name="diet[]">
+                                                            <select data-placeholder="Any" class="chosen-select form-control" multiple  name="diet[]">
                                                                 <?php echo $this->common_model->array_optionstr($this->common_model->get_list_ddr('diet'));?>
                                                             </select>
                                                         </div>
@@ -266,7 +248,7 @@
                                                             Drinking:
                                                         </div>
                                                         <div class="xxl-12 xl-12 xs-16 s-16 m-12 l-12 margin-top-5px-320 margin-top-5px-480">
-                                                            <select data-placeholder="Select Drinking Habit" class="chosen-select form-control" multiple  name="drink[]">
+                                                            <select data-placeholder="Any" class="chosen-select form-control" multiple  name="drink[]">
                                                               <?php echo $this->common_model->array_optionstr($this->common_model->get_list_ddr('drink'));?>
                                                             </select>
                                                         </div>
@@ -276,7 +258,7 @@
                                                             Smoking:
                                                         </div>
                                                         <div class="xxl-12 xl-12 xs-16 s-16 m-12 l-12 margin-top-5px-320 margin-top-5px-480">
-                                                            <select data-placeholder="Select Smoking Habit" class="chosen-select form-control" multiple  name="smoking[]">
+                                                            <select data-placeholder="Any" class="chosen-select form-control" multiple  name="smoking[]">
                                                                <?php echo $this->common_model->array_optionstr($this->common_model->get_list_ddr('smoke'));?>
                                                             </select>
                                                         </div>
@@ -300,7 +282,7 @@
                                                             Complexion:
                                                         </div>
                                                         <div class="xxl-12 xl-12 xs-16 s-16 m-12 l-12 margin-top-5px-320 margin-top-5px-480">
-                                                            <select data-placeholder="Select Complexion" class="chosen-select form-control" name="complexion[]" multiple >
+                                                            <select data-placeholder="Any" class="chosen-select form-control" name="complexion[]" multiple >
                                                               <?php echo $this->common_model->array_optionstr($this->common_model->get_list_ddr('complexion'));?>
                                                             </select>
                                                         </div>
@@ -310,7 +292,7 @@
                                                             Body type:
                                                         </div>
                                                         <div class="xxl-12 xl-12 xs-16 s-16 m-12 l-12 margin-top-5px-320 margin-top-5px-480">
-                                                            <select data-placeholder="Select Body type" class="chosen-select form-control" name="bodytype[]" multiple >
+                                                            <select data-placeholder="Any" class="chosen-select form-control" name="bodytype[]" multiple >
                                                                 <?php echo $this->common_model->array_optionstr($this->common_model->get_list_ddr('bodytype'));?>
                                                             </select>
                                                         </div>
