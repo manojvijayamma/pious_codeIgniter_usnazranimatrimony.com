@@ -262,7 +262,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-3">
-					<img src="<?php echo $base_url?>/assets/logo/homepage-aboutlogo.png">
+					<a href="https://www.usnazranimatrimony.com/about-us"><img src="<?php echo $base_url?>/assets/logo/homepage-aboutlogo.png" border="0"></a>
 				</div>
 				<div class="col-md-8">
 					<p class="font-25-xs" style="color:#c54868;padding-bottom: 18px;"><span class="text-center"><b><?php if(isset($config_data['website_description']) && $config_data['website_description'] !=''){ echo $config_data['website_description'];} ?></b></span></p>

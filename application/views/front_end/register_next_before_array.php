@@ -303,7 +303,7 @@
                     <div class="xxl-16 xl-16 xs-16 s-16 m-16 l-16 margin-top-20px-1200 margin-top-20px-1199 margin-top-20px-999 margin-top-15px-480px margin-top-10px-320px reg-main-title padding-lr-zero-xs" style="margin-top:5px;">
                         <h3 class="font-15-bold-arial title-bg">
                             <a href="#" class="text-white">
-                                <i class="fa fa-graduation-cap"></i> Education / Occupation / Annual Income Details:
+                                <i class="fa fa-graduation-cap"></i> Education / Occupation :
                             </a>
                         </h3>
                     </div>
@@ -328,22 +328,7 @@
                                 </div>
                             </div>
                            
-                            <div class="xxl-16 xl-16 xs-16 s-16  m-16 l-16 margin-top-20px">
-                                <div class="row">
-                                    <div class="xxl-5 xl-5 xs-16 s-16 m-16 l-4 margin-top-5px">
-                                        <label>
-                                            Annual Income <span class="font-red">* </span>:
-                                        </label>
-                                    </div>
-                                    <div class="clearfix visible-xs"></div>
-                                    <div class="xxl-11 xl-11 xs-16 s-16 m-16 l-8">
-                                        <select class="form-control select2" required name="income" id="income" style="width:100%">
-	                                       <option value="">Select Annual Income</option>
-                                            <?php echo $this->common_model->array_optionstr('income');?>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
+                         
                             <div class="xxl-16 xl-16 xs-16 s-16  m-16 l-16 margin-top-20px">
                                 <div class="row">
                                     <div class="xxl-5 xl-5 xs-16 s-16 m-16 l-4 margin-top-5px">

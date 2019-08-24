@@ -189,7 +189,7 @@
                                                 <div class="xxl-16 xs-16 s-16 m-16 l-16 s-16" data-toggle="collapse" role="navigation" data-target="#ne_lft_pan_list2"  aria-expanded="false" aria-controls="ne_lft_pan_list2" onclick="change_img('2_profile')" style="padding:0px;">														
                                                     <h3 class="font-15-bold-arial title-bg">
                                                         <a  class="text-white">
-                                                            <i class="fa fa-graduation-cap"></i> Education / Occupation / Annual Income Details:
+                                                            <i class="fa fa-graduation-cap"></i> Education / Occupation :
                                                             <span class="collapse-plus-nomargin" id="img_2_profile"></span>
                                                         </a>
                                                     </h3>
