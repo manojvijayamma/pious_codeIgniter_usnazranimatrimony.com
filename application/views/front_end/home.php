@@ -9,7 +9,12 @@
 	}
 </style>
 
-<div id="bootstrap-touch-slider" class="slider-bg kenburns_zoomInOut">
+
+
+
+
+
+<div id="bootstrap-touch-slider" class="slider-bg kenburns_zoomInOut" >
 	<div id="slider" class="owl-carousel owl-theme slider hp-3">
 		<?php
 			$home_banner = $this->common_model->get_count_data_manual('homepage_banner',array('status'=>'APPROVED'),2,'banner','id desc');
@@ -121,7 +126,7 @@
 												<select name="country[]" id="country[]" class="form-control" style="padding: 5px 15px;width: 150px;border: 2px solid #ecc8ca!important;
 												border-radius: 5px;">
 													<option value="">Select Country</option>
-													<?php echo $this->common_model->array_optionstr($this->common_model->dropdown_array_table('country_master'));?>
+													<?php echo $this->common_model->array_optionstr($this->common_model->dropdown_array_table('country_master'),'215');?>
 												</select>
 											</div>
 										</div>

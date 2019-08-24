@@ -494,4 +494,50 @@ class New_listing extends CI_Controller {
 		$other_config = array('enctype'=>'enctype="multipart/form-data"','display_image'=>array('banner','og_img'),'searchAllow'=>'no');
 		$this->common_model->common_rander('matrimony_data', $status, $page , 'Matrimony Data',$ele_array,'id',0,$other_config);
 	}
+
+
+	public function add_ticker($status ='')
+	{
+		$this->label_page = 'Update Ticker';
+		$this->table_name = 'ticker_master';// *need to set here tabel name //
+		$this->common_model->set_table_name($this->table_name);
+		
+		if($_POST)
+		{	
+			$id=$_POST['id'];
+			if(isset($id)){
+				$this->db->where('id',$id);
+   				$q = $this->db->get('ticker_master');
+			}
+
+			$data=array('title'=>$_POST['title']);
+			if ( $q->num_rows() > 0 ) 
+			{
+				$this->db->where('id',$id);
+				$this->db->update('ticker_master',$data);
+
+			} else {
+				$this->db->set('id', $id);
+				$this->db->insert('ticker_master',$data);
+			}
+			redirect($this->common_model->data['base_url_admin'].'new-listing/add_ticker');
+		}
+		else
+		{
+			$this->common_model->extra_js[] = 'vendor/jquery-validation/dist/additional-methods.min.js';
+		
+			
+			$other_config = array('mode'=>'edit','id'=>'1','enctype'=>'enctype="multipart/form-data"');
+			
+			$this->db->where('id','1');
+			$query = $this->db->get('ticker_master');			
+			$this->data['ticker'] = $query->result();
+
+			
+
+			$this->common_model->__load_header($this->label_page);
+			$this->load->view('back_end/add_ticker',$this->data);
+			$this->common_model->__load_footer();
+		}	
+	}
 }

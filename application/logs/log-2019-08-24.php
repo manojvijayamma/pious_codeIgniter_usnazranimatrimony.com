@@ -783,3 +783,32 @@ WHERE `matri_id` = 'USNZM49'
 AND `is_deleted` = 'No'
 AND `current_plan` = 'Yes'
  LIMIT 1
+ERROR - 2019-08-24 14:59:15 --> Query error: Table 'pious_matrimony.ticker_master' doesn't exist - Invalid query: SHOW COLUMNS FROM `ticker_master`
+ERROR - 2019-08-24 15:00:44 --> Query error: Unknown column 'ticker_master.is_deleted' in 'where clause' - Invalid query: SELECT `title`
+FROM `ticker_master`
+WHERE `ticker_master`.`is_deleted` = 'No'
+AND `id` = '1'
+ LIMIT 1
+ERROR - 2019-08-24 15:17:18 --> Severity: 4096 --> Object of class CI_DB_pdo_result could not be converted to string /var/www/html/pious/pious_usnazranimatrimony.com/application/controllers/control-panel/New_listing.php 520
+ERROR - 2019-08-24 15:21:22 --> Severity: Notice --> Array to string conversion /var/www/html/pious/pious_usnazranimatrimony.com/application/views/back_end/add_ticker.php 9
+ERROR - 2019-08-24 15:21:38 --> Severity: error --> Exception: Cannot use object of type stdClass as array /var/www/html/pious/pious_usnazranimatrimony.com/application/views/back_end/add_ticker.php 9
+ERROR - 2019-08-24 15:35:51 --> Query error: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'pious_matrimony.country_master.country_name' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT `country_code`, `country_name`
+FROM `country_master`
+WHERE `is_deleted` = 'No' AND `country_code` != '' GROUP BY country_code
+ERROR - 2019-08-24 15:35:55 --> Query error: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'pious_matrimony.country_master.country_name' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT `country_code`, `country_name`
+FROM `country_master`
+WHERE `is_deleted` = 'No' AND `country_code` != '' GROUP BY country_code
+ERROR - 2019-08-24 15:35:57 --> Query error: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'pious_matrimony.country_master.country_name' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT `country_code`, `country_name`
+FROM `country_master`
+WHERE `is_deleted` = 'No' AND `country_code` != '' GROUP BY country_code
+ERROR - 2019-08-24 15:53:42 --> Severity: Notice --> Undefined property: Success_story::$is_home_page /var/www/html/pious/pious_usnazranimatrimony.com/system/core/Model.php 77
+ERROR - 2019-08-24 16:08:13 --> Query error: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'pious_matrimony.country_master.country_name' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT `country_code`, `country_name`
+FROM `country_master`
+WHERE `is_deleted` = 'No' AND `country_code` != '' GROUP BY country_code
+ERROR - 2019-08-24 16:08:17 --> Query error: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'pious_matrimony.country_master.country_name' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT `country_code`, `country_name`
+FROM `country_master`
+WHERE `is_deleted` = 'No' AND `country_code` != '' GROUP BY country_code
+ERROR - 2019-08-24 16:23:04 --> Severity: Notice --> Undefined variable: row_data /var/www/html/pious/pious_usnazranimatrimony.com/application/views/front_end/contact_privacy_setting.php 74
+ERROR - 2019-08-24 16:23:32 --> Severity: Notice --> Undefined index: allow_contact /var/www/html/pious/pious_usnazranimatrimony.com/application/views/front_end/contact_privacy_setting.php 74
+ERROR - 2019-08-24 16:45:01 --> Severity: Notice --> Undefined variable: success_message /var/www/html/pious/pious_usnazranimatrimony.com/application/views/front_end/contact_privacy_setting.php 14
+ERROR - 2019-08-24 16:45:04 --> Severity: Notice --> Undefined variable: success_message /var/www/html/pious/pious_usnazranimatrimony.com/application/views/front_end/contact_privacy_setting.php 14

@@ -291,3 +291,32 @@
 			<?php
 			}
 		?>			
+
+<style>
+@media (min-width: 1000px) {
+.tickertop{
+	/* margin-top:80px; */
+}
+}
+</style>
+
+
+<?php
+$this->db->where('id','1');
+$query = $this->db->get('ticker_master');			
+$ticker = $query->row();
+if(isset($ticker->title) && trim($ticker->title)!=''){
+	if(isset($this->common_model->is_home_page)){
+?>
+<div class="tickertop"></div>
+	<?php }?>
+<div class="tiny-footer margin-top-0" style="background-color:#ec3483;clear:both;position:relative;">
+        <div class="container">
+			<marquee>
+				<div class="row">
+					<div class="col-md-12" style="color:#fec7df;font-weight:bold;"><?php echo $ticker->title?></div>
+				</div>
+			</marquee>
+		</div>
+</div>
+<?php } ?>
