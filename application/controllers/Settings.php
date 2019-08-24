@@ -22,12 +22,16 @@ class Settings extends CI_Controller {
 	}
 
 	public function save_contact_number(){
-		echo $allow_contact=isset($_POST['allow_contact']) ? $_POST['allow_contact'] : 0;
-		echo $member_id = $this->common_front_model->get_session_data('id');
+		 $allow_contact=isset($_POST['allow_contact']) ? $_POST['allow_contact'] : 0;
+		 $member_id = $this->common_front_model->get_session_data('id');
 		$this->db->where('id',$member_id);
 		$this->db->update("register",array('allow_contact'=>$allow_contact));
-
-		redirect(base_url().'settings/contact-number');
+		$data1['contact_setting_load'] = "Your contact setting is edited Successfully.";
+		//$this->session->set_flashdata('success_message_contact',$success_message);
+		$data1['token'] = $this->security->get_csrf_hash();
+		$data1['status'] = 'success';
+		//redirect(base_url().'settings/contact-number');
+		echo json_encode($data1);
 	}
 	
 }

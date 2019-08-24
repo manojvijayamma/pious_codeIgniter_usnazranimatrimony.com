@@ -1,14 +1,18 @@
 <div class="ne_tab_sub_tab_content ne_interest_sent_tab xxl-16 xl-16 m-16 l-16 s-16 xs-16 tab-content" style="border:0px;">
 												
 												<div class="xxl-16 xl-16 xs-16 l-16 m-16 s-16 padding-20-5-xs">                   <?php
+						$showerror="none";
+						$success_message='';
 						if($this->session->flashdata('success_message_contact'))
 						{
 							$success_message = $this->session->flashdata('success_message_contact');
 							if($success_message !='')
 							{
-								echo '<div id="mydivs" class="alert alert-success  alert-dismissable"><div class="fa fa-check">&nbsp;</div><a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>'.$success_message.'</div>';
+								$showerror="block";
 							}
 						}
+
+						echo '<div id="mydivs" class="alert alert-success  alert-dismissable" style="display:'.$showerror.'"><div class="fa fa-check">&nbsp;</div><a href="#" class="close" data-dismiss="alert" aria-label="close">×</a><span id="msg_panel">'.$success_message.'</span></div>';
 					?>
 													<div class="">
 														<h3 class="xxl-16 xl-16 xs-16 l-16 m-16 s-16 margin-bottom-0px padding-bottom-10px ne-bdr-btm-lgt-grey text-darkgrey padding-lr-zero">
@@ -60,6 +64,25 @@
 															</div>
 															<div class="clearfix"></div>
 														</div>
+														<div class="clearfix"></div>
+
+
+
+														<div class="xxl-16 xl-16 l-16 s-16 m-16 xs-16 padding-lr-zero ne_pad_btm_10px ne_pad_tp_10px">
+															<div class="xxl-16 xl-16 l-16 s-16 m-16 xs-16 padding-lr-zero-320 padding-lr-zero-480 padding-lr-zero-768 padding-0-5-xs">
+																<b class="xxl-4 xl-4 l-6 s-16 m-6 xs-16 padding-lr-zero-320 padding-lr-zero-480 ">
+																Allow to show contact number 
+																</b>
+
+																<div class="xxl-8 xl-8 l-8 s-16 m-8 xs-16 padding-lr-zero-320 padding-lr-zero-480 margin-top-10px-320px margin-top-10-xs">
+                                                                <input type="checkbox" id="allow_contact" name="allow_contact" value="1" <?php echo isset($user_data['allow_contact']) ? 'checked' : '' ?> onclick="contactNumber();">
+
+																</div>	
+
+															</div>
+														</div>
+
+
 														<div class="clearfix"></div>
 													</div>
 												</div>

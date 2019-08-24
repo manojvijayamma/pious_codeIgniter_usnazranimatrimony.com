@@ -491,6 +491,42 @@
 			});
 			return false;
 		}
+
+
+
+
+		function contactNumber(cval)
+		{	
+			show_comm_mask();
+			var hash_tocken_id = $('#hash_tocken_id').val();
+			var base_url = $('#base_url').val();
+			var url = base_url+'settings/save-contact-number';
+			var allow_contact=$('#allow_contact').val();
+			$.ajax({
+			  	    url: url,
+					type: 'POST',
+					data: {'csrf_new_matrimonial':hash_tocken_id,'allow_contact':allow_contact},
+					dataType:'json',
+					success: function(data)
+					{ 	
+						if(data.status == 'success')
+						{
+
+							//$('#contact_setting_ajax').html(data.contact_setting_load);
+							$('#mydivs').show();
+							$('#msg_panel').html(data.contact_setting_load);
+							setTimeout(function() {
+								$('#mydivs').hide();
+							}, 800);
+							update_tocken($('#hash_tocken_id_temp').val());					
+							$('#hash_tocken_id_temp').remove();
+						}
+						$('#hash_tocken_id').val(data.token);
+						hide_comm_mask();	
+			   		}
+			});
+			return false;
+		}
 <!---------------------------------------------stop for contact setting and start for change password----------------------->
 		
 		if($('#change_pass').length > 0)

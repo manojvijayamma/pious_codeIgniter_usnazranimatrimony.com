@@ -187,6 +187,12 @@ $class_name = $this->router->fetch_class();
 							<li class="new_listing_add" id="add_matrimoni_data">
                             	<a href="<?php echo $base_url.$admin_path.'/new-listing/add_matrimoni_data/ALL/1/yes';?>"> <span>Matrimony Data</span> </a> 
                             </li>
+
+							<li class="new_listing_add" id="add_matrimoni_data">
+                            	<a href="<?php echo $base_url.$admin_path.'/new-listing/add_ticker/ALL/1/yes';?>"> <span>Ticker Data</span> </a> 
+                            </li>
+
+
 			          	</ul>
 			        </li>
                     <?php
