@@ -262,8 +262,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-3">
-					<h2 class="font-25-xs" style="color:#c54868;"><span class="text-center"><b><?php if(isset($config_data['web_frienly_name']) && $config_data['web_frienly_name'] !=''){ echo $config_data['web_frienly_name'];} ?></b></span>
-					</h2>
+					<img src="<?php echo $base_url?>/assets/logo/homepage-aboutlogo.png">
 				</div>
 				<div class="col-md-8">
 					<p class="font-25-xs" style="color:#c54868;padding-bottom: 18px;"><span class="text-center"><b><?php if(isset($config_data['website_description']) && $config_data['website_description'] !=''){ echo $config_data['website_description'];} ?></b></span></p>
