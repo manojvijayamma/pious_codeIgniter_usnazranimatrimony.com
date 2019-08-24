@@ -310,7 +310,7 @@ if(isset($ticker->title) && trim($ticker->title)!=''){
 ?>
 <div class="tickertop"></div>
 	<?php }?>
-<div class="tiny-footer margin-top-0" style="padding-top:5px;padding-bottom:5px;background-color:#ec3483;clear:both;position:relative;">
+<div class="tiny-footer margin-top-0" style="padding-top:5px;padding-bottom:0px;background-color:#ec3483;clear:both;position:relative;">
         <div class="container">
 			<marquee>
 				<div class="row">
