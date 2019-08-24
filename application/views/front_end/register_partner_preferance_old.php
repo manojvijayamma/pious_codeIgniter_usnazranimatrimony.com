@@ -767,31 +767,7 @@
 												</div>
 											</div>
 											
-											<div class="xxl-16 xl-16 xs-16 s-16  m-16 l-16 margin-top-20px padding-0-xs">
-												<div class="row">
-													<div class="xxl-5 xl-5 xs-16 s-16 m-16 l-4 margin-top-5px">
-														<label>
-															Annual Income <span class="font-red">* </span>:
-														</label>
-													</div>
-													<div class="clearfix visible-xs"></div>
-													<div class="xxl-11 xl-11 xs-16 s-16 m-16 l-8">
-														<select class="form-control">
-															<option value="Select Annual Income">Select Annual Income</option>
-															<option value="">Select Annual Income</option>
-															<option value="">Does not matter</option>
-															<option value="Rs 10,000 - 50,000">Rs 10,000 - 50,000</option>
-															<option value="Rs 50,000 - 1,00,000">Rs 50,000 - 1,00,000</option>
-															<option value="Rs 1,00,000 - 2,00,000">Rs 1,00,000 - 2,00,000</option>
-															<option value="Rs 2,00,000 - 5,00,000">Rs 2,00,000 - 5,00,000</option>
-															<option value="Rs 5,00,000 - 10,00,000">Rs 5,00,000 - 10,00,000</option>
-															<option value="Rs 10,00,000 - 50,00,000">Rs 10,00,000 - 50,00,000</option>
-															<option value="Rs 50,00,000 - 1,00,00,000">Rs 50,00,000 - 1,00,00,000</option>
-															<option value="Above Rs 1,00,00,000">Above Rs 1,00,00,000</option>
-														</select>
-													</div>
-												</div>
-											</div>
+											
 										</div>
 									</form>
 								</div>

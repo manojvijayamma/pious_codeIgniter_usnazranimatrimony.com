@@ -305,6 +305,18 @@ border-bottom: 0px !important;
 												if(isset($country_arr) && $country_arr !='' && is_array($country_arr) && count($country_arr) > 0)
 												{
 													$country_curr = $comm_model->get_data_fromArray($search_filed_data,'country');
+													
+													?>
+
+
+													<li class="xxl-16 xl-16 xs-16 s-16 m-16 l-16 padding-lr-zero">
+														<span class="">
+															<input <?php echo "checked"; ?> id="country_<?php echo '215'; ?>" type="checkbox" value="<?php echo '215'; ?>"  onClick="getlist_onchange('country','state')" name="country[]" class="country row xxl-4 xl-4 xs-4 s-4 m-4 l-4">
+															<label for="country_<?php echo '215'; ?>" class="xxl-12 xl-12 xs-12 s-12 m-12 l-12 label-search"><?php echo $country_arr['215']; ?></label>
+														</span>
+													</li>
+
+													<?php
 													foreach($country_arr as $country_key=>$country_val)
 													{
 														$cheked = "";
@@ -312,6 +324,7 @@ border-bottom: 0px !important;
 														{
 															$cheked = "checked";
 														}
+														if($country_key!='215'){
 													?>
 													<li class="xxl-16 xl-16 xs-16 s-16 m-16 l-16 padding-lr-zero">
 														<span class="">
@@ -320,6 +333,7 @@ border-bottom: 0px !important;
 														</span>
 													</li>
 													<?php
+														}
 													}
 												}
 											?>
@@ -559,53 +573,7 @@ border-bottom: 0px !important;
 										<div class="clearfix"></div>
 									</div>
 								</div>
-								<div class="xxl-16 xl-16 l-16 m-16 s-16 xs-16 ne-bdr-btm-lgt-grey ne_pad_btm_10px neBoxShadowBtm2px padding-lr-zero">
-									<div class="xxl-16 xl-16 xs-16 l-16 m-16 s-16 ne_bg_alert ne-box-shd-1px-lgt-grey border-top" data-toggle="collapse" role="navigation" data-target="#collapseExample13" aria-expanded="false" aria-controls="collapseExample1"  onclick="change_img('13_profile')">
-										<a class="xxl-16 xl-16 xs-16 l-16 m-16 s-16 padding-lr-zero">
-											<h4 class="margin-bottom-0px margin-top-0px ne_pad_btm_10px ne_pad_tp_10px center-text ne_font_weight_nrm ne_bg_alert ">
-												Annual Income
-												<span class="collapse-plus-nomargin" id="img_13_profile"></span>
-											</h4>
-										</a>
-									</div>
-									<div class="collapse xxl-16 xl-16 xs-16 l-16 m-16 s-16 padding-lr-zero" id="collapseExample13">
-										<ul class="xxl-16 xl-16 padding-lr-zero margin-top-10px neRefineScroll">
-											<?php
-												$income_arr = $this->common_model->get_list_ddr('income');
-												if(isset($income_arr) && $income_arr !='' && is_array($income_arr) && count($income_arr) > 0)
-												{
-													$income_curr = $comm_model->get_data_fromArray($search_filed_data,'income');
-													foreach($income_arr as $income_key=>$income_val)
-													{
-														$cheked = "";
-														if(isset($income_curr) && $income_curr !='' && is_array($income_curr) && count($income_curr) && in_array($income_key,$income_curr))
-														{
-															$cheked = "checked";
-														}
-													?>
-													<li class="xxl-16 xl-16 xs-16 s-16 m-16 l-16 padding-lr-zero">
-														<span class="">
-															<input <?php echo $cheked; ?> id="<?php echo $income_key; ?>" type="checkbox" value="<?php echo $income_key; ?>" name="income[]" class="income row xxl-4 xl-4 xs-4 s-4 m-4 l-4">
-															<label for="<?php echo $income_key; ?>" class="xxl-12 xl-12 xs-12 s-12 m-12 l-12 label-search"><?php echo $income_val; ?></label>
-														</span>
-													</li>
-													<?php
-													}
-												}
-											?>
-										</ul>
-										<div class="xxl-16 xl-16 xs-16 l-16 m-16 s-16 padding-lr-zero-xs">
-											<a class="xxl-7 xl-7 xs-7 l-7 m-7 s-7 clear ne-cursor" onClick="refine_search();">
-												<i class="fa fa-search ne_mrg_ri8_10 text-grey"></i>Search
-											</a>
-											<span class="xxl-1 xl-1 xs-1 l-1 m-1 s-1">&nbsp;</span>
-											<a class="xxl-6 xl-6 xs-6 l-6 m-6 s-6 clear ne-cursor" onClick="clear_refine('income');">
-												<i class="fa fa-times-circle-o ne_mrg_ri8_10 text-grey"></i>Clear
-											</a>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-								</div>
+								
 								
 								<div class="xxl-16 xl-16 l-16 m-16 s-16 xs-16 ne-bdr-btm-lgt-grey ne_pad_btm_10px neBoxShadowBtm2px padding-lr-zero">
 									<div class="xxl-16 xl-16 xs-16 l-16 m-16 s-16 ne_bg_alert ne-box-shd-1px-lgt-grey border-top" data-toggle="collapse" role="navigation" data-target="#collapseExample13_1" aria-expanded="false" aria-controls="collapseExample1" onclick="change_img('13_1_profile')">
@@ -1573,53 +1541,7 @@ border-bottom: 0px !important;
 										<div class="clearfix"></div>
 									</div>
 								</div>
-								<div class="xxl-16 xl-16 l-16 m-16 s-16 xs-16 ne-bdr-btm-lgt-grey ne_pad_btm_10px neBoxShadowBtm2px padding-lr-zero">
-									<div class="xxl-16 xl-16 xs-16 l-16 m-16 s-16 ne_bg_alert ne-box-shd-1px-lgt-grey border-top" data-toggle="collapse" role="navigation" data-target="#collapseExample132" aria-expanded="false" aria-controls="collapseExample12"  onclick="change_img('13_profile_mobile')">
-										<a class="xxl-16 xl-16 xs-16 l-16 m-16 s-16 padding-lr-zero">
-											<h4 class="margin-bottom-0px margin-top-0px ne_pad_btm_10px ne_pad_tp_10px center-text ne_font_weight_nrm ne_bg_alert ">
-												Annual Income
-												<span class="collapse-plus-nomargin" id="img_13_profile_mobile"></span>
-											</h4>
-										</a>
-									</div>
-									<div class="collapse xxl-16 xl-16 xs-16 l-16 m-16 s-16 padding-lr-zero" id="collapseExample132">
-										<ul class="xxl-16 xl-16 padding-lr-zero margin-top-10px neRefineScroll">
-											<?php
-												$income_arr = $this->common_model->get_list_ddr('income');
-												if(isset($income_arr) && $income_arr !='' && is_array($income_arr) && count($income_arr) > 0)
-												{
-													$income_curr = $comm_model->get_data_fromArray($search_filed_data,'income');
-													foreach($income_arr as $income_key=>$income_val)
-													{
-														$cheked = "";
-														if(isset($income_curr) && $income_curr !='' && is_array($income_curr) && count($income_curr) && in_array($income_key,$income_curr))
-														{
-															$cheked = "checked";
-														}
-													?>
-													<li class="xxl-16 xl-16 xs-16 s-16 m-16 l-16 padding-lr-zero">
-														<span class="">
-															<input <?php echo $cheked; ?> id="<?php echo $income_key; ?>" type="checkbox" value="<?php echo $income_key; ?>" name="income[]" class="income row xxl-4 xl-4 xs-4 s-4 m-4 l-4">
-															<label for="<?php echo $income_key; ?>" class="xxl-12 xl-12 xs-12 s-12 m-12 l-12 label-search"><?php echo $income_val; ?></label>
-														</span>
-													</li>
-													<?php
-													}
-												}
-											?>
-										</ul>
-										<div class="xxl-16 xl-16 xs-16 l-16 m-16 s-16 padding-lr-zero-xs">
-											<a class="xxl-7 xl-7 xs-7 l-7 m-7 s-7 clear ne-cursor" onClick="refine_search_mobile();">
-												<i class="fa fa-search ne_mrg_ri8_10 text-grey"></i>Search
-											</a>
-											<span class="xxl-1 xl-1 xs-1 l-1 m-1 s-1">&nbsp;</span>
-											<a class="xxl-6 xl-6 xs-6 l-6 m-6 s-6 clear ne-cursor" onClick="clear_refine('income');">
-												<i class="fa fa-times-circle-o ne_mrg_ri8_10 text-grey"></i>Clear
-											</a>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-								</div>
+								
 								
 								<div class="xxl-16 xl-16 l-16 m-16 s-16 xs-16 ne-bdr-btm-lgt-grey ne_pad_btm_10px neBoxShadowBtm2px padding-lr-zero">
 									<div class="xxl-16 xl-16 xs-16 l-16 m-16 s-16 ne_bg_alert ne-box-shd-1px-lgt-grey border-top" data-toggle="collapse" role="navigation" data-target="#collapseExample13_12" aria-expanded="false" aria-controls="collapseExample12" onclick="change_img('13_1_profile_mobile')">

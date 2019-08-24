@@ -812,3 +812,13 @@ ERROR - 2019-08-24 16:23:04 --> Severity: Notice --> Undefined variable: row_dat
 ERROR - 2019-08-24 16:23:32 --> Severity: Notice --> Undefined index: allow_contact /var/www/html/pious/pious_usnazranimatrimony.com/application/views/front_end/contact_privacy_setting.php 74
 ERROR - 2019-08-24 16:45:01 --> Severity: Notice --> Undefined variable: success_message /var/www/html/pious/pious_usnazranimatrimony.com/application/views/front_end/contact_privacy_setting.php 14
 ERROR - 2019-08-24 16:45:04 --> Severity: Notice --> Undefined variable: success_message /var/www/html/pious/pious_usnazranimatrimony.com/application/views/front_end/contact_privacy_setting.php 14
+ERROR - 2019-08-24 22:03:47 --> Severity: Notice --> Undefined variable: country_key /var/www/html/pious/pious_usnazranimatrimony.com/application/views/front_end/search_result.php 314
+ERROR - 2019-08-24 22:03:47 --> Severity: Notice --> Undefined variable: country_key /var/www/html/pious/pious_usnazranimatrimony.com/application/views/front_end/search_result.php 314
+ERROR - 2019-08-24 22:03:47 --> Severity: Notice --> Undefined variable: country_key /var/www/html/pious/pious_usnazranimatrimony.com/application/views/front_end/search_result.php 315
+ERROR - 2019-08-24 22:03:47 --> Severity: Notice --> Undefined variable: country_val /var/www/html/pious/pious_usnazranimatrimony.com/application/views/front_end/search_result.php 315
+ERROR - 2019-08-24 22:05:58 --> Severity: Notice --> Undefined variable: country_key /var/www/html/pious/pious_usnazranimatrimony.com/application/views/front_end/search_result.php 314
+ERROR - 2019-08-24 22:05:58 --> Severity: Notice --> Undefined variable: country_key /var/www/html/pious/pious_usnazranimatrimony.com/application/views/front_end/search_result.php 314
+ERROR - 2019-08-24 22:05:58 --> Severity: Notice --> Undefined variable: country_key /var/www/html/pious/pious_usnazranimatrimony.com/application/views/front_end/search_result.php 315
+ERROR - 2019-08-24 22:06:22 --> Severity: Notice --> Undefined variable: country_key /var/www/html/pious/pious_usnazranimatrimony.com/application/views/front_end/search_result.php 315
+ERROR - 2019-08-24 22:06:49 --> Severity: Notice --> Undefined variable: country_key /var/www/html/pious/pious_usnazranimatrimony.com/application/views/front_end/search_result.php 315
+ERROR - 2019-08-24 22:06:51 --> Severity: Notice --> Undefined variable: country_key /var/www/html/pious/pious_usnazranimatrimony.com/application/views/front_end/search_result.php 315

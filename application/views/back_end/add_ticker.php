@@ -16,7 +16,7 @@
 							  	<button type="submit" class="btn btn-primary mr10">Submit</button>
 							  
 										</div>
-							<input type="hidden" name="csrf_new_matrimonial" value="575ee9b18ffac0f392662515c54b9533" id="hash_tocken_id" class="hash_tocken_id" />
+							<input type="hidden" name="csrf_new_matrimonial" value="<?php echo $this->security->get_csrf_hash()?>" id="hash_tocken_id" class="hash_tocken_id" />
 							<input type="hidden" name="mode" value="edit" id="mode" />
 							<input type="hidden" name="id" value="<?php echo $ticker[0]->id?>" id="id" />
 							
