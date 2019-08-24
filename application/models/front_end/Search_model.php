@@ -1797,6 +1797,7 @@ class Search_model extends CI_Model {
 						$matri_id = $member_data['matri_id'];
 						$username = $member_data['username'];
 						$mobile = $member_data['mobile'];
+						$allow_contact = $member_data['allow_contact'];
 						$email = $member_data['email'];
 						$time_to_call = $member_data['time_to_call'];	
 						if($member_data['city_name'] != '' && $member_data['state_name'] != '' && $member_data['country_name'] != ''){
@@ -1859,9 +1860,11 @@ class Search_model extends CI_Model {
 												<div class='xxl-9 xl-9 l-9 m-16 xs-16 s-16'>
 													<span> <i class='fa fa-user ne_mrg_ri8_10'></i> Matri Id : $from_id</span><br/>
 													<span> <i class='fa fa-user ne_mrg_ri8_10'></i> Name  : $username</span><br/>
-													<span> <i class='fa fa-home ne_mrg_ri8_10'></i> Address : $address</span><br/>
-													<span> <i class='fa fa-phone ne_mrg_ri8_10'></i> Mobile : $mobile</span><br/>
-													<span> <i class='fa fa-envelope ne_mrg_ri8_10'></i> Email Id : $email</span><br/>
+													<span> <i class='fa fa-home ne_mrg_ri8_10'></i> Address : $address</span><br/>";
+													if($allow_contact==1){
+														$data['contact_details'].="<span> <i class='fa fa-phone ne_mrg_ri8_10'></i> Mobile : $mobile</span><br/>";
+													}		
+													$data['contact_details'].="<span> <i class='fa fa-envelope ne_mrg_ri8_10'></i> Email Id : $email</span><br/>
 													<span> <i class='fa fa-clock-o ne_mrg_ri8_10'></i> Time To Call : $time_to_call</span><br/>
 												</div>
 											</div>
@@ -1922,9 +1925,11 @@ class Search_model extends CI_Model {
 												<div class='xxl-9 xl-9 l-9 m-16 xs-16 s-16'>
 													<span> <i class='fa fa-user ne_mrg_ri8_10'></i> Matri Id : $from_id</span><br/>
 													<span> <i class='fa fa-user ne_mrg_ri8_10'></i> Name  : $username</span><br/>
-													<span> <i class='fa fa-home ne_mrg_ri8_10'></i> Address : $address</span><br/>
-													<span> <i class='fa fa-phone ne_mrg_ri8_10'></i> Mobile : $mobile</span><br/>
-													<span> <i class='fa fa-envelope ne_mrg_ri8_10'></i> Email Id : $email</span><br/>
+													<span> <i class='fa fa-home ne_mrg_ri8_10'></i> Address : $address</span><br/>";
+													if($allow_contact==1){
+														$data['contact_details'].="<span> <i class='fa fa-phone ne_mrg_ri8_10'></i> Mobile : $mobile</span><br/>";
+													}		
+													$data['contact_details'].="<span> <i class='fa fa-envelope ne_mrg_ri8_10'></i> Email Id : $email</span><br/>
 													<span> <i class='fa fa-clock-o ne_mrg_ri8_10'></i> Time To Call : $time_to_call</span><br/>
 												</div>
 											</div>

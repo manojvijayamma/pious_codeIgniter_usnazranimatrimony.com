@@ -606,53 +606,7 @@ border-bottom: 0px !important;
 										<div class="clearfix"></div>
 									</div>
 								</div>
-								<div class="xxl-16 xl-16 l-16 m-16 s-16 xs-16 ne-bdr-btm-lgt-grey ne_pad_btm_10px neBoxShadowBtm2px padding-lr-zero">
-									<div class="xxl-16 xl-16 xs-16 l-16 m-16 s-16 ne_bg_alert ne-box-shd-1px-lgt-grey border-top" data-toggle="collapse" role="navigation" data-target="#collapseExample221" aria-expanded="false" aria-controls="collapseExample1"  onclick="change_img('221_profile')">
-										<a class="xxl-16 xl-16 xs-16 l-16 m-16 s-16 padding-lr-zero">
-											<h4 class="margin-bottom-0px margin-top-0px ne_pad_btm_10px ne_pad_tp_10px center-text ne_font_weight_nrm ne_bg_alert ">
-												Employee In
-												<span class="collapse-plus-nomargin" id="img_221_profile"></span>
-											</h4>
-										</a>
-									</div>
-									<div class="collapse xxl-16 xl-16 xs-16 l-16 m-16 s-16 padding-lr-zero" id="collapseExample221">
-										<ul class="xxl-16 xl-16 padding-lr-zero margin-top-10px neRefineScroll">
-											<?php
-												$employee_in_arr = $this->common_model->get_list_ddr('employee_in');
-												if(isset($employee_in_arr) && $employee_in_arr !='' && is_array($employee_in_arr) && count($employee_in_arr) > 0)
-												{
-													$employee_in_curr = $comm_model->get_data_fromArray($search_filed_data,'employee_in');
-													foreach($employee_in_arr as $emp_key=>$emp_val)
-													{
-														$cheked = "";
-														if(isset($employee_in_curr) && $employee_in_curr !='' && is_array($employee_in_curr) &&  count($employee_in_curr) && in_array($emp_key,$employee_in_curr))
-														{
-															$cheked = "checked";
-														}
-													?>
-													<li class="xxl-16 xl-16 xs-16 s-16 m-16 l-16 padding-lr-zero">
-														<span class="">
-															<input <?php echo $cheked; ?> id="employee_in_<?php echo $emp_key; ?>" type="checkbox" value="<?php echo $emp_key; ?>" name="employee_in[]" class="employee_in row xxl-4 xl-4 xs-4 s-4 m-4 l-4">
-															<label for="employee_in_<?php echo $emp_key; ?>" class="xxl-12 xl-12 xs-12 s-12 m-12 l-12 label-search"><?php echo $emp_val; ?></label>
-														</span>
-													</li>
-													<?php
-													}
-												}
-											?>
-										</ul>
-										<div class="xxl-16 xl-16 xs-16 l-16 m-16 s-16 padding-lr-zero-xs">
-											<a class="xxl-7 xl-7 xs-7 l-7 m-7 s-7 clear ne-cursor" onClick="refine_search();">
-												<i class="fa fa-search ne_mrg_ri8_10 text-grey"></i>Search
-											</a>
-											<span class="xxl-1 xl-1 xs-1 l-1 m-1 s-1">&nbsp;</span>
-											<a class="xxl-6 xl-6 xs-6 l-6 m-6 s-6 clear ne-cursor" onClick="clear_refine('employee_in');">
-												<i class="fa fa-times-circle-o ne_mrg_ri8_10 text-grey"></i>Clear
-											</a>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-								</div>
+								
 								<div class="xxl-16 xl-16 l-16 m-16 s-16 xs-16 ne-bdr-btm-lgt-grey ne_pad_btm_10px neBoxShadowBtm2px padding-lr-zero">
 									<div class="xxl-16 xl-16 xs-16 l-16 m-16 s-16 ne_bg_alert ne-box-shd-1px-lgt-grey border-top" data-toggle="collapse" role="navigation" data-target="#collapseExample13_1" aria-expanded="false" aria-controls="collapseExample1" onclick="change_img('13_1_profile')">
 										<a class="xxl-16 xl-16 xs-16 l-16 m-16 s-16 padding-lr-zero">
@@ -1666,53 +1620,7 @@ border-bottom: 0px !important;
 										<div class="clearfix"></div>
 									</div>
 								</div>
-								<div class="xxl-16 xl-16 l-16 m-16 s-16 xs-16 ne-bdr-btm-lgt-grey ne_pad_btm_10px neBoxShadowBtm2px padding-lr-zero">
-									<div class="xxl-16 xl-16 xs-16 l-16 m-16 s-16 ne_bg_alert ne-box-shd-1px-lgt-grey border-top" data-toggle="collapse" role="navigation" data-target="#collapseExample2212" aria-expanded="false" aria-controls="collapseExample12"  onclick="change_img('221_profile_mobile')">
-										<a class="xxl-16 xl-16 xs-16 l-16 m-16 s-16 padding-lr-zero">
-											<h4 class="margin-bottom-0px margin-top-0px ne_pad_btm_10px ne_pad_tp_10px center-text ne_font_weight_nrm ne_bg_alert ">
-												Employee In
-												<span class="collapse-plus-nomargin" id="img_221_profile_mobile"></span>
-											</h4>
-										</a>
-									</div>
-									<div class="collapse xxl-16 xl-16 xs-16 l-16 m-16 s-16 padding-lr-zero" id="collapseExample2212">
-										<ul class="xxl-16 xl-16 padding-lr-zero margin-top-10px neRefineScroll">
-											<?php
-												$employee_in_arr = $this->common_model->get_list_ddr('employee_in');
-												if(isset($employee_in_arr) && $employee_in_arr !='' && is_array($employee_in_arr) && count($employee_in_arr) > 0)
-												{
-													$employee_in_curr = $comm_model->get_data_fromArray($search_filed_data,'employee_in');
-													foreach($employee_in_arr as $emp_key=>$emp_val)
-													{
-														$cheked = "";
-														if(isset($employee_in_curr) && $employee_in_curr !='' && is_array($employee_in_curr) &&  count($employee_in_curr) && in_array($emp_key,$employee_in_curr))
-														{
-															$cheked = "checked";
-														}
-													?>
-													<li class="xxl-16 xl-16 xs-16 s-16 m-16 l-16 padding-lr-zero">
-														<span class="">
-															<input <?php echo $cheked; ?> id="employee_in_<?php echo $emp_key; ?>" type="checkbox" value="<?php echo $emp_key; ?>" name="employee_in[]" class="employee_in row xxl-4 xl-4 xs-4 s-4 m-4 l-4">
-															<label for="employee_in_<?php echo $emp_key; ?>" class="xxl-12 xl-12 xs-12 s-12 m-12 l-12 label-search"><?php echo $emp_val; ?></label>
-														</span>
-													</li>
-													<?php
-													}
-												}
-											?>
-										</ul>
-										<div class="xxl-16 xl-16 xs-16 l-16 m-16 s-16 padding-lr-zero-xs">
-											<a class="xxl-7 xl-7 xs-7 l-7 m-7 s-7 clear ne-cursor" onClick="refine_search_mobile();">
-												<i class="fa fa-search ne_mrg_ri8_10 text-grey"></i>Search
-											</a>
-											<span class="xxl-1 xl-1 xs-1 l-1 m-1 s-1">&nbsp;</span>
-											<a class="xxl-6 xl-6 xs-6 l-6 m-6 s-6 clear ne-cursor" onClick="clear_refine('employee_in');">
-												<i class="fa fa-times-circle-o ne_mrg_ri8_10 text-grey"></i>Clear
-											</a>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-								</div>
+								
 								<div class="xxl-16 xl-16 l-16 m-16 s-16 xs-16 ne-bdr-btm-lgt-grey ne_pad_btm_10px neBoxShadowBtm2px padding-lr-zero">
 									<div class="xxl-16 xl-16 xs-16 l-16 m-16 s-16 ne_bg_alert ne-box-shd-1px-lgt-grey border-top" data-toggle="collapse" role="navigation" data-target="#collapseExample13_12" aria-expanded="false" aria-controls="collapseExample12" onclick="change_img('13_1_profile_mobile')">
 										<a class="xxl-16 xl-16 xs-16 l-16 m-16 s-16 padding-lr-zero">
