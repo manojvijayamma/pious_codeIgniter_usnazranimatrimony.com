@@ -481,7 +481,7 @@ class Common_model extends CI_Model {
 		
 		$this->load->view('front_end/page_part/header_matrimony',$this->data);
 	}
-	public function front_load_header($label_page='',$status='',$seo_title='',$seo_description='',$seo_keywords='',$og_title='',$og_description='',$og_image='')
+	public function front_load_header($label_page='',$status='',$seo_title='',$seo_description='',$seo_keywords='',$og_title='',$og_description='',$og_image='', $home_page='')
 	{
 		$this->label_page = $label_page;
 		$page_title = $label_page;
@@ -496,6 +496,7 @@ class Common_model extends CI_Model {
 		$this->data['og_title'] = $og_title;
 		$this->data['og_description'] = $og_description;
 		$this->data['og_image'] = $og_image;
+		$this->data['home_page']=$home_page;
 		
 		$this->load->view('front_end/page_part/header',$this->data);
 	}
