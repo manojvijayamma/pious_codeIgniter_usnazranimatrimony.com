@@ -307,7 +307,7 @@ $query = $this->db->get('ticker_master');
 $ticker = $query->row();
 if(isset($ticker->title) && trim($ticker->title)!=''){
 	
-	if(isset($home) && $home==1){
+	if(isset($home_page) && $home_page==1){
 ?>
 <div class="tickertop"></div>
 	<?php }?>

@@ -15,7 +15,7 @@ class Home extends CI_Controller {
 	}
 	public function index()
 	{
-		$home=1;
+		$home_page=1;
 		$is_login = $this->common_front_model->checkLogin('return');
 		if($is_login == true)
 		{
@@ -56,7 +56,7 @@ class Home extends CI_Controller {
 		{
 			$og_image = $seo_data['og_image'];
 		}
-		$this->common_model->front_load_header('','',$seo_title,$seo_description,$seo_keywords,$og_title,$og_description,$og_image);
+		$this->common_model->front_load_header('','',$seo_title,$seo_description,$seo_keywords,$og_title,$og_description,$og_image,$home_page);
 		$this->load->view('front_end/home');
 		$this->common_model->front_load_footer();
 	}
