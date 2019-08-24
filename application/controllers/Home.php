@@ -15,6 +15,7 @@ class Home extends CI_Controller {
 	}
 	public function index()
 	{
+		$home=1;
 		$is_login = $this->common_front_model->checkLogin('return');
 		if($is_login == true)
 		{

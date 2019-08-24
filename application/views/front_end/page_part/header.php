@@ -295,7 +295,7 @@
 <style>
 @media (min-width: 1000px) {
 .tickertop{
-	/* margin-top:80px; */
+	margin-top:80px;
 }
 }
 </style>
@@ -306,7 +306,7 @@ $this->db->where('id','1');
 $query = $this->db->get('ticker_master');			
 $ticker = $query->row();
 if(isset($ticker->title) && trim($ticker->title)!=''){
-	if(isset($this->common_model->is_home_page)){
+	if(isset($home)){
 ?>
 <div class="tickertop"></div>
 	<?php }?>
