@@ -56,6 +56,7 @@ error_reporting(0);
  * NOTE: If you change these, also change the error_reporting() code below
  */
 include(".env");
+require './vendor/autoload.php';
 
 /*
  *---------------------------------------------------------------

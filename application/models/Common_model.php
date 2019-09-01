@@ -709,7 +709,69 @@ class Common_model extends CI_Model {
 		}
 		return $msg;
 	}
+
+
+
 	public function common_sms_send($mobile,$sms)
+	{
+		if($mobile !='' && $sms !='')
+		{
+			$config_arra = $this->get_site_config();
+			$sms_api = $config_arra['sms_api'];
+			$sms_api_status = $config_arra['sms_api_status'];
+
+
+				$mobile_new = $mobile;
+				if(strlen($mobile) == 13 && substr($mobile, 0, 3) == "+91"){
+					$mobile_new = substr($mobile, 3, 10);
+				}
+				else if(strlen($mobile) == 14 && substr($mobile, 0, 4) == "+91-"){
+					$mobile_arr = explode('-',$mobile);
+					if(isset($mobile_arr[1]) && $mobile_arr[1] !=''){
+						$mobile_new = $mobile_arr[1];
+					}
+				}
+
+
+				$sms = urlencode($sms);
+			
+
+			$params = array(
+				'credentials' => array(
+					'key' => 'AKIAQPGVTS7F6MLIDMUI',
+					'secret' => 'YTMthrlPKxZIUZI5XYyQxVydnKcAOk67+m7dg5p6',
+				),
+				'region' => 'us-west-2', // < your aws from SNS Topic region
+				'version' => 'latest'
+			);
+			$sns = new \Aws\Sns\SnsClient($params);
+			
+			$args = array(
+				"MessageAttributes" => [
+							'AWS.SNS.SMS.SenderID' => [
+								'DataType' => 'String',
+								'StringValue' => 'Notice'
+							],
+							'AWS.SNS.SMS.SMSType' => [
+								'DataType' => 'String',
+								'StringValue' => 'Transactional'
+							]
+						],
+				"Message" => $sms,
+				"PhoneNumber" => $mobile_new
+			);
+			
+			
+			$result = $sns->publish($args);
+
+
+		}
+	}
+
+
+
+
+	public function common_sms_send_bk($mobile,$sms)
 	{
 		if($mobile !='' && $sms !='')
 		{

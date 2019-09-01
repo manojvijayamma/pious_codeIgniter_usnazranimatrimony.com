@@ -1,0 +1,9 @@
+1. admin
+-----------------
+see ticker
+
+
+2.ajax implementation
+
+see privacy-contact.php
+	-there should be csrf token
