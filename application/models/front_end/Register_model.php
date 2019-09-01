@@ -747,7 +747,8 @@ class Register_model extends CI_Model {
 			if($is_post == 0)
 
 			{
-
+				$data1['status'] = $data1['status'] ? $data1['status'] : "success";
+				$data1['errmessage'] = $data1['errmessage'] ? $data1['errmessage'] : "Your profile has been added successfully";
 				$data['data'] = json_encode($data1);
 
 				return $data;
