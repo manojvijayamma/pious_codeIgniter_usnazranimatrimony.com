@@ -721,19 +721,12 @@ class Common_model extends CI_Model {
 			$sms_api_status = $config_arra['sms_api_status'];
 
 
-				$mobile_new = $mobile;
-				if(strlen($mobile) == 13 && substr($mobile, 0, 3) == "+91"){
-					$mobile_new = substr($mobile, 3, 10);
-				}
-				else if(strlen($mobile) == 14 && substr($mobile, 0, 4) == "+91-"){
-					$mobile_arr = explode('-',$mobile);
-					if(isset($mobile_arr[1]) && $mobile_arr[1] !=''){
-						$mobile_new = $mobile_arr[1];
-					}
-				}
+				$mobile = str_replace("+","00",$mobile);
+				$mobile = str_replace("-","",$mobile);
+				
 
 
-				$sms = urlencode($sms);
+				//$sms = urlencode($sms);
 			
 
 			$params = array(
@@ -758,7 +751,7 @@ class Common_model extends CI_Model {
 							]
 						],
 				"Message" => $sms,
-				"PhoneNumber" => $mobile_new
+				"PhoneNumber" => $mobile
 			);
 			
 			
