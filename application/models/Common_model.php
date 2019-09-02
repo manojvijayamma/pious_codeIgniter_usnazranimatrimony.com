@@ -4185,7 +4185,7 @@ class Common_model extends CI_Model {
 	public function get_list_ddr($type='')
 	{
 		$marital_status= array('Unmarried'=>'Unmarried','Widow/Widower'=>'Widow/Widower','Divorcee'=>'Divorcee','Separated'=>'Separated');
-		$diet = array('Occasionally Non-Veg'=>'Occasionally Non-Veg','Veg'=>'Veg','Eggetarian'=>'Eggetarian','Occasionally Non-Veg'=>'Occasionally Non-Veg','Non-Veg'=>'Non-Veg');
+		$diet = array('Occasionally Non-Veg'=>'Occasionally Non-Veg','Veg'=>'Veg','Eggetarian'=>'Eggetarian','Occasionally Non-Veg'=>'Occasionally Non-Veg','Non-Veg'=>'Non-Veg', 'Vegans'=>'Vegans');
 		$smoke = array('No'=>'No','Yes'=>'Yes','Occasionally'=>'Occasionally');
 		$gender = array('Male'=>'Male','Female'=>'Female');
 		$manglik = array('No'=>'No','Yes'=>'Yes','Maybe'=>'Maybe','Anshik'=>'Anshik');
