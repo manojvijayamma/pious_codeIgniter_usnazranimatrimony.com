@@ -265,57 +265,6 @@ $today=date('Y-m-d');
 
 
 
-
-    <div class="xxl-16 xl-16 m-16 l-16 xs-16 s-16 bg-white compltele-profile margin-bottom-15px hidden-sm hidden-xs" style="padding-top:0px;">
-    <div class="row" data-toggle="collapse" href="#ne_lft_pan_list" aria-expanded="false" aria-controls="ne_lft_pan_list" style="padding:4px;">
-    <a href="#" onclick="change_img('profile')">
-        <h3 class="upgrade-heading" style="margin:0px;">
-            <i class="glyphicon glyphicon-list ne_mrg_ri8_10 ne_font_12"></i>
-            <span class="ne_mrg_ri8_10">Settings</span>
-            <span class="collapse-minus" id="img_profile"></span>
-        </h3>
-    </a>
-    </div>
-    <div class="xxl-16 xl-16 l-16 m-16 s-16 xs-16 bg-white" style="box-shadow: none;">
-    <div class="row">
-        <div class="collapse in ne_left_msg_opt xxl-16 xl-16 s-16 m-16 l-16 xs-16" id="ne_lft_pan_list">
-            <div class="row">
-               
-               
-                <a href="<?php echo $base_url;?>settings/contact-number" class="xxl-16 xxl-margin-left-0 xl-16 xl-margin-left-0 m-16 m-margin-left-0 s-15 s-margin-left-1 l-15 l-margin-left-1 xs-16 padding-lr-zero">
-                    <span class="xxl-16 xs-16 s-160 m-16 l-16 xl-16">
-                        <i class="glyphicon glyphicon-sort-by-attributes-alt ne_mrg_ri8_10 ne_font_12"></i>Show / Hide Contact Number
-                    </span>                    
-                    
-                </a>
-                
-                
-                
-               
-                
-      
-                
-                             
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
    <div class="xxl-16 xl-16 m-16 l-16 xs-16 s-16 bg-white compltele-profile margin-bottom-15px hidden-sm hidden-xs" style="padding-top:0px;">
     
 	<div class="margin-bottom-10 row"  data-toggle="collapse" href="#ne_Messages" aria-expanded="false" aria-controls="ne_Messages" style="padding:4px;">
