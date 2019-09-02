@@ -157,3 +157,9 @@ ERROR - 2019-09-01 08:08:14 --> Severity: Notice --> Undefined index: part_desig
 ERROR - 2019-09-01 08:08:14 --> Severity: Notice --> Undefined index: part_designation /home/smccubnr/public_html/usnazranimatrimony.com/application/models/front_end/Common_front_model.php 2414
 ERROR - 2019-09-01 08:08:14 --> Severity: Notice --> Undefined index: part_income /home/smccubnr/public_html/usnazranimatrimony.com/application/models/front_end/Common_front_model.php 2412
 ERROR - 2019-09-01 08:08:14 --> Severity: Notice --> Undefined index: part_income /home/smccubnr/public_html/usnazranimatrimony.com/application/models/front_end/Common_front_model.php 2414
+ERROR - 2019-09-01 13:33:09 --> Severity: Notice --> Undefined index: status /home/smccubnr/public_html/usnazranimatrimony.com/application/models/front_end/Register_model.php 750
+ERROR - 2019-09-01 13:33:09 --> Severity: Notice --> Undefined index: errmessage /home/smccubnr/public_html/usnazranimatrimony.com/application/models/front_end/Register_model.php 751
+ERROR - 2019-09-01 13:33:17 --> Severity: Notice --> Undefined index: status /home/smccubnr/public_html/usnazranimatrimony.com/application/models/front_end/Register_model.php 750
+ERROR - 2019-09-01 13:33:17 --> Severity: Notice --> Undefined index: errmessage /home/smccubnr/public_html/usnazranimatrimony.com/application/models/front_end/Register_model.php 751
+ERROR - 2019-09-01 13:33:36 --> Severity: Notice --> Undefined index: status /home/smccubnr/public_html/usnazranimatrimony.com/application/models/front_end/Register_model.php 750
+ERROR - 2019-09-01 13:33:36 --> Severity: Notice --> Undefined index: errmessage /home/smccubnr/public_html/usnazranimatrimony.com/application/models/front_end/Register_model.php 751
