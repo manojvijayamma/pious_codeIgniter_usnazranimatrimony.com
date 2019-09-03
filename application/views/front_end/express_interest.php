@@ -4,6 +4,94 @@ $paid_member_id = $this->common_front_model->get_session_data('id');
 $where = array('id'=>$paid_member_id);
 $pdata = $this->common_model->get_count_data_manual("register",$where,1,'plan_status','','',1);
 $paid_status = $pdata['plan_status'];
+
+
+
+$matri_id=$this->session->userdata('matri_id');
+
+
+$sql="select count(*) as total from register_view join 
+expressinterest on 
+	expressinterest.receiver = register_view.matri_id where 
+	expressinterest.sender='".$matri_id."' and expressinterest.trash_sender='No'";
+$all_sent_q= $this->db->query($sql)->row();
+$all_sent=$all_sent_q->total;
+
+
+
+$sql="select count(*) as total from register_view join 
+expressinterest on 
+	expressinterest.receiver = register_view.matri_id where 
+	expressinterest.sender='".$matri_id."' and expressinterest.trash_sender='No' AND
+	expressinterest.receiver_response='Accepted'";
+$accept_sent_q= $this->db->query($sql)->row();
+$accept_sent=$accept_sent_q->total;
+
+
+
+$sql="select count(*) as total from register_view join 
+expressinterest on 
+	expressinterest.receiver = register_view.matri_id where 
+	expressinterest.sender='".$matri_id."' and expressinterest.trash_sender='No' AND
+	expressinterest.receiver_response='Rejected'";
+$reject_sent_q= $this->db->query($sql)->row();
+$reject_sent=$reject_sent_q->total;
+
+
+
+$sql="select count(*) as total from register_view join 
+expressinterest on 
+	expressinterest.receiver = register_view.matri_id where 
+	expressinterest.sender='".$matri_id."' and expressinterest.trash_sender='No' AND
+	expressinterest.receiver_response='Pending'";
+$pending_sent_q= $this->db->query($sql)->row();
+$pending_sent=$pending_sent_q->total;
+
+
+
+$sql="select count(*) as total from register_view join 
+expressinterest on 
+	expressinterest.sender = register_view.matri_id where 
+	expressinterest.receiver='".$matri_id."' and expressinterest.trash_receiver='No' AND
+	register_view.is_deleted='No'
+	";
+$all_receive_q= $this->db->query($sql)->row();
+$all_receive=$all_receive_q->total;
+
+
+
+$sql="select count(*) as total from register_view join 
+expressinterest on 
+	expressinterest.sender = register_view.matri_id where 
+	expressinterest.receiver='".$matri_id."' and expressinterest.trash_receiver='No' AND
+	register_view.is_deleted='No' AND expressinterest.receiver_response='Accepted'
+	";
+$accept_receive_q= $this->db->query($sql)->row();
+$accept_receive=$accept_receive_q->total;
+
+
+
+$sql="select count(*) as total from register_view join 
+expressinterest on 
+	expressinterest.sender = register_view.matri_id where 
+	expressinterest.receiver='".$matri_id."' and expressinterest.trash_receiver='No' AND
+	register_view.is_deleted='No' AND expressinterest.receiver_response='Rejected'
+	";
+$reject_receive_q= $this->db->query($sql)->row();
+$reject_receive=$reject_receive_q->total;
+
+
+
+$sql="select count(*) as total from register_view join 
+expressinterest on 
+	expressinterest.sender = register_view.matri_id where 
+	expressinterest.receiver='".$matri_id."' and expressinterest.trash_receiver='No' AND
+	register_view.is_deleted='No' AND expressinterest.receiver_response='Pending'
+	";
+$pending_receive_q= $this->db->query($sql)->row();
+$pending_receive=$pending_receive_q->total;
+
+
 ?>
 <style> .user { padding: 5px; margin-bottom: 5px; text-align: center; } </style>
 <!------------------<div class="container">----Start------------------------------------------------->	
@@ -45,7 +133,10 @@ $paid_status = $pdata['plan_status'];
 										<!--<img src="<?php echo $base_url; ?>assets/front_end/images/icon/select-all.png" alt="" class="" />-->
 									</div>
 									<div class="xxl-14 xl-14 l-14 m-14 s-14 xs-14">
-										 All Interest Sent
+										 All Interest Sent 
+										    <span class="ne_left_msg_badge">
+												<span><?php echo $all_sent?></span>
+											</span>
 									</div>
 								</div>
                             </a>
@@ -57,7 +148,10 @@ $paid_status = $pdata['plan_status'];
 										<img src="<?php echo $base_url; ?>assets/front_end/images/icon/interest-sent-black.png" alt="" class="" />
 									</div>
 									<div class="xxl-14 xl-14 l-14 m-14 s-14 xs-14">
-										Interest Sent Accepted
+										Interest Sent Accepted 
+											<span class="ne_left_msg_badge">
+												<span><?php echo $accept_sent?></span>
+											</span>
 									</div>
 								</div>
                             </a>
@@ -70,6 +164,9 @@ $paid_status = $pdata['plan_status'];
 									</div>
 									<div class="xxl-14 xl-14 l-14 m-14 s-14 xs-14">
 										Interest Sent Rejected
+										<span class="ne_left_msg_badge">
+												<span><?php echo $reject_sent?></span>
+											</span>
 									</div>
 								</div>
 						   </a>
@@ -82,6 +179,9 @@ $paid_status = $pdata['plan_status'];
 									</div>
 									<div class="xxl-14 xl-14 l-14 m-14 s-14 xs-14">
 										Interest Sent Pending
+										<span class="ne_left_msg_badge">
+												<span><?php echo $pending_sent?></span>
+											</span>
 									</div>
 								</div>
 							</a>
@@ -94,7 +194,14 @@ $paid_status = $pdata['plan_status'];
 										<!--<img src="<?php echo $base_url; ?>assets/front_end/images/icon/select-all.png" alt="" class="" />-->
 									</div>
 									<div class="xxl-14 xl-14 l-14 m-14 s-14 xs-14">
-										 All Interest Received
+											All Interest Received
+										 
+											<span class="ne_left_msg_badge">
+												<span><?php echo $all_receive?></span>
+											</span>
+										
+
+
 									</div>
 								</div>
                             </a>
@@ -107,6 +214,9 @@ $paid_status = $pdata['plan_status'];
 									</div>
 									<div class="xxl-14 xl-14 l-14 m-14 s-14 xs-14">
 										Interest Received Accepted
+										<span class="ne_left_msg_badge">
+												<span><?php echo $accept_receive?></span>
+											</span>
 									</div>
 								</div>
 							</a>
@@ -119,6 +229,9 @@ $paid_status = $pdata['plan_status'];
 									</div>
 									<div class="xxl-14 xl-14 l-14 m-14 s-14 xs-14">
 										Interest Received Rejected
+										<span class="ne_left_msg_badge">
+												<span><?php echo $reject_receive?></span>
+											</span>
 									</div>
 								</div>
 							</a>
@@ -131,6 +244,9 @@ $paid_status = $pdata['plan_status'];
 									</div>
 									<div class="xxl-14 xl-14 l-14 m-14 s-14 xs-14">
 										Interest Received Pending
+										<span class="ne_left_msg_badge">
+												<span><?php echo $pending_receive?></span>
+											</span>
 									</div>
 								</div>
 							</a>

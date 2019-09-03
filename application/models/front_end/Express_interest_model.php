@@ -25,6 +25,9 @@ class Express_interest_model extends CI_Model {
 		$where_arra = array('id'=>$member_id);  
 		$row_data = $this->common_model->get_count_data_manual('register',$where_arra,1,'matri_id');
 		$login_user_matri_id = $row_data['matri_id'];
+
+		$this->session->set_userdata('matri_id',$login_user_matri_id); //manoj
+
 		//$login_user_matri_id = $this->common_front_model->get_user_id('matri_id','matri_id');
 		
 		$this->common_model->set_table_name($this->table_name);
