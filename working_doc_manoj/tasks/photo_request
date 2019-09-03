@@ -1,0 +1,35 @@
+
+fe/photo_protect view 
+--------------------------
+
+photo_protect.php 
+-send_password_request()
+
+
+function defined 
+--------------------------
+photo_protect.js
+    function send_password_request()
+
+
+
+controllers call the view fe/photo_protect
+----------------------------------------
+Express_interst.php 
+Matches.php 
+modify_photo.php 
+my_dashboard 
+my_profile 
+search 
+upload 
+
+
+
+
+
+
+
+
+Notification count:
+Express_interst.php >> index
+
