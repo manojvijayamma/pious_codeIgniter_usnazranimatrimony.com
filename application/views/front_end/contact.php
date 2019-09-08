@@ -142,7 +142,7 @@
                                                                         <div class="xxl-11 xl-11 xs-16 s-16 m-11 l-11 margin-top-5px-320 padding-lr-zero-480">								
                                                                        <div style="width:40% !important;float:left">
                                         			<select name="country_code" id="country_code" class="form-control select2">
-                                        						<?php echo $this->common_model->country_code_opt('+91');?>
+                                        						<?php echo $this->common_model->country_code_opt('+1');?>
                                         			</select>
                                         </div>
                                         <input type="text" class="form-control" placeholder="Enter Your Contact No" id="phone" name="phone" minlength="7" maxlength="15" style="width:60%;float:left" required/>
