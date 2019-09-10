@@ -123,7 +123,8 @@ class Privacy_model extends CI_Model {
 			if(isset($_POST['contact_view_security']) && $_POST['contact_view_security']!='')
 			{
 				$contact_view_security = trim($_POST['contact_view_security']);
-				$data_array = array('contact_view_security'=>$contact_view_security);
+				$allow_contact = trim($_POST['allow_contact']);
+				$data_array = array('contact_view_security'=>$contact_view_security,'allow_contact'=>$allow_contact);
 				$return = $this->common_model->update_insert_data_common('register',$data_array,$where_arra);
 				$success_message = "Your contact setting is edited Successfully.";
 				
