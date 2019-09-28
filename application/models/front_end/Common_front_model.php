@@ -2278,7 +2278,7 @@ class Common_front_model extends CI_Model {
 				),
 
 				'edu_Occup'=>array(
-					'Education & Occupation Information'=>array('Education'=>'education_detail_str','Occupation'=>'occupation_name','Designation'=>'designation_name')
+					'Education & Occupation Information'=>array('Education'=>'education_detail_str','Other Education'=>'other_education','Occupation'=>'occupation_name','Other Occupation'=>'other_occupation','Designation'=>'designation_name','Other Designation'=>'other_designation')
 				),
 
 				'life_style_info'=>array(
@@ -2286,7 +2286,7 @@ class Common_front_model extends CI_Model {
 				),
 
 				'location_info'=>array(
-					'Location Details'=>array('Country'=>'country_name','State'=>'state_name','City'=>'city_name','Address'=>'address','Mobile'=>'mobile','Phone'=>'phone','Time To Call'=>'time_to_call','Residence'=>'residence')
+					'Location Details'=>array('Country'=>'country_name','State'=>'state_name','City'=>'city_name','Other City'=>'other_city','Address'=>'address','Mobile'=>'mobile','Phone'=>'phone','Time To Call'=>'time_to_call','Residence'=>'residence')
 				),
 
 				'family_info'=>array(
