@@ -822,6 +822,10 @@ class Search extends CI_Controller {
 							
 							$user_data['percentage'] = $percentage_stored;
 							
+							if($user_data['allow_contact']==0){
+							    $user_data['mobile']="";
+							    $user_data['phone']="";
+							}
 							$data1['data'] = $user_data;
 							$data1['status'] = 'success';
 							
