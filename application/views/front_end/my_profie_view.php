@@ -214,7 +214,7 @@
 
 									'caste_name'=>array('label'=>'Diocese'),
 									'other_caste'=>array('label'=>'If other diocese'),
-									'subcaste'=>array('label'=>'Parish'),
+									
 
 									
 

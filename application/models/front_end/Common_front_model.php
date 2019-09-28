@@ -1974,7 +1974,7 @@ class Common_front_model extends CI_Model {
                     'Basic Details'=>array('Name'=>'username','Marital Status'=>'marital_status','Total Children'=>'total_children','Status Children'=>'status_children','Mother Tongue'=>'mtongue_name','Languages Known'=>(($data['languages_known']==null || $data['languages_known']==''))?'languages_known':'languages_known_str','Height'=>(($data['height']==null || $data['height']==''))?'height':'height_str','Weight'=>'weight','Birthdate'=>'birthdate','Age'=>'age')
                 ),
 				'religion_info'=>array(
-					'Religious Information'=>array('Community'=>'religion_name','Diocese'=>'caste_name','Parish'=>'subcaste')
+					'Religious Information'=>array('Community'=>'religion_name','Diocese'=>'caste_name','Other Diocese'=>'other_caste')
 				),
 				'about_me_and_hobby'=>array(
 					'About Me & Hobby'=>array('About Us'=>'profile_text','Hobby'=>'hobby','Birth Place'=>'birthplace','Created By'=>'profileby','Referenced By'=>'reference')
@@ -2270,7 +2270,7 @@ class Common_front_model extends CI_Model {
                 ),
 
 				'religion_info'=>array(
-					'Religious Information'=>array('Community'=>'religion_name','Diocese'=>'caste_name','Parish'=>'subcaste')
+					'Religious Information'=>array('Community'=>'religion_name','Diocese'=>'caste_name','Other Diocese'=>'other_caste')
 				),
 
 				'about_me_and_hobby'=>array(

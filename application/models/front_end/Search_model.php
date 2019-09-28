@@ -1741,16 +1741,11 @@ class Search_model extends CI_Model {
 					}
 					$where_array_member = array('matri_id'=>$from_id);
 					$member_data = $this->common_model->get_count_data_manual('register_view',$where_array_member,1,'');
-					$allow_contact = $member_data['allow_contact'];
+					
 					$image = $this->common_model->member_photo_disp($member_data);
 					$matri_id = $member_data['matri_id'];
 					$username = $member_data['username'];
-					if($allow_contact==1){
-						$mobile = $member_data['mobile'];
-					}	
-					else{
-						$mobile = "";
-					}	
+					$mobile = $member_data['mobile'];
 					$email = $member_data['email'];
 					$time_to_call = $member_data['time_to_call'];					
 					if($member_data['contact_view_security'] == 1){
