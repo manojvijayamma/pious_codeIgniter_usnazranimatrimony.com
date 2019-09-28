@@ -560,7 +560,7 @@
 
            							'caste'=>array('label'=>'Diocese','type'=>'dropdown','relation'=>array('rel_table'=>'caste','key_val'=>'id','key_disp'=>'caste_name','rel_col_name'=>'religion_id','not_load_add'=>'yes','not_load_add'=>'yes','cus_rel_col_val'=>'religion'),'extra_style'=>'width:100%'),
 									   'other_caste'=>array('label'=>'If other diocese'),
-									'subcaste'=>array('label'=>'Parish'),
+									
 									
 
            							//'manglik'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('manglik'),'extra_style'=>'width:100%'),
