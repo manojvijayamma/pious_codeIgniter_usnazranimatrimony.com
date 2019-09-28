@@ -777,7 +777,7 @@ class Search extends CI_Controller {
 				$total_profile = $payment_data['profile'];
 				$profile_used = $payment_data['profile_used'];
 			
-				if(isset($payment_data) && $payment_data != '' && $total_profile >= $profile_used)
+				if(isset($payment_data) && $payment_data != '' && $total_profile > $profile_used)
 				{
 					if(isset($matri_id) && $matri_id!='')
 					{
