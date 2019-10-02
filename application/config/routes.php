@@ -80,3 +80,4 @@ $route['privacy_policy'] = 'cms/privacy_policy';
 
 $route['terms-condition'] = 'cms/terms_condition';
 $route['terms_condition'] = 'cms/terms_condition';
+
