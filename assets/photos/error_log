@@ -1,2 +1,12 @@
 [10-Aug-2019 18:32:00 Etc/GMT] PHP Notice:  Undefined variable: watermark in /home/smccubnr/public_html/usnazranimatrimony.com/assets/photos/watermark.php on line 64
 [10-Aug-2019 18:32:00 Etc/GMT] PHP Warning:  imagedestroy() expects parameter 1 to be resource, null given in /home/smccubnr/public_html/usnazranimatrimony.com/assets/photos/watermark.php on line 64
+[02-Oct-2019 14:14:35 Etc/GMT] PHP Notice:  Undefined variable: watermark in /home/smccubnr/public_html/usnazranimatrimony.com/assets/photos/watermark.php on line 64
+[02-Oct-2019 14:14:35 Etc/GMT] PHP Warning:  imagedestroy() expects parameter 1 to be resource, null given in /home/smccubnr/public_html/usnazranimatrimony.com/assets/photos/watermark.php on line 64
+[02-Oct-2019 14:28:36 Etc/GMT] PHP Notice:  Undefined variable: watermark in /home/smccubnr/public_html/usnazranimatrimony.com/assets/photos/watermark.php on line 64
+[02-Oct-2019 14:28:36 Etc/GMT] PHP Warning:  imagedestroy() expects parameter 1 to be resource, null given in /home/smccubnr/public_html/usnazranimatrimony.com/assets/photos/watermark.php on line 64
+[02-Oct-2019 14:29:27 Etc/GMT] PHP Notice:  Undefined variable: watermark in /home/smccubnr/public_html/usnazranimatrimony.com/assets/photos/watermark.php on line 64
+[02-Oct-2019 14:29:27 Etc/GMT] PHP Warning:  imagedestroy() expects parameter 1 to be resource, null given in /home/smccubnr/public_html/usnazranimatrimony.com/assets/photos/watermark.php on line 64
+[02-Oct-2019 14:34:43 Etc/GMT] PHP Notice:  Undefined variable: watermark in /home/smccubnr/public_html/usnazranimatrimony.com/assets/photos/watermark.php on line 64
+[02-Oct-2019 14:34:43 Etc/GMT] PHP Warning:  imagedestroy() expects parameter 1 to be resource, null given in /home/smccubnr/public_html/usnazranimatrimony.com/assets/photos/watermark.php on line 64
+[02-Oct-2019 14:42:27 Etc/GMT] PHP Notice:  Undefined variable: watermark in /home/smccubnr/public_html/usnazranimatrimony.com/assets/photos/watermark.php on line 64
+[02-Oct-2019 14:42:27 Etc/GMT] PHP Warning:  imagedestroy() expects parameter 1 to be resource, null given in /home/smccubnr/public_html/usnazranimatrimony.com/assets/photos/watermark.php on line 64
