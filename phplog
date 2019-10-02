@@ -1,0 +1,1304 @@
+
+ Wed, 02 Oct 2019 10:14:41 -0400 INFO : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Creation Begin
+ Wed, 02 Oct 2019 10:14:41 -0400 DEBUG : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\CreateTransactionRequest Object
+(
+    [transactionRequest:net\authorize\api\contract\v1\CreateTransactionRequest:private] => net\authorize\api\contract\v1\TransactionRequestType Object
+        (
+            [transactionType:net\authorize\api\contract\v1\TransactionRequestType:private] => authCaptureTransaction
+            [amount:net\authorize\api\contract\v1\TransactionRequestType:private] => 151.51
+            [currencyCode:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [payment:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\PaymentType Object
+                (
+                    [creditCard:net\authorize\api\contract\v1\PaymentType:private] => net\authorize\api\contract\v1\CreditCardType Object
+                        (
+                            [cardCode:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [isPaymentToken:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [cryptogram:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorName:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorId:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorEci:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [cardNumber:net\authorize\api\contract\v1\CreditCardSimpleType:private] => xxxx-1111
+                            [expirationDate:net\authorize\api\contract\v1\CreditCardSimpleType:private] => xxxx
+                        )
+
+                    [bankAccount:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [trackData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [encryptedTrackData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [payPal:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [opaqueData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [emv:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [dataSource:net\authorize\api\contract\v1\PaymentType:private] => 
+                )
+
+            [profile:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [solution:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [callId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [terminalNumber:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [authCode:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [refTransId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [splitTenderId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [order:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [lineItems:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [tax:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [duty:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipping:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [taxExempt:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [poNumber:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [customer:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [billTo:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipTo:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [customerIP:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [cardholderAuthentication:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [retail:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [employeeId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [transactionSettings:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [userFields:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [surcharge:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [merchantDescriptor:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [subMerchant:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [tip:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [processingOptions:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [subsequentAuthInformation:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [otherTax:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipFrom:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+        )
+
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => YOUR_API_LOGIN_ID
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [accessToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-2.0.0-ALPHA
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1570025681
+)
+
+ Wed, 02 Oct 2019 10:14:41 -0400 INFO : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 126) - Request  Creation End
+ Wed, 02 Oct 2019 10:14:41 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Wed, 02 Oct 2019 10:14:41 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+{"createTransactionRequest":{"merchantAuthentication":{"name":"YOUR_API_LOGIN_ID","transactionKey":"YOUR_TRANSACTION_KEY"},"clientId":"sdk-php-2.0.0-ALPHA","refId":"ref1570025681","transactionRequest":{"transactionType":"authCaptureTransaction","amount":151.51,"payment":{"creditCard":{"cardNumber":"xxxx","expirationDate":"2038-12"}}}}}
+ Wed, 02 Oct 2019 10:14:41 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Wed, 02 Oct 2019 10:14:41 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Wed, 02 Oct 2019 10:14:42 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿{"messages":{"resultCode":"Error","message":[{"code":"E00003","text":"The 'AnetApi/xml/v1/schema/AnetApiSchema.xsd:transactionKey' element is invalid - The value XXXXXXXXXXXXXXXXXXXXXX is invalid according to its datatype 'String' - The actual length is greater than the MaxLength value."}]}}
+ Wed, 02 Oct 2019 10:15:06 -0400 INFO : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Creation Begin
+ Wed, 02 Oct 2019 10:15:06 -0400 DEBUG : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\CreateTransactionRequest Object
+(
+    [transactionRequest:net\authorize\api\contract\v1\CreateTransactionRequest:private] => net\authorize\api\contract\v1\TransactionRequestType Object
+        (
+            [transactionType:net\authorize\api\contract\v1\TransactionRequestType:private] => authCaptureTransaction
+            [amount:net\authorize\api\contract\v1\TransactionRequestType:private] => 1
+            [currencyCode:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [payment:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\PaymentType Object
+                (
+                    [creditCard:net\authorize\api\contract\v1\PaymentType:private] => net\authorize\api\contract\v1\CreditCardType Object
+                        (
+                            [cardCode:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [isPaymentToken:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [cryptogram:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorName:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorId:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorEci:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [cardNumber:net\authorize\api\contract\v1\CreditCardSimpleType:private] => xxxx-3390
+                            [expirationDate:net\authorize\api\contract\v1\CreditCardSimpleType:private] => xxxx
+                        )
+
+                    [bankAccount:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [trackData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [encryptedTrackData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [payPal:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [opaqueData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [emv:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [dataSource:net\authorize\api\contract\v1\PaymentType:private] => 
+                )
+
+            [profile:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [solution:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [callId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [terminalNumber:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [authCode:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [refTransId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [splitTenderId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [order:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [lineItems:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [tax:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [duty:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipping:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [taxExempt:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [poNumber:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [customer:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [billTo:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipTo:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [customerIP:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [cardholderAuthentication:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [retail:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [employeeId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [transactionSettings:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [userFields:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [surcharge:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [merchantDescriptor:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [subMerchant:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [tip:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [processingOptions:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [subsequentAuthInformation:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [otherTax:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipFrom:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+        )
+
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => YOUR_API_LOGIN_ID
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [accessToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-2.0.0-ALPHA
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1570025706
+)
+
+ Wed, 02 Oct 2019 10:15:06 -0400 INFO : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 126) - Request  Creation End
+ Wed, 02 Oct 2019 10:15:06 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Wed, 02 Oct 2019 10:15:06 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+{"createTransactionRequest":{"merchantAuthentication":{"name":"YOUR_API_LOGIN_ID","transactionKey":"YOUR_TRANSACTION_KEY"},"clientId":"sdk-php-2.0.0-ALPHA","refId":"ref1570025706","transactionRequest":{"transactionType":"authCaptureTransaction","amount":1,"payment":{"creditCard":{"cardNumber":"9847483390","expirationDate":"2038-12"}}}}}
+ Wed, 02 Oct 2019 10:15:06 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Wed, 02 Oct 2019 10:15:06 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Wed, 02 Oct 2019 10:15:07 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿{"messages":{"resultCode":"Error","message":[{"code":"E00003","text":"The 'AnetApi/xml/v1/schema/AnetApiSchema.xsd:transactionKey' element is invalid - The value XXXXXXXXXXXXXXXXXXXXXX is invalid according to its datatype 'String' - The actual length is greater than the MaxLength value."}]}}
+ Wed, 02 Oct 2019 10:16:32 -0400 INFO : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Creation Begin
+ Wed, 02 Oct 2019 10:16:32 -0400 DEBUG : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\CreateTransactionRequest Object
+(
+    [transactionRequest:net\authorize\api\contract\v1\CreateTransactionRequest:private] => net\authorize\api\contract\v1\TransactionRequestType Object
+        (
+            [transactionType:net\authorize\api\contract\v1\TransactionRequestType:private] => authCaptureTransaction
+            [amount:net\authorize\api\contract\v1\TransactionRequestType:private] => 1
+            [currencyCode:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [payment:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\PaymentType Object
+                (
+                    [creditCard:net\authorize\api\contract\v1\PaymentType:private] => net\authorize\api\contract\v1\CreditCardType Object
+                        (
+                            [cardCode:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [isPaymentToken:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [cryptogram:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorName:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorId:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorEci:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [cardNumber:net\authorize\api\contract\v1\CreditCardSimpleType:private] => xxxx-5763
+                            [expirationDate:net\authorize\api\contract\v1\CreditCardSimpleType:private] => xxxx
+                        )
+
+                    [bankAccount:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [trackData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [encryptedTrackData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [payPal:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [opaqueData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [emv:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [dataSource:net\authorize\api\contract\v1\PaymentType:private] => 
+                )
+
+            [profile:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [solution:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [callId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [terminalNumber:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [authCode:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [refTransId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [splitTenderId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [order:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [lineItems:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [tax:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [duty:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipping:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [taxExempt:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [poNumber:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [customer:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [billTo:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipTo:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [customerIP:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [cardholderAuthentication:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [retail:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [employeeId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [transactionSettings:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [userFields:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [surcharge:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [merchantDescriptor:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [subMerchant:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [tip:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [processingOptions:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [subsequentAuthInformation:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [otherTax:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipFrom:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+        )
+
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => YOUR_API_LOGIN_ID
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [accessToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-2.0.0-ALPHA
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1570025792
+)
+
+ Wed, 02 Oct 2019 10:16:32 -0400 INFO : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 126) - Request  Creation End
+ Wed, 02 Oct 2019 10:16:32 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Wed, 02 Oct 2019 10:16:32 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+{"createTransactionRequest":{"merchantAuthentication":{"name":"YOUR_API_LOGIN_ID","transactionKey":"YOUR_TRANSACTION_KEY"},"clientId":"sdk-php-2.0.0-ALPHA","refId":"ref1570025792","transactionRequest":{"transactionType":"authCaptureTransaction","amount":1,"payment":{"creditCard":{"cardNumber":"xxxx3","expirationDate":"2022-07"}}}}}
+ Wed, 02 Oct 2019 10:16:32 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Wed, 02 Oct 2019 10:16:32 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Wed, 02 Oct 2019 10:16:33 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿{"messages":{"resultCode":"Error","message":[{"code":"E00003","text":"The 'AnetApi/xml/v1/schema/AnetApiSchema.xsd:transactionKey' element is invalid - The value XXXXXXXXXXXXXXXXXXXXXX is invalid according to its datatype 'String' - The actual length is greater than the MaxLength value."}]}}
+ Wed, 02 Oct 2019 10:17:04 -0400 INFO : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Creation Begin
+ Wed, 02 Oct 2019 10:17:04 -0400 DEBUG : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\CreateTransactionRequest Object
+(
+    [transactionRequest:net\authorize\api\contract\v1\CreateTransactionRequest:private] => net\authorize\api\contract\v1\TransactionRequestType Object
+        (
+            [transactionType:net\authorize\api\contract\v1\TransactionRequestType:private] => authCaptureTransaction
+            [amount:net\authorize\api\contract\v1\TransactionRequestType:private] => 1
+            [currencyCode:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [payment:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\PaymentType Object
+                (
+                    [creditCard:net\authorize\api\contract\v1\PaymentType:private] => net\authorize\api\contract\v1\CreditCardType Object
+                        (
+                            [cardCode:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [isPaymentToken:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [cryptogram:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorName:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorId:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorEci:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [cardNumber:net\authorize\api\contract\v1\CreditCardSimpleType:private] => xxxx-5763
+                            [expirationDate:net\authorize\api\contract\v1\CreditCardSimpleType:private] => xxxx
+                        )
+
+                    [bankAccount:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [trackData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [encryptedTrackData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [payPal:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [opaqueData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [emv:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [dataSource:net\authorize\api\contract\v1\PaymentType:private] => 
+                )
+
+            [profile:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [solution:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [callId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [terminalNumber:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [authCode:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [refTransId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [splitTenderId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [order:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [lineItems:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [tax:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [duty:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipping:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [taxExempt:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [poNumber:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [customer:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [billTo:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipTo:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [customerIP:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [cardholderAuthentication:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [retail:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [employeeId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [transactionSettings:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [userFields:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [surcharge:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [merchantDescriptor:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [subMerchant:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [tip:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [processingOptions:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [subsequentAuthInformation:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [otherTax:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipFrom:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+        )
+
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 9zyp7U9TTQ
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [accessToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-2.0.0-ALPHA
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1570025824
+)
+
+ Wed, 02 Oct 2019 10:17:04 -0400 INFO : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 126) - Request  Creation End
+ Wed, 02 Oct 2019 10:17:04 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Wed, 02 Oct 2019 10:17:04 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+{"createTransactionRequest":{"merchantAuthentication":{"name":"9zyp7U9TTQ","transactionKey":"77XGG5NyZ836jbn7"},"clientId":"sdk-php-2.0.0-ALPHA","refId":"ref1570025824","transactionRequest":{"transactionType":"authCaptureTransaction","amount":1,"payment":{"creditCard":{"cardNumber":"xxxx3","expirationDate":"2022-07"}}}}}
+ Wed, 02 Oct 2019 10:17:04 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Wed, 02 Oct 2019 10:17:04 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Wed, 02 Oct 2019 10:17:05 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿{"messages":{"resultCode":"Error","message":[{"code":"E00003","text":"The 'AnetApi/xml/v1/schema/AnetApiSchema.xsd:cardNumber' element is invalid - The value XXXXXXXXXXXXXXXXXXX is invalid according to its datatype 'String' - The actual length is greater than the MaxLength value."}]}}
+ Wed, 02 Oct 2019 10:17:06 -0400 INFO : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Creation Begin
+ Wed, 02 Oct 2019 10:17:06 -0400 DEBUG : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\CreateTransactionRequest Object
+(
+    [transactionRequest:net\authorize\api\contract\v1\CreateTransactionRequest:private] => net\authorize\api\contract\v1\TransactionRequestType Object
+        (
+            [transactionType:net\authorize\api\contract\v1\TransactionRequestType:private] => authCaptureTransaction
+            [amount:net\authorize\api\contract\v1\TransactionRequestType:private] => 1
+            [currencyCode:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [payment:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\PaymentType Object
+                (
+                    [creditCard:net\authorize\api\contract\v1\PaymentType:private] => net\authorize\api\contract\v1\CreditCardType Object
+                        (
+                            [cardCode:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [isPaymentToken:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [cryptogram:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorName:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorId:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorEci:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [cardNumber:net\authorize\api\contract\v1\CreditCardSimpleType:private] => xxxx-5763
+                            [expirationDate:net\authorize\api\contract\v1\CreditCardSimpleType:private] => xxxx
+                        )
+
+                    [bankAccount:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [trackData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [encryptedTrackData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [payPal:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [opaqueData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [emv:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [dataSource:net\authorize\api\contract\v1\PaymentType:private] => 
+                )
+
+            [profile:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [solution:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [callId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [terminalNumber:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [authCode:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [refTransId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [splitTenderId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [order:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [lineItems:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [tax:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [duty:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipping:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [taxExempt:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [poNumber:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [customer:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [billTo:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipTo:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [customerIP:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [cardholderAuthentication:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [retail:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [employeeId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [transactionSettings:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [userFields:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [surcharge:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [merchantDescriptor:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [subMerchant:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [tip:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [processingOptions:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [subsequentAuthInformation:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [otherTax:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipFrom:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+        )
+
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 9zyp7U9TTQ
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [accessToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-2.0.0-ALPHA
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1570025826
+)
+
+ Wed, 02 Oct 2019 10:17:06 -0400 INFO : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 126) - Request  Creation End
+ Wed, 02 Oct 2019 10:17:06 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Wed, 02 Oct 2019 10:17:06 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+{"createTransactionRequest":{"merchantAuthentication":{"name":"9zyp7U9TTQ","transactionKey":"77XGG5NyZ836jbn7"},"clientId":"sdk-php-2.0.0-ALPHA","refId":"ref1570025826","transactionRequest":{"transactionType":"authCaptureTransaction","amount":1,"payment":{"creditCard":{"cardNumber":"xxxx3","expirationDate":"2022-07"}}}}}
+ Wed, 02 Oct 2019 10:17:06 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Wed, 02 Oct 2019 10:17:06 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Wed, 02 Oct 2019 10:17:07 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿{"messages":{"resultCode":"Error","message":[{"code":"E00003","text":"The 'AnetApi/xml/v1/schema/AnetApiSchema.xsd:cardNumber' element is invalid - The value XXXXXXXXXXXXXXXXXXX is invalid according to its datatype 'String' - The actual length is greater than the MaxLength value."}]}}
+ Wed, 02 Oct 2019 10:20:21 -0400 INFO : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Creation Begin
+ Wed, 02 Oct 2019 10:20:21 -0400 DEBUG : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\CreateTransactionRequest Object
+(
+    [transactionRequest:net\authorize\api\contract\v1\CreateTransactionRequest:private] => net\authorize\api\contract\v1\TransactionRequestType Object
+        (
+            [transactionType:net\authorize\api\contract\v1\TransactionRequestType:private] => authCaptureTransaction
+            [amount:net\authorize\api\contract\v1\TransactionRequestType:private] => 1
+            [currencyCode:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [payment:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\PaymentType Object
+                (
+                    [creditCard:net\authorize\api\contract\v1\PaymentType:private] => net\authorize\api\contract\v1\CreditCardType Object
+                        (
+                            [cardCode:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [isPaymentToken:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [cryptogram:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorName:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorId:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorEci:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [cardNumber:net\authorize\api\contract\v1\CreditCardSimpleType:private] => xxxx-5763
+                            [expirationDate:net\authorize\api\contract\v1\CreditCardSimpleType:private] => xxxx
+                        )
+
+                    [bankAccount:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [trackData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [encryptedTrackData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [payPal:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [opaqueData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [emv:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [dataSource:net\authorize\api\contract\v1\PaymentType:private] => 
+                )
+
+            [profile:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [solution:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [callId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [terminalNumber:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [authCode:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [refTransId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [splitTenderId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [order:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [lineItems:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [tax:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [duty:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipping:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [taxExempt:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [poNumber:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [customer:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [billTo:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipTo:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [customerIP:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [cardholderAuthentication:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [retail:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [employeeId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [transactionSettings:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [userFields:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [surcharge:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [merchantDescriptor:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [subMerchant:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [tip:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [processingOptions:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [subsequentAuthInformation:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [otherTax:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipFrom:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+        )
+
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 9zyp7U9TTQ
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [accessToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-2.0.0-ALPHA
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1570026021
+)
+
+ Wed, 02 Oct 2019 10:20:21 -0400 INFO : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 126) - Request  Creation End
+ Wed, 02 Oct 2019 10:20:21 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Wed, 02 Oct 2019 10:20:21 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+{"createTransactionRequest":{"merchantAuthentication":{"name":"9zyp7U9TTQ","transactionKey":"77XGG5NyZ836jbn7"},"clientId":"sdk-php-2.0.0-ALPHA","refId":"ref1570026021","transactionRequest":{"transactionType":"authCaptureTransaction","amount":1,"payment":{"creditCard":{"cardNumber":"xxxx3","expirationDate":"2022-07"}}}}}
+ Wed, 02 Oct 2019 10:20:21 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Wed, 02 Oct 2019 10:20:21 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Wed, 02 Oct 2019 10:20:23 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿{"messages":{"resultCode":"Error","message":[{"code":"E00003","text":"The 'AnetApi/xml/v1/schema/AnetApiSchema.xsd:cardNumber' element is invalid - The value XXXXXXXXXXXXXXXXXXX is invalid according to its datatype 'String' - The actual length is greater than the MaxLength value."}]}}
+ Wed, 02 Oct 2019 10:22:31 -0400 INFO : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Creation Begin
+ Wed, 02 Oct 2019 10:22:31 -0400 DEBUG : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\CreateTransactionRequest Object
+(
+    [transactionRequest:net\authorize\api\contract\v1\CreateTransactionRequest:private] => net\authorize\api\contract\v1\TransactionRequestType Object
+        (
+            [transactionType:net\authorize\api\contract\v1\TransactionRequestType:private] => authCaptureTransaction
+            [amount:net\authorize\api\contract\v1\TransactionRequestType:private] => 2.23
+            [currencyCode:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [payment:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\PaymentType Object
+                (
+                    [creditCard:net\authorize\api\contract\v1\PaymentType:private] => net\authorize\api\contract\v1\CreditCardType Object
+                        (
+                            [cardCode:net\authorize\api\contract\v1\CreditCardType:private] => xxxx
+                            [isPaymentToken:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [cryptogram:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorName:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorId:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorEci:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [cardNumber:net\authorize\api\contract\v1\CreditCardSimpleType:private] => xxxx-1111
+                            [expirationDate:net\authorize\api\contract\v1\CreditCardSimpleType:private] => xxxx
+                        )
+
+                    [bankAccount:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [trackData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [encryptedTrackData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [payPal:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [opaqueData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [emv:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [dataSource:net\authorize\api\contract\v1\PaymentType:private] => 
+                )
+
+            [profile:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [solution:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [callId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [terminalNumber:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [authCode:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [refTransId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [splitTenderId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [order:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\OrderType Object
+                (
+                    [invoiceNumber:net\authorize\api\contract\v1\OrderType:private] => 10101
+                    [description:net\authorize\api\contract\v1\OrderType:private] => Golf Shirts
+                    [discountAmount:net\authorize\api\contract\v1\OrderType:private] => 
+                    [taxIsAfterDiscount:net\authorize\api\contract\v1\OrderType:private] => 
+                    [totalTaxTypeCode:net\authorize\api\contract\v1\OrderType:private] => 
+                    [purchaserVATRegistrationNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [merchantVATRegistrationNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [vatInvoiceReferenceNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [purchaserCode:net\authorize\api\contract\v1\OrderType:private] => 
+                    [summaryCommodityCode:net\authorize\api\contract\v1\OrderType:private] => 
+                    [purchaseOrderDateUTC:net\authorize\api\contract\v1\OrderType:private] => 
+                    [supplierOrderReference:net\authorize\api\contract\v1\OrderType:private] => 
+                    [authorizedContactName:net\authorize\api\contract\v1\OrderType:private] => 
+                    [cardAcceptorRefNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA1:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA2:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA3:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA4:net\authorize\api\contract\v1\OrderType:private] => 
+                )
+
+            [lineItems:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [tax:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [duty:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipping:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [taxExempt:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [poNumber:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [customer:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\CustomerDataType Object
+                (
+                    [type:net\authorize\api\contract\v1\CustomerDataType:private] => individual
+                    [id:net\authorize\api\contract\v1\CustomerDataType:private] => 99999456654
+                    [email:net\authorize\api\contract\v1\CustomerDataType:private] => EllenJohnson@example.com
+                    [driversLicense:net\authorize\api\contract\v1\CustomerDataType:private] => 
+                    [taxId:net\authorize\api\contract\v1\CustomerDataType:private] => 
+                )
+
+            [billTo:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\CustomerAddressType Object
+                (
+                    [phoneNumber:net\authorize\api\contract\v1\CustomerAddressType:private] => 
+                    [faxNumber:net\authorize\api\contract\v1\CustomerAddressType:private] => 
+                    [email:net\authorize\api\contract\v1\CustomerAddressType:private] => 
+                    [firstName:net\authorize\api\contract\v1\NameAndAddressType:private] => Ellen
+                    [lastName:net\authorize\api\contract\v1\NameAndAddressType:private] => Johnson
+                    [company:net\authorize\api\contract\v1\NameAndAddressType:private] => Souveniropolis
+                    [address:net\authorize\api\contract\v1\NameAndAddressType:private] => 14 Main Street
+                    [city:net\authorize\api\contract\v1\NameAndAddressType:private] => Pecan Springs
+                    [state:net\authorize\api\contract\v1\NameAndAddressType:private] => TX
+                    [zip:net\authorize\api\contract\v1\NameAndAddressType:private] => 44628
+                    [country:net\authorize\api\contract\v1\NameAndAddressType:private] => USA
+                )
+
+            [shipTo:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [customerIP:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [cardholderAuthentication:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [retail:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [employeeId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [transactionSettings:net\authorize\api\contract\v1\TransactionRequestType:private] => Array
+                (
+                    [0] => net\authorize\api\contract\v1\SettingType Object
+                        (
+                            [settingName:net\authorize\api\contract\v1\SettingType:private] => duplicateWindow
+                            [settingValue:net\authorize\api\contract\v1\SettingType:private] => 60
+                        )
+
+                )
+
+            [userFields:net\authorize\api\contract\v1\TransactionRequestType:private] => Array
+                (
+                    [0] => net\authorize\api\contract\v1\UserFieldType Object
+                        (
+                            [name:net\authorize\api\contract\v1\UserFieldType:private] => customerLoyaltyNum
+                            [value:net\authorize\api\contract\v1\UserFieldType:private] => 1128836273
+                        )
+
+                    [1] => net\authorize\api\contract\v1\UserFieldType Object
+                        (
+                            [name:net\authorize\api\contract\v1\UserFieldType:private] => favoriteColor
+                            [value:net\authorize\api\contract\v1\UserFieldType:private] => blue
+                        )
+
+                )
+
+            [surcharge:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [merchantDescriptor:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [subMerchant:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [tip:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [processingOptions:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [subsequentAuthInformation:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [otherTax:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipFrom:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+        )
+
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [accessToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-2.0.0-ALPHA
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1570026151
+)
+
+ Wed, 02 Oct 2019 10:22:31 -0400 INFO : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 126) - Request  Creation End
+ Wed, 02 Oct 2019 10:22:31 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Wed, 02 Oct 2019 10:22:31 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+{"createTransactionRequest":{"merchantAuthentication":{"name":"","transactionKey":""},"clientId":"sdk-php-2.0.0-ALPHA","refId":"ref1570026151","transactionRequest":{"transactionType":"authCaptureTransaction","amount":"2.23","payment":{"creditCard":{"cardNumber":"xxxx","expirationDate":"2038-12","cardCode":"123"}},"order":{"invoiceNumber":"10101","description":"Golf Shirts"},"customer":{"type":"individual","id":"99999456654","email":"EllenJohnson@example.com"},"billTo":{"firstName":"Ellen","lastName":"Johnson","company":"Souveniropolis","address":"14 Main Street","city":"Pecan Springs","state":"TX","zip":"44628","country":"USA"},"transactionSettings":{"setting":[{"settingName":"duplicateWindow","settingValue":"60"}]},"userFields":{"userField":[{"name":"customerLoyaltyNum","value":"1128836273"},{"name":"favoriteColor","value":"blue"}]}}}}
+ Wed, 02 Oct 2019 10:22:31 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Wed, 02 Oct 2019 10:22:31 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Wed, 02 Oct 2019 10:22:31 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿{"transactionResponse":{"SupplementalDataQualificationIndicator":0},"refId":"ref1570026151","messages":{"resultCode":"Error","message":[{"code":"E00006","text":"The API user name is invalid or not present."}]}}
+ Wed, 02 Oct 2019 10:23:09 -0400 INFO : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Creation Begin
+ Wed, 02 Oct 2019 10:23:09 -0400 DEBUG : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\CreateTransactionRequest Object
+(
+    [transactionRequest:net\authorize\api\contract\v1\CreateTransactionRequest:private] => net\authorize\api\contract\v1\TransactionRequestType Object
+        (
+            [transactionType:net\authorize\api\contract\v1\TransactionRequestType:private] => authCaptureTransaction
+            [amount:net\authorize\api\contract\v1\TransactionRequestType:private] => 2.23
+            [currencyCode:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [payment:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\PaymentType Object
+                (
+                    [creditCard:net\authorize\api\contract\v1\PaymentType:private] => net\authorize\api\contract\v1\CreditCardType Object
+                        (
+                            [cardCode:net\authorize\api\contract\v1\CreditCardType:private] => xxxx
+                            [isPaymentToken:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [cryptogram:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorName:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorId:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorEci:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [cardNumber:net\authorize\api\contract\v1\CreditCardSimpleType:private] => xxxx-1111
+                            [expirationDate:net\authorize\api\contract\v1\CreditCardSimpleType:private] => xxxx
+                        )
+
+                    [bankAccount:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [trackData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [encryptedTrackData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [payPal:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [opaqueData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [emv:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [dataSource:net\authorize\api\contract\v1\PaymentType:private] => 
+                )
+
+            [profile:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [solution:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [callId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [terminalNumber:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [authCode:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [refTransId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [splitTenderId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [order:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\OrderType Object
+                (
+                    [invoiceNumber:net\authorize\api\contract\v1\OrderType:private] => 10101
+                    [description:net\authorize\api\contract\v1\OrderType:private] => Golf Shirts
+                    [discountAmount:net\authorize\api\contract\v1\OrderType:private] => 
+                    [taxIsAfterDiscount:net\authorize\api\contract\v1\OrderType:private] => 
+                    [totalTaxTypeCode:net\authorize\api\contract\v1\OrderType:private] => 
+                    [purchaserVATRegistrationNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [merchantVATRegistrationNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [vatInvoiceReferenceNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [purchaserCode:net\authorize\api\contract\v1\OrderType:private] => 
+                    [summaryCommodityCode:net\authorize\api\contract\v1\OrderType:private] => 
+                    [purchaseOrderDateUTC:net\authorize\api\contract\v1\OrderType:private] => 
+                    [supplierOrderReference:net\authorize\api\contract\v1\OrderType:private] => 
+                    [authorizedContactName:net\authorize\api\contract\v1\OrderType:private] => 
+                    [cardAcceptorRefNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA1:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA2:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA3:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA4:net\authorize\api\contract\v1\OrderType:private] => 
+                )
+
+            [lineItems:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [tax:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [duty:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipping:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [taxExempt:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [poNumber:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [customer:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\CustomerDataType Object
+                (
+                    [type:net\authorize\api\contract\v1\CustomerDataType:private] => individual
+                    [id:net\authorize\api\contract\v1\CustomerDataType:private] => 99999456654
+                    [email:net\authorize\api\contract\v1\CustomerDataType:private] => EllenJohnson@example.com
+                    [driversLicense:net\authorize\api\contract\v1\CustomerDataType:private] => 
+                    [taxId:net\authorize\api\contract\v1\CustomerDataType:private] => 
+                )
+
+            [billTo:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\CustomerAddressType Object
+                (
+                    [phoneNumber:net\authorize\api\contract\v1\CustomerAddressType:private] => 
+                    [faxNumber:net\authorize\api\contract\v1\CustomerAddressType:private] => 
+                    [email:net\authorize\api\contract\v1\CustomerAddressType:private] => 
+                    [firstName:net\authorize\api\contract\v1\NameAndAddressType:private] => Ellen
+                    [lastName:net\authorize\api\contract\v1\NameAndAddressType:private] => Johnson
+                    [company:net\authorize\api\contract\v1\NameAndAddressType:private] => Souveniropolis
+                    [address:net\authorize\api\contract\v1\NameAndAddressType:private] => 14 Main Street
+                    [city:net\authorize\api\contract\v1\NameAndAddressType:private] => Pecan Springs
+                    [state:net\authorize\api\contract\v1\NameAndAddressType:private] => TX
+                    [zip:net\authorize\api\contract\v1\NameAndAddressType:private] => 44628
+                    [country:net\authorize\api\contract\v1\NameAndAddressType:private] => USA
+                )
+
+            [shipTo:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [customerIP:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [cardholderAuthentication:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [retail:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [employeeId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [transactionSettings:net\authorize\api\contract\v1\TransactionRequestType:private] => Array
+                (
+                    [0] => net\authorize\api\contract\v1\SettingType Object
+                        (
+                            [settingName:net\authorize\api\contract\v1\SettingType:private] => duplicateWindow
+                            [settingValue:net\authorize\api\contract\v1\SettingType:private] => 60
+                        )
+
+                )
+
+            [userFields:net\authorize\api\contract\v1\TransactionRequestType:private] => Array
+                (
+                    [0] => net\authorize\api\contract\v1\UserFieldType Object
+                        (
+                            [name:net\authorize\api\contract\v1\UserFieldType:private] => customerLoyaltyNum
+                            [value:net\authorize\api\contract\v1\UserFieldType:private] => 1128836273
+                        )
+
+                    [1] => net\authorize\api\contract\v1\UserFieldType Object
+                        (
+                            [name:net\authorize\api\contract\v1\UserFieldType:private] => favoriteColor
+                            [value:net\authorize\api\contract\v1\UserFieldType:private] => blue
+                        )
+
+                )
+
+            [surcharge:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [merchantDescriptor:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [subMerchant:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [tip:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [processingOptions:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [subsequentAuthInformation:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [otherTax:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipFrom:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+        )
+
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 9zyp7U9TTQ
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [accessToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-2.0.0-ALPHA
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1570026189
+)
+
+ Wed, 02 Oct 2019 10:23:09 -0400 INFO : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 126) - Request  Creation End
+ Wed, 02 Oct 2019 10:23:09 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Wed, 02 Oct 2019 10:23:09 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+{"createTransactionRequest":{"merchantAuthentication":{"name":"9zyp7U9TTQ","transactionKey":"77XGG5NyZ836jbn7"},"clientId":"sdk-php-2.0.0-ALPHA","refId":"ref1570026189","transactionRequest":{"transactionType":"authCaptureTransaction","amount":"2.23","payment":{"creditCard":{"cardNumber":"xxxx","expirationDate":"2038-12","cardCode":"123"}},"order":{"invoiceNumber":"10101","description":"Golf Shirts"},"customer":{"type":"individual","id":"99999456654","email":"EllenJohnson@example.com"},"billTo":{"firstName":"Ellen","lastName":"Johnson","company":"Souveniropolis","address":"14 Main Street","city":"Pecan Springs","state":"TX","zip":"44628","country":"USA"},"transactionSettings":{"setting":[{"settingName":"duplicateWindow","settingValue":"60"}]},"userFields":{"userField":[{"name":"customerLoyaltyNum","value":"1128836273"},{"name":"favoriteColor","value":"blue"}]}}}}
+ Wed, 02 Oct 2019 10:23:09 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Wed, 02 Oct 2019 10:23:09 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Wed, 02 Oct 2019 10:23:10 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿{"transactionResponse":{"SupplementalDataQualificationIndicator":0},"refId":"ref1570026189","messages":{"resultCode":"Error","message":[{"code":"E00007","text":"User authentication failed due to invalid authentication values."}]}}
+ Wed, 02 Oct 2019 10:24:59 -0400 INFO : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Creation Begin
+ Wed, 02 Oct 2019 10:24:59 -0400 DEBUG : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\CreateTransactionRequest Object
+(
+    [transactionRequest:net\authorize\api\contract\v1\CreateTransactionRequest:private] => net\authorize\api\contract\v1\TransactionRequestType Object
+        (
+            [transactionType:net\authorize\api\contract\v1\TransactionRequestType:private] => authCaptureTransaction
+            [amount:net\authorize\api\contract\v1\TransactionRequestType:private] => 2.23
+            [currencyCode:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [payment:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\PaymentType Object
+                (
+                    [creditCard:net\authorize\api\contract\v1\PaymentType:private] => net\authorize\api\contract\v1\CreditCardType Object
+                        (
+                            [cardCode:net\authorize\api\contract\v1\CreditCardType:private] => xxxx
+                            [isPaymentToken:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [cryptogram:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorName:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorId:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorEci:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [cardNumber:net\authorize\api\contract\v1\CreditCardSimpleType:private] => xxxx-1111
+                            [expirationDate:net\authorize\api\contract\v1\CreditCardSimpleType:private] => xxxx
+                        )
+
+                    [bankAccount:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [trackData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [encryptedTrackData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [payPal:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [opaqueData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [emv:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [dataSource:net\authorize\api\contract\v1\PaymentType:private] => 
+                )
+
+            [profile:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [solution:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [callId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [terminalNumber:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [authCode:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [refTransId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [splitTenderId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [order:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\OrderType Object
+                (
+                    [invoiceNumber:net\authorize\api\contract\v1\OrderType:private] => 10101
+                    [description:net\authorize\api\contract\v1\OrderType:private] => Golf Shirts
+                    [discountAmount:net\authorize\api\contract\v1\OrderType:private] => 
+                    [taxIsAfterDiscount:net\authorize\api\contract\v1\OrderType:private] => 
+                    [totalTaxTypeCode:net\authorize\api\contract\v1\OrderType:private] => 
+                    [purchaserVATRegistrationNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [merchantVATRegistrationNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [vatInvoiceReferenceNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [purchaserCode:net\authorize\api\contract\v1\OrderType:private] => 
+                    [summaryCommodityCode:net\authorize\api\contract\v1\OrderType:private] => 
+                    [purchaseOrderDateUTC:net\authorize\api\contract\v1\OrderType:private] => 
+                    [supplierOrderReference:net\authorize\api\contract\v1\OrderType:private] => 
+                    [authorizedContactName:net\authorize\api\contract\v1\OrderType:private] => 
+                    [cardAcceptorRefNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA1:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA2:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA3:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA4:net\authorize\api\contract\v1\OrderType:private] => 
+                )
+
+            [lineItems:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [tax:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [duty:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipping:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [taxExempt:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [poNumber:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [customer:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\CustomerDataType Object
+                (
+                    [type:net\authorize\api\contract\v1\CustomerDataType:private] => individual
+                    [id:net\authorize\api\contract\v1\CustomerDataType:private] => 99999456654
+                    [email:net\authorize\api\contract\v1\CustomerDataType:private] => EllenJohnson@example.com
+                    [driversLicense:net\authorize\api\contract\v1\CustomerDataType:private] => 
+                    [taxId:net\authorize\api\contract\v1\CustomerDataType:private] => 
+                )
+
+            [billTo:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\CustomerAddressType Object
+                (
+                    [phoneNumber:net\authorize\api\contract\v1\CustomerAddressType:private] => 
+                    [faxNumber:net\authorize\api\contract\v1\CustomerAddressType:private] => 
+                    [email:net\authorize\api\contract\v1\CustomerAddressType:private] => 
+                    [firstName:net\authorize\api\contract\v1\NameAndAddressType:private] => Ellen
+                    [lastName:net\authorize\api\contract\v1\NameAndAddressType:private] => Johnson
+                    [company:net\authorize\api\contract\v1\NameAndAddressType:private] => Souveniropolis
+                    [address:net\authorize\api\contract\v1\NameAndAddressType:private] => 14 Main Street
+                    [city:net\authorize\api\contract\v1\NameAndAddressType:private] => Pecan Springs
+                    [state:net\authorize\api\contract\v1\NameAndAddressType:private] => TX
+                    [zip:net\authorize\api\contract\v1\NameAndAddressType:private] => 44628
+                    [country:net\authorize\api\contract\v1\NameAndAddressType:private] => USA
+                )
+
+            [shipTo:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [customerIP:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [cardholderAuthentication:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [retail:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [employeeId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [transactionSettings:net\authorize\api\contract\v1\TransactionRequestType:private] => Array
+                (
+                    [0] => net\authorize\api\contract\v1\SettingType Object
+                        (
+                            [settingName:net\authorize\api\contract\v1\SettingType:private] => duplicateWindow
+                            [settingValue:net\authorize\api\contract\v1\SettingType:private] => 60
+                        )
+
+                )
+
+            [userFields:net\authorize\api\contract\v1\TransactionRequestType:private] => Array
+                (
+                    [0] => net\authorize\api\contract\v1\UserFieldType Object
+                        (
+                            [name:net\authorize\api\contract\v1\UserFieldType:private] => customerLoyaltyNum
+                            [value:net\authorize\api\contract\v1\UserFieldType:private] => 1128836273
+                        )
+
+                    [1] => net\authorize\api\contract\v1\UserFieldType Object
+                        (
+                            [name:net\authorize\api\contract\v1\UserFieldType:private] => favoriteColor
+                            [value:net\authorize\api\contract\v1\UserFieldType:private] => blue
+                        )
+
+                )
+
+            [surcharge:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [merchantDescriptor:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [subMerchant:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [tip:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [processingOptions:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [subsequentAuthInformation:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [otherTax:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipFrom:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+        )
+
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 5KP3u95bQpv
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [accessToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-2.0.0-ALPHA
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1570026299
+)
+
+ Wed, 02 Oct 2019 10:24:59 -0400 INFO : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 126) - Request  Creation End
+ Wed, 02 Oct 2019 10:24:59 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Wed, 02 Oct 2019 10:24:59 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+{"createTransactionRequest":{"merchantAuthentication":{"name":"5KP3u95bQpv","transactionKey":"346HZ32z3fP4hTG2"},"clientId":"sdk-php-2.0.0-ALPHA","refId":"ref1570026299","transactionRequest":{"transactionType":"authCaptureTransaction","amount":"2.23","payment":{"creditCard":{"cardNumber":"xxxx","expirationDate":"2038-12","cardCode":"123"}},"order":{"invoiceNumber":"10101","description":"Golf Shirts"},"customer":{"type":"individual","id":"99999456654","email":"EllenJohnson@example.com"},"billTo":{"firstName":"Ellen","lastName":"Johnson","company":"Souveniropolis","address":"14 Main Street","city":"Pecan Springs","state":"TX","zip":"44628","country":"USA"},"transactionSettings":{"setting":[{"settingName":"duplicateWindow","settingValue":"60"}]},"userFields":{"userField":[{"name":"customerLoyaltyNum","value":"1128836273"},{"name":"favoriteColor","value":"blue"}]}}}}
+ Wed, 02 Oct 2019 10:24:59 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Wed, 02 Oct 2019 10:24:59 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Wed, 02 Oct 2019 10:25:01 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿{"transactionResponse":{"responseCode":"1","authCode":"61OQCO","avsResultCode":"Y","cvvResultCode":"P","cavvResultCode":"2","transId":"60128179123","refTransID":"","transHash":"","testRequest":"0","accountNumber":"XXXX1111","accountType":"Visa","messages":[{"code":"1","description":"This transaction has been approved."}],"userFields":[{"name":"customerLoyaltyNum","value":"1128836273"},{"name":"favoriteColor","value":"blue"}],"transHashSha2":"A30913A9D949D1B47E2B078E5463529C86245944347FA58C3B36DAEE69F70CC665DA5108AB03656DFA573365F8206CADA2AAD08CA92FE56F0A5DCFB19C06A07F","SupplementalDataQualificationIndicator":0},"refId":"ref1570026299","messages":{"resultCode":"Ok","message":[{"code":"I00001","text":"Successful."}]}}
+ Wed, 02 Oct 2019 10:25:12 -0400 INFO : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Creation Begin
+ Wed, 02 Oct 2019 10:25:12 -0400 DEBUG : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\CreateTransactionRequest Object
+(
+    [transactionRequest:net\authorize\api\contract\v1\CreateTransactionRequest:private] => net\authorize\api\contract\v1\TransactionRequestType Object
+        (
+            [transactionType:net\authorize\api\contract\v1\TransactionRequestType:private] => authCaptureTransaction
+            [amount:net\authorize\api\contract\v1\TransactionRequestType:private] => 2.23
+            [currencyCode:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [payment:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\PaymentType Object
+                (
+                    [creditCard:net\authorize\api\contract\v1\PaymentType:private] => net\authorize\api\contract\v1\CreditCardType Object
+                        (
+                            [cardCode:net\authorize\api\contract\v1\CreditCardType:private] => xxxx
+                            [isPaymentToken:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [cryptogram:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorName:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorId:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorEci:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [cardNumber:net\authorize\api\contract\v1\CreditCardSimpleType:private] => xxxx-1111
+                            [expirationDate:net\authorize\api\contract\v1\CreditCardSimpleType:private] => xxxx
+                        )
+
+                    [bankAccount:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [trackData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [encryptedTrackData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [payPal:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [opaqueData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [emv:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [dataSource:net\authorize\api\contract\v1\PaymentType:private] => 
+                )
+
+            [profile:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [solution:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [callId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [terminalNumber:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [authCode:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [refTransId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [splitTenderId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [order:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\OrderType Object
+                (
+                    [invoiceNumber:net\authorize\api\contract\v1\OrderType:private] => 10101
+                    [description:net\authorize\api\contract\v1\OrderType:private] => Golf Shirts
+                    [discountAmount:net\authorize\api\contract\v1\OrderType:private] => 
+                    [taxIsAfterDiscount:net\authorize\api\contract\v1\OrderType:private] => 
+                    [totalTaxTypeCode:net\authorize\api\contract\v1\OrderType:private] => 
+                    [purchaserVATRegistrationNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [merchantVATRegistrationNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [vatInvoiceReferenceNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [purchaserCode:net\authorize\api\contract\v1\OrderType:private] => 
+                    [summaryCommodityCode:net\authorize\api\contract\v1\OrderType:private] => 
+                    [purchaseOrderDateUTC:net\authorize\api\contract\v1\OrderType:private] => 
+                    [supplierOrderReference:net\authorize\api\contract\v1\OrderType:private] => 
+                    [authorizedContactName:net\authorize\api\contract\v1\OrderType:private] => 
+                    [cardAcceptorRefNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA1:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA2:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA3:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA4:net\authorize\api\contract\v1\OrderType:private] => 
+                )
+
+            [lineItems:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [tax:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [duty:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipping:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [taxExempt:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [poNumber:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [customer:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\CustomerDataType Object
+                (
+                    [type:net\authorize\api\contract\v1\CustomerDataType:private] => individual
+                    [id:net\authorize\api\contract\v1\CustomerDataType:private] => 99999456654
+                    [email:net\authorize\api\contract\v1\CustomerDataType:private] => EllenJohnson@example.com
+                    [driversLicense:net\authorize\api\contract\v1\CustomerDataType:private] => 
+                    [taxId:net\authorize\api\contract\v1\CustomerDataType:private] => 
+                )
+
+            [billTo:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\CustomerAddressType Object
+                (
+                    [phoneNumber:net\authorize\api\contract\v1\CustomerAddressType:private] => 
+                    [faxNumber:net\authorize\api\contract\v1\CustomerAddressType:private] => 
+                    [email:net\authorize\api\contract\v1\CustomerAddressType:private] => 
+                    [firstName:net\authorize\api\contract\v1\NameAndAddressType:private] => Ellen
+                    [lastName:net\authorize\api\contract\v1\NameAndAddressType:private] => Johnson
+                    [company:net\authorize\api\contract\v1\NameAndAddressType:private] => Souveniropolis
+                    [address:net\authorize\api\contract\v1\NameAndAddressType:private] => 14 Main Street
+                    [city:net\authorize\api\contract\v1\NameAndAddressType:private] => Pecan Springs
+                    [state:net\authorize\api\contract\v1\NameAndAddressType:private] => TX
+                    [zip:net\authorize\api\contract\v1\NameAndAddressType:private] => 44628
+                    [country:net\authorize\api\contract\v1\NameAndAddressType:private] => USA
+                )
+
+            [shipTo:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [customerIP:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [cardholderAuthentication:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [retail:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [employeeId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [transactionSettings:net\authorize\api\contract\v1\TransactionRequestType:private] => Array
+                (
+                    [0] => net\authorize\api\contract\v1\SettingType Object
+                        (
+                            [settingName:net\authorize\api\contract\v1\SettingType:private] => duplicateWindow
+                            [settingValue:net\authorize\api\contract\v1\SettingType:private] => 60
+                        )
+
+                )
+
+            [userFields:net\authorize\api\contract\v1\TransactionRequestType:private] => Array
+                (
+                    [0] => net\authorize\api\contract\v1\UserFieldType Object
+                        (
+                            [name:net\authorize\api\contract\v1\UserFieldType:private] => customerLoyaltyNum
+                            [value:net\authorize\api\contract\v1\UserFieldType:private] => 1128836273
+                        )
+
+                    [1] => net\authorize\api\contract\v1\UserFieldType Object
+                        (
+                            [name:net\authorize\api\contract\v1\UserFieldType:private] => favoriteColor
+                            [value:net\authorize\api\contract\v1\UserFieldType:private] => blue
+                        )
+
+                )
+
+            [surcharge:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [merchantDescriptor:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [subMerchant:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [tip:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [processingOptions:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [subsequentAuthInformation:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [otherTax:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipFrom:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+        )
+
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 5KP3u95bQpv
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [accessToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-2.0.0-ALPHA
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1570026312
+)
+
+ Wed, 02 Oct 2019 10:25:12 -0400 INFO : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 126) - Request  Creation End
+ Wed, 02 Oct 2019 10:25:12 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Wed, 02 Oct 2019 10:25:12 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+{"createTransactionRequest":{"merchantAuthentication":{"name":"5KP3u95bQpv","transactionKey":"346HZ32z3fP4hTG2"},"clientId":"sdk-php-2.0.0-ALPHA","refId":"ref1570026312","transactionRequest":{"transactionType":"authCaptureTransaction","amount":"2.23","payment":{"creditCard":{"cardNumber":"xxxx","expirationDate":"2038-12","cardCode":"123"}},"order":{"invoiceNumber":"10101","description":"Golf Shirts"},"customer":{"type":"individual","id":"99999456654","email":"EllenJohnson@example.com"},"billTo":{"firstName":"Ellen","lastName":"Johnson","company":"Souveniropolis","address":"14 Main Street","city":"Pecan Springs","state":"TX","zip":"44628","country":"USA"},"transactionSettings":{"setting":[{"settingName":"duplicateWindow","settingValue":"60"}]},"userFields":{"userField":[{"name":"customerLoyaltyNum","value":"1128836273"},{"name":"favoriteColor","value":"blue"}]}}}}
+ Wed, 02 Oct 2019 10:25:12 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Wed, 02 Oct 2019 10:25:12 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Wed, 02 Oct 2019 10:25:13 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿{"transactionResponse":{"responseCode":"3","authCode":"61OQCO","avsResultCode":"Y","cvvResultCode":"P","cavvResultCode":"","transId":"60128179123","refTransID":"","transHash":"","testRequest":"0","accountNumber":"XXXX1111","accountType":"Visa","errors":[{"errorCode":"11","errorText":"A duplicate transaction has been submitted."}],"userFields":[{"name":"customerLoyaltyNum","value":"1128836273"},{"name":"favoriteColor","value":"blue"}],"transHashSha2":"A30913A9D949D1B47E2B078E5463529C86245944347FA58C3B36DAEE69F70CC665DA5108AB03656DFA573365F8206CADA2AAD08CA92FE56F0A5DCFB19C06A07F","SupplementalDataQualificationIndicator":0},"refId":"ref1570026312","messages":{"resultCode":"Error","message":[{"code":"E00027","text":"The transaction was unsuccessful."}]}}
+ Wed, 02 Oct 2019 10:27:37 -0400 INFO : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Creation Begin
+ Wed, 02 Oct 2019 10:27:37 -0400 DEBUG : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\CreateTransactionRequest Object
+(
+    [transactionRequest:net\authorize\api\contract\v1\CreateTransactionRequest:private] => net\authorize\api\contract\v1\TransactionRequestType Object
+        (
+            [transactionType:net\authorize\api\contract\v1\TransactionRequestType:private] => authCaptureTransaction
+            [amount:net\authorize\api\contract\v1\TransactionRequestType:private] => 2.23
+            [currencyCode:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [payment:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\PaymentType Object
+                (
+                    [creditCard:net\authorize\api\contract\v1\PaymentType:private] => net\authorize\api\contract\v1\CreditCardType Object
+                        (
+                            [cardCode:net\authorize\api\contract\v1\CreditCardType:private] => xxxx
+                            [isPaymentToken:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [cryptogram:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorName:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorId:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorEci:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [cardNumber:net\authorize\api\contract\v1\CreditCardSimpleType:private] => xxxx-1111
+                            [expirationDate:net\authorize\api\contract\v1\CreditCardSimpleType:private] => xxxx
+                        )
+
+                    [bankAccount:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [trackData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [encryptedTrackData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [payPal:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [opaqueData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [emv:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [dataSource:net\authorize\api\contract\v1\PaymentType:private] => 
+                )
+
+            [profile:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [solution:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [callId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [terminalNumber:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [authCode:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [refTransId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [splitTenderId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [order:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\OrderType Object
+                (
+                    [invoiceNumber:net\authorize\api\contract\v1\OrderType:private] => 10101
+                    [description:net\authorize\api\contract\v1\OrderType:private] => Golf Shirts
+                    [discountAmount:net\authorize\api\contract\v1\OrderType:private] => 
+                    [taxIsAfterDiscount:net\authorize\api\contract\v1\OrderType:private] => 
+                    [totalTaxTypeCode:net\authorize\api\contract\v1\OrderType:private] => 
+                    [purchaserVATRegistrationNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [merchantVATRegistrationNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [vatInvoiceReferenceNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [purchaserCode:net\authorize\api\contract\v1\OrderType:private] => 
+                    [summaryCommodityCode:net\authorize\api\contract\v1\OrderType:private] => 
+                    [purchaseOrderDateUTC:net\authorize\api\contract\v1\OrderType:private] => 
+                    [supplierOrderReference:net\authorize\api\contract\v1\OrderType:private] => 
+                    [authorizedContactName:net\authorize\api\contract\v1\OrderType:private] => 
+                    [cardAcceptorRefNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA1:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA2:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA3:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA4:net\authorize\api\contract\v1\OrderType:private] => 
+                )
+
+            [lineItems:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [tax:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [duty:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipping:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [taxExempt:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [poNumber:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [customer:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\CustomerDataType Object
+                (
+                    [type:net\authorize\api\contract\v1\CustomerDataType:private] => individual
+                    [id:net\authorize\api\contract\v1\CustomerDataType:private] => 99999456654
+                    [email:net\authorize\api\contract\v1\CustomerDataType:private] => EllenJohnson@example.com
+                    [driversLicense:net\authorize\api\contract\v1\CustomerDataType:private] => 
+                    [taxId:net\authorize\api\contract\v1\CustomerDataType:private] => 
+                )
+
+            [billTo:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\CustomerAddressType Object
+                (
+                    [phoneNumber:net\authorize\api\contract\v1\CustomerAddressType:private] => 
+                    [faxNumber:net\authorize\api\contract\v1\CustomerAddressType:private] => 
+                    [email:net\authorize\api\contract\v1\CustomerAddressType:private] => 
+                    [firstName:net\authorize\api\contract\v1\NameAndAddressType:private] => Ellen
+                    [lastName:net\authorize\api\contract\v1\NameAndAddressType:private] => Johnson
+                    [company:net\authorize\api\contract\v1\NameAndAddressType:private] => Souveniropolis
+                    [address:net\authorize\api\contract\v1\NameAndAddressType:private] => 14 Main Street
+                    [city:net\authorize\api\contract\v1\NameAndAddressType:private] => Pecan Springs
+                    [state:net\authorize\api\contract\v1\NameAndAddressType:private] => TX
+                    [zip:net\authorize\api\contract\v1\NameAndAddressType:private] => 44628
+                    [country:net\authorize\api\contract\v1\NameAndAddressType:private] => USA
+                )
+
+            [shipTo:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [customerIP:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [cardholderAuthentication:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [retail:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [employeeId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [transactionSettings:net\authorize\api\contract\v1\TransactionRequestType:private] => Array
+                (
+                    [0] => net\authorize\api\contract\v1\SettingType Object
+                        (
+                            [settingName:net\authorize\api\contract\v1\SettingType:private] => duplicateWindow
+                            [settingValue:net\authorize\api\contract\v1\SettingType:private] => 60
+                        )
+
+                )
+
+            [userFields:net\authorize\api\contract\v1\TransactionRequestType:private] => Array
+                (
+                    [0] => net\authorize\api\contract\v1\UserFieldType Object
+                        (
+                            [name:net\authorize\api\contract\v1\UserFieldType:private] => customerLoyaltyNum
+                            [value:net\authorize\api\contract\v1\UserFieldType:private] => 1128836273
+                        )
+
+                    [1] => net\authorize\api\contract\v1\UserFieldType Object
+                        (
+                            [name:net\authorize\api\contract\v1\UserFieldType:private] => favoriteColor
+                            [value:net\authorize\api\contract\v1\UserFieldType:private] => blue
+                        )
+
+                )
+
+            [surcharge:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [merchantDescriptor:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [subMerchant:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [tip:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [processingOptions:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [subsequentAuthInformation:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [otherTax:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipFrom:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+        )
+
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 9zyp7U9TTQ
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [accessToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-2.0.0-ALPHA
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1570026457
+)
+
+ Wed, 02 Oct 2019 10:27:37 -0400 INFO : [execute] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 126) - Request  Creation End
+ Wed, 02 Oct 2019 10:27:37 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Wed, 02 Oct 2019 10:27:37 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+{"createTransactionRequest":{"merchantAuthentication":{"name":"9zyp7U9TTQ","transactionKey":"77XGG5NyZ836jbn7"},"clientId":"sdk-php-2.0.0-ALPHA","refId":"ref1570026457","transactionRequest":{"transactionType":"authCaptureTransaction","amount":"2.23","payment":{"creditCard":{"cardNumber":"xxxx","expirationDate":"2038-12","cardCode":"123"}},"order":{"invoiceNumber":"10101","description":"Golf Shirts"},"customer":{"type":"individual","id":"99999456654","email":"EllenJohnson@example.com"},"billTo":{"firstName":"Ellen","lastName":"Johnson","company":"Souveniropolis","address":"14 Main Street","city":"Pecan Springs","state":"TX","zip":"44628","country":"USA"},"transactionSettings":{"setting":[{"settingName":"duplicateWindow","settingValue":"60"}]},"userFields":{"userField":[{"name":"customerLoyaltyNum","value":"1128836273"},{"name":"favoriteColor","value":"blue"}]}}}}
+ Wed, 02 Oct 2019 10:27:37 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Wed, 02 Oct 2019 10:27:37 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Wed, 02 Oct 2019 10:27:38 -0400 INFO : [_sendRequest] (/var/www/html/pious/pious_usnazranimatrimony.com/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿{"transactionResponse":{"SupplementalDataQualificationIndicator":0},"refId":"ref1570026457","messages":{"resultCode":"Error","message":[{"code":"E00007","text":"User authentication failed due to invalid authentication values."}]}}

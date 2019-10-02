@@ -1,0 +1,15 @@
+lising
+---------------
+
+views/fe/payment_option_event
+
+controllers/Event.php  => pay_now ()
+
+table : payment_method
+
+update
+--------------------
+update function : update_plan_member  in common_model.php
+
+
+response call payment_status in controller/Events.php
