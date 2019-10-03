@@ -492,7 +492,8 @@ $config['csrf_exclude_uris'] = array(
 	'event/payment-status/PayUMoney',
 	'event/payment-status/fail',
 	'premium-member/payment-process-mobile-app',
-	'common_request/update_ticket_from_developer'
+	'common_request/update_ticket_from_developer',
+	'premium-member/authorize-dot-net',
 );
 
 /*
