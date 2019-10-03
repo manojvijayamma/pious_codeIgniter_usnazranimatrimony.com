@@ -776,7 +776,11 @@ class Search extends CI_Controller {
 				
 				$total_profile = $payment_data['profile'];
 				$profile_used = $payment_data['profile_used'];
-			
+			    
+			    
+			  
+							
+							
 				if(isset($payment_data) && $payment_data != '' && $total_profile >= $profile_used)
 				{
 					if(isset($matri_id) && $matri_id!='')
@@ -822,6 +826,10 @@ class Search extends CI_Controller {
 							
 							$user_data['percentage'] = $percentage_stored;
 							
+							if($user_data['allow_contact']==0){
+							    $user_data['mobile']="";
+							    $user_data['phone']="";
+							}
 							$data1['data'] = $user_data;
 							$data1['status'] = 'success';
 							

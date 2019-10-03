@@ -1743,11 +1743,20 @@ class Search_model extends CI_Model {
 					$member_data = $this->common_model->get_count_data_manual('register_view',$where_array_member,1,'');
 					
 					$image = $this->common_model->member_photo_disp($member_data);
+					$allow_contact = $member_data['allow_contact'];
 					$matri_id = $member_data['matri_id'];
 					$username = $member_data['username'];
 					$mobile = $member_data['mobile'];
 					$email = $member_data['email'];
-					$time_to_call = $member_data['time_to_call'];					
+					$time_to_call = $member_data['time_to_call'];
+					
+					if($allow_contact==1){
+						$mobile = $member_data['mobile'];
+					}	
+					else{
+						$mobile = "";
+					}
+					
 					if($member_data['contact_view_security'] == 1){
 						if($block_count == 1)
 						{
@@ -1794,9 +1803,15 @@ class Search_model extends CI_Model {
 					$member_data = $this->common_model->get_count_data_manual('register_view',$where_array_member,1,'');
 					
 						$image = $this->common_model->member_photo_disp($member_data);
+						$allow_contact = $member_data['allow_contact'];
 						$matri_id = $member_data['matri_id'];
 						$username = $member_data['username'];
-						$mobile = $member_data['mobile'];
+    					if($allow_contact==1){
+    						$mobile = $member_data['mobile'];
+    					}	
+    					else{
+    						$mobile = "";
+    					}
 						$allow_contact = $member_data['allow_contact'];
 						$email = $member_data['email'];
 						$time_to_call = $member_data['time_to_call'];	
@@ -1962,9 +1977,15 @@ class Search_model extends CI_Model {
 					
 						if($member_data['contact_view_security'] == 1){
 							$image = $this->common_model->member_photo_disp($member_data);
+							$allow_contact = $member_data['allow_contact'];
 							$matri_id = $member_data['matri_id'];
 							$username = $member_data['username'];
-							$mobile = $member_data['mobile'];
+					    	if($allow_contact==1){
+        						$mobile = $member_data['mobile'];
+        					}	
+        					else{
+        						$mobile = "";
+        					}
 							$email = $member_data['email'];
 						
 							
