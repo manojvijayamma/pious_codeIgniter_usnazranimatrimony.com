@@ -62,6 +62,7 @@
 	$payubizz = $this->common_model->get_count_data_manual('payment_method'," name = 'Paybizz' ",1,'*','','','',"");
 	$BankDetails = $this->common_model->get_count_data_manual('payment_method'," name = 'BankDetails' ",1,'*','','','',"");
 	$instamojo = $this->common_model->get_count_data_manual('payment_method'," name = 'Instamojo' ",1,'*','','','',"");
+	$authorize = $this->common_model->get_count_data_manual('payment_method'," name = 'authorize' ",1,'*','','','',"");
 	
 	$cancel_return = $base_url.'premium-member/payment-status/fail';
 	
@@ -163,6 +164,9 @@
 								?>
 								</a>
 							</li>
+
+
+							
 						<?php 
 							$i++;
 							}
@@ -370,6 +374,63 @@
 						<br>
 					</div>
 				</div>
+
+									
+
+				<div role="tabpanel" class="tab-pane <?php if(isset($actve_panel) && $actve_panel =='Authorize'){ echo "active";}?>" id="Authorize">
+				<form action="authorize-dot-net" method="POST" id="authorize_frm">
+					<div class="col-sm-12">
+						<div class="col-xs-2">
+							<h3>Card Number : </h3>
+						</div>
+						<div class="col-xs-4">
+							
+									<input type="number" class="form-control" placeholder="Number" name="card_number" id="card_number">
+									
+							
+						</div>
+						<div class="col-xs-2">
+							<h3>Card Expiry : </h3>
+						</div>
+						<div class="col-xs-2">
+							
+									<input type="number" class="form-control" placeholder="Month" name="month" id="month">
+									
+							
+						</div>
+						<div class="col-xs-2">
+							
+									<input type="number" class="form-control" placeholder="Year" name="year" id="year">
+									
+							
+						</div>
+						<br>
+					</div>
+
+					<div class="col-sm-12">
+						<div class="col-xs-2">
+							<h3>CVV Number  : </h3>
+						</div>
+						<div class="col-xs-4">
+							
+									<input type="number" class="form-control" placeholder="CVV Number" name="cvv" id="cvv">
+									
+							
+						</div>
+
+						<div class="col-xs-4">
+							
+									<input type="hidden" name="plan_name" value="<?php echo $plan_name;?>">
+                                    <input type="hidden" name="plan_amount" value="<?php echo $plan_data['total_pay'];?>">
+                                    <input type="hidden" name="plan_id" value="<?php echo $plan;?>">
+
+									<input type="button" class="btn authorize_btn" value="Submit" >
+									
+							
+						</div>
+				</div>
+
+				</form>
 				
 			</div>
 		</div>
@@ -400,5 +461,35 @@
 	function payment_ccavenue(){
 		$('#customerData1').submit();
 	}
+
+	$('.authorize_btn').on('click', function(){
+		var card=$('#card_number').val();
+		var month=$('#month').val();
+		var year=$('#year').val();
+		var cvv=$('#cvv').val();
+
+		if(card==''){
+			alert('Please enter card number');
+			return false;
+		}
+		if(month==''){
+			alert('Please enter expiry month');
+			return false;
+		}
+		
+		if(year==''){
+			alert('Please enter expiry year');
+			return false;
+		}
+
+		if(cvv==''){
+			alert('Please enter cvv');
+			return false;
+		}
+
+		$('#authorize_frm').submit();
+
+	});
+
 	 ";
 ?>
