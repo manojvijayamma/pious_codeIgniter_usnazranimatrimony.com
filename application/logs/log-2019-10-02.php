@@ -48,3 +48,9 @@ ERROR - 2019-10-02 22:03:52 --> Severity: Notice --> Undefined index: month /var
 ERROR - 2019-10-02 22:03:52 --> Severity: Notice --> Undefined index: cvv /var/www/html/pious/pious_usnazranimatrimony.com/application/controllers/Premium_member.php 913
 ERROR - 2019-10-02 22:03:52 --> Severity: Notice --> Undefined index: plan_name /var/www/html/pious/pious_usnazranimatrimony.com/application/controllers/Premium_member.php 922
 ERROR - 2019-10-02 22:03:52 --> Severity: Notice --> Undefined index: plan_amount /var/www/html/pious/pious_usnazranimatrimony.com/application/controllers/Premium_member.php 959
+ERROR - 2019-10-02 22:07:28 --> Severity: Notice --> Undefined index: card_number /var/www/html/pious/pious_usnazranimatrimony.com/application/controllers/Premium_member.php 911
+ERROR - 2019-10-02 22:07:28 --> Severity: Notice --> Undefined index: year /var/www/html/pious/pious_usnazranimatrimony.com/application/controllers/Premium_member.php 912
+ERROR - 2019-10-02 22:07:28 --> Severity: Notice --> Undefined index: month /var/www/html/pious/pious_usnazranimatrimony.com/application/controllers/Premium_member.php 912
+ERROR - 2019-10-02 22:07:28 --> Severity: Notice --> Undefined index: cvv /var/www/html/pious/pious_usnazranimatrimony.com/application/controllers/Premium_member.php 913
+ERROR - 2019-10-02 22:07:28 --> Severity: Notice --> Undefined index: plan_name /var/www/html/pious/pious_usnazranimatrimony.com/application/controllers/Premium_member.php 922
+ERROR - 2019-10-02 22:07:28 --> Severity: Notice --> Undefined index: plan_amount /var/www/html/pious/pious_usnazranimatrimony.com/application/controllers/Premium_member.php 959

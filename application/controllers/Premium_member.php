@@ -473,7 +473,7 @@ class Premium_member extends CI_Controller {
 
 			if(isset($pay_gateway) && $pay_gateway == 'authorize')
 			{
-				echo 1;exit;
+				$status="success";
 			}
 
 			
