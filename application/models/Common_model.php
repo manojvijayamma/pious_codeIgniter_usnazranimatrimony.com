@@ -3620,7 +3620,7 @@ class Common_model extends CI_Model {
 						
 							$sms_template = $this->common_front_model->sms_string_replaced($sms_template_update, $trans);
 							
-							$this->common_model->common_sms_send($mobile,$sms_template);
+							//$this->common_model->common_sms_send($mobile,$sms_template);
 						}
 					}
 				}
