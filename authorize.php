@@ -11,16 +11,16 @@ function chargeCreditCard($amount)
     /* Create a merchantAuthenticationType object with authentication details
        retrieved from the constants file */
     $merchantAuthentication = new AnetAPI\MerchantAuthenticationType();
-    $merchantAuthentication->setName("5KP3u95bQpv");
-    $merchantAuthentication->setTransactionKey("346HZ32z3fP4hTG2");
+    $merchantAuthentication->setName("9zyp7U9TTQ");
+    $merchantAuthentication->setTransactionKey("8hFVee23p993GVVa");
     
     // Set the transaction's refId
     $refId = 'ref' . time();
 
     // Create the payment data for a credit card
     $creditCard = new AnetAPI\CreditCardType();
-    $creditCard->setCardNumber("4111111111111111");
-    $creditCard->setExpirationDate("2038-12");
+    $creditCard->setCardNumber("41111111111111111");
+    $creditCard->setExpirationDate("2022-12");
     $creditCard->setCardCode("123");
 
     // Add the payment data to a paymentType object
@@ -84,7 +84,7 @@ function chargeCreditCard($amount)
 
     // Create the controller and get the response
     $controller = new AnetController\CreateTransactionController($request);
-    $response = $controller->executeWithApiResponse(\net\authorize\api\constants\ANetEnvironment::SANDBOX);
+    $response = $controller->executeWithApiResponse(\net\authorize\api\constants\ANetEnvironment::PRODUCTION);
     
 
     if ($response != null) {
@@ -128,5 +128,5 @@ function chargeCreditCard($amount)
 }
 
 if (!defined('DONT_RUN_SAMPLES')) {
-    chargeCreditCard("2.23");
+    chargeCreditCard("0.1");
 }
