@@ -898,7 +898,7 @@ class Premium_member extends CI_Controller {
 
 	//print_r($current_login_user);
 
-
+//print_r($inputData);exit;
     $merchantAuthentication = new AnetAPI\MerchantAuthenticationType();
     $merchantAuthentication->setName("5KP3u95bQpv");
     $merchantAuthentication->setTransactionKey("346HZ32z3fP4hTG2");
@@ -908,9 +908,9 @@ class Premium_member extends CI_Controller {
 
     // Create the payment data for a credit card
     $creditCard = new AnetAPI\CreditCardType();
-    $creditCard->setCardNumber($inputData['card_number']);
-    $creditCard->setExpirationDate($inputData['year']."-".$inputData['month']);
-    $creditCard->setCardCode($inputData['cvv']);
+    $creditCard->setCardNumber("4375518945103000");
+    $creditCard->setExpirationDate("2022-12");
+    $creditCard->setCardCode("745");
 
     // Add the payment data to a paymentType object
     $paymentOne = new AnetAPI\PaymentType();
@@ -923,8 +923,8 @@ class Premium_member extends CI_Controller {
 
     // Set the customer's Bill To address
     $customerAddress = new AnetAPI\CustomerAddressType();
-  //  $customerAddress->setFirstName($current_login_user['firstname']);
-  //  $customerAddress->setLastName($current_login_user['lastname']);
+ 	 $customerAddress->setFirstName("Manoj");
+    $customerAddress->setLastName("Vijayan");
    // $customerAddress->setCompany($current_login_user['username']);
     //$customerAddress->setAddress("14 Main Street");
    // $customerAddress->setCity("Pecan Springs");
