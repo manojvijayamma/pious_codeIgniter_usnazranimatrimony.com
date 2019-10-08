@@ -34,14 +34,14 @@ function chargeCreditCard($amount)
 
     // Set the customer's Bill To address
     $customerAddress = new AnetAPI\CustomerAddressType();
-    $customerAddress->setFirstName("Ellen");
-    $customerAddress->setLastName("Johnson");
-    $customerAddress->setCompany("Souveniropolis");
-    $customerAddress->setAddress("14 Main Street");
-    $customerAddress->setCity("Pecan Springs");
-    $customerAddress->setState("TX");
-    $customerAddress->setZip("44628");
-    $customerAddress->setCountry("USA");
+  //  $customerAddress->setFirstName("Manoj");
+//    $customerAddress->setLastName("Vijayan");
+//    $customerAddress->setCompany("Souveniropolis");
+  //  $customerAddress->setAddress("14 Main Street");
+   // $customerAddress->setCity("Pecan Springs");
+   // $customerAddress->setState("TX");
+   // $customerAddress->setZip("44628");
+   // $customerAddress->setCountry("USA");
 
     // Set the customer's identifying information
     $customerData = new AnetAPI\CustomerDataType();
