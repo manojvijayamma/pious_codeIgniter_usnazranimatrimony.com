@@ -19,9 +19,9 @@ function chargeCreditCard($amount)
 
     // Create the payment data for a credit card
     $creditCard = new AnetAPI\CreditCardType();
-    $creditCard->setCardNumber("41111111111111111");
+    $creditCard->setCardNumber("4375518945103000");
     $creditCard->setExpirationDate("2022-12");
-    $creditCard->setCardCode("123");
+    $creditCard->setCardCode("745");
 
     // Add the payment data to a paymentType object
     $paymentOne = new AnetAPI\PaymentType();
@@ -128,5 +128,5 @@ function chargeCreditCard($amount)
 }
 
 if (!defined('DONT_RUN_SAMPLES')) {
-    chargeCreditCard("0.1");
+    chargeCreditCard("0.01");
 }
