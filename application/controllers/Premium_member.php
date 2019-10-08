@@ -923,9 +923,9 @@ class Premium_member extends CI_Controller {
 
     // Set the customer's Bill To address
     $customerAddress = new AnetAPI\CustomerAddressType();
-  //  $customerAddress->setFirstName($current_login_user['firstname']);
-  //  $customerAddress->setLastName($current_login_user['lastname']);
-   // $customerAddress->setCompany($current_login_user['username']);
+    $customerAddress->setFirstName($current_login_user['firstname']);
+    $customerAddress->setLastName($current_login_user['lastname']);
+    $customerAddress->setCompany($current_login_user['username']);
     //$customerAddress->setAddress("14 Main Street");
    // $customerAddress->setCity("Pecan Springs");
     //$customerAddress->setState("TX");
