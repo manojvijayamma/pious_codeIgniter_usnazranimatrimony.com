@@ -380,6 +380,19 @@
 				<div role="tabpanel" class="tab-pane <?php if(isset($actve_panel) && $actve_panel =='Authorize'){ echo "active";}?>" id="Authorize">
 				<form action="authorize-dot-net" method="POST" id="authorize_frm">
 					<div class="col-sm-12">
+
+
+						<div class="col-xs-2">
+							<h3>Name on card : </h3>
+						</div>
+						<div class="col-xs-4">
+							
+									<input type="text" class="form-control" placeholder="Name on card" name="name_on_card" id="name_on_card">
+									
+							
+						</div>
+
+
 						<div class="col-xs-2">
 							<h3>Card Number : </h3>
 						</div>
