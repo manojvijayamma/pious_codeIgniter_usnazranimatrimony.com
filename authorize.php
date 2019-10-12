@@ -6,7 +6,7 @@
 
   define("AUTHORIZENET_LOG_FILE", "phplog");
 
-function chargeCreditCard($amount)
+function chargeCreditCard()
 {
     /* Create a merchantAuthenticationType object with authentication details
        retrieved from the constants file */
@@ -14,14 +14,15 @@ function chargeCreditCard($amount)
     $merchantAuthentication->setName("9zyp7U9TTQ");
     $merchantAuthentication->setTransactionKey("8hFVee23p993GVVa");
     
+//print_r($_POST);
     // Set the transaction's refId
     $refId = 'ref' . time();
-
+    $amount=$_POST['card_amount'];
     // Create the payment data for a credit card
     $creditCard = new AnetAPI\CreditCardType();
-    $creditCard->setCardNumber("4375518945103000");
-    $creditCard->setExpirationDate("2022-12");
-    $creditCard->setCardCode("745");
+    $creditCard->setCardNumber($_POST['card_number']);
+    $creditCard->setExpirationDate($_POST['year']."-".$_POST['month']);
+    $creditCard->setCardCode($_POST['card_cvv']);
 
     // Add the payment data to a paymentType object
     $paymentOne = new AnetAPI\PaymentType();
@@ -34,7 +35,7 @@ function chargeCreditCard($amount)
 
     // Set the customer's Bill To address
     $customerAddress = new AnetAPI\CustomerAddressType();
-  //  $customerAddress->setFirstName("Manoj");
+    $customerAddress->setFirstName($_POST['name']);
 //    $customerAddress->setLastName("Vijayan");
 //    $customerAddress->setCompany("Souveniropolis");
   //  $customerAddress->setAddress("14 Main Street");
@@ -81,7 +82,7 @@ function chargeCreditCard($amount)
     $request->setMerchantAuthentication($merchantAuthentication);
     $request->setRefId($refId);
     $request->setTransactionRequest($transactionRequestType);
-
+//print_r($request);
     // Create the controller and get the response
     $controller = new AnetController\CreateTransactionController($request);
     $response = $controller->executeWithApiResponse(\net\authorize\api\constants\ANetEnvironment::PRODUCTION);
@@ -126,7 +127,38 @@ function chargeCreditCard($amount)
 
     return $response;
 }
+if($_POST){
+    if (!defined('DONT_RUN_SAMPLES')) {
+        chargeCreditCard();
+    }
+}  
 
-if (!defined('DONT_RUN_SAMPLES')) {
-    chargeCreditCard("0.01");
-}
+?>
+
+<form action="" method="POST"> 
+    <table>
+    <tr>
+        <td>Name on card</td><td><input type="text" name="name"></td>
+</tr>
+<tr>
+        <td>Card number</td><td><input type="text" name="card_number"></td>
+</tr>
+
+<tr>
+        <td>Card Expiry</td><td><input type="text" name="month" placeholder="Month ( Eg: 01)"><input type="text" name="year" placeholder="Year (Eg: 2022)"></td>
+</tr>
+<tr>
+        <td>Card Cvv</td><td><input type="text" name="card_cvv"></td>
+</tr>
+
+<tr>
+        <td>Bill Amount (USD)</td><td><input type="text" name="card_amount"></td>
+</tr>
+
+<tr>
+       <td colspna="2"><input type="submit" name="sub" value="Submit"></td>
+</tr>
+
+</table>
+</form>
+

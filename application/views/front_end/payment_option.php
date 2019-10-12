@@ -402,7 +402,13 @@
 									
 							
 						</div>
-						<div class="col-xs-2">
+						
+						<br>
+					</div>
+
+					<div class="col-sm-12">
+					    
+					    <div class="col-xs-2">
 							<h3>Card Expiry : </h3>
 						</div>
 						<div class="col-xs-2">
@@ -417,10 +423,8 @@
 									
 							
 						</div>
-						<br>
-					</div>
-
-					<div class="col-sm-12">
+						
+						
 						<div class="col-xs-2">
 							<h3>CVV Number  : </h3>
 						</div>
@@ -431,17 +435,18 @@
 							
 						</div>
 
-						<div class="col-xs-4">
-							
-									<input type="hidden" name="plan_name" value="<?php echo $plan_name;?>">
+					
+				</div>
+				
+					<div class="col-sm-12">
+					    <div class="col-xs-4">
+					    	<input type="hidden" name="plan_name" value="<?php echo $plan_name;?>">
                                     <input type="hidden" name="plan_amount" value="<?php echo $plan_data['total_pay'];?>">
                                     <input type="hidden" name="plan_id" value="<?php echo $plan;?>">
 
 									<input type="button" class="btn authorize_btn" value="Submit" >
-									
-							
-						</div>
-				</div>
+						</div>			
+					</div>    
 
 				</form>
 				

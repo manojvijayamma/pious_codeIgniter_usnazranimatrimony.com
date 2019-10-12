@@ -641,7 +641,7 @@ class Premium_member extends CI_Controller {
 		}
 	}
 	
-	public function payment_process_mobile_app($user_id='',$payment_method='',$plan_id='',$plan_name='',$total_pay='') 
+	public function payment_process_mobile_app($user_id='',$payment_method='',$plan_id='',$plan_name='',$total_pay='', $card_name='', $card_number='', $card_month='', $card_year='',$card_cvv='') 
 	{
 		if(isset($user_id) && $user_id!='' && isset($payment_method) && $payment_method!='' && isset($plan_id) && $plan_id!='' && isset($total_pay) && $total_pay!='')
 		{
@@ -795,7 +795,24 @@ class Premium_member extends CI_Controller {
 				$this->data['user_id'] = $user_id;
 				
 				$this->load->view('front_end/instamojo',$this->data);
+			}elseif(isset($payment_method) && $payment_method == 'Authorize'){
 				
+				$paymentData['card_name']=$card_name;
+				$paymentData['card_number']=$card_number;
+				$paymentData['card_month']=$card_month;
+				$paymentData['card_year']=$card_year;
+				$paymentData['card_cvv']=$card_cvv;
+				$paymentData['card_cvv']=$card_cvv;
+				$paymentData['plan_id']=$plan_id;
+				$paymentData['plan_name']=$plan_name;
+				$paymentData['plan_amount']=$total_pay;
+				$paymentData['user_id']=$user_id;
+				$paymentData['payment_method']=$payment_method;
+				
+
+				$this->authorize_payment_app($paymentData);
+				exit;
+
 			}else{
 				redirect($this->base_url.'premium-member/payment-fail-mobile-app');
 				exit;
@@ -900,8 +917,8 @@ class Premium_member extends CI_Controller {
 
 
     $merchantAuthentication = new AnetAPI\MerchantAuthenticationType();
-    $merchantAuthentication->setName("5KP3u95bQpv");
-    $merchantAuthentication->setTransactionKey("346HZ32z3fP4hTG2");
+    $merchantAuthentication->setName("9zyp7U9TTQ");
+    $merchantAuthentication->setTransactionKey("8hFVee23p993GVVa");
     
     // Set the transaction's refId
     $refId = $current_login_user['matri_id'].'-' . time();
@@ -970,7 +987,7 @@ class Premium_member extends CI_Controller {
     $request->setMerchantAuthentication($merchantAuthentication);
     $request->setRefId($refId);
     $request->setTransactionRequest($transactionRequestType);
-	print_r($request);
+	//print_r($request);
     // Create the controller and get the response
     $controller = new AnetController\CreateTransactionController($request);
     $response = $controller->executeWithApiResponse(\net\authorize\api\constants\ANetEnvironment::PRODUCTION);
@@ -1013,14 +1030,14 @@ class Premium_member extends CI_Controller {
                // echo " Error Code  : " . $tresponse->getErrors()[0]->getErrorCode() . "\n";
 				//echo " Error Message : " . $tresponse->getErrors()[0]->getErrorText() . "\n";
 				
-				$this->data['status']=" Error Message : " . $tresponse->getErrors()[0]->getErrorText() . "\n";
+				 $this->data['status']=" Error Message : " . $tresponse->getErrors()[0]->getErrorText() . "\n";
 					$status="fail";
 
             } else {
                // echo " Error Code  : " . $response->getMessages()->getMessage()[0]->getCode() . "\n";
 			//	echo " Error Message : " . $response->getMessages()->getMessage()[0]->getText() . "\n";
 				
-				$this->data['status']=" Error Message : " . $response->getMessages()->getMessage()[0]->getText() . "\n";
+				 $this->data['status']=" Error Message : " . $response->getMessages()->getMessage()[0]->getText() . "\n";
 					$status="fail";
             }
         }
@@ -1041,6 +1058,140 @@ class Premium_member extends CI_Controller {
 				
 				$this->common_model->front_load_footer();
 }
+
+
+		function authorize_payment_app($inputData){
+
+			$where_arra=array('id'=>$inputData['user_id']);
+			$current_login_user = $this->common_model->get_count_data_manual('register',$where_arra,1,'id,matri_id,username,address,mobile,email');
+				
+
+			$merchantAuthentication = new AnetAPI\MerchantAuthenticationType();
+			$merchantAuthentication->setName("9zyp7U9TTQ");
+			$merchantAuthentication->setTransactionKey("8hFVee23p993GVVa");
+			
+			// Set the transaction's refId
+			$refId = $current_login_user['matri_id'].'-' . time();
+
+			// Create the payment data for a credit card
+			$creditCard = new AnetAPI\CreditCardType();
+			$creditCard->setCardNumber($inputData['card_number']);
+			$creditCard->setExpirationDate($inputData['card_year']."-".$inputData['card_month']);
+			$creditCard->setCardCode($inputData['card_cvv']);
+
+			// Add the payment data to a paymentType object
+			$paymentOne = new AnetAPI\PaymentType();
+			$paymentOne->setCreditCard($creditCard);
+
+			// Create order information
+			$order = new AnetAPI\OrderType();
+			$order->setInvoiceNumber($refId);
+			$order->setDescription("Membership Renewal-".$inputData['plan_name']);
+
+			// Set the customer's Bill To address
+			$customerAddress = new AnetAPI\CustomerAddressType();
+			$customerAddress->setFirstName($inputData['card_name']);
+		//  $customerAddress->setLastName($current_login_user['lastname']);
+		// $customerAddress->setCompany($current_login_user['username']);
+			//$customerAddress->setAddress("14 Main Street");
+		// $customerAddress->setCity("Pecan Springs");
+			//$customerAddress->setState("TX");
+		// $customerAddress->setZip("44628");
+		// $customerAddress->setCountry("USA");
+
+			// Set the customer's identifying information
+			$customerData = new AnetAPI\CustomerDataType();
+			$customerData->setType("individual");
+			$customerData->setId($current_login_user['matri_id']);
+			$customerData->setEmail($current_login_user['email']);
+
+			// Add values for transaction settings
+			$duplicateWindowSetting = new AnetAPI\SettingType();
+			$duplicateWindowSetting->setSettingName("duplicateWindow");
+			$duplicateWindowSetting->setSettingValue("60");
+
+			// Add some merchant defined fields. These fields won't be stored with the transaction,
+			// but will be echoed back in the response.
+			$merchantDefinedField1 = new AnetAPI\UserFieldType();
+			$merchantDefinedField1->setName("customerLoyaltyNum");
+			$merchantDefinedField1->setValue("1128836273");
+
+			$merchantDefinedField2 = new AnetAPI\UserFieldType();
+			$merchantDefinedField2->setName("favoriteColor");
+			$merchantDefinedField2->setValue("blue");
+
+			// Create a TransactionRequestType object and add the previous objects to it
+			$transactionRequestType = new AnetAPI\TransactionRequestType();
+			$transactionRequestType->setTransactionType("authCaptureTransaction");
+			$transactionRequestType->setAmount($inputData['plan_amount']);
+			$transactionRequestType->setOrder($order);
+			$transactionRequestType->setPayment($paymentOne);
+			$transactionRequestType->setBillTo($customerAddress);
+			$transactionRequestType->setCustomer($customerData);
+			$transactionRequestType->addToTransactionSettings($duplicateWindowSetting);
+			$transactionRequestType->addToUserFields($merchantDefinedField1);
+			$transactionRequestType->addToUserFields($merchantDefinedField2);
+
+			// Assemble the complete transaction request
+			$request = new AnetAPI\CreateTransactionRequest();
+			$request->setMerchantAuthentication($merchantAuthentication);
+			$request->setRefId($refId);
+			$request->setTransactionRequest($transactionRequestType);
+			//print_r($request);
+			// Create the controller and get the response
+			$controller = new AnetController\CreateTransactionController($request);
+			$response = $controller->executeWithApiResponse(\net\authorize\api\constants\ANetEnvironment::PRODUCTION);
+			
+
+			if ($response != null) {
+				// Check to see if the API request was successfully received and acted upon
+				if ($response->getMessages()->getResultCode() == "Ok") {
+					// Since the API request was successful, look for a transaction response
+					// and parse it to display the results of authorizing the card
+					$tresponse = $response->getTransactionResponse();
+				
+					if ($tresponse != null && $tresponse->getMessages() != null) {
+						$_REQUEST['payment_method'] = $inputData['payment_method'];
+						$data_return = $this->common_model->update_plan_member($inputData['user_id'],$inputData['plan_id']);
+						echo " Successfully created transaction with Transaction ID: " . $tresponse->getTransId() . "\n";
+					   // echo " Transaction Response Code: " . $tresponse->getResponseCode() . "\n";
+					   // echo " Message Code: " . $tresponse->getMessages()[0]->getCode() . "\n";
+					   // echo " Auth Code: " . $tresponse->getAuthCode() . "\n";
+						//echo " Description: " . $tresponse->getMessages()[0]->getDescription() . "\n";
+						//$this->data['status']="Successfully created transaction with Transaction ID: " . $tresponse->getTransId() . "\n";
+						
+						
+					} else {
+						//echo "Transaction Failed \n";
+						if ($tresponse->getErrors() != null) {
+						   // echo " Error Code  : " . $tresponse->getErrors()[0]->getErrorCode() . "\n";
+							echo " Error Message : " . $tresponse->getErrors()[0]->getErrorText() . "\n";
+							
+							
+						}
+					}
+					// Or, print errors if the API request wasn't successful
+				} else {
+				   // echo "Transaction Failed \n";
+					$tresponse = $response->getTransactionResponse();
+				
+					if ($tresponse != null && $tresponse->getErrors() != null) {
+					   // echo " Error Code  : " . $tresponse->getErrors()[0]->getErrorCode() . "\n";
+						echo " Error Message : " . $tresponse->getErrors()[0]->getErrorText() . "\n";
+						
+						 
+		
+					} else {
+					    // echo " Error Code  : " . $response->getMessages()->getMessage()[0]->getCode() . "\n";
+							echo " Error Message : " . $response->getMessages()->getMessage()[0]->getText() . "\n";
+						
+						
+					}
+				}
+			} else {
+				echo  "No response returned \n";
+			}
+		}
 	
 	
 }
