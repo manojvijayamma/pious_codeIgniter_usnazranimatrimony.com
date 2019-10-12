@@ -900,8 +900,8 @@ class Premium_member extends CI_Controller {
 
 
     $merchantAuthentication = new AnetAPI\MerchantAuthenticationType();
-    $merchantAuthentication->setName("5KP3u95bQpv");
-    $merchantAuthentication->setTransactionKey("346HZ32z3fP4hTG2");
+    $merchantAuthentication->setName("9zyp7U9TTQ");
+    $merchantAuthentication->setTransactionKey("8hFVee23p993GVVa");
     
     // Set the transaction's refId
     $refId = $current_login_user['matri_id'].'-' . time();
@@ -923,9 +923,9 @@ class Premium_member extends CI_Controller {
 
     // Set the customer's Bill To address
     $customerAddress = new AnetAPI\CustomerAddressType();
-    $customerAddress->setFirstName($current_login_user['firstname']);
-    $customerAddress->setLastName($current_login_user['lastname']);
-    $customerAddress->setCompany($current_login_user['username']);
+    $customerAddress->setFirstName($inputData['name_on_card']);
+  //  $customerAddress->setLastName($current_login_user['lastname']);
+   // $customerAddress->setCompany($current_login_user['username']);
     //$customerAddress->setAddress("14 Main Street");
    // $customerAddress->setCity("Pecan Springs");
     //$customerAddress->setState("TX");
@@ -970,8 +970,7 @@ class Premium_member extends CI_Controller {
     $request->setMerchantAuthentication($merchantAuthentication);
     $request->setRefId($refId);
     $request->setTransactionRequest($transactionRequestType);
-
-print_r($request);
+	//print_r($request);
     // Create the controller and get the response
     $controller = new AnetController\CreateTransactionController($request);
     $response = $controller->executeWithApiResponse(\net\authorize\api\constants\ANetEnvironment::PRODUCTION);
@@ -1014,14 +1013,14 @@ print_r($request);
                // echo " Error Code  : " . $tresponse->getErrors()[0]->getErrorCode() . "\n";
 				//echo " Error Message : " . $tresponse->getErrors()[0]->getErrorText() . "\n";
 				
-				$this->data['status']=" Error Message : " . $tresponse->getErrors()[0]->getErrorText() . "\n";
+				 $this->data['status']=" Error Message : " . $tresponse->getErrors()[0]->getErrorText() . "\n";
 					$status="fail";
 
             } else {
                // echo " Error Code  : " . $response->getMessages()->getMessage()[0]->getCode() . "\n";
 			//	echo " Error Message : " . $response->getMessages()->getMessage()[0]->getText() . "\n";
 				
-				$this->data['status']=" Error Message : " . $response->getMessages()->getMessage()[0]->getText() . "\n";
+				 $this->data['status']=" Error Message : " . $response->getMessages()->getMessage()[0]->getText() . "\n";
 					$status="fail";
             }
         }
