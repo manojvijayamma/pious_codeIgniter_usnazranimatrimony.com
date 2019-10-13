@@ -381,7 +381,7 @@
 				<form action="authorize-dot-net" method="POST" id="authorize_frm">
 					<div class="col-sm-12">
 
-
+						<img src="<?php echo $base_url;?>assets/images/autlogo.png">			
 						<div class="col-xs-2">
 							<h3>Name on card : </h3>
 						</div>

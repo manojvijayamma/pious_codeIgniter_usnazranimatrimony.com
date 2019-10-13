@@ -1153,20 +1153,20 @@ class Premium_member extends CI_Controller {
 					if ($tresponse != null && $tresponse->getMessages() != null) {
 						$_REQUEST['payment_method'] = $inputData['payment_method'];
 						$data_return = $this->common_model->update_plan_member($inputData['user_id'],$inputData['plan_id']);
-						echo " Successfully created transaction with Transaction ID: " . $tresponse->getTransId() . "\n";
+						//echo " Successfully created transaction with Transaction ID: " . $tresponse->getTransId() . "\n";
 					   // echo " Transaction Response Code: " . $tresponse->getResponseCode() . "\n";
 					   // echo " Message Code: " . $tresponse->getMessages()[0]->getCode() . "\n";
 					   // echo " Auth Code: " . $tresponse->getAuthCode() . "\n";
 						//echo " Description: " . $tresponse->getMessages()[0]->getDescription() . "\n";
 						//$this->data['status']="Successfully created transaction with Transaction ID: " . $tresponse->getTransId() . "\n";
-						
+						redirect($this->base_url.'premium-member/payment_success_mobile_app_redirect');
 						
 					} else {
 						//echo "Transaction Failed \n";
 						if ($tresponse->getErrors() != null) {
 						   // echo " Error Code  : " . $tresponse->getErrors()[0]->getErrorCode() . "\n";
-							echo " Error Message : " . $tresponse->getErrors()[0]->getErrorText() . "\n";
-							
+							//echo " Error Message : " . $tresponse->getErrors()[0]->getErrorText() . "\n";
+							redirect($this->base_url.'premium-member/payment_fail_mobile_app_redirect');
 							
 						}
 					}
@@ -1177,14 +1177,14 @@ class Premium_member extends CI_Controller {
 				
 					if ($tresponse != null && $tresponse->getErrors() != null) {
 					   // echo " Error Code  : " . $tresponse->getErrors()[0]->getErrorCode() . "\n";
-						echo " Error Message : " . $tresponse->getErrors()[0]->getErrorText() . "\n";
-						
+						//echo " Error Message : " . $tresponse->getErrors()[0]->getErrorText() . "\n";
+						redirect($this->base_url.'premium-member/payment_fail_mobile_app_redirect');
 						 
 		
 					} else {
 					    // echo " Error Code  : " . $response->getMessages()->getMessage()[0]->getCode() . "\n";
-							echo " Error Message : " . $response->getMessages()->getMessage()[0]->getText() . "\n";
-						
+							//echo " Error Message : " . $response->getMessages()->getMessage()[0]->getText() . "\n";
+							redirect($this->base_url.'premium-member/payment_fail_mobile_app_redirect');
 						
 					}
 				}
