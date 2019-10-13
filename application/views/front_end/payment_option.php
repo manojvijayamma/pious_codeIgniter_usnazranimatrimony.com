@@ -379,10 +379,14 @@
 
 				<div role="tabpanel" class="tab-pane <?php if(isset($actve_panel) && $actve_panel =='Authorize'){ echo "active";}?>" id="Authorize">
 				<form action="authorize-dot-net" method="POST" id="authorize_frm">
+					
 					<div class="form-group xxl-16 xl-16 s-16 m-16 xs-16 l-16 padding-lr-zero-320 padding-lr-zero-480 padding-0-xs">
-						<div class="col-md-3 col-sm-12 col-xs-12 padding-0-5-xs" style="text-align:center">			
+						<div class="col-md-12 col-sm-12 col-xs-12 padding-0-5-xs" style="text-align:center">			
 							<img src="<?php echo $base_url;?>assets/payment_logo/autlogo.png" class="img-responsive lazyloaded" >	
-						</div>			
+						</div>
+					</div>
+
+					<div class="form-group xxl-16 xl-16 s-16 m-16 xs-16 l-16 padding-lr-zero-320 padding-lr-zero-480 padding-0-xs">				
 						<div class="xxl-4 xl-6 m-16 l-6 s-16 xs-16 margin-top-5px profile-label">
 							<h3>Name on card : </h3>
 						</div>
@@ -392,8 +396,10 @@
 									
 							
 						</div>
+					</div>	
 
 
+					<div class="form-group xxl-16 xl-16 s-16 m-16 xs-16 l-16 padding-lr-zero-320 padding-lr-zero-480 padding-0-xs">				
 						<div class="xxl-4 xl-6 m-16 l-6 s-16 xs-16 margin-top-5px profile-label">
 							<h3>Card Number : </h3>
 						</div>
@@ -407,24 +413,27 @@
 						<br>
 					</div>
 
-					<div class="col-sm-12">
+
+					<div class="form-group xxl-16 xl-16 s-16 m-16 xs-16 l-16 padding-lr-zero-320 padding-lr-zero-480 padding-0-xs">
 					    
 						<div class="xxl-4 xl-6 m-16 l-6 s-16 xs-16 margin-top-5px profile-label">
 							<h3>Card Expiry : </h3>
 						</div>
-						<div class="xxl-12 xl-10 s-16 xs-16 m-16 l-10">
+						<div class="xxl-4 xl-10 s-16 xs-16 m-16 l-10">
 							
 									<input type="number" class="form-control" placeholder="Month" name="month" id="month">
 									
 							
 						</div>
-						<div class="xxl-12 xl-10 s-16 xs-16 m-16 l-10">
+						<div class="xxl-4 xl-10 s-16 xs-16 m-16 l-10">
 							
 									<input type="number" class="form-control" placeholder="Year" name="year" id="year">
 									
 							
 						</div>
-						
+					</div>
+
+					<div class="form-group xxl-16 xl-16 s-16 m-16 xs-16 l-16 padding-lr-zero-320 padding-lr-zero-480 padding-0-xs">	
 						
 						<div class="xxl-4 xl-6 m-16 l-6 s-16 xs-16 margin-top-5px profile-label">
 							<h3>CVV Number  : </h3>
@@ -435,7 +444,7 @@
 									
 							
 						</div>
-
+					</div>				
 					
 				</div>
 				
