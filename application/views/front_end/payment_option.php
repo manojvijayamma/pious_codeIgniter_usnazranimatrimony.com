@@ -380,7 +380,7 @@
 				<div role="tabpanel" class="tab-pane <?php if(isset($actve_panel) && $actve_panel =='Authorize'){ echo "active";}?>" id="Authorize">
 				<form action="authorize-dot-net" method="POST" id="authorize_frm">
 					<div class="col-sm-12">
-						<div class="col-xs-12">			
+						<div class="col-xs-12" style="text-align:center">			
 							<img src="<?php echo $base_url;?>assets/payment_logo/autlogo.png">	
 						</div>			
 						<div class="col-xs-2">
