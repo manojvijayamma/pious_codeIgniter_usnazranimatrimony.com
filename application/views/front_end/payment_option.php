@@ -379,14 +379,14 @@
 
 				<div role="tabpanel" class="tab-pane <?php if(isset($actve_panel) && $actve_panel =='Authorize'){ echo "active";}?>" id="Authorize">
 				<form action="authorize-dot-net" method="POST" id="authorize_frm">
-					<div class="col-sm-12">
-						<div class="col-xs-12" style="text-align:center">			
-							<img src="<?php echo $base_url;?>assets/payment_logo/autlogo.png">	
+					<div class="form-group xxl-16 xl-16 s-16 m-16 xs-16 l-16 padding-lr-zero-320 padding-lr-zero-480 padding-0-xs">
+						<div class="col-md-3 col-sm-12 col-xs-12 padding-0-5-xs" style="text-align:center">			
+							<img src="<?php echo $base_url;?>assets/payment_logo/autlogo.png" class="img-responsive lazyloaded" >	
 						</div>			
-						<div class="col-xs-2">
+						<div class="xxl-4 xl-6 m-16 l-6 s-16 xs-16 margin-top-5px profile-label">
 							<h3>Name on card : </h3>
 						</div>
-						<div class="col-xs-4">
+						<div class="xxl-12 xl-10 s-16 xs-16 m-16 l-10">
 							
 									<input type="text" class="form-control" placeholder="Name on card" name="name_on_card" id="name_on_card">
 									
@@ -394,10 +394,10 @@
 						</div>
 
 
-						<div class="col-xs-2">
+						<div class="xxl-4 xl-6 m-16 l-6 s-16 xs-16 margin-top-5px profile-label">
 							<h3>Card Number : </h3>
 						</div>
-						<div class="col-xs-4">
+						<div class="xxl-12 xl-10 s-16 xs-16 m-16 l-10">
 							
 									<input type="number" class="form-control" placeholder="Number" name="card_number" id="card_number">
 									
@@ -409,16 +409,16 @@
 
 					<div class="col-sm-12">
 					    
-					    <div class="col-xs-2">
+						<div class="xxl-4 xl-6 m-16 l-6 s-16 xs-16 margin-top-5px profile-label">
 							<h3>Card Expiry : </h3>
 						</div>
-						<div class="col-xs-2">
+						<div class="xxl-12 xl-10 s-16 xs-16 m-16 l-10">
 							
 									<input type="number" class="form-control" placeholder="Month" name="month" id="month">
 									
 							
 						</div>
-						<div class="col-xs-2">
+						<div class="xxl-12 xl-10 s-16 xs-16 m-16 l-10">
 							
 									<input type="number" class="form-control" placeholder="Year" name="year" id="year">
 									
@@ -426,10 +426,10 @@
 						</div>
 						
 						
-						<div class="col-xs-2">
+						<div class="xxl-4 xl-6 m-16 l-6 s-16 xs-16 margin-top-5px profile-label">
 							<h3>CVV Number  : </h3>
 						</div>
-						<div class="col-xs-4">
+						<div class="xxl-12 xl-10 s-16 xs-16 m-16 l-10">
 							
 									<input type="number" class="form-control" placeholder="CVV Number" name="cvv" id="cvv">
 									
@@ -439,8 +439,8 @@
 					
 				</div>
 				
-					<div class="col-sm-12">
-					    <div class="col-xs-4">
+				<div class="col-md-3 col-sm-12 col-xs-12 padding-0-5-xs" >	
+						<div class="xxl-4 xl-6 m-16 l-6 s-16 xs-16 margin-top-5px profile-label">
 					    	<input type="hidden" name="plan_name" value="<?php echo $plan_name;?>">
                                     <input type="hidden" name="plan_amount" value="<?php echo $plan_data['total_pay'];?>">
                                     <input type="hidden" name="plan_id" value="<?php echo $plan;?>">
