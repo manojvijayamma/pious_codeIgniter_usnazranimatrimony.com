@@ -285,6 +285,15 @@ class Common_request extends CI_Controller {
 				$data = $this->common_model->get_count_data_manual("caste",$where_arr,2,"id,caste_name","caste_name ASC");
 				$disp_field = array("id","caste_name");
 			}
+
+			elseif(isset($get_list) && $get_list!='' && $get_list=='designation')
+			{
+				$where_arr = array("occupation_id IN (".$currnet_val.") AND status = 'APPROVED'");
+				$data = $this->common_model->get_count_data_manual("designation",$where_arr,2,"id,designation_name","designation_name ASC");
+				$disp_field = array("id","designation_name");
+			}
+
+
 			elseif(isset($get_list) && $get_list!='' && $get_list=='state')
 			{
 				$where_arr = array("country_id IN (".$currnet_val.") AND status = 'APPROVED'");
