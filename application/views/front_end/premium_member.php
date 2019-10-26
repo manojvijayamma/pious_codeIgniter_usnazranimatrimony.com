@@ -18,7 +18,7 @@
     <div class="clearfix"></div>
     <div  class="container padding-0-5-xs">
         <div class="row">
-            <div class="board" style="height:auto !important;">
+            <div class="board" style="height:auto !important; margin-top:0px">
                     <div class="board-inner" style="display:none">
                         <ul class="nav nav-tabs" id="myTab">
                             <!-- <div class="liner"></div> -->
@@ -51,7 +51,7 @@
                         </ul>
                     </div>
                     <div class="clearfix"></div>
-                    <br>
+                    
                     <div class="tab-content padding-0-5-xs"> <!-- style="background-color:#eee;" -->
                         <div class="tab-pane fade in active padding-0-5-xs" id="home">
                             <div class="padding-0-5-xs">
