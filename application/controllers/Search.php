@@ -756,116 +756,127 @@ class Search extends CI_Controller {
 		
 		$current_login_user_id = $this->input->post('user_id');
 		$member_id = $this->input->post('member_id');
-		
-		if(isset($current_login_user_id) && $current_login_user_id != '' && isset($member_id) && $member_id != '' )
-		{
-			$login_where_arra=array('id'=>$current_login_user_id,'is_deleted'=>'No');
-			$login_member_data = $this->common_model->get_count_data_manual('register',$login_where_arra,1,'matri_id','','','','');
-			
-			$member_where_arra=array('id'=>$member_id,'is_deleted'=>'No');
-			$member_member_data = $this->common_model->get_count_data_manual('register',$member_where_arra,1,'matri_id','','','','');
-			
-			$user_id = $login_member_data['matri_id'];
-			
-			$matri_id = $member_member_data['matri_id'];
-		
-			if(isset($user_agent) && $user_agent!='NI-WEB' && isset($user_id) && $user_id!='' && isset($matri_id) && $matri_id!='')
-			{
-				$where_arra_payment=array('matri_id'=>$user_id,'is_deleted'=>'No','current_plan' =>'Yes');
-				$payment_data = $this->common_model->get_count_data_manual('payments_view',$where_arra_payment,1,'*','','','','');
-				
-				$total_profile = $payment_data['profile'];
-				$profile_used = $payment_data['profile_used'];
-			    
-			    
-			  
-							
-							
-				if(isset($payment_data) && $payment_data != '' && $total_profile >= $profile_used)
-				{
-					if(isset($matri_id) && $matri_id!='')
-					{
-						$where_arra=array('matri_id'=>$matri_id,'is_deleted'=>'No',"status !='UNAPPROVED' and status !='Suspended'");
-						$user_data_arr = $this->common_model->get_count_data_manual('register_view',$where_arra,1,'*','','','','');
-						if(isset($user_data_arr) && $user_data_arr!='' && $user_data_arr > 0)
-						{
-							$where_array_checker = array('my_id'=>$user_id,'viewed_id'=>$matri_id);
-							$profile_checker = $this->common_model->get_count_data_manual('profile_checker',$where_array_checker,0,'','','','','','');
-							
-							if($profile_checker == 0){
-								$created_on = $this->common_model->getCurrentDate();
-								
-								$insert_profile_checker = $this->common_model->update_insert_data_common('profile_checker',array('my_id' => $user_id,'viewed_id' => $matri_id,'date' => $created_on),'',0);
-								
-								$this->common_front_model->update_plan_detail($user_id,'profile');
-									
-								$insert_who_viewed = $this->common_model->update_insert_data_common('who_viewed_my_profile',array('my_id' => $user_id,'viewed_member_id' => $matri_id,'created_on' => $created_on),'',0);
-							}
-						
-							$where_arra=array('matri_id'=>$matri_id,'is_deleted'=>'No');
-							$member_data = $this->common_model->get_count_data_manual('register',$where_arra,1,'id','','','','');
-							$member_id = $member_data['id'];
 
-							$where_arrays=array('matri_id'=>$user_id,'is_deleted'=>'No');
-							$member_datass = $this->common_model->get_count_data_manual('register',$where_arrays,1,'id','','','','');
-							$compare_from = $member_datass['id'];
-							
-							$user_data1 = $this->common_front_model->get_user_data('register_view',$member_id);
-							$my_data = $this->common_front_model->get_user_data('register_view',$compare_from);
-							
-							$user_data = $this->common_front_model->set_member_profile_join_data($user_data1);
-							$parampass = array('photo1' =>'assets/photos/','photo2' =>'assets/photos/','photo3' =>'assets/photos/','photo4' =>'assets/photos/','photo5' =>'assets/photos/','photo6' =>'assets/photos/','photo7' =>'assets/photos/','photo8' =>'assets/photos/','cover_photo'=>'assets/cover_photo/','horoscope_photo'=>'assets/horoscope-list/');
-							$user_data = $this->common_front_model->dataimage_fullurl($user_data,$parampass,'single');
-							
-							$percentage_stored = $this->common_front_model->getprofile_completeness($member_id);
-							$check_permission_view=array('ph_requester_id'=>$user_id,'ph_receiver_id '=>$matri_id,'receiver_response'=>'Accepted','status'=>'1');
-							$user_data['photo_view_count'] = $this->common_model->get_count_data_manual('photoprotect_request',$check_permission_view,0,'*','','','','');
-							//$user_data = $this->common_front_model->set_member_profile_data_category_wise($user_data);
-							
-							$user_data = $this->common_front_model->compare_to_other_user($user_data,$my_data);
-							
-							$user_data['percentage'] = $percentage_stored;
-							
-							if($user_data['allow_contact']==0){
-							    $user_data['mobile']="";
-							    $user_data['phone']="";
-							}
-							$data1['data'] = $user_data;
-							$data1['status'] = 'success';
-							
-						}
-						else
+		$check_membership_plab_exp_date = $this->search_model->view_profile_details($current_login_user_id);
+		if($check_membership_plab_exp_date==0)
+		{
+					$data1['status'] = 'expired';
+					$data1['errormessage'] = 'Your account has been expired';
+					$data1['errmessage'] = 'Your account has been expired';
+					$data1['data'] = '';
+		}
+		else{
+				if(isset($current_login_user_id) && $current_login_user_id != '' && isset($member_id) && $member_id != '' )
+				{
+					$login_where_arra=array('id'=>$current_login_user_id,'is_deleted'=>'No');
+					$login_member_data = $this->common_model->get_count_data_manual('register',$login_where_arra,1,'matri_id','','','','');
+					
+					$member_where_arra=array('id'=>$member_id,'is_deleted'=>'No');
+					$member_member_data = $this->common_model->get_count_data_manual('register',$member_where_arra,1,'matri_id','','','','');
+					
+					$user_id = $login_member_data['matri_id'];
+					
+					$matri_id = $member_member_data['matri_id'];
+				
+					if(isset($user_agent) && $user_agent!='NI-WEB' && isset($user_id) && $user_id!='' && isset($matri_id) && $matri_id!='')
+					{
+						$where_arra_payment=array('matri_id'=>$user_id,'is_deleted'=>'No','current_plan' =>'Yes');
+						$payment_data = $this->common_model->get_count_data_manual('payments_view',$where_arra_payment,1,'*','','','','');
+						
+						$total_profile = $payment_data['profile'];
+						$profile_used = $payment_data['profile_used'];
+						
+						
+					
+									
+									
+						if(isset($payment_data) && $payment_data != '' && $total_profile >= $profile_used)
 						{
-							$data1['status'] = 'error';
-							$data1['errormessage'] = 'Data not found.';
-							$data1['errmessage'] = 'Data not found.';
+							if(isset($matri_id) && $matri_id!='')
+							{
+								$where_arra=array('matri_id'=>$matri_id,'is_deleted'=>'No',"status !='UNAPPROVED' and status !='Suspended'");
+								$user_data_arr = $this->common_model->get_count_data_manual('register_view',$where_arra,1,'*','','','','');
+								if(isset($user_data_arr) && $user_data_arr!='' && $user_data_arr > 0)
+								{
+									$where_array_checker = array('my_id'=>$user_id,'viewed_id'=>$matri_id);
+									$profile_checker = $this->common_model->get_count_data_manual('profile_checker',$where_array_checker,0,'','','','','','');
+									
+									if($profile_checker == 0){
+										$created_on = $this->common_model->getCurrentDate();
+										
+										$insert_profile_checker = $this->common_model->update_insert_data_common('profile_checker',array('my_id' => $user_id,'viewed_id' => $matri_id,'date' => $created_on),'',0);
+										
+										$this->common_front_model->update_plan_detail($user_id,'profile');
+											
+										$insert_who_viewed = $this->common_model->update_insert_data_common('who_viewed_my_profile',array('my_id' => $user_id,'viewed_member_id' => $matri_id,'created_on' => $created_on),'',0);
+									}
+								
+									$where_arra=array('matri_id'=>$matri_id,'is_deleted'=>'No');
+									$member_data = $this->common_model->get_count_data_manual('register',$where_arra,1,'id','','','','');
+									$member_id = $member_data['id'];
+
+									$where_arrays=array('matri_id'=>$user_id,'is_deleted'=>'No');
+									$member_datass = $this->common_model->get_count_data_manual('register',$where_arrays,1,'id','','','','');
+									$compare_from = $member_datass['id'];
+									
+									$user_data1 = $this->common_front_model->get_user_data('register_view',$member_id);
+									$my_data = $this->common_front_model->get_user_data('register_view',$compare_from);
+									
+									$user_data = $this->common_front_model->set_member_profile_join_data($user_data1);
+									$parampass = array('photo1' =>'assets/photos/','photo2' =>'assets/photos/','photo3' =>'assets/photos/','photo4' =>'assets/photos/','photo5' =>'assets/photos/','photo6' =>'assets/photos/','photo7' =>'assets/photos/','photo8' =>'assets/photos/','cover_photo'=>'assets/cover_photo/','horoscope_photo'=>'assets/horoscope-list/');
+									$user_data = $this->common_front_model->dataimage_fullurl($user_data,$parampass,'single');
+									
+									$percentage_stored = $this->common_front_model->getprofile_completeness($member_id);
+									$check_permission_view=array('ph_requester_id'=>$user_id,'ph_receiver_id '=>$matri_id,'receiver_response'=>'Accepted','status'=>'1');
+									$user_data['photo_view_count'] = $this->common_model->get_count_data_manual('photoprotect_request',$check_permission_view,0,'*','','','','');
+									//$user_data = $this->common_front_model->set_member_profile_data_category_wise($user_data);
+									
+									$user_data = $this->common_front_model->compare_to_other_user($user_data,$my_data);
+									
+									$user_data['percentage'] = $percentage_stored;
+									
+									if($user_data['allow_contact']==0){
+										$user_data['mobile']="";
+										$user_data['phone']="";
+									}
+									$data1['data'] = $user_data;
+									$data1['status'] = 'success';
+									
+								}
+								else
+								{
+									$data1['status'] = 'error';
+									$data1['errormessage'] = 'Data not found.';
+									$data1['errmessage'] = 'Data not found.';
+									$data1['data'] = '';
+								}
+							}
+							else
+							{
+								$data1['status'] = 'error';
+								$data1['errormessage'] = 'Data not found.';
+								$data1['errmessage'] = 'Data not found.';
+								$data1['data'] = '';
+							}
+						}else{
+							$data1['status'] = 'warning';
+							$data1['errormessage'] = 'Your profile viewed count has been not available';
+							$data1['errmessage'] = 'Your profile viewed count has been not available';
 							$data1['data'] = '';
 						}
-					}
-					else
-					{
+					}else{
 						$data1['status'] = 'error';
 						$data1['errormessage'] = 'Data not found.';
 						$data1['errmessage'] = 'Data not found.';
 						$data1['data'] = '';
 					}
 				}else{
-					$data1['status'] = 'warning';
-					$data1['errormessage'] = 'Your profile viewed count has been not available';
-					$data1['errmessage'] = 'Your profile viewed count has been not available';
-					$data1['data'] = '';
+					$data1['status'] = 'error';
+					$data1['errormessage'] = 'Sorry, Your session hase been time out, Please login Again.';
+					$data1['errmessage'] = 'Sorry, Your session hase been time out, Please login Again.';
 				}
-			}else{
-				$data1['status'] = 'error';
-				$data1['errormessage'] = 'Data not found.';
-				$data1['errmessage'] = 'Data not found.';
-				$data1['data'] = '';
-			}
-		}else{
-			$data1['status'] = 'error';
-			$data1['errormessage'] = 'Sorry, Your session hase been time out, Please login Again.';
-			$data1['errmessage'] = 'Sorry, Your session hase been time out, Please login Again.';
-		}
+		}		
+
 		$data1['tocken'] = $this->security->get_csrf_hash();
 		$data['data'] = json_encode($data1);
 		$this->load->view('common_file_echo',$data);

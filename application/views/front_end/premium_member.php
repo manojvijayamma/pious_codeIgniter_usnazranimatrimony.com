@@ -16,10 +16,10 @@
         </div>
     </div>
     <div class="clearfix"></div>
-    <div class="container padding-0-5-xs">
+    <div  class="container padding-0-5-xs">
         <div class="row">
             <div class="board" style="height:auto !important;">
-                    <div class="board-inner">
+                    <div class="board-inner" style="display:none">
                         <ul class="nav nav-tabs" id="myTab">
                             <!-- <div class="liner"></div> -->
                             <li class="payment-tabs active">
