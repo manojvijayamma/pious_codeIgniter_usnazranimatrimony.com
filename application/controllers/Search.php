@@ -758,6 +758,7 @@ class Search extends CI_Controller {
 		$member_id = $this->input->post('member_id');
 
 		$check_membership_plab_exp_date = $this->search_model->view_profile_details($current_login_user_id);
+		echo $check_membership_plab_exp_date;exit;
 		if($check_membership_plab_exp_date==0)
 		{
 					$data1['status'] = 'expired';
