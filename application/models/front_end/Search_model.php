@@ -2299,5 +2299,29 @@ class Search_model extends CI_Model {
 		$data1['data'] = json_encode($data);
 		$this->load->view('common_file_echo',$data1);
 	}
+
+	function view_profile_details_app($matri_id){
+		$mytri_id = $matri_id;
+		$today_date = date('Y-m-d');//date('Y-m-d H:i:s');
+		$created_on = $this->common_model->getCurrentDate();
+		$where_array = array('current_plan'=>'Yes','matri_id'=>$mytri_id);
+		$payments_data = $this->common_model->get_count_data_manual('payments_view',$where_array,1,'');
+		$payments_data_count = $this->common_model->get_count_data_manual('payments_view',$where_array,0,'');
+		
+		if($payments_data_count>0){
+			$total_profiles = $payments_data['profile'];
+			$profile_used =$payments_data['profile_used'];
+			$plan_expired =$payments_data['plan_expired'];
+			$today_date = date('Y-m-d');//date('Y-m-d H:i:s');
+		
+			if($plan_expired >= $today_date){
+				return 1;
+			}else{
+				return 0;
+			}
+		}else{
+			return 1;
+		}		
+	}
 	
 }
