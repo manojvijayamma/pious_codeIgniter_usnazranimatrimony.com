@@ -156,7 +156,7 @@
 									if(isset($payment_logo) && $payment_logo!= '')
 									{ 
 								?>
-										<img src="<?php echo $payment_logo;?>" alt="Payment-logo" style="height:40px;width:70px;">
+										<img src="<?php echo $payment_logo;?>" alt="Payment-logo" >
 								<?php
 									}else{ 
 										echo $row_method['name'];
