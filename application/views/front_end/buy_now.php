@@ -96,8 +96,8 @@ if(isset($display_detail) && $display_detail =='Yes')
      <div class="row">
             <div class="board" style="height:auto !important;">
 	<div class="board-inner">
-                        <ul class="nav nav-tabs" id="myTab">
-                            <!-- <div class="liner"></div> -->
+                        <!-- <ul class="nav nav-tabs" id="myTab">
+                            
                             <li class="payment-tabs ">
                                 
                                 <a href="#home" data-toggle="tooltip" title="" data-original-title="Select your plan">
@@ -125,7 +125,7 @@ if(isset($display_detail) && $display_detail =='Yes')
                                         <i class="fa fa-check-square" aria-hidden="true"></i>
                                     </span> 
                                 </a></li>	
-                        </ul>
+                        </ul> -->
                     </div>
                     <div class="clearfix"></div>
                     <br>

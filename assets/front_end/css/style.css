@@ -11440,7 +11440,7 @@ h3.margin-top-0px.margin-bottom-0px.font-blue.border-1px-btm-lgt-grey.padding-bo
 	box-sizing: border-box;
 }
 .new_reg .header_bg {
-	background-color: rgba(0,183,46,0.95); 
+	background-color: #C73775; 
 	padding: 29px;
 	text-align: center;
 	box-shadow: 0 1px 3px rgba(43,59,93,0.29);
@@ -11510,10 +11510,12 @@ h3.margin-top-0px.margin-bottom-0px.font-blue.border-1px-btm-lgt-grey.padding-bo
 }
 .new_reg .header_bg .card-type .card img {
 	display: inline-block;
-	border: 2px solid #fff;
+	height: 60px;
+	width:100%;
+	/* border: 2px solid #fff; */
     padding: 2px;
-    border-radius: 50px;
-	box-shadow: 0 1px 3px rgba(43,59,93,0.29);
+    /* border-radius: 50px;
+	box-shadow: 0 1px 3px rgba(43,59,93,0.29); */
 }
 .new_reg .header_bg .card-type li {
 	display: inline-block;
