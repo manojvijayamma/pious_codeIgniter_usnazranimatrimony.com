@@ -2,3 +2,8 @@
 Stack trace:
 #0 {main}
   thrown in /home/smccubnr/public_html/usnazranimatrimony.com/sns.php on line 14
+[17-Nov-2019 12:07:46 Etc/GMT] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Aws\Common\Client\AbstractClient::__construct() must be an instance of Aws\Common\Credentials\CredentialsInterface, array given, called in /home/smccubnr/public_html/usnazranimatrimony.com/sns.php on line 14 and defined in /home/smccubnr/public_html/usnazranimatrimony.com/vendor/aws/aws-sdk-php/src/Aws/Common/Client/AbstractClient.php:73
+Stack trace:
+#0 /home/smccubnr/public_html/usnazranimatrimony.com/sns.php(14): Aws\Common\Client\AbstractClient->__construct(Array)
+#1 {main}
+  thrown in /home/smccubnr/public_html/usnazranimatrimony.com/vendor/aws/aws-sdk-php/src/Aws/Common/Client/AbstractClient.php on line 73

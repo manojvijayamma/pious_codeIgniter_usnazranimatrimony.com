@@ -1,6 +1,7 @@
 {
     "require": {
         "symfony/console": "^3.3",
-        "authorizenet/authorizenet": ">=1.9.3"    
+        "authorizenet/authorizenet": ">=1.9.3"   
+        ,"aws/aws-sdk-php": "3.*" 
     }
     }
