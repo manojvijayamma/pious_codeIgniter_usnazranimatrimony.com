@@ -1,0 +1,4 @@
+[17-Nov-2019 11:57:10 Etc/GMT] PHP Fatal error:  Uncaught Error: Class 'Aws\Sns\SnsClient' not found in /home/smccubnr/public_html/usnazranimatrimony.com/sns.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/smccubnr/public_html/usnazranimatrimony.com/sns.php on line 14
