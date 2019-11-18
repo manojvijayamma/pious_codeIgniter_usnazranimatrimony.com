@@ -7,3 +7,5 @@ Stack trace:
 #0 /home/smccubnr/public_html/usnazranimatrimony.com/sns.php(14): Aws\Common\Client\AbstractClient->__construct(Array)
 #1 {main}
   thrown in /home/smccubnr/public_html/usnazranimatrimony.com/vendor/aws/aws-sdk-php/src/Aws/Common/Client/AbstractClient.php on line 73
+[17-Nov-2019 21:36:59 Asia/Kolkata] PHP Warning:  session_write_close(): Cannot call session save handler in a recursive manner in Unknown on line 0
+[17-Nov-2019 21:36:59 Asia/Kolkata] PHP Warning:  session_write_close(): Failed to write session data using user defined save handler. (session.save_path: /tmp) in Unknown on line 0
