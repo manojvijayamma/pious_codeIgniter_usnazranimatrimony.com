@@ -128,7 +128,7 @@
 		<div class="new_reg">
 			<header class="header_bg">
 				<div class="card-type">
-					<select onchange="payment_option(this.value)" class="form-control">
+					<select onchange="payment_option()">
 					<?php 
 						$i=1;
 						$path_payment_logo = $this->common_model->path_payment_logo;
@@ -152,8 +152,20 @@
 									$active = '';
 								}
 						?>
-						<option value="<?php echo $row_method['name']?>"><?php echo $row_method['name']?></option>
-							
+							<li style="width:12% !important; <?php if(isset($row_method['name']) && $row_method['name']=='BankDetails'){echo 'padding-top: 10px;';}?>" class="card <?php echo $active;?>">
+								<a style="color:#F7FFC1 !important;"  href="#<?php echo $row_method['name'];?>" data-toggle="tab" onclick="payment_option();">
+								<?php 
+									if(isset($payment_logo) && $payment_logo!= '')
+									{ 
+								?>
+										<img src="<?php echo $payment_logo;?>" alt="Payment-logo" class="responsive">
+								<?php
+									}else{ 
+										echo $row_method['name'];
+									}
+								?>
+								</a>
+							</li>
 
 
 							
@@ -498,10 +510,8 @@
 		});
 	
 	function payment_option(method_name){
-		//$('.card').removeClass('active');
-		//$(this).addClass('active');
-		$('.tab-pane').hide();
-		$('#'+method_name).show();
+		$('.card').removeClass('active');
+		$(this).addClass('active');
 	}
 	
 	function payment_payubizz(){
