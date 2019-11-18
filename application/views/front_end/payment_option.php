@@ -180,21 +180,37 @@
 				<div role="tabpanel" class="tab-pane <?php if(isset($actve_panel) && $actve_panel =='Paypal'){ echo "active";}?>" id="Paypal">
 					<div class="clearfix"></div>
 					<div class="col-sm-12">
-						<div class="col-sm-6">
-							<div class="col-sm-12">
-								<div class="col-xs-6"><h3>Plan</h3></div>
-								<div class="col-xs-6 input-group"> : <?php echo $plan_name;?>
-								</div>
-							</div>
-							<div class="col-sm-12">
-								<div class="col-xs-6"><h3>Plan Amount</h3></div>
-								<div class="col-xs-6 input-group"> : <?php echo $plan_amount_type.' '.$plan_data['total_pay'];?>
-								</div>
-							</div>
+						
+						
+
+					<div class="form-group xxl-16 xl-16 s-16 m-16 xs-16 l-16 padding-lr-zero-320 padding-lr-zero-480 padding-0-xs">				
+						<div class="xxl-4 xl-6 m-16 l-6 s-16 xs-16 margin-top-5px profile-label">
+							<h3>Plan : </h3>
 						</div>
-						<div class="col-sm-6">
-							<div class="col-sm-12 text-right">
-								<form action="https://www.paypal.com/cgi-bin/webscr" name="frmPayPal1" id="frmPayPal1" method="post" class="" onSubmit="return payment_paypal();">
+						<div class="xxl-6 xl-10 s-16 xs-16 m-16 l-10">
+							
+								<?php echo $plan_name;?>
+						</div>
+					</div>
+
+
+					<div class="form-group xxl-16 xl-16 s-16 m-16 xs-16 l-16 padding-lr-zero-320 padding-lr-zero-480 padding-0-xs">				
+						<div class="xxl-4 xl-6 m-16 l-6 s-16 xs-16 margin-top-5px profile-label">
+							<h3>Plan Amount : </h3>
+						</div>
+						<div class="xxl-6 xl-10 s-16 xs-16 m-16 l-10">
+							
+						<?php echo $plan_amount_type.' '.$plan_data['total_pay'];?>
+						</div>
+					</div>
+
+					<div class="form-group xxl-16 xl-16 s-16 m-16 xs-16 l-16 padding-lr-zero-320 padding-lr-zero-480 padding-0-xs">				
+						<div class="xxl-4 xl-6 m-16 l-6 s-16 xs-16 margin-top-5px profile-label">
+							
+						</div>
+						<div class="xxl-6 xl-10 s-16 xs-16 m-16 l-10">
+							
+						<form action="https://www.paypal.com/cgi-bin/webscr" name="frmPayPal1" id="frmPayPal1" method="post" class="" onSubmit="return payment_paypal();">
 									<input type="hidden" name="business" value="<?php echo $paypal['email_merchant_id']; ?>">
 									<input type="hidden" name="cmd" value="_xclick">
 									<input type="hidden" name="item_name" value="Membership Plan <?php echo $plan_data['total_pay'];?> Purchase">
@@ -213,8 +229,20 @@
 									</button>
 									<input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>" id="hash_tocken_id" />
 								</form>
-							</div>
 						</div>
+					</div>
+
+
+
+						
+					
+
+
+
+
+
+
+
 					</div>
 					<br/>
 				</div>
