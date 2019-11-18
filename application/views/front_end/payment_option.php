@@ -90,6 +90,7 @@
      <div class="row">
             <div class="board" style="height:auto !important;">
 	<div class="board-inner">
+	Select Your Payment System
                         <!-- <ul class="nav nav-tabs" id="myTab">
                             
                             <li class="payment-tabs ">
@@ -156,7 +157,7 @@
 									if(isset($payment_logo) && $payment_logo!= '')
 									{ 
 								?>
-										<img src="<?php echo $payment_logo;?>" alt="Payment-logo" >
+										<img src="<?php echo $payment_logo;?>" alt="Payment-logo" class="responsive">
 								<?php
 									}else{ 
 										echo $row_method['name'];
