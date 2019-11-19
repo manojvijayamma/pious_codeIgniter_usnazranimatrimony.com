@@ -127,48 +127,57 @@
                     <br>
 	<div class="container padding-lr-zero-xs">
 		<div class="new_reg">
-			<header class="header_bg1">
-				<div class="card-type1">
-					<select onchange="payment_option(this.value)" class="form-control">
-					<?php 
-						$i=1;
-						$path_payment_logo = $this->common_model->path_payment_logo;
-						if(isset($payment_methods) && $payment_methods!='' && count($payment_methods)>0)
-						{
-							foreach($payment_methods as $row_method)
-							{
-								if(isset($row_method['logo']) && $row_method['logo'] !='' && file_exists($path_payment_logo.$row_method['logo']))
-								{
-									$payment_logo = $base_url.$path_payment_logo.$row_method['logo'];
-								}
-								else
-								{
-									$payment_logo = '';
-								}
-								
-								if($i == 1){
-									$active = 'active';
-									$actve_panel = $row_method['name'];
-								}else{
-									$active = '';
-								}
-						?>
-						<option value="<?php echo $row_method['name']?>"><?php echo $row_method['name']?></option>
-							
+			
+				<div class="card-type1" >
+					<div class="col-sm-12">
+						<div class="form-group xxl-16 xl-16 s-16 m-16 xs-16 l-16 padding-lr-zero-320 padding-lr-zero-480 padding-0-xs">				
+								<div class="xxl-4 xl-6 m-16 l-6 s-16 xs-16 margin-top-5px profile-label" style="padding-left: 20px;">
+								<h3>&nbsp;Payment Options : </h3>
+								</div>	
+									<div class="xxl-4 xl-6 m-16 l-6 s-16 xs-16 margin-top-5px profile-label">
+									<select onchange="payment_option(this.value)" class="form-control">
+									<?php 
+										$i=1;
+										$path_payment_logo = $this->common_model->path_payment_logo;
+										if(isset($payment_methods) && $payment_methods!='' && count($payment_methods)>0)
+										{
+											foreach($payment_methods as $row_method)
+											{
+												if(isset($row_method['logo']) && $row_method['logo'] !='' && file_exists($path_payment_logo.$row_method['logo']))
+												{
+													$payment_logo = $base_url.$path_payment_logo.$row_method['logo'];
+												}
+												else
+												{
+													$payment_logo = '';
+												}
+												
+												if($i == 1){
+													$active = 'active';
+													$actve_panel = $row_method['name'];
+												}else{
+													$active = '';
+												}
+										?>
+										<option value="<?php echo $row_method['name']?>"><?php echo $row_method['name']?></option>
+											
 
 
-							
-						<?php 
-							$i++;
-							}
-						}						
-					?>
-					</select>
+											
+										<?php 
+											$i++;
+											}
+										}						
+									?>
+									</select>
+									</div>
+							</div>
+					</div>				
 				</div>
-			</header> 
+			
 			
 			<div class="tab-content">
-				<div role="tabpanel" class="tab-pane <?php if(isset($actve_panel) && $actve_panel =='Paypal'){ echo "active";}?>" id="Paypal">
+				<div role="tabpanel" class="tab-pane1 <?php if(isset($actve_panel) && $actve_panel =='Paypal'){ echo "active";}?>" id="Paypal">
 					<div class="clearfix"></div>
 					<div class="col-sm-12">
 						
@@ -196,9 +205,7 @@
 					</div>
 
 					<div class="form-group xxl-16 xl-16 s-16 m-16 xs-16 l-16 padding-lr-zero-320 padding-lr-zero-480 padding-0-xs">				
-						<div class="xxl-4 xl-6 m-16 l-6 s-16 xs-16 margin-top-5px profile-label">
-							
-						</div>
+						
 						<div class="xxl-6 xl-10 s-16 xs-16 m-16 l-10">
 							
 						<form action="https://www.paypal.com/cgi-bin/webscr" name="frmPayPal1" id="frmPayPal1" method="post" class="" onSubmit="return payment_paypal();">
@@ -237,7 +244,7 @@
 					</div>
 					<br/>
 				</div>
-				<div role="tabpanel" class="tab-pane <?php if(isset($actve_panel) && $actve_panel =='Paybizz'){ echo "active";}?>" id="Paybizz">	
+				<div role="tabpanel" class="tab-pane1 <?php if(isset($actve_panel) && $actve_panel =='Paybizz'){ echo "active";}?>" id="Paybizz" style="display:none;">	
 					<div class="clearfix"></div>
 					<div class="col-sm-12">
 						<div class="col-sm-6">
@@ -278,7 +285,7 @@
 					<br/>
 				</div>
 				
-				<div role="tabpanel" class="tab-pane <?php if(isset($actve_panel) && $actve_panel =='PayUmoney'){ echo "active";}?>" id="PayUmoney">
+				<div role="tabpanel" class="tab-pane1 <?php if(isset($actve_panel) && $actve_panel =='PayUmoney'){ echo "active";}?>" id="PayUmoney" style="display:none;">
 					<div class="clearfix"></div>
 					<div class="col-sm-12">
 						<div class="col-sm-6">
@@ -315,7 +322,7 @@
 					<br/>
 				</div>
 				
-				<div role="tabpanel" class="tab-pane <?php if(isset($actve_panel) && $actve_panel =='CCAvenue'){ echo "active";}?>" id="CCAvenue">
+				<div role="tabpanel" class="tab-pane1 <?php if(isset($actve_panel) && $actve_panel =='CCAvenue'){ echo "active";}?>" id="CCAvenue" style="display:none;">
 					<div class="clearfix"></div>
 					<div class="col-sm-12">
 						<div class="col-sm-6">
@@ -358,7 +365,7 @@
 					</div>
 					<br/>
 				</div>
-				<div role="tabpanel" class="tab-pane <?php if(isset($actve_panel) && $actve_panel =='Instamojo'){ echo "active";}?>" id="Instamojo">
+				<div role="tabpanel" class="tab-pane1 <?php if(isset($actve_panel) && $actve_panel =='Instamojo'){ echo "active";}?>" id="Instamojo" style="display:none;">
 					<div class="clearfix"></div>
 					<div class="col-sm-12">
 						<div class="col-sm-6">
@@ -397,7 +404,7 @@
 
 									
 
-				<div  class="tab-pane <?php if(isset($actve_panel) && $actve_panel =='Authorize'){ echo "active";}?>" id="Authorize">
+				<div  class="tab-pane1 <?php if(isset($actve_panel) && $actve_panel =='Authorize'){ echo "active";}?>" id="Authorize" style="display:none;">
 					<form action="authorize-dot-net" method="POST" id="authorize_frm">
 					
 					<div class="form-group xxl-16 xl-16 s-16 m-16 xs-16 l-16 padding-lr-zero-320 padding-lr-zero-480 padding-0-xs">
@@ -499,9 +506,10 @@
 		});
 	
 	function payment_option(method_name){
+		
 		//$('.card').removeClass('active');
 		//$(this).addClass('active');
-		$('.tab-pane').hide();
+		$('.tab-pane1').hide();
 		$('#'+method_name).show();
 	}
 	
