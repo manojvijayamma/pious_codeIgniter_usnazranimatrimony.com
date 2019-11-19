@@ -1059,7 +1059,7 @@ class Premium_member extends CI_Controller {
 				$this->common_model->front_load_footer();
 }
 
-
+		/* manoj */
 		function authorize_payment_app($inputData){
 
 			$where_arra=array('id'=>$inputData['user_id']);
