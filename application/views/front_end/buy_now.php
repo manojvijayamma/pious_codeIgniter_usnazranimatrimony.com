@@ -94,7 +94,7 @@ if(isset($display_detail) && $display_detail =='Yes')
     <br>
     <div class="container padding-0-5-xs">
      <div class="row">
-            <div class="board" style="height:auto !important;">
+            <div class="board" style="height:auto !important;margin:0px auto">
 	<div class="board-inner">
                         <!-- <ul class="nav nav-tabs" id="myTab">
                             

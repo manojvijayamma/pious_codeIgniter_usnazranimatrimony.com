@@ -8,7 +8,7 @@
                         <div class="icon-circle">
                             <i class="icon icon-size-60 icon-lock icon-white"></i>
                         </div>
-                        <h1>Payment Option</h1>
+                        <h1>Packages</h1>
                         <p class="text-white text-center">Just simple steps and become premium member.</p>
                     </div>
                 </div>
