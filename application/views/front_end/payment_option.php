@@ -88,9 +88,10 @@
     <br> 
     <div class="container padding-0-5-xs">
      <div class="row">
-            <div class="board" style="height:auto !important;">
+            <div class="board" style="height:auto !important;margin:0px auto">
 	<div class="board-inner">
-	<div style="font-size:18px;">Select Your Payment System</div>
+	<div class="panel-heading back-img"><span class="glyphicon glyphicon-credit-card" style="vertical-align:middle;"></span> <strong>Select Your Payment System</strong></div>
+	
                         <!-- <ul class="nav nav-tabs" id="myTab">
                             
                             <li class="payment-tabs ">
@@ -126,8 +127,8 @@
                     <br>
 	<div class="container padding-lr-zero-xs">
 		<div class="new_reg">
-			<header class="header_bg">
-				<div class="card-type">
+			<header class="header_bg1">
+				<div class="card-type1">
 					<select onchange="payment_option(this.value)" class="form-control">
 					<?php 
 						$i=1;
@@ -396,7 +397,7 @@
 
 									
 
-				<div role="tabpanel" class="tab-pane <?php if(isset($actve_panel) && $actve_panel =='Authorize'){ echo "active";}?>" id="Authorize">
+				<div  class="tab-pane <?php if(isset($actve_panel) && $actve_panel =='Authorize'){ echo "active";}?>" id="Authorize">
 					<form action="authorize-dot-net" method="POST" id="authorize_frm">
 					
 					<div class="form-group xxl-16 xl-16 s-16 m-16 xs-16 l-16 padding-lr-zero-320 padding-lr-zero-480 padding-0-xs">
