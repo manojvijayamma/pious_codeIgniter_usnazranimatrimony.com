@@ -311,6 +311,7 @@ class Register_model extends CI_Model {
 		
 
 						$email = $row_data['email'];
+						$email_cc = "support@usnazranimatrimony.com";
 
 						
 
