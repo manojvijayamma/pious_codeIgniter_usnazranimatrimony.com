@@ -365,7 +365,7 @@ class Register_model extends CI_Model {
 
 						
 
-						$this->common_model->common_send_email($email,$subject,$email_template);
+						$this->common_model->common_send_email($email,$subject,$email_template, $email_cc);
 
 						
 
