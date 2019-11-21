@@ -16,12 +16,12 @@ function chargeCreditCard($amount)
     
     // Set the transaction's refId
     $refId = 'ref' . time();
-
+    $amount=$_POST['amount'];
     // Create the payment data for a credit card
     $creditCard = new AnetAPI\CreditCardType();
-    $creditCard->setCardNumber("4375518945103000");
-    $creditCard->setExpirationDate("2022-12");
-    $creditCard->setCardCode("745");
+    $creditCard->setCardNumber($_POST['card_number']);
+    $creditCard->setExpirationDate($_POST['year']."-",$_POST['month']);
+    $creditCard->setCardCode($_POST['cvv']);
 
     // Add the payment data to a paymentType object
     $paymentOne = new AnetAPI\PaymentType();
@@ -34,7 +34,7 @@ function chargeCreditCard($amount)
 
     // Set the customer's Bill To address
     $customerAddress = new AnetAPI\CustomerAddressType();
-  //  $customerAddress->setFirstName("Manoj");
+    $customerAddress->setFirstName($_POST['name']);
 //    $customerAddress->setLastName("Vijayan");
 //    $customerAddress->setCompany("Souveniropolis");
   //  $customerAddress->setAddress("14 Main Street");
@@ -127,6 +127,37 @@ function chargeCreditCard($amount)
     return $response;
 }
 
-if (!defined('DONT_RUN_SAMPLES')) {
-    chargeCreditCard("0.01");
-}
+if($_POST){
+    if (!defined('DONT_RUN_SAMPLES')) {
+        chargeCreditCard("0.01");
+    }
+}  
+
+?>
+
+<form action="" method="POST"> 
+    <table>
+    <tr>
+        <td>Name on card</td><td><input type="text" name="name"></td>
+</tr>
+<tr>
+        <td>Card number</td><td><input type="text" name="card_number"></td>
+</tr>
+
+<tr>
+        <td>Card Expiry</td><td><input type="text" name="month" placeholder="Month"><input type="text" name="year" placeholder="Year"></td>
+</tr>
+<tr>
+        <td>Card Cvv</td><td><input type="text" name="cvv"></td>
+</tr>
+
+<tr>
+        <td>Bill Amount (USD)</td><td><input type="text" name="amount"></td>
+</tr>
+
+<tr>
+       <td colspna="2"><input type="submit" name="sub" value="Submit"></td>
+</tr>
+
+</table>
+</form>
