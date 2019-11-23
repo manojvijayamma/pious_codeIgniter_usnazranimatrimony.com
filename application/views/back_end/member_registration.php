@@ -262,13 +262,13 @@ else if($this->session->flashdata('error_message_mem'))
 
             'password'=>array('is_required'=>'required','other'=>'minlength="6" ','type'=>'password','label'=>'Create a Password'),
 
-            'marital_status'=>array('is_required'=>'required','type'=>'radio','value_arr'=>$this->common_model->get_list_ddr('marital_status'),'value'=>'Unmarried','onclick'=>'display_total_childern()'),
+            'marital_status'=>array('type'=>'radio','value_arr'=>$this->common_model->get_list_ddr('marital_status'),'value'=>'Unmarried','onclick'=>'display_total_childern();showChildern();'),
 
-			'total_children'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('total_children'),'value_curr'=>0,'extra'=>'disabled','onchange'=>'display_childern_status()'),
+			'total_children'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('total_children'),'value_curr'=>0,'extra'=>'disabled','onchange'=>'display_childern_status();'),
 
-			'status_children'=>array('is_required'=>'required','type'=>'radio','value_arr'=>$this->common_model->get_list_ddr('status_children'),'extra'=>'disabled'),
+			'status_children'=>array('type'=>'radio','value_arr'=>$this->common_model->get_list_ddr('status_children'),'extra'=>'disabled'),
 
-            'mother_tongue'=>array('is_required'=>'required','type'=>'dropdown','class'=>'select2','value_arr'=>$mother_tongue_arr,'label'=>'Mother Tongue'),
+            'mother_tongue'=>array('type'=>'dropdown','class'=>'select2','value_arr'=>$mother_tongue_arr,'label'=>'Mother Tongue'),
 
             'languages_known'=>array('type'=>'dropdown','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','value_arr'=>$mother_tongue_arr,'label'=>'Language Known'),
 
@@ -462,19 +462,19 @@ else if($this->session->flashdata('error_message_mem'))
 
         $ele_array = array(
 
-            'height'=>array('is_required'=>'required','type'=>'dropdown','class'=>'select2','value_arr'=>$this->common_model->height_list()),
+            'height'=>array('type'=>'dropdown','class'=>'select2','value_arr'=>$this->common_model->height_list()),
 
-            'weight'=>array('is_required'=>'required','type'=>'dropdown','class'=>'select2','value_arr'=>$this->common_model->weight_list()),
+            'weight'=>array('type'=>'dropdown','class'=>'select2','value_arr'=>$this->common_model->weight_list()),
 
-            'diet'=>array('label'=>'Eating Habits','is_required'=>'required','class'=>'select2','type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('diet')),
+            'diet'=>array('label'=>'Eating Habits','class'=>'select2','type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('diet')),
 
-            'smoke'=>array('label'=>'Smoking','is_required'=>'required','type'=>'radio','value_arr'=>$this->common_model->get_list_ddr('smoke'),'value'=>'No'),
+            'smoke'=>array('label'=>'Smoking','type'=>'radio','value_arr'=>$this->common_model->get_list_ddr('smoke'),'value'=>'No'),
 
-            'drink'=>array('label'=>'Drinking','is_required'=>'required','type'=>'radio','value_arr'=>$this->common_model->get_list_ddr('drink'),'value'=>'No'),
+            'drink'=>array('label'=>'Drinking','type'=>'radio','value_arr'=>$this->common_model->get_list_ddr('drink'),'value'=>'No'),
 
-            'bodytype'=>array('label'=>'Body Type','is_required'=>'required','class'=>'select2','type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('bodytype')),
+            'bodytype'=>array('label'=>'Body Type','class'=>'select2','type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('bodytype')),
 
-            'complexion'=>array('is_required'=>'required','type'=>'dropdown','class'=>'select2','value_arr'=>$this->common_model->get_list_ddr('complexion'),'label'=>'Skin Tone'),
+            'complexion'=>array('type'=>'dropdown','class'=>'select2','value_arr'=>$this->common_model->get_list_ddr('complexion'),'label'=>'Skin Tone'),
 
             'blood_group'=>array('type'=>'dropdown','class'=>'select2','value_arr'=>$this->common_model->get_list_ddr('blood_group')),
 
@@ -518,17 +518,17 @@ else if($this->session->flashdata('error_message_mem'))
 
 			'hobby'=>array('type'=>'textarea'),
 
-			'birthplace'=>array('label'=>'Birth Place'),
+			
 
-            'birthtime'=>array('label'=>'Birth Time','input_type'=>'time'),
+            
 
             'profileby'=>array('is_required'=>'required','type'=>'dropdown','class'=>'select2','value_arr'=>$this->common_model->get_list_ddr('profileby'),'label'=>'Profile By'),
 
-            'reference'=>array('is_required'=>'required','type'=>'dropdown','class'=>'select2','value_arr'=>$this->common_model->get_list_ddr('reference')),
+            'reference'=>array('type'=>'dropdown','class'=>'select2','value_arr'=>$this->common_model->get_list_ddr('reference')),
 
             'family_title'=>array('type'=>'manual','code'=>'<h3 class="sub_title_mem"> Family Details</h3>'),
 
-            'family_type'=>array('type'=>'dropdown','class'=>'select2','value_arr'=>$this->common_model->get_list_ddr('family_type')),
+            'family_type'=>array('lable'=>"Family Name"),
 
             'father_name'=>array(),
 
@@ -600,17 +600,17 @@ else if($this->session->flashdata('error_message_mem'))
 
         $ele_array = array(
 
-            'looking_for'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('marital_status'),'label'=>'Looking For','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2'),
+            'looking_for'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('marital_status'),'label'=>'Looking For','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2'),
 
             'part_complexion'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('complexion'),'label'=>'Partner Complexion','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2'),
 
-            'part_frm_age'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->age_rang(),'label'=>"Partner From Age",'class'=>'select2'),
+            'part_frm_age'=>array('type'=>'dropdown','value_arr'=>$this->common_model->age_rang(),'label'=>"Partner From Age",'class'=>'select2'),
 
-            'part_to_age'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->age_rang(),'label'=>"Partner To Age",'class'=>'select2'),
+            'part_to_age'=>array('type'=>'dropdown','value_arr'=>$this->common_model->age_rang(),'label'=>"Partner To Age",'class'=>'select2'),
 
-            'part_height'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->height_list(),'label'=>"Partner From Height",'class'=>'select2'),
+            'part_height'=>array('type'=>'dropdown','value_arr'=>$this->common_model->height_list(),'label'=>"Partner From Height",'class'=>'select2'),
 
-            'part_height_to'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->height_list(),'label'=>"Partner To Height",'class'=>'select2'),
+            'part_height_to'=>array('type'=>'dropdown','value_arr'=>$this->common_model->height_list(),'label'=>"Partner To Height",'class'=>'select2'),
 
             'part_bodytype'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('bodytype'),'label'=>'Partner Body type','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2'),
 
@@ -630,7 +630,7 @@ else if($this->session->flashdata('error_message_mem'))
 
             'religious_title'=>array('type'=>'manual','code'=>'<h3 class="sub_title_mem">Religious Preferences</h3>'),
 
-            'part_religion'=>array('is_required'=>'required','type'=>'dropdown','onchange'=>"dropdownChange('part_religion','part_caste','caste_list')",'value_arr'=>$religion_arr,'label'=>'Partner Religion','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','label'=>'Partner Community'),
+            'part_religion'=>array('type'=>'dropdown','onchange'=>"dropdownChange('part_religion','part_caste','caste_list')",'value_arr'=>$religion_arr,'label'=>'Partner Religion','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','label'=>'Partner Community'),
 
             'part_caste'=>array('type'=>'dropdown','relation'=>array('rel_table'=>'caste','key_val'=>'id','key_disp'=>'caste_name','not_load_add'=>'yes','rel_col_name'=>'religion_id','cus_rel_col_val'=>'part_religion'),'label'=>'Partner Diocese','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2'),
 
@@ -734,9 +734,9 @@ else if($this->session->flashdata('error_message_mem'))
 
         }
 
-        $ele_array['horoscope_photo_approve'] = array('type'=>'radio','is_required'=>'required','value'=>'APPROVED','value_arr'=>$status_arr,'label'=>'Horoscope Status');
+        //$ele_array['horoscope_photo_approve'] = array('type'=>'radio','is_required'=>'required','value'=>'APPROVED','value_arr'=>$status_arr,'label'=>'Horoscope Status');
 
-		$ele_array['horoscope_photo']= array('type'=>'file','path_value'=>$this->common_model->path_horoscope,'inline_style'=>'height:100px;width:150px;');
+		//$ele_array['horoscope_photo']= array('type'=>'file','path_value'=>$this->common_model->path_horoscope,'inline_style'=>'height:100px;width:150px;');
 
         
 

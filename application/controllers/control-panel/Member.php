@@ -20,6 +20,7 @@ class Member extends CI_Controller {
 		$this->common_model->extra_css[] = 'vendor/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css';
 		$this->common_model->extra_js[] = 'vendor/jquery-validation/dist/additional-methods.min.js';
 		$this->common_model->extra_js[] = 'vendor/bootstrap-datepicker/js/bootstrap-datepicker.js';
+		$this->common_model->extra_js[] = 'assets/front_end/js/register.js';
 		if($mode =='add-data' || $mode =='add')
 		{
 			$add_label = 'Add Member';
