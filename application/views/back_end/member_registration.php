@@ -528,15 +528,15 @@ else if($this->session->flashdata('error_message_mem'))
 
             'family_title'=>array('type'=>'manual','code'=>'<h3 class="sub_title_mem"> Family Details</h3>'),
 
-            'family_type'=>array('lable'=>"Family Name"),
+            'family_type'=>array('label'=>"Family Name"),
 
             'father_name'=>array(),
 
-            'father_occupation'=>array('lable'=>"Father's Occupation"),
+            'father_occupation'=>array('label'=>"Father's Occupation"),
 
             'mother_name'=>array(),
 
-            'mother_occupation'=>array('lable'=>"Mother's Occupation"),
+            'mother_occupation'=>array('label'=>"Mother's Occupation"),
 
             'family_status'=>array('type'=>'dropdown','class'=>'select2','value_arr'=>$this->common_model->get_list_ddr('family_status')),
 
