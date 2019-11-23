@@ -302,9 +302,9 @@ else if($this->session->flashdata('error_message_mem'))
 
             //'income'=>array('type'=>'dropdown','class'=>'select2','value_arr'=>$this->common_model->get_list_ddr('income'),'label'=>'Annual Income'),
 
-            'occupation'=>array('type'=>'dropdown','value_arr'=>$occupation_arr,'label'=>'Occupation','class'=>'select2'),
+            'occupation'=>array('type'=>'dropdown','value_arr'=>$occupation_arr,'label'=>'Occupation','class'=>'select2','onchange'=>"dropdownChange('occupation','designation','designation_list')"),
             'other_occupation'=>array('label'=>'If other occupation'),
-            'designation'=>array('type'=>'dropdown','class'=>'select2','value_arr'=>$designation_arr),
+            'designation'=>array('type'=>'dropdown','class'=>'select2','relation'=>array('rel_table'=>'designation','key_val'=>'id','key_disp'=>'designation_name','not_load_add'=>'yes','cus_rel_col_name'=>'occupation_id')),
             'other_designation'=>array('label'=>'If other designation'),
 			'page_type'=>array('type'=>'manual','code'=>'<input type="hidden" name="page_type" id="page_type" value="basic_detail" />')
 
