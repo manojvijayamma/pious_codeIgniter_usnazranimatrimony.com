@@ -62,7 +62,7 @@
 			include_once('message_sidebar.php'); ?>
             
             <div id="sc_div_message" class="xxl-12 xl-12 l-12 xs-16 m-16 s-16 ne_inbox_right_pan padding-lr-zero-320 margin-top-10px-320px padding-lr-zero-480 margin-top-10px-480px  ne-mrg-top-10-768 bg-border border-top padding-20-5-xs" style="">
-                <h3 class="upgrade-heading margin-top-0px font-18 text-white  text-center" style="padding:5px;margin-top:-15px !important">
+                <h3 class="upgrade-heading margin-top-0px font-18 text-brown  text-center" style="padding:5px;margin-top:-15px !important">
                     <i class="fa fa-plus ne_mrg_ri8_10"></i>
                     Compose Message
                 </h3>
