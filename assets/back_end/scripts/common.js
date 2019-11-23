@@ -1919,7 +1919,7 @@ function month_year_change()
 /* manoj */
 
 $('#total_children').parent().parent().hide();
-$('input[name="status_children"]').parent().parent().parent().hide();
+$('input[name="status_children"]').parent().parent().parent().parent().hide();
 
 
 
@@ -1928,10 +1928,10 @@ function showChildern(){
 	if(marital_status !='' && marital_status !='Unmarried')
 	{
         $('#total_children').parent().parent().show();
-		$('input[name="status_children"]').parent().parent().parent().show();
+		$('input[name="status_children"]').parent().parent().parent().parent().show();
     }
     else{
         $('#total_children').parent().parent().hide();
-		$('input[name="status_children"]').parent().parent().parent().hide();
+		$('input[name="status_children"]').parent().parent().parent().parent().hide();
     }
 }
