@@ -1029,7 +1029,7 @@ box-shadow: 0 1px 2px rgba(43,59,93,0.29); }
 .icon-white {color: #ffffff;  }
 .icon-circle { border: 2px solid #fff; border-radius: 50%; width: 100px; height: 100px; margin: 0 auto 30px auto; background-color: rgba(255, 255, 255, .1); }
 { }
-.badge { display: inline-block; min-width: 10px; padding: 3px 7px; font-size: 13px; font-weight: 700; line-height: 1; color: #ffffff;  text-align: center; white-space: nowrap; vertical-align: middle; background-color: #777; border-radius: 2px; }
+.badge { display: inline-block; min-width: 10px; padding: 3px 7px; font-size: 13px; font-weight: 700; line-height: 1; color: #ce8602;  text-align: center; white-space: nowrap; vertical-align: middle; background-color: #777; border-radius: 2px; }
 .badge-default {  background-color: rgba(0,183,46,0.95);  color: #ffffff;  }
 .badge-primary { background-color: #f48f01; color: #ffffff;  }
 .badge-light { background-color: #f0ead9; color: #969388; }
@@ -9202,7 +9202,7 @@ a.btn-compose-new-msg
 	display:inline;
 	text-align:center;
 	vertical-align:middle;
-	background: rgba(0,183,46,0.95); 
+	background: rgba(206, 133, 0, 0.95); 
 	color:rgba(255,255,255,1.00);
 	border-radius: 3px;
 	transition:all 0.5s ease-in-out;
@@ -9543,7 +9543,7 @@ a.ne_msg_previous:focus,a.ne_msg_previous:hover
 }
 .ne-counter
 {
-	background:rgba(142, 142, 142, 1);
+	background:rgba(210, 142, 35, 1);
 	padding:5px 15px;
 	color:rgba(253,253,253,1.00);
 	font-size:10px;
@@ -9806,7 +9806,7 @@ a.ne_left_msg:hover,a.ne_left_msg:focus
 	display: inline-block;
     background-color: #efdcbc;
     font: normal 12px arial;
-	color: #ffffff; 
+	color: #bf3030; 
     border-radius:0px;
     padding: 2px 6px;
     float: right; 
@@ -14003,7 +14003,7 @@ a.btn.btn-primary.btn-sm.col-md-6.font-10.bold.active {
 	margin-top: 144px;
 }
 .new-reg-t{
-	background: #ebb3b2!important;
+	background: ##db7290!important;
     color: #c93221 !important;
     font-size: 20px !important;
     border-radius: 0px !important;

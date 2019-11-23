@@ -26,3 +26,5 @@
 [13-Oct-2019 11:51:58 Etc/GMT] PHP Warning:  imagedestroy() expects parameter 1 to be resource, null given in /home/smccubnr/public_html/usnazranimatrimony.com/assets/photos/watermark.php on line 64
 [19-Oct-2019 23:36:14 Etc/GMT] PHP Notice:  Undefined variable: watermark in /home/smccubnr/public_html/usnazranimatrimony.com/assets/photos/watermark.php on line 64
 [19-Oct-2019 23:36:14 Etc/GMT] PHP Warning:  imagedestroy() expects parameter 1 to be resource, null given in /home/smccubnr/public_html/usnazranimatrimony.com/assets/photos/watermark.php on line 64
+[22-Nov-2019 17:25:37 Etc/GMT] PHP Notice:  Undefined variable: watermark in /home/smccubnr/public_html/usnazranimatrimony.com/assets/photos/watermark.php on line 64
+[22-Nov-2019 17:25:37 Etc/GMT] PHP Warning:  imagedestroy() expects parameter 1 to be resource, null given in /home/smccubnr/public_html/usnazranimatrimony.com/assets/photos/watermark.php on line 64
