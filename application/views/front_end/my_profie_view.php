@@ -78,7 +78,7 @@
 
 									'height'=>array('call_back'=>'display_height'),
 
-									'weight'=>array('post_filed'=>'KG','post_filed_val'=>'Kg'),
+									'weight'=>array('post_filed'=>'lb','post_filed_val'=>'lb'),
 
 									'birthdate'=>array('call_back'=>'birthdate_disp')
 

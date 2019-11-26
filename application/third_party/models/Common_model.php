@@ -3017,9 +3017,9 @@ class Common_model extends CI_Model {
 	public function weight_list()
 	{
 		$weight_arr = array();
-		for($i=40;$i<=140;$i++)
+		for($i=80;$i<=310;$i++)
 		{
-			$weight_arr[$i] = $i.' Kg';
+			$weight_arr[$i] = $i.' lb';
 		}
 		return $weight_arr;
 	}
