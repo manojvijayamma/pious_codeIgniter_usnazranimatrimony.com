@@ -430,7 +430,7 @@
 																echo $this->common_model->display_data_na('');
 															}?>, Weight : 
 															<?php if(isset($user_data['weight']) && $user_data['weight'] !=''){
-																$weight = $user_data['weight'].' Kg';
+																$weight = $user_data['weight'].' lb';
 																echo $weight;
 															}
 															else
