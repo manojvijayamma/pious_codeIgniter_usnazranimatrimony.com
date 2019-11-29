@@ -85,7 +85,7 @@ $current_login_user = $this->common_front_model->get_session_data(); ?>
 									<div class="row" style="padding:4px;">									
 										<div class="xxl-16 xl-16 l-16 m-16 s-16 xs-16 bg-white" style="box-shadow: none;">
 											<div class="row upgrade-heading">
-												<h3 class="font-13 text-white">You might also be interested in these new matching profiles</h3>
+												<h3 class="font-13 text-brown">You might also be interested in these new matching profiles</h3>
 											</div>
 											<div class="clearfix"></div>
 											<div class="row">
@@ -135,7 +135,7 @@ $current_login_user = $this->common_front_model->get_session_data(); ?>
 																						</div>
                                                                                         <div class="xxl-16 xl-16 m-16 xs-16 l-16 s-16 ne_font_12"><?php echo $comm_model->birthdate_disp($member_data['birthdate'], 0); ?>, <?php echo $comm_model->display_height($member_data['height']); ?>, <?php
                                                                                             if (isset($member_data['weight']) && $member_data['weight'] != '') {
-                                                                                                $weight = $member_data['weight'] . ' Kg';
+                                                                                                $weight = $member_data['weight'] . ' lb';
                                                                                                 echo $weight;
 																								} else {
                                                                                                 echo $this->common_model->display_data_na('');
@@ -230,7 +230,7 @@ $current_login_user = $this->common_front_model->get_session_data(); ?>
 																						<div class="row ne_font_12">
 																							<p class="text-center"><span class="glyphicon glyphicon-user"></span>&nbsp;<?php echo $comm_model->birthdate_disp($member_data['birthdate'], 0); ?>, <?php echo $comm_model->display_height($member_data['height']); ?>, <?php
 																								if (isset($member_data['weight']) && $member_data['weight'] != '') {
-																									$weight = $member_data['weight'] . ' Kg';
+																									$weight = $member_data['weight'] . ' lb';
 																									echo $weight;
                                                                                                     } else {
 																									echo $this->common_model->display_data_na('');

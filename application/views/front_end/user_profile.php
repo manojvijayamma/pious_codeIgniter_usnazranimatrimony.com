@@ -430,7 +430,7 @@
 																echo $this->common_model->display_data_na('');
 															}?>, Weight : 
 															<?php if(isset($user_data['weight']) && $user_data['weight'] !=''){
-																$weight = $user_data['weight'].' Kg';
+																$weight = $user_data['weight'].' lb';
 																echo $weight;
 															}
 															else
@@ -479,7 +479,7 @@
 									<div class="xxl-16 xl-16 m-16 s-16 xs-16 l-16 bg-border margin-top-15px padding-0-5-xs" style="padding-top:0px;">
 										<div class="row" style="padding:4px;">
 											<h3 class="profile-heading" style="margin-top:0px;">
-												<a href="javascript:;" class="bdr-btm text-white"><i class="fa fa-book ne_mrg_ri8_10"></i>Detailed Profile</a>
+												<a href="javascript:;" class="bdr-btm text-brown"><i class="fa fa-book ne_mrg_ri8_10"></i>Detailed Profile</a>
 											</h3>
 										</div>
 										
