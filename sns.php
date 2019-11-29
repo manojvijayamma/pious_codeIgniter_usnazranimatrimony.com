@@ -25,7 +25,7 @@ $args = array(
                 ]
             ],
     "Message" => "000000 is your one time password for usnazmatrimonial.com",
-    "PhoneNumber" => "0096566282723"
+    "PhoneNumber" => "00919847483390"
 );
 
 
