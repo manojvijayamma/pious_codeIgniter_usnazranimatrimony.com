@@ -731,8 +731,8 @@ class Common_model extends CI_Model {
 
 			$params = array(
 				'credentials' => array(
-					'key' => 'AKIAQPGVTS7F6MLIDMUI',
-					'secret' => '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',
+					'key' => 'AKIAQPGVTS7FSEOPPJM7',
+					'secret' => 'P/krGwhQMfjnzg2IwizXW4chLDEgmd/gQ/VieiII',
 				),
 				'region' => 'us-west-2', // < your aws from SNS Topic region
 				'version' => 'latest'
