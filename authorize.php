@@ -6,7 +6,7 @@
 
   define("AUTHORIZENET_LOG_FILE", "phplog");
 
-function chargeCreditCard($amount)
+function chargeCreditCard()
 {
     /* Create a merchantAuthenticationType object with authentication details
        retrieved from the constants file */
@@ -14,14 +14,15 @@ function chargeCreditCard($amount)
     $merchantAuthentication->setName("9zyp7U9TTQ");
     $merchantAuthentication->setTransactionKey("8hFVee23p993GVVa");
     
+//print_r($_POST);
     // Set the transaction's refId
     $refId = 'ref' . time();
-    $amount=$_POST['amount'];
+    $amount=$_POST['card_amount'];
     // Create the payment data for a credit card
     $creditCard = new AnetAPI\CreditCardType();
     $creditCard->setCardNumber($_POST['card_number']);
-    $creditCard->setExpirationDate($_POST['year']."-",$_POST['month']);
-    $creditCard->setCardCode($_POST['cvv']);
+    $creditCard->setExpirationDate($_POST['year']."-".$_POST['month']);
+    $creditCard->setCardCode($_POST['card_cvv']);
 
     // Add the payment data to a paymentType object
     $paymentOne = new AnetAPI\PaymentType();
@@ -81,7 +82,7 @@ function chargeCreditCard($amount)
     $request->setMerchantAuthentication($merchantAuthentication);
     $request->setRefId($refId);
     $request->setTransactionRequest($transactionRequestType);
-
+//print_r($request);
     // Create the controller and get the response
     $controller = new AnetController\CreateTransactionController($request);
     $response = $controller->executeWithApiResponse(\net\authorize\api\constants\ANetEnvironment::PRODUCTION);
@@ -126,10 +127,9 @@ function chargeCreditCard($amount)
 
     return $response;
 }
-
 if($_POST){
     if (!defined('DONT_RUN_SAMPLES')) {
-        chargeCreditCard("0.01");
+        chargeCreditCard();
     }
 }  
 
@@ -145,14 +145,14 @@ if($_POST){
 </tr>
 
 <tr>
-        <td>Card Expiry</td><td><input type="text" name="month" placeholder="Month"><input type="text" name="year" placeholder="Year"></td>
+        <td>Card Expiry</td><td><input type="text" name="month" placeholder="Month ( Eg: 01)"><input type="text" name="year" placeholder="Year (Eg: 2022)"></td>
 </tr>
 <tr>
-        <td>Card Cvv</td><td><input type="text" name="cvv"></td>
+        <td>Card Cvv</td><td><input type="text" name="card_cvv"></td>
 </tr>
 
 <tr>
-        <td>Bill Amount (USD)</td><td><input type="text" name="amount"></td>
+        <td>Bill Amount (USD)</td><td><input type="text" name="card_amount"></td>
 </tr>
 
 <tr>
@@ -161,3 +161,4 @@ if($_POST){
 
 </table>
 </form>
+

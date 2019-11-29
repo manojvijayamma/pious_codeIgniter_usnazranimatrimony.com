@@ -88,10 +88,12 @@
     <br> 
     <div class="container padding-0-5-xs">
      <div class="row">
-            <div class="board" style="height:auto !important;">
+            <div class="board" style="height:auto !important;margin:0px auto">
 	<div class="board-inner">
-                        <ul class="nav nav-tabs" id="myTab">
-                            <!-- <div class="liner"></div> -->
+	<div class="panel-heading back-img"><span class="glyphicon glyphicon-credit-card" style="vertical-align:middle;"></span> <strong>Select Your Payment System</strong></div>
+	
+                        <!-- <ul class="nav nav-tabs" id="myTab">
+                            
                             <li class="payment-tabs ">
                                 
                                 <a href="#home" data-toggle="tooltip" title="" data-original-title="Select your plan">
@@ -119,81 +121,94 @@
                                         <i class="fa fa-check-square" aria-hidden="true"></i>
                                     </span> 
                                 </a></li>	
-                        </ul>
+                        </ul> -->
                     </div>
                     <div class="clearfix"></div>
                     <br>
 	<div class="container padding-lr-zero-xs">
 		<div class="new_reg">
-			<header class="header_bg">
-				<div class="card-type">
-					<?php 
-						$i=1;
-						$path_payment_logo = $this->common_model->path_payment_logo;
-						if(isset($payment_methods) && $payment_methods!='' && count($payment_methods)>0)
-						{
-							foreach($payment_methods as $row_method)
-							{
-								if(isset($row_method['logo']) && $row_method['logo'] !='' && file_exists($path_payment_logo.$row_method['logo']))
-								{
-									$payment_logo = $base_url.$path_payment_logo.$row_method['logo'];
-								}
-								else
-								{
-									$payment_logo = '';
-								}
-								
-								if($i == 1){
-									$active = 'active';
-									$actve_panel = $row_method['name'];
-								}else{
-									$active = '';
-								}
-						?>
-							<li style="width:12% !important; <?php if(isset($row_method['name']) && $row_method['name']=='BankDetails'){echo 'padding-top: 10px;';}?>" class="card <?php echo $active;?>">
-								<a style="color:#F7FFC1 !important;"  href="#<?php echo $row_method['name'];?>" data-toggle="tab" onclick="payment_option();">
-								<?php 
-									if(isset($payment_logo) && $payment_logo!= '')
-									{ 
-								?>
-										<img src="<?php echo $payment_logo;?>" alt="Payment-logo" style="height:40px;width:70px;">
-								<?php
-									}else{ 
-										echo $row_method['name'];
-									}
-								?>
-								</a>
-							</li>
+			
+				<div class="card-type1" >
+					<div class="col-sm-12">
+						<div class="form-group xxl-16 xl-16 s-16 m-16 xs-16 l-16 padding-lr-zero-320 padding-lr-zero-480 padding-0-xs">				
+								<div class="xxl-4 xl-6 m-16 l-6 s-16 xs-16 margin-top-5px profile-label" style="padding-left: 20px;">
+								<h3>&nbsp;Payment Options : </h3>
+								</div>	
+									<div class="xxl-4 xl-6 m-16 l-6 s-16 xs-16 margin-top-5px profile-label">
+									<select onchange="payment_option(this.value)" class="form-control">
+									<?php 
+										$i=1;
+										$path_payment_logo = $this->common_model->path_payment_logo;
+										if(isset($payment_methods) && $payment_methods!='' && count($payment_methods)>0)
+										{
+											foreach($payment_methods as $row_method)
+											{
+												if(isset($row_method['logo']) && $row_method['logo'] !='' && file_exists($path_payment_logo.$row_method['logo']))
+												{
+													$payment_logo = $base_url.$path_payment_logo.$row_method['logo'];
+												}
+												else
+												{
+													$payment_logo = '';
+												}
+												
+												if($i == 1){
+													$active = 'active';
+													$actve_panel = $row_method['name'];
+												}else{
+													$active = '';
+												}
+										?>
+										<option value="<?php echo $row_method['name']?>"><?php echo $row_method['name']?></option>
+											
 
 
-							
-						<?php 
-							$i++;
-							}
-						}
-					?>
+											
+										<?php 
+											$i++;
+											}
+										}						
+									?>
+									</select>
+									</div>
+							</div>
+					</div>				
 				</div>
-			</header> 
+			
 			
 			<div class="tab-content">
-				<div role="tabpanel" class="tab-pane <?php if(isset($actve_panel) && $actve_panel =='Paypal'){ echo "active";}?>" id="Paypal">
+				<div role="tabpanel" class="tab-pane1 <?php if(isset($actve_panel) && $actve_panel =='Paypal'){ echo "active";}?>" id="Paypal">
 					<div class="clearfix"></div>
 					<div class="col-sm-12">
-						<div class="col-sm-6">
-							<div class="col-sm-12">
-								<div class="col-xs-6"><h3>Plan</h3></div>
-								<div class="col-xs-6 input-group"> : <?php echo $plan_name;?>
-								</div>
-							</div>
-							<div class="col-sm-12">
-								<div class="col-xs-6"><h3>Plan Amount</h3></div>
-								<div class="col-xs-6 input-group"> : <?php echo $plan_amount_type.' '.$plan_data['total_pay'];?>
-								</div>
-							</div>
+						
+						
+
+					<div class="form-group xxl-16 xl-16 s-16 m-16 xs-16 l-16 padding-lr-zero-320 padding-lr-zero-480 padding-0-xs">				
+						<div class="xxl-4 xl-6 m-16 l-6 s-16 xs-16 margin-top-5px profile-label">
+							<h3>Plan : </h3>
 						</div>
-						<div class="col-sm-6">
-							<div class="col-sm-12 text-right">
-								<form action="https://www.paypal.com/cgi-bin/webscr" name="frmPayPal1" id="frmPayPal1" method="post" class="" onSubmit="return payment_paypal();">
+						<div class="xxl-6 xl-10 s-16 xs-16 m-16 l-10">
+							
+								<?php echo $plan_name;?>
+						</div>
+					</div>
+
+
+					<div class="form-group xxl-16 xl-16 s-16 m-16 xs-16 l-16 padding-lr-zero-320 padding-lr-zero-480 padding-0-xs">				
+						<div class="xxl-4 xl-6 m-16 l-6 s-16 xs-16 margin-top-5px profile-label">
+							<h3>Plan Amount : </h3>
+						</div>
+						<div class="xxl-6 xl-10 s-16 xs-16 m-16 l-10">
+							
+						<?php echo $plan_amount_type.' '.$plan_data['total_pay'];?>
+						</div>
+					</div>
+
+					<div class="form-group xxl-16 xl-16 s-16 m-16 xs-16 l-16 padding-lr-zero-320 padding-lr-zero-480 padding-0-xs">				
+						
+						<div class="xxl-6 xl-10 s-16 xs-16 m-16 l-10">
+							
+						<form action="https://www.paypal.com/cgi-bin/webscr" name="frmPayPal1" id="frmPayPal1" method="post" class="" onSubmit="return payment_paypal();">
 									<input type="hidden" name="business" value="<?php echo $paypal['email_merchant_id']; ?>">
 									<input type="hidden" name="cmd" value="_xclick">
 									<input type="hidden" name="item_name" value="Membership Plan <?php echo $plan_data['total_pay'];?> Purchase">
@@ -212,12 +227,24 @@
 									</button>
 									<input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>" id="hash_tocken_id" />
 								</form>
-							</div>
 						</div>
+					</div>
+
+
+
+						
+					
+
+
+
+
+
+
+
 					</div>
 					<br/>
 				</div>
-				<div role="tabpanel" class="tab-pane <?php if(isset($actve_panel) && $actve_panel =='Paybizz'){ echo "active";}?>" id="Paybizz">	
+				<div role="tabpanel" class="tab-pane1 <?php if(isset($actve_panel) && $actve_panel =='Paybizz'){ echo "active";}?>" id="Paybizz" style="display:none;">	
 					<div class="clearfix"></div>
 					<div class="col-sm-12">
 						<div class="col-sm-6">
@@ -258,7 +285,7 @@
 					<br/>
 				</div>
 				
-				<div role="tabpanel" class="tab-pane <?php if(isset($actve_panel) && $actve_panel =='PayUmoney'){ echo "active";}?>" id="PayUmoney">
+				<div role="tabpanel" class="tab-pane1 <?php if(isset($actve_panel) && $actve_panel =='PayUmoney'){ echo "active";}?>" id="PayUmoney" style="display:none;">
 					<div class="clearfix"></div>
 					<div class="col-sm-12">
 						<div class="col-sm-6">
@@ -295,7 +322,7 @@
 					<br/>
 				</div>
 				
-				<div role="tabpanel" class="tab-pane <?php if(isset($actve_panel) && $actve_panel =='CCAvenue'){ echo "active";}?>" id="CCAvenue">
+				<div role="tabpanel" class="tab-pane1 <?php if(isset($actve_panel) && $actve_panel =='CCAvenue'){ echo "active";}?>" id="CCAvenue" style="display:none;">
 					<div class="clearfix"></div>
 					<div class="col-sm-12">
 						<div class="col-sm-6">
@@ -338,7 +365,7 @@
 					</div>
 					<br/>
 				</div>
-				<div role="tabpanel" class="tab-pane <?php if(isset($actve_panel) && $actve_panel =='Instamojo'){ echo "active";}?>" id="Instamojo">
+				<div role="tabpanel" class="tab-pane1 <?php if(isset($actve_panel) && $actve_panel =='Instamojo'){ echo "active";}?>" id="Instamojo" style="display:none;">
 					<div class="clearfix"></div>
 					<div class="col-sm-12">
 						<div class="col-sm-6">
@@ -377,60 +404,91 @@
 
 									
 
-				<div role="tabpanel" class="tab-pane <?php if(isset($actve_panel) && $actve_panel =='Authorize'){ echo "active";}?>" id="Authorize">
-				<form action="authorize-dot-net" method="POST" id="authorize_frm">
-					<div class="col-sm-12">
-						<div class="col-xs-2">
+				<div  class="tab-pane1 <?php if(isset($actve_panel) && $actve_panel =='Authorize'){ echo "active";}?>" id="Authorize" style="display:none;">
+					<form action="authorize-dot-net" method="POST" id="authorize_frm">
+					
+					<div class="form-group xxl-16 xl-16 s-16 m-16 xs-16 l-16 padding-lr-zero-320 padding-lr-zero-480 padding-0-xs">
+						<div class="col-md-12 col-sm-12 col-xs-12 padding-0-5-xs" style="text-align:center">			
+							<img src="<?php echo $base_url;?>assets/payment_logo/autlogo.png" class="img-responsive lazyloaded" >	
+						</div>
+					</div>
+
+					<div class="form-group xxl-16 xl-16 s-16 m-16 xs-16 l-16 padding-lr-zero-320 padding-lr-zero-480 padding-0-xs">				
+						<div class="xxl-4 xl-6 m-16 l-6 s-16 xs-16 margin-top-5px profile-label">
+							<h3>Name on card : </h3>
+						</div>
+						<div class="xxl-6 xl-10 s-16 xs-16 m-16 l-10">
+							
+									<input type="text" class="form-control" placeholder="Name on card" name="name_on_card" id="name_on_card">
+									
+							
+						</div>
+					</div>	
+
+
+					<div class="form-group xxl-16 xl-16 s-16 m-16 xs-16 l-16 padding-lr-zero-320 padding-lr-zero-480 padding-0-xs">				
+						<div class="xxl-4 xl-6 m-16 l-6 s-16 xs-16 margin-top-5px profile-label">
 							<h3>Card Number : </h3>
 						</div>
-						<div class="col-xs-4">
+						<div class="xxl-6 xl-10 s-16 xs-16 m-16 l-10">
 							
 									<input type="number" class="form-control" placeholder="Number" name="card_number" id="card_number">
 									
 							
 						</div>
-						<div class="col-xs-2">
+						
+						<br>
+					</div>
+
+
+					<div class="form-group xxl-16 xl-16 s-16 m-16 xs-16 l-16 padding-lr-zero-320 padding-lr-zero-480 padding-0-xs">
+					    
+						<div class="xxl-4 xl-6 m-16 l-6 s-16 xs-16 margin-top-5px profile-label">
 							<h3>Card Expiry : </h3>
 						</div>
-						<div class="col-xs-2">
+						<div class="xxl-3 xl-10 s-16 xs-16 m-16 l-10">
 							
 									<input type="number" class="form-control" placeholder="Month" name="month" id="month">
 									
 							
 						</div>
-						<div class="col-xs-2">
+						<div class="xxl-3 xl-10 s-16 xs-16 m-16 l-10">
 							
 									<input type="number" class="form-control" placeholder="Year" name="year" id="year">
 									
 							
 						</div>
-						<br>
 					</div>
 
-					<div class="col-sm-12">
-						<div class="col-xs-2">
+					<div class="form-group xxl-16 xl-16 s-16 m-16 xs-16 l-16 padding-lr-zero-320 padding-lr-zero-480 padding-0-xs">	
+						
+						<div class="xxl-4 xl-6 m-16 l-6 s-16 xs-16 margin-top-5px profile-label">
 							<h3>CVV Number  : </h3>
 						</div>
-						<div class="col-xs-4">
+						<div class="xxl-6 xl-10 s-16 xs-16 m-16 l-10">
 							
 									<input type="number" class="form-control" placeholder="CVV Number" name="cvv" id="cvv">
 									
 							
 						</div>
+					</div>	
 
-						<div class="col-xs-4">
-							
-									<input type="hidden" name="plan_name" value="<?php echo $plan_name;?>">
+
+					<div class="col-md-3 col-sm-12 col-xs-12 padding-0-5-xs" >	
+						<div class="xxl-4 xl-6 m-16 l-6 s-16 xs-16 margin-top-5px profile-label">
+					    	<input type="hidden" name="plan_name" value="<?php echo $plan_name;?>">
                                     <input type="hidden" name="plan_amount" value="<?php echo $plan_data['total_pay'];?>">
                                     <input type="hidden" name="plan_id" value="<?php echo $plan;?>">
 
 									<input type="button" class="btn authorize_btn" value="Submit" >
-									
-							
-						</div>
-				</div>
+						</div>			
+					</div>    
 
-				</form>
+					</form>			
+					
+				</div>
+				
+				
 				
 			</div>
 		</div>
@@ -448,8 +506,11 @@
 		});
 	
 	function payment_option(method_name){
-		$('.card').removeClass('active');
-		$(this).addClass('active');
+		
+		//$('.card').removeClass('active');
+		//$(this).addClass('active');
+		$('.tab-pane1').hide();
+		$('#'+method_name).show();
 	}
 	
 	function payment_payubizz(){

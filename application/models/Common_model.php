@@ -3595,6 +3595,8 @@ class Common_model extends CI_Model {
 					$username = $member_data['username'];
 					$matri_id = $member_data['matri_id'];
 					$email = $member_data['email'];
+
+					$email_cc = "support@usnazranimatrimony.com";
 					
 					$data_array = array('matri_id'=>$matri_id,'username'=>$username,'webfriendlyname'=>$webfriendlyname,"site_domain_name"=>$web_name,"facebook_link"=>$facebook_link,"twitter_link"=>$twitter_link,"google_link"=>$google_link,"linkedin_link"=>$linkedin_link,"footer_text"=>$footer_text,"template_image_url"=>$template_image_url,"contact_no"=>$contact_no,"from_email"=>$from_email,"contact_us"=>$contact_us,"android_app_link"=>$android_app_link,"part_basic_detail"=>$part_basic_detail,"login"=>$login);
 					
@@ -3605,7 +3607,7 @@ class Common_model extends CI_Model {
 					$email_subject = $this->common_front_model->getstringreplaced($email_subject,$data_array);
 					
 					if(isset($email) && $email!= ''){
-						$this->common_model->common_send_email($email,$email_subject,$email_content);
+						$this->common_model->common_send_email($email,$email_subject,$email_content, $email_cc);
 					}
 					
 					if(isset($member_data['mobile']) && $member_data['mobile'] != '')

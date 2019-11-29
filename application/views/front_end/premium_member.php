@@ -8,7 +8,7 @@
                         <div class="icon-circle">
                             <i class="icon icon-size-60 icon-lock icon-white"></i>
                         </div>
-                        <h1>Payment Option</h1>
+                        <h1>Packages</h1>
                         <p class="text-white text-center">Just simple steps and become premium member.</p>
                     </div>
                 </div>
@@ -16,10 +16,10 @@
         </div>
     </div>
     <div class="clearfix"></div>
-    <div class="container padding-0-5-xs">
+    <div  class="container padding-0-5-xs">
         <div class="row">
-            <div class="board" style="height:auto !important;">
-                    <div class="board-inner">
+            <div class="board" style="height:auto !important; margin-top:0px">
+                    <div class="board-inner" style="display:none">
                         <ul class="nav nav-tabs" id="myTab">
                             <!-- <div class="liner"></div> -->
                             <li class="payment-tabs active">
@@ -51,7 +51,7 @@
                         </ul>
                     </div>
                     <div class="clearfix"></div>
-                    <br>
+                    
                     <div class="tab-content padding-0-5-xs"> <!-- style="background-color:#eee;" -->
                         <div class="tab-pane fade in active padding-0-5-xs" id="home">
                             <div class="padding-0-5-xs">

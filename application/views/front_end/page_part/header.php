@@ -123,7 +123,7 @@
 				</li>
 				<li class="'.$premium_member.'"><a href="javascript:;">UpGrade</a>
 				<ul>
-				<li><a href="'.$base_url.'premium-member">Payment Options</a></li>
+				<li><a href="'.$base_url.'premium-member">Packages</a></li>
 				<li><a href="'.$base_url.'premium-member/current-plan">Current Plan</a></li>
 				</ul>
 				</li>
@@ -208,7 +208,7 @@
 				</li>
 				<li class="'.$premium_member.'"><a href="javascript:;">UpGrade</a>
 				<ul>
-				<li><a href="'.$base_url.'premium-member">Payment Options</a></li>
+				<li><a href="'.$base_url.'premium-member">Packages</a></li>
 				</ul>
 				</li>
 				<li class="'.$success_story.'"><a href="'.$base_url.'success-story">Success Story</a></li>
