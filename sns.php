@@ -3,10 +3,12 @@ require './vendor/autoload.php';
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
+$randomid = mt_rand(100000,999999); 
+
 $params = array(
     'credentials' => array(
-        'key' => 'AKIAQPGVTS7F6MLIDMUI',
-        'secret' => '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',
+        'key' => 'AKIAQPGVTS7FSEOPPJM7',
+        'secret' => 'P/krGwhQMfjnzg2IwizXW4chLDEgmd/gQ/VieiII',
     ),
     'region' => 'us-west-2', // < your aws from SNS Topic region
     'version' => 'latest'
@@ -24,8 +26,8 @@ $args = array(
                     'StringValue' => 'Transactional'
                 ]
             ],
-    "Message" => "000000 is your one time password for usnazmatrimonial.com",
-    "PhoneNumber" => "0096566282723"
+    "Message" => $randomid." is your one time password for usnazmatrimonial.com",
+    "PhoneNumber" => "00919847483390"
 );
 
 
