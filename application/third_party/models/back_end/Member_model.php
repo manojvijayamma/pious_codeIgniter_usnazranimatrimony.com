@@ -1193,7 +1193,7 @@ class Member_model extends CI_Model {
 			$('#designation').chosen({placeholder_text_multiple:'Select Designation'});
 			$('#residence').chosen({placeholder_text_multiple:'Select Residence'});
 			$('#diet').chosen({placeholder_text_multiple:'Select Diet'});
-			$('#bodytype').chosen({placeholder_text_multiple:'Select Body Type'});
+			$('#bodytype').chosen({placeholder_text_multiple:'Any'});
 			$('#complexion').chosen({placeholder_text_multiple:'Select Skin Tone'});
 			$('#blood_group').chosen({placeholder_text_multiple:'Select Blood Group'});
 			$('#profileby').chosen({placeholder_text_multiple:'Select Profile By'});
