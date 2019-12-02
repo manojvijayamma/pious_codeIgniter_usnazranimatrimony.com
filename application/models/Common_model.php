@@ -1396,7 +1396,7 @@ class Common_model extends CI_Model {
 						<select '.$is_multi.' '.$onChange.' '.$is_required.' name="'.$key.$is_multi_par.'" id="'.$key.'" class="form-control '.$class.' " '.$extra.' >';
 							if($display_placeholder =='Yes')
 							{
-								$return_content.='<option selected value="" >Select '.$label.'</option>';
+								$return_content.='<option selected value="" >Any</option>';
 							}
 							
 						if(isset($value_arr) && $value_arr !='' && count($value_arr) > 0)
