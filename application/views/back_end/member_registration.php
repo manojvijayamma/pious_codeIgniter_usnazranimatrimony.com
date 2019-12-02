@@ -310,7 +310,7 @@ else if($this->session->flashdata('error_message_mem'))
 
         );
 
-        $this->common_model->js_extra_code.= " select2('.select2','Please Select'); $(function(){display_total_childern(); });";
+        $this->common_model->js_extra_code.= " select2('.select2','Any'); $(function(){display_total_childern(); });";
 
         $other_config = array('mode'=>$mode,'id'=>$id,'enctype'=>'enctype="multipart/form-data"','form_id'=>'basic_detail','action'=>'member/save_member');
 
