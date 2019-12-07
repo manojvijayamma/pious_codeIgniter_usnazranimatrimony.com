@@ -226,7 +226,7 @@
 
 							'mother_tongue'=>array('is_required'=>'required','type'=>'dropdown','class'=>'select2','value_arr'=>$mother_tongue_arr,'label'=>'Mother Tongue','extra_style'=>'width:100%'),
 
-							'languages_known'=>array('type'=>'dropdown','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','value_arr'=>$mother_tongue_arr,'label'=>'Language Known','extra_style'=>'width:100%'),
+							'languages_known'=>array('type'=>'dropdown','is_multiple'=>'yes','display_placeholder'=>'Yes','class'=>'select2','value_arr'=>$mother_tongue_arr,'label'=>'Language Known','extra_style'=>'width:100%'),
 
 							'height'=>array('type'=>'dropdown','class'=>'select2','value_arr'=>$height,'label'=>'Height','extra_style'=>'width:100%'),
 
@@ -882,7 +882,7 @@
 
 										$ele_array = array(
 
-										'education_detail'=>array('type'=>'dropdown','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','value_arr'=>$education_name_arr,'label'=>'Education','extra_style'=>'width:100%'),
+										'education_detail'=>array('type'=>'dropdown','is_multiple'=>'yes','display_placeholder'=>'Yes','class'=>'select2','value_arr'=>$education_name_arr,'label'=>'Education','extra_style'=>'width:100%'),
 										'other_education'=>array('label'=>'If other education'),
 										'employee_in'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('employee_in'),'extra_style'=>'width:100%'),
 
@@ -1116,9 +1116,9 @@
 
 													$ele_array = array(
 
-													'looking_for'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('marital_status'),'label'=>'Looking For','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','extra_style'=>'width:100%'),
+													'looking_for'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('marital_status'),'label'=>'Looking For','is_multiple'=>'yes','display_placeholder'=>'Yes','class'=>'select2','extra_style'=>'width:100%'),
 
-													'part_complexion'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('complexion'),'label'=>'Complexion','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','extra_style'=>'width:100%'),
+													'part_complexion'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('complexion'),'label'=>'Complexion','is_multiple'=>'yes','display_placeholder'=>'Yes','class'=>'select2','extra_style'=>'width:100%'),
 
 													'part_frm_age'=>array('is_required'=>'required','type'=>'dropdown','value_arr'=>$this->common_model->age_rang(1),'label'=>"From Age",'class'=>'select2','extra_style'=>'width:100%'),
 
@@ -1128,15 +1128,15 @@
 
 													'part_height_to'=>array('type'=>'dropdown','value_arr'=>$this->common_model->height_list(),'label'=>"To Height",'class'=>'select2','extra_style'=>'width:100%'),
 
-													'part_bodytype'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('bodytype'),'label'=>'Body type','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','extra_style'=>'width:100%'),
+													'part_bodytype'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('bodytype'),'label'=>'Body type','is_multiple'=>'yes','display_placeholder'=>'Yes','class'=>'select2','extra_style'=>'width:100%'),
 
-													'part_diet'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('diet'),'label'=>'Eating Habit','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','extra_style'=>'width:100%'),
+													'part_diet'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('diet'),'label'=>'Eating Habit','is_multiple'=>'yes','display_placeholder'=>'Yes','class'=>'select2','extra_style'=>'width:100%'),
 
-													'part_smoke'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('smoke'),'label'=>'Smoking Habit','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','extra_style'=>'width:100%'),
+													'part_smoke'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('smoke'),'label'=>'Smoking Habit','is_multiple'=>'yes','display_placeholder'=>'Yes','class'=>'select2','extra_style'=>'width:100%'),
 
-													'part_drink'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('drink'),'label'=>'Drinking Habit','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','extra_style'=>'width:100%'),
+													'part_drink'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('drink'),'label'=>'Drinking Habit','is_multiple'=>'yes','display_placeholder'=>'Yes','class'=>'select2','extra_style'=>'width:100%'),
 
-													'part_mother_tongue'=>array('type'=>'dropdown','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','value_arr'=>$mother_tongue_arr,'label'=>'Mother Tongue','extra_style'=>'width:100%'),
+													'part_mother_tongue'=>array('type'=>'dropdown','is_multiple'=>'yes','display_placeholder'=>'Yes','class'=>'select2','value_arr'=>$mother_tongue_arr,'label'=>'Mother Tongue','extra_style'=>'width:100%'),
 
 													'part_expect'=>array('type'=>'textarea','label'=>'Expectations','extra_style'=>'width:100%')
 
@@ -1230,9 +1230,9 @@
 
 														$ele_array = array(
 
-														'part_religion'=>array('is_required'=>'required','type'=>'dropdown','onchange'=>"dropdownChange('part_religion','part_caste','caste_list')",'value_arr'=>$religion_arr,'label'=>'Community','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','extra_style'=>'width:100%'),
+														'part_religion'=>array('is_required'=>'required','type'=>'dropdown','onchange'=>"dropdownChange('part_religion','part_caste','caste_list')",'value_arr'=>$religion_arr,'label'=>'Community','is_multiple'=>'yes','display_placeholder'=>'Yes','class'=>'select2','extra_style'=>'width:100%'),
 
-														'part_caste'=>array('type'=>'dropdown','relation'=>array('rel_table'=>'caste','key_val'=>'id','key_disp'=>'caste_name','not_load_add'=>'yes','rel_col_name'=>'religion_id','cus_rel_col_val'=>'part_religion'),'label'=>'Diocese','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','extra_style'=>'width:100%'),
+														'part_caste'=>array('type'=>'dropdown','relation'=>array('rel_table'=>'caste','key_val'=>'id','key_disp'=>'caste_name','not_load_add'=>'yes','rel_col_name'=>'religion_id','cus_rel_col_val'=>'part_religion'),'label'=>'Diocese','is_multiple'=>'yes','display_placeholder'=>'Yes','class'=>'select2','extra_style'=>'width:100%'),
 
 														//'part_manglik'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('manglik'),'label'=>'Manglik','extra_style'=>'width:100%'),
 
@@ -1328,13 +1328,13 @@
 
 															$ele_array = array(
 
-															'part_country_living'=>array('type'=>'dropdown','value_arr'=>$country_arr,'label'=>'Country','onchange'=>"dropdownChange('part_country_living','part_state','state_list')",'is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','extra_style'=>'width:100%'),
+															'part_country_living'=>array('type'=>'dropdown','value_arr'=>$country_arr,'label'=>'Country','onchange'=>"dropdownChange('part_country_living','part_state','state_list')",'is_multiple'=>'yes','display_placeholder'=>'Yes','class'=>'select2','extra_style'=>'width:100%'),
 
-															'part_state'=>array('type'=>'dropdown','relation'=>array('rel_table'=>'state_master','key_val'=>'id','key_disp'=>'state_name','not_load_add'=>'yes','cus_rel_col_name'=>'country_id','cus_rel_col_val'=>'part_country_living'),'label'=>'State','onchange'=>"dropdownChange('part_state','part_city','city_list')",'is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','label'=>'State','extra_style'=>'width:100%'),
+															'part_state'=>array('type'=>'dropdown','relation'=>array('rel_table'=>'state_master','key_val'=>'id','key_disp'=>'state_name','not_load_add'=>'yes','cus_rel_col_name'=>'country_id','cus_rel_col_val'=>'part_country_living'),'label'=>'State','onchange'=>"dropdownChange('part_state','part_city','city_list')",'is_multiple'=>'yes','display_placeholder'=>'Yes','class'=>'select2','label'=>'State','extra_style'=>'width:100%'),
 
-															'part_city'=>array('type'=>'dropdown','relation'=>array('rel_table'=>'city_master','key_val'=>'id','key_disp'=>'city_name','not_load_add'=>'yes','cus_rel_col_name'=>'state_id','cus_rel_col_val'=>'part_state'),'label'=>'City','class'=>'select2','is_multiple'=>'yes','display_placeholder'=>'No','extra_style'=>'width:100%'),
+															'part_city'=>array('type'=>'dropdown','relation'=>array('rel_table'=>'city_master','key_val'=>'id','key_disp'=>'city_name','not_load_add'=>'yes','cus_rel_col_name'=>'state_id','cus_rel_col_val'=>'part_state'),'label'=>'City','class'=>'select2','is_multiple'=>'yes','display_placeholder'=>'Yes','extra_style'=>'width:100%'),
 															'part_other_city'=>array('label'=>'If other city'),
-															'part_resi_status'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('residence'),'label'=>'Residence','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','extra_style'=>'width:100%')
+															'part_resi_status'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('residence'),'label'=>'Residence','is_multiple'=>'yes','display_placeholder'=>'Yes','class'=>'select2','extra_style'=>'width:100%')
 
 															);
 
@@ -1428,13 +1428,13 @@
 
 																$ele_array = array(
 
-																'part_education'=>array('type'=>'dropdown','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','value_arr'=>$education_name_arr,'label'=>'Education','extra_style'=>'width:100%'),
+																'part_education'=>array('type'=>'dropdown','is_multiple'=>'yes','display_placeholder'=>'Yes','class'=>'select2','value_arr'=>$education_name_arr,'label'=>'Education','extra_style'=>'width:100%'),
 
-																'part_employee_in'=>array('is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('employee_in'),'label'=>'Employed In','extra_style'=>'width:100%'),
+																'part_employee_in'=>array('is_multiple'=>'yes','display_placeholder'=>'Yes','class'=>'select2','type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('employee_in'),'label'=>'Employed In','extra_style'=>'width:100%'),
 
-																'part_occupation'=>array('type'=>'dropdown','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','value_arr'=>$occupation_arr,'label'=>'Occupation','class'=>'select2','extra_style'=>'width:100%'),
+																'part_occupation'=>array('type'=>'dropdown','is_multiple'=>'yes','display_placeholder'=>'Yes','class'=>'select2','value_arr'=>$occupation_arr,'label'=>'Occupation','class'=>'select2','extra_style'=>'width:100%'),
 
-																'part_designation'=>array('type'=>'dropdown','is_multiple'=>'yes','display_placeholder'=>'No','class'=>'select2','value_arr'=>$designation_arr,'label'=>'Designation','extra_style'=>'width:100%'),
+																'part_designation'=>array('type'=>'dropdown','is_multiple'=>'yes','display_placeholder'=>'Yes','class'=>'select2','value_arr'=>$designation_arr,'label'=>'Designation','extra_style'=>'width:100%'),
 
 																//'part_income'=>array('type'=>'dropdown','value_arr'=>$this->common_model->get_list_ddr('income'),'label'=>'Annual Income','extra_style'=>'width:100%')
 
